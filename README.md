@@ -6,5 +6,6 @@ Each CMS project uses the [Core CMS][core-cms-repo] assets, but also has access 
 
 ## Reference
 
+- [Organization](https://confluence.tacc.utexas.edu/x/HoBGCw)
 - [Formatting & Linting](https://confluence.tacc.utexas.edu/x/HoBGCw)
 - [DjangoCMS Stand Alone Site](https://confluence.tacc.utexas.edu/x/G4G-Ag)
