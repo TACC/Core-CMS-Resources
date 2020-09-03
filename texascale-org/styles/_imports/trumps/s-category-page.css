@@ -1,0 +1,49 @@
+/*
+Category
+
+Style category pages.
+
+Warining: This was made a scope only so it could be applied to Texascale quickly. At the time of its creation, there was no architecture for template-specific styles, and limited use of templates.
+
+Markup:
+<div class="s-category-page">
+  <!-- ??? -->
+</div>
+
+Styleguide Trumps.Scopes.CategoryPage
+*/
+
+/* TODO: Document expected markup */
+/* TODO: Make this a template-specific stylesheet */
+/* TODO: When `postcss-css-next` plugin is installed,
+         then nest all styles within `.s-category-page` block */
+
+/* Add border between the two columns */
+/* FAQ: The border is aded to the right column,
+        because the `.u-position-sticky…` on the left column
+        shrinks the height of the left column (so, the border
+        would not be tall enough, were it added to left column) */
+.s-category-page .row:nth-of-type(2) > .col:nth-of-type(2) {
+  border-left-width: 2px;
+  border-left-style: solid;
+  /* TODO: Use a variable (when it exists) */
+  border-left-color: rgb(51, 51, 51); /* match core site header background */
+
+  margin-bottom: calc( -1 * var(--global-space-beneath-main-content) );
+  padding-bottom: var(--global-space-beneath-main-content);
+}
+
+/* The header needs more vertical buffer between header and content */
+/* FAQ: No, this header is not on any page (if this kind of header is added
+        to another page, then this style must be moved to a broader layer) */
+.s-category-page .row:nth-of-type(1) h2 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+/* Every article summary needs space between it and the article summary above */
+/* FAQ: Article summaries do not have container, so add space to
+        the image container (topmost element of article summary) */
+.s-category-page .row:nth-of-type(2) .col:nth-of-type(2) p + p img {
+  margin-top: 25px;
+}

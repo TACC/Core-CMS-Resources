@@ -1,0 +1,23 @@
+/*
+Position Sticky
+
+A minimal utility to apply `position: sticky` (and relevant styles) to an element.
+
+.u-position-sticky - Set content, when being scrolled past, to stick to the very top of its parent container
+.u-position-sticky--flex-item - Support functionality on a flex item.
+
+Reference:
+- [CSS Position Sticky - How It Really Works!](https://medium.com/@elad/css-position-sticky-how-it-really-works-54cd01dc2d46)
+
+Style guide: Trumps.Utilities.PositionSticky
+*/
+
+.u-position-sticky,
+[class*="u-position-sticky--"] {
+    position: sticky;
+    top: 0;
+}
+.u-position-sticky--flex-item {
+    align-self: flex-start;
+    height: auto;
+}

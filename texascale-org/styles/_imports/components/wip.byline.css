@@ -1,0 +1,14 @@
+/* WIP COMPONENTS: Byline */
+
+/* TODO: Determine if suitable Django CMS or Bootstrap Component exists, otherwise, namespace this. */
+
+.byline {
+	color: #999999;
+	margin: 10px 15px 3px 15px;
+	font-size: 14px;
+}
+.byline-title {
+	color: #999999;
+	margin: 0px 15px 0px 15px;
+	font-size: 12px;
+}

@@ -1,0 +1,34 @@
+/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
+
+/* Organize via ITCSS */
+/* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
+
+/* SETTINGS */
+@import url("_imports/settings/props.font.css");
+@import url("_imports/settings/props.space.css");
+
+/* GENERICS */
+/* … */
+
+/* ELEMENTS */
+@import url("_imports/elements/sectioning.css");
+@import url("_imports/elements/sectioning.headings.css");
+
+/* OBJECTS */
+/* … */
+
+/* COMPONENTS */
+@import url("_imports/components/wip.byline.css");
+/* RFC: If only used on articles, then these components could be imported into a `page.article.css` instead */
+@import url("_imports/components/tacc.c-offset-content.css");
+@import url("_imports/components/bootstrap.figure.css");
+@import url("_imports/components/bootstrap.blockquote.css");
+
+/* TRUMPS */
+@import url("_imports/trumps/s-drop-caps.css");
+/* TODO: Consider creating an `.s-article-page` instead,
+         and including it via a `page.article.css` stylesheet,
+         then adding the class and including the stylesheet
+        via a `page_type/article.html` template
+        (See related RFC comment in COMPONENTS) */
+@import url("_imports/trumps/s-article.css");
