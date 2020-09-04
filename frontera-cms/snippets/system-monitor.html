@@ -1,0 +1,146 @@
+<style>
+  .single-system .hr-left-margin { margin-left:15px }
+  .single-system .status-left-padding { padding-left:30px }
+  .single-system .label-system-status {border-radius:3px;font-size: medium}
+  .single-system {
+    background-color: #272024;
+    font-weight: bold;
+    font-size: small
+    color: white;
+    border-radius: 3px;
+    min-width: 320px;
+  }
+  .single-system {
+  padding: 0 15px 7px 8px;
+  }
+
+  .single-system .table>tbody>tr>th{
+  color:#898889;
+  font-family: BentonSansMedium;
+  font-size: small;
+  }
+
+  .single-system .table {
+  margin-bottom: 0px;
+  }
+  .single-system .row {
+    min-height: 30px;
+  }
+  .single-system>.table>tbody>tr>td {
+  font-size: medium;
+  font-weight: 300;
+  font-family: helvetica neue;
+  }
+  .single-system>.table>tbody>tr>th, .single-system>.table>thead>tr>td, .single-system>.table>tbody>tr>td {
+    border-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 2px;
+    padding-top: 7px;
+  }
+  .single-system>.table>tbody>tr>th {
+    font-size: small
+  }
+  .single-system .sysmon-header {
+    border-bottom: 1px solid #dddddd;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .badge-warning {
+      background-color: #c7ce1d;
+      color: #fff;
+  }
+  </style>
+
+  <div class="single-system">
+  <table class="table table-dark sysmon-table">
+        <tr class="sysmon-header">
+          <th scope="col">STATUS</th>
+          <th scope="col">LOAD</th>
+          <th scope="col">RUNNING</th>
+          <th scope="col">QUEUED</th>
+        </tr>
+          <tr>
+            <td scope="row">
+                <span id='frontera_status' class="badge badge-success label-system-status iconworks d-none" style="font-weight: 400;"
+                  data-icon="&#217;">&nbsp;&nbsp;Operational</span>
+            </td>
+            <td id="load_percentage">
+              -
+            </td>
+            <td id="jobs_running">-</td>
+            <td id="jobs_queued">-</td>
+          </tr>
+    </table>
+  </div>
+  <script>
+  function loadSystemStatusJSON(path, success, error)
+  {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function()
+      {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+              if (xhr.status === 200) {
+                  if (success)
+                      success(JSON.parse(xhr.responseText));
+              } else {
+                  if (error)
+                      error(xhr);
+              }
+          }
+      };
+      xhr.open("GET", path, true);
+      xhr.send();
+  }
+
+  function isOperational(system){
+    if (system['load_percentage'] < 1 || system['load_percentage'] > 99){
+      return system['jobs']['running'] > 1;
+      }
+    return true;
+  }
+
+  function setFronteraStatus(frontera_status){
+    if (frontera_status && isOperational(frontera_status)){
+        document.getElementById('load_percentage').innerHTML = frontera_status['load_percentage'] + '%'
+        document.getElementById('jobs_running').innerHTML = frontera_status['jobs']['running']
+        document.getElementById('jobs_queued').innerHTML = frontera_status['jobs']['queued']
+      } else {
+        // if we're here frontera wasn't found in the json
+        document.getElementById('frontera_status').classList.remove('badge-success');
+        document.getElementById('frontera_status').removeAttribute('data-icon');
+        document.getElementById('frontera_status').innerHTML = 'Maintenance';
+        document.getElementById('frontera_status').classList.add('badge-warning');
+        if(frontera_status){
+          document.getElementById('load_percentage').innerHTML = frontera_status['load_percentage'] + '%'
+          document.getElementById('jobs_running').innerHTML = frontera_status['jobs']['running']
+          document.getElementById('jobs_queued').innerHTML = frontera_status['jobs']['queued']
+        }
+      }
+      document.getElementById('frontera_status').classList.remove('d-none');
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+  loadSystemStatusJSON('/api/system-monitor', function(data) {
+    var frontera_status;
+    data.forEach(function(system){
+      if(system['hostname'] == 'frontera.tacc.utexas.edu'){
+        frontera_status = system;
+        return false;
+      }
+    })
+
+    setFronteraStatus(frontera_status);
+
+    },
+           function(xhr) { console.error(xhr); }
+  );
+
+
+
+  console.log('done with sysmon load');
+
+  }, false);
+
+
+
+  </script>
