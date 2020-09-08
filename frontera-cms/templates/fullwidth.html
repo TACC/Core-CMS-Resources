@@ -1,13 +1,11 @@
 {% extends "fullwidth.html" %}
 {% load cms_tags staticfiles %}
 
-{% block head_fonts %}
+{% block assets_font %}
   {{ block.super }}
+{% endblock assets_font %}
 
-  <link rel="stylesheet" href="https://use.typekit.net/xnr7bof.css">
-{% endblock head_fonts %}
-
-{% block head_end %}
+{% block assets_custom %}
   {{ block.super }}
 
   <link rel="stylesheet" href="{% static 'build/styles/brand/site.css' %}">
@@ -19,4 +17,4 @@
   <!-- Order of `main` stylesheets: https://bitbucket.org/taccaci/frontera/src/master/client/src/index.js -->
   <link class="css-site-old" rel="stylesheet" href="{% static 'site_cms/styles/archive/main.portal.css' %}">
   <link class="css-site-old" rel="stylesheet" href="{% static 'site_cms/styles/archive/main.frontera.css' %}">
-{% endblock head_end %}
+{% endblock assets_custom %}

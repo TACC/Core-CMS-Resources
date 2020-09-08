@@ -1,14 +1,12 @@
 {% extends "fullwidth.html" %}
 {% load cms_tags staticfiles %}
 
-{% block head_fonts %}
-  {{ block.super }}
-
+{% block assets_font %}
   <link rel="stylesheet" href="https://use.typekit.net/xnr7bof.css">
-{% endblock head_fonts %}
+{% endblock assets_font %}
 
-{% block head_end %}
+{% block assets_custom %}
   {{ block.super }}
 
   <link rel="stylesheet" href="{% static 'build/styles/brand/site.css' %}">
-{% endblock head_end %}
+{% endblock assets_custom %}
