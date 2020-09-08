@@ -1,8 +1,10 @@
 {% extends "../fullwidth.html" %}
 {% load cms_tags staticfiles %}
 
-{% block head_brand %}
+{% block head_end %}
+	{{ block.super }}
+
 	<link rel="stylesheet" href="{% static 'build/styles/template.category.css' %}">
-{% endblock head_brand %}
+{% endblock head_end %}
 
 {% block template_class %}s-category-page{% endblock template_class %}
