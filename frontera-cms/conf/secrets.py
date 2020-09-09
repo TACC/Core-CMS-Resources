@@ -14,7 +14,9 @@ _CUSTOM_ASSET_DIR = "frontera-cms"
 
 # …
 
-_CMS_TEMPLATES.insert(0, ('fullwidth.html', 'Frontera Fullwidth'))
+_CMS_TEMPLATES_LIST = list(_CMS_TEMPLATES)
+_CMS_TEMPLATES_LIST.insert(0, ('fullwidth.html', 'Frontera Fullwidth'))
+_CMS_TEMPLATES = tuple(_CMS_TEMPLATES_LIST)
 
 # …
 
