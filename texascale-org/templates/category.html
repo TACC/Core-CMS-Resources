@@ -1,10 +1,10 @@
-{% extends "../fullwidth.html" %}
+{% extends "./fullwidth.html" %}
 {% load cms_tags staticfiles %}
 
 {% block assets_custom %}
 	{{ block.super }}
 
-	<link rel="stylesheet" href="{% static 'build/styles/template.category.css' %}">
+	<link rel="stylesheet" href="{% static 'texascale-org/build/styles/template.category.css' %}">
 {% endblock assets_custom %}
 
 {% block template_class %}s-category-page{% endblock template_class %}
