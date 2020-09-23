@@ -1,12 +1,24 @@
 # …
 
 ########################
+# GOOGLE ANALYTICS
+########################
+
+_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-15"
+_GOOGLE_ANALYTICS_PRELOAD = True
+
+########################
+# BRANDING & LOGOS
+########################
+
+# …
+
+########################
 # BRANDING.
 
 # …
 
-#_BRANDING = [ _TACC_BRANDING, _UTEXAS_BRANDING ]        # Default TACC Portal.
-_BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]       # NSF Funded TACC Portal.
+_BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
 
 ########################
 # LOGOS.

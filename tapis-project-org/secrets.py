@@ -1,6 +1,19 @@
 # …
 
 ########################
+# GOOGLE ANALYTICS
+########################
+
+_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-17"
+_GOOGLE_ANALYTICS_PRELOAD = True
+
+########################
+# BRANDING & LOGOS
+########################
+
+# …
+
+########################
 # BRANDING.
 
 # …
@@ -16,7 +29,7 @@ _UHAWAII_BRANDING = [
     "True"
 ]
 
-_BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, _UHAWAII_BRANDING ]        # NSF Funded Portal w/ Specific Partners.
+_BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, _UHAWAII_BRANDING ]
 
 ########################
 # LOGOS.
