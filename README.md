@@ -1,6 +1,6 @@
 # TACC CMS Per-Site Assets
 
-Each CMS project uses the [Core CMS][core-cms-repo] assets, but also has access to this repo from which it can load assets specific to one CMS site.
+Each CMS project uses the [Core CMS][core-cms-repo] assets, but also has access to this repo from which it can load assets and configuration specific to it.
 
 [core-cms-repo]: https://gitlab.tacc.utexas.edu/wma-cms/cms-site-template
 
