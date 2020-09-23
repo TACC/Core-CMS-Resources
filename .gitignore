@@ -1,3 +1,3 @@
 # Parent Repository processes
 ## built assets
-/static/build/*
+**/static/build/*
