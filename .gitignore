@@ -1,3 +1,4 @@
 # Parent Repository processes
 ## built assets
-**/build/*
+build/*
+!build/README.md
