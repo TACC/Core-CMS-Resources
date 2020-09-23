@@ -3,14 +3,6 @@ import os
 # …
 
 ########################
-# ASSETS.
-
-# Specify from which directory in `taccsite_custom` to pull custom assets
-_CUSTOM_ASSET_DIR = "texascale-org"
-
-# …
-
-########################
 # DJANGO CMS SETTINGS
 ########################
 
@@ -27,7 +19,7 @@ _CMS_TEMPLATES = tuple(_CMS_TEMPLATES_LIST)
 
 _TEXASCALE_LOGO =  [
     "texascale",
-    "site_cms/images/org_logos/texascale-wordmark.png",
+    "texascale-org/images/org_logos/texascale-wordmark.png",
     "",
     "/",
     "_self",
