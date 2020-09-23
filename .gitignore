@@ -1,3 +1,3 @@
-# Static and Media folders
-/static
-/media
+# Parent Repository processes
+## built assets
+/static/build/*
