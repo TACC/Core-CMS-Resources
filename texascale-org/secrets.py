@@ -30,7 +30,7 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 
 _TEXASCALE_LOGO =  [
     "texascale",
-    "texascale-org/images/org_logos/texascale-wordmark.png",
+    "texascale-org/img/org_logos/texascale-wordmark.png",
     "",
     "/",
     "_self",

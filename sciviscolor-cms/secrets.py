@@ -21,7 +21,7 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 
 _SCIVISCOLOR_LOGO =  [
     "sciviscolor",
-    "sciviscolor-cms/images/org_logos/sciviscolor-logo-white.png",
+    "sciviscolor-cms/img/org_logos/sciviscolor-logo-white.png",
     "",
     "/",
     "_self",

@@ -20,7 +20,7 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 
 _UHAWAII_BRANDING = [
     "uhawaii",
-    "site_cms/images/org_logos/hawaii-header-trimmed.png",
+    "site_cms/img/org_logos/hawaii-header-trimmed.png",
     "branding-uhawaii",
     "https://www.hawaii.edu/",
     "_blank",
@@ -36,7 +36,7 @@ _BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, _UHAWAII_BRANDING
 
 _TAPIS_LOGO =  [
     "tapis",
-    "tapis-project-org/images/org_logos/tapis-logo-navbar.png",
+    "tapis-project-org/img/org_logos/tapis-logo-navbar.png",
     "",
     "/",
     "_self",

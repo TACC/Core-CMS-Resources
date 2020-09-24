@@ -25,7 +25,7 @@ _BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
 
 _LCCF_LOGO = [
     "lccf",
-    "lccf-tacc/images/org_logos/lccf-white.png",
+    "lccf-tacc/img/org_logos/lccf-white.png",
     "",
     "/",
     "_self",

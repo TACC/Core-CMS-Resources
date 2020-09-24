@@ -47,7 +47,7 @@ _BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
 
 _FRONTERA_LOGO =  [
     "frontera",
-    "frontera-cms/images/org_logos/frontera-white-solo.png",
+    "frontera-cms/img/org_logos/frontera-white-solo.png",
     "",
     "/",
     "_self",
