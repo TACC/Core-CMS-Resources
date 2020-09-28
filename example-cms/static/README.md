@@ -1,16 +1,16 @@
-# TACC CMS Per-Site Assets - Example - Static
+# TACC CMS Per-Site Resources - Example - Static Files
 
-All static assets specific to this project __must__ be placed in this directory within a directory whose name matches the parent directory of this directory. Failure to do so will make them unavailable via [Core CMS][core-cms-repo].
+All static files specific to this CMS project __must__ be placed here _within_ a directory whose name matches _the parent directory of this directory_. Failure to do so will make them unavailable via [Core CMS][core-cms-repo].
 
 [core-cms-repo]: https://gitlab.tacc.utexas.edu/wma-cms/cms-site-template
 
 ## Clarification
 
-Where `your-project-a` and `some-project-b` are unique projects with custom resources:
+Where `cms-project-a` and `cms-project-b` are unique CMS projects with custom resources:
 
-- `cms-site-assets:/your-project-a/static/your-project-a/…`
-- `cms-site-assets:/some-project-b/static/some-project-b/…`
+- `cms-site-resources:/cms-project-a/static/cms-project-a/…`
+- `cms-site-resources:/cms-project-b/static/cms-project-b/…`
 
-The redundancy is intentional. The high-level instance isolates per-project resources. The low-level instance [namespaces static assets][djangocms-custom-assets].
+The redundancy is intentional. The high-level instance isolates per-project resources. The low-level instance [namespaces the custom static files and templates][djangocms-custom-resources].
 
-[djangocms-custom-assets]: https://docs.djangoproject.com/en/2.2/intro/tutorial06/#customize-your-app-s-look-and-feel
+[djangocms-custom-resources]: https://docs.djangoproject.com/en/2.2/intro/tutorial06/#customize-your-app-s-look-and-feel

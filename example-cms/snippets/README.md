@@ -1,4 +1,4 @@
-# TACC CMS Per-Site Assets - Example - Snippets
+# TACC CMS Per-Site Resources - Example - Snippets
 
 All snippet code specific to this project __must__ be placed in this directory. This allows us to version and source control snippet code. Failure to do so will result in snippet code loss upon data loss from database.
 
@@ -7,11 +7,11 @@ _This directory can alleviate danger #1 of [Why a Snippet Is Dangerous](#why-a-s
 ## Important
 
 1. The Core CMS __must not__ use any snippets. _They would be inaccessible to projects._
-2. A project CMS __should not__ use any snippets. _They __may only__ be temporarily._
+2. A CMS project __should not__ use any snippets. _They __may only__ be temporarily._
 
 ## Usage
 
-In a project:
+In a CMS project:
 
 1. Any snippet __must__ also be saved into this directory in its own file.
 2. Any snippet file __must__ be kept up to date.[^1]

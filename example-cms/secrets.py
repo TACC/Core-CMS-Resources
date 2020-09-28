@@ -1,4 +1,4 @@
-# TACC CMS Per-Site Assets - Example - Configuration
+# TACC CMS Per-Site Resources - Example - Configuration
 
 # In a project-specific configuration file like this, edit existing configuration values from `cms-site-template:/taccsite_cms/default_secrets.py` that must change to suit this project.
 
