@@ -2,7 +2,11 @@
 
 All static files specific to this CMS project __must__ be placed here _within_ a directory whose name matches _the parent directory of this directory_. Failure to do so will make them unavailable via [Core CMS][core-cms-repo].
 
+See [Core `static/README.md`](/taccsite_cms/static/README.md).
+
+
 [core-cms-repo]: https://gitlab.tacc.utexas.edu/wma-cms/cms-site-template
+
 
 ## Clarification
 
