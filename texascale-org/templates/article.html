@@ -1,0 +1,8 @@
+{% extends "../fullwidth.html" %}
+{% load cms_tags staticfiles %}
+
+{% block custom_css %}
+	<link rel="stylesheet" href="{% static 'texascale-org/css/build/template.article.css' %}">
+{% endblock custom_css %}
+
+{% block page_type_class %}s-article-page{% endblock page_type_class %}
