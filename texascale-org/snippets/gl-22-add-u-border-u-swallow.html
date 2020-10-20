@@ -1,0 +1,31 @@
+<style id="gl-22--s-category--remove">
+    .s-category-page .row:nth-of-type(2) > .col:nth-of-type(2) {
+      border-left-width: unset;
+      border-left-style: unset;
+      border-left-color: unset;
+    
+      margin-bottom: unset;
+      padding-bottom: unset;
+    }
+    </style>
+    <style id="gl-22--u-border--add">
+    .u-border,
+    [class*="u-border--"] {
+        /* TODO: Use global custom properties */
+      --border-width: 2px;
+    
+      border-width: 0 !important;
+      border-style: solid !important;
+      border-color: black !important;
+    }
+    .u-border--top { border-top-width: var(--border-width) !important; }
+    .u-border--left { border-left-width: var(--border-width) !important; }
+    .u-border--right { border-right-width: var(--border-width) !important; }
+    .u-border--bottom { border-bottom-width: var(--border-width) !important; }
+    </style>
+    <style id="gl-22--u-swallow--add">
+    .u-swallow--space-beneath-main-content {
+      padding-bottom: var(--global-space-beneath-main-content) !important;
+      margin-bottom: calc( -1 * var(--global-space-beneath-main-content) ) !important;
+    }
+    </style>
