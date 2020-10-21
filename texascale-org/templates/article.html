@@ -6,14 +6,14 @@
 {% endblock custom_css %}
 
 {% block content %}
-<article class="container-fluid">
+<article class="c-article  container-fluid">
   <div class="row">
 
-    <div class="col col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+    <div class="c-article__sidebar  col col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
       {% placeholder "sidebar" %}
     </div>
 
-    <div class="col col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 s-drop-caps">
+    <div class="c-article__title c-article__content  col col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 s-drop-caps">
       {% placeholder "title" %}
       {% placeholder "content" %}
     </div>
