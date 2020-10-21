@@ -9,10 +9,14 @@ import os
 # …
 _CMS_TEMPLATES = (
     # ('fullwidth.html', 'Fullwidth'),
+    # ('sidebar_left.html', 'Sidebar Left'),
     ('texascale-org/templates/fullwidth.html', 'Fullwidth'),
     ('texascale-org/templates/category.html', 'Category'),
-    # ('sidebar_left.html', 'Sidebar Left'),
-    # ('sidebar_right.html', 'Sidebar Right')
+    ('texascale-org/templates/article.html', 'Article'),
+    ('texascale-org/templates/article.freeform.html', 'Article (Free-Form)'),
+    ('texascale-org/templates/article.sidebar-right.html', 'Article (Has Right Sidebar)'),
+    ('texascale-org/templates/article.image.html', 'Article (Image)'),
+    ('texascale-org/templates/article.image-map.html', 'Article (Image Map)'),
 )
 
 ########################

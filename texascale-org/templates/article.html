@@ -1,0 +1,24 @@
+{% extends "./fullwidth.html" %}
+{% load cms_tags staticfiles %}
+
+{% block custom_css %}
+	<link rel="stylesheet" href="{% static 'texascale-org/css/build/template.article.css' %}">
+{% endblock custom_css %}
+
+{% block content %}
+<article class="container-fluid">
+  <div class="row">
+
+    <div class="col col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+      {% placeholder "sidebar" %}
+    </div>
+
+    <div class="col col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+      {% placeholder "content" %}
+    </div>
+
+  </div>
+</article>
+{% endblock content %}
+
+{% block page_type_class %}s-article{% endblock page_type_class %}
