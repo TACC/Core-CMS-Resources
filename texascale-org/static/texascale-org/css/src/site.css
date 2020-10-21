@@ -26,9 +26,3 @@
 
 /* TRUMPS */
 @import url("_imports/trumps/s-drop-caps.css");
-/* TODO: Consider creating an `.s-article-page` instead,
-         and including it via a `page.article.css` stylesheet,
-         then adding the class and including the stylesheet
-        via a `page_type/article.html` template
-        (See related RFC comment in COMPONENTS) */
-@import url("_imports/trumps/s-article.css");
