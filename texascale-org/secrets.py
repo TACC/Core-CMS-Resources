@@ -15,7 +15,7 @@ _CMS_TEMPLATES = (
     ('texascale-org/templates/article.html', 'Article'),
     ('texascale-org/templates/article.freeform.html', 'Article (Free-Form)'),
     ('texascale-org/templates/article.sidebar-right.html', 'Article (Right Sidebar)'),
-    ('texascale-org/templates/article.image.html', 'Article (Full-Size Image)'),
+    ('texascale-org/templates/article.visual.html', 'Article (Full-Size Visual)'),
     ('texascale-org/templates/article.image-map.html', 'Article (Image Map)'),
 )
 

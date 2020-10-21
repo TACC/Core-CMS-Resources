@@ -1,0 +1,21 @@
+/*
+Article
+
+A web magazine article that has these elements:
+
+- sidebar
+- title
+- (optional) visual
+- content
+- (optional) content sidebar
+
+Warning: This component does NOT have styles to lay out the elements.
+
+Markup: c-article.twig.html
+
+Styleguide Components.Article
+*/
+
+.c-article--visual .c-article__visual {
+  margin-bottom: 15px;
+}
