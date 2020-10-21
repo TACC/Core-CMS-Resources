@@ -1,7 +1,7 @@
 /*
-Article
+Page
 
-A web magazine article that has these elements:
+A page that has these elements:
 
 - sidebar
 - title
@@ -11,11 +11,13 @@ A web magazine article that has these elements:
 
 Warning: This component does NOT have styles to lay out the elements.
 
-Markup: c-article.twig.html
+.c-page--visual        - A page with a full-size visual
 
-Styleguide Components.Article
+Markup: c-page.twig.html
+
+Styleguide Components.Page
 */
 
-.c-article--visual .c-article__visual {
+.c-page--visual .c-page__visual {
   margin-bottom: 15px;
 }
