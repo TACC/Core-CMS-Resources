@@ -1,0 +1,23 @@
+/*
+Page
+
+A page that has these elements:
+
+- sidebar
+- title
+- (optional) visual
+- content
+- (optional) content sidebar
+
+Warning: This component does NOT have styles to lay out the elements.
+
+.c-page--visual        - A page with a full-size visual
+
+Markup: c-page.twig.html
+
+Styleguide Components.Page
+*/
+
+.c-page--visual .c-page__visual {
+  margin-bottom: 15px;
+}
