@@ -156,7 +156,7 @@
   /* font: bold normal 2em benton-sans, serif; */
   font-weight: bold;
 }
-.c-image-map__item-desc {
+p.c-image-map__item-desc {
   margin: var(--space--desc-top) 0 0; /* overwrite Bootstrap or browser */
 }
 
