@@ -20,8 +20,7 @@
   --toggle-shape-size: 60px;
 
   /* SEE: `.c-image-map--has-caption-toggle-alignment` */
-  --toggle-offset-from-self: calc( var(--toggle-shape-size) / 2 );
-  --caption-offset-from-toggle: calc( var(--toggle-offset-from-self) + 1em );
+  --caption-offset-from-toggle: calc( ( var(--toggle-shape-size) / 2 ) + 1em );
 }
 @media only screen and (max-width: 991px) {
   .c-image-map {
@@ -87,6 +86,14 @@
 .c-image-map__item-toggle {
   width: var(--toggle-shape-size);
   height: var(--toggle-shape-size);
+
+  /* Set transform origin to horizontal center */
+  margin-top: calc( -1 * ( var(--toggle-shape-size) / 2 ) );
+}
+.c-image-map__item {
+  /* Set transform origin of toggle to vertical center */
+  /* FAQ: Done on item so that all children move up with the toggle */
+  margin-left: calc( -1 * ( var(--toggle-shape-size) / 2 ) );
 }
 
 
@@ -247,16 +254,8 @@ button.c-image-map__item-close {
   scroll-margin: var(--caption-offset-from-toggle);
 }
 
-/* Align toggle so its center is the top-left corner of the item */
-.c-image-map--has-caption-toggle-alignment .c-image-map__item-toggle {
-  margin-top: calc( -1 * var(--toggle-offset-from-self) );
-  margin-left: calc( -1 * var(--toggle-offset-from-self) );
-}
 /* Align caption far left, but still aligned vertically with toggle */
 .c-image-map--has-caption-toggle-alignment .c-image-map__item-caption {
-  /* Move caption up into the space left empty by the offset toggle */
-  margin-top: calc( -1 * var(--toggle-offset-from-self) );
-
   /* Move caption to the far left */
   left: var(--caption-offset);
 }
@@ -368,8 +367,6 @@ a[href="#_"].c-image-map__image:hover {
   z-index: 1;
   left: var(--caption-offset);
   top: 50%;
+  margin-top: calc( -1 * var(--size) / 2 );
   margin-left: calc( -1 * var(--size) / 2 );
-}
-.c-image-map--has-item-counters.c-image-map--has-caption-toggle-alignment .c-image-map__item::before {
-  margin-top: calc( -1 * var(--toggle-offset-from-self) );
 }
