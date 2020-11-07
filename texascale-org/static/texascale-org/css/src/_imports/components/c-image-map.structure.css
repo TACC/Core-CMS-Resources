@@ -106,7 +106,6 @@
 .c-image-map:not(.c-image-map--should-position-items) .c-image-map__items {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
 }
