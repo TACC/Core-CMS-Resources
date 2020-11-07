@@ -10,11 +10,22 @@ COMPONENTS: Image Map: Structure
 
 /* On narrow viewport, small custom toggle size */
 @media only screen and (max-width: 320px) {
-  .c-image-map { --toggle-shape-size: 70px; }
+  .c-image-map {
+    --toggle-shape-size: 70px;
+  }
 }
 /* On wide viewport, large custom toggle size */
 @media only screen and (min-width: 321px) {
-  .c-image-map { --toggle-shape-size: 90px; }
+  .c-image-map {
+    --toggle-shape-size: 90px;
+  }
+}
+/* On wide viewport, move captions to the left */
+@media only screen and (min-width: 992px) {
+  .c-image-map {
+    --caption-width: 445px;
+    --caption-offset: -460px;
+  }
 }
 
 

@@ -18,21 +18,11 @@
 .c-image-map {
   --button-shape-size: 50px;
   --toggle-shape-size: 60px;
+  --caption-width: 100%;
+  --caption-offset: 0px;
 
   /* SEE: `.c-image-map--has-caption-toggle-alignment` */
   --caption-offset-from-toggle: calc( ( var(--toggle-shape-size) / 2 ) + 1em );
-}
-@media only screen and (max-width: 991px) {
-  .c-image-map {
-    --caption-offset: 0px;
-    --caption-width: 100%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .c-image-map {
-    --caption-offset: -460px;
-    --caption-width: 445px;
-  }
 }
 
 
@@ -88,12 +78,13 @@
   height: var(--toggle-shape-size);
 
   /* Set transform origin to horizontal center */
-  margin-top: calc( -1 * ( var(--toggle-shape-size) / 2 ) );
+  margin-top: calc( -1 * var(--toggle-shape-size) / 2 );
+  margin-left: calc( -1 * var(--toggle-shape-size) / 2 );
 }
 .c-image-map__item {
   /* Set transform origin of toggle to vertical center */
   /* FAQ: Done on item so that all children move up with the toggle */
-  margin-left: calc( -1 * ( var(--toggle-shape-size) / 2 ) );
+  /* margin-left: calc( -1 * ( var(--toggle-shape-size) / 2 ) ); */
 }
 
 
@@ -102,38 +93,25 @@
 /* Toggles & Captions: Position Anchors */
 
 /* Anchor child elements */
-.c-image-map                { position: relative; }
-/* Prepare to position toggle horz. (directly) and vert. (via item) */
-.c-image-map__item,
-.c-image-map__item-toggle   { position: absolute; }
-/* Allow relative alignment (x-axis, y-axis) and layering (z-axis) */
-.c-image-map__item-caption { position: relative; }
-/* Align toggle and caption to top of item */
-.c-image-map__item-toggle,
-.c-image-map__item-caption {
-  top: 0;
+.c-image-map {
+  position: relative;
 }
-
-/* Toggles & Captions: Positions for Specific Items */
-
-/* IMPORTANT: Define these per instance. Key:
-    - `unique-instance--item…` is a `c-image-map__item`
-    - `top` is the vertical y position of the item & toggle
-    - `left` is the horizontal x position of the item & toggle */
-#unique-instance--item_1_name                            { top: 10% }
-#unique-instance--item_1_name .c-image-map__item-toggle { left: 5%; }
-
-#unique-instance--item_2_name                            { top: 20% }
-#unique-instance--item_2_name .c-image-map__item-toggle { left: 5%; }
-
-#unique-instance--item_3_name                            { top: 30% }
-#unique-instance--item_3_name .c-image-map__item-toggle { left: 5%; }
-
-#unique-instance--item_4_name                             { top: 40% }
-#unique-instance--item_4_name .c-image-map__item-toggle { left: 5%; }
-
-#unique-instance--item_5_name                            { top: 50% }
-#unique-instance--item_5_name .c-image-map__item-toggle { left: 5%; }
+/* Prepare to position toggle horz. (directly) and vert. (via item) */
+.c-image-map:not(.c-image-map--should-position-items) .c-image-map__item {
+  position: relative;
+}
+/* Position and size items over image */
+.c-image-map:not(.c-image-map--should-position-items) .c-image-map__items {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* Allow relative alignment (x-axis, y-axis) and layering (z-axis) */
+.c-image-map__item-caption {
+  position: relative;
+}
 
 /* Toggles & Captions: UX */
 
@@ -205,6 +183,35 @@ button.c-image-map__item-close {
 
 
 /* MODIFIERS */
+
+
+/* Position Items */
+
+/* Prepare to position toggle horz. (directly) and vert. (via item) */
+.c-image-map--should-position-items .c-image-map__item,
+.c-image-map--should-position-items .c-image-map__item-toggle {
+  position: absolute;
+}
+/* IMPORTANT: Define these per instance. Key:
+    - `unique-instance--item…` is a `c-image-map__item`
+    - `top` is the vertical y position of the item & toggle
+    - `left` is the horizontal x position of the item & toggle */
+/*
+#unique-instance--item_1_name                            { top: 10% }
+#unique-instance--item_1_name .c-image-map__item-toggle { left: 5%; }
+
+#unique-instance--item_2_name                            { top: 20% }
+#unique-instance--item_2_name .c-image-map__item-toggle { left: 5%; }
+
+#unique-instance--item_3_name                            { top: 30% }
+#unique-instance--item_3_name .c-image-map__item-toggle { left: 5%; }
+
+#unique-instance--item_4_name                             { top: 40% }
+#unique-instance--item_4_name .c-image-map__item-toggle { left: 5%; }
+
+#unique-instance--item_5_name                            { top: 50% }
+#unique-instance--item_5_name .c-image-map__item-toggle { left: 5%; }
+*/
 
 
 /* Toggle Counters */
@@ -342,7 +349,7 @@ a[href="#_"].c-image-map__image:hover {
 /* Toggle Counters & Item Counters */
 
 /* Size the item counters and close buttons */
-.c-image-map--has-toggle-counters .c-image-map__item-toggle::before {
+.c-image-map__item-toggle::before {
   --size: var(--toggle-shape-size);
 }
 .c-image-map--has-item-counters .c-image-map__item-close {
@@ -360,8 +367,7 @@ a[href="#_"].c-image-map__image:hover {
 
 /* Item Counters */
 
-/* Position items that have counters */
-/* FAQ: Vertically center, and horizontally align atop caption's left border */
+/* Vertically center. Horizontally align */
 .c-image-map--has-item-counters .c-image-map__item::before {
   position: absolute;
   z-index: 1;

@@ -156,20 +156,23 @@
   /* font: bold normal 2em benton-sans, serif; */
   font-weight: bold;
 }
-p.c-image-map__item-desc {
+.c-image-map__item-desc {
   margin: var(--space--desc-top) 0 0; /* overwrite Bootstrap or browser */
 }
 
 /* On narrow viewport, less spacing */
 @media only screen and (max-width: 991px) {
   .c-image-map__item-caption {
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 20px;
   }
 }
 /* On wide viewport, more spacing */
 @media only screen and (min-width: 992px) {
   .c-image-map__item-caption {
-    padding: 10px 25px 15px 40px;
+    padding: 10px 25px 15px;
+  }
+  .c-image-map__item-toggle + .c-image-map__item-caption {
+    padding-left: 40px;
   }
 }
 
