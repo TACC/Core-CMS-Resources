@@ -54,6 +54,13 @@
 /* ELEMENTS */
 
 
+/* Item */
+
+.c-image-map__item {
+  width: 100%;
+}
+
+
 /* Captions */
 
 .c-image-map__item-caption {
@@ -80,11 +87,6 @@
   /* Set transform origin to horizontal center */
   margin-top: calc( -1 * var(--toggle-shape-size) / 2 );
   margin-left: calc( -1 * var(--toggle-shape-size) / 2 );
-}
-.c-image-map__item {
-  /* Set transform origin of toggle to vertical center */
-  /* FAQ: Done on item so that all children move up with the toggle */
-  /* margin-left: calc( -1 * ( var(--toggle-shape-size) / 2 ) ); */
 }
 
 
