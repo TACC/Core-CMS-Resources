@@ -1,0 +1,196 @@
+<style id="styles-gl-19--project-page">
+    /* COMPONENTS: Image Map */
+    
+    
+    
+    /* STRUCTURE */
+    
+    /* Customize properties */
+    .c-image-map {
+        --caption-offset-from-toggle: calc( var(--toggle-offset-from-self) + 1em );
+    }
+    @media only screen and (max-width: 991px) {
+        .c-image-map {
+            --caption-offset: 0px;
+            --caption-width: 100%;
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        .c-image-map {
+            --caption-offset: -460px;
+            --caption-width: 445px;
+        }
+    }
+    /* Overwrite `core.site.image-map.css` */
+    /* TODO: Use custom media queries */
+    @media only screen and (max-width: 320px) {
+        .c-image-map { --toggle-shape-size: 70px; }
+    }
+    @media only screen and (min-width: 321px) {
+        .c-image-map { --toggle-shape-size: 90px; }
+    }
+    
+    /* Lower the (external) description on wide viewports */
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        /* FAQ: This is a sibling element to `.c-image-map` */
+        /* Push text down to align just at the top of node image */
+        .c-image-map-desc {
+            margin-top: 15px;
+        }
+    }
+    @media only screen and (min-width: 1201px) {
+        /* FAQ: This is a sibling element to `.c-image-map` */
+        /* Push text down to align just below top of node rectangle frame */
+        .c-image-map-desc {
+            margin-top: 100px;
+        }
+    }
+    
+    /* Center the widget on narrow viewports */
+    @media only screen and (max-width: 991px) {
+        .c-image-map { margin: 0 auto; }
+    }
+    
+    /* Prevent image from growing larger than native size */
+    .c-image-map__image {
+        max-width: 495px;
+    }
+    
+    /* Size the caption */
+    .c-image-map__item-caption {
+        width: var(--caption-width);
+    }
+    
+    /* Position toggles by ID */
+    .c-image-map                { position: relative; }
+    
+    .c-image-map__item,
+    .c-image-map__item-toggle,
+    .c-image-map__item-caption  { position: absolute; }
+    
+    .c-image-map__item  {
+        width: 100%;
+    }
+    .c-image-map__item-toggle,
+    .c-image-map__item-caption {
+        top: 0;
+    }
+    
+    #whats-in-a-node--network                            { top: 27% }
+    #whats-in-a-node--network .c-image-map__item-toggle { left: 35%; }
+    
+    #whats-in-a-node--cooling                            { top: 43% }
+    #whats-in-a-node--cooling .c-image-map__item-toggle { left: 48%; }
+    
+    #whats-in-a-node--process                            { top: 57% }
+    #whats-in-a-node--process .c-image-map__item-toggle { left: 48%; }
+    
+    #whats-in-a-node--memory                             { top: 72% }
+    #whats-in-a-node--memory .c-image-map__item-toggle { left: 17%; }
+    
+    #whats-in-a-node--storage                            { top: 87% }
+    #whats-in-a-node--storage .c-image-map__item-toggle { left: -9%; }
+    
+    /* Position captions and toggles per viewport */
+    @media only screen and (max-width: 991px) {
+        /* Move toggles of unmapped items to be centered within widget */
+        .c-image-map__item--unmapped .c-image-map__item-toggle {
+            left: 50% !important; /* overwrite `item` ID selector */
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        /* Move toggles of unmapped items to be at top-right of their respective caption */
+        .c-image-map__item--unmapped .c-image-map__item-toggle {
+            left: calc( var(--caption-offset) + var(--caption-width) ) !important; /* overwrite `item` ID */
+        }
+        .c-image-map__item--unmapped .c-image-map__item-caption {
+            margin-top: unset; /* overwrite `item` ID */
+        }
+    }
+    
+    /* Hide close button on desktop */
+    @media only screen and (min-width: 992px) {
+        .c-image-map__item-close {
+            display: none;
+        }
+    }
+    
+    /* Always show toggles on wide viewport */
+    /* TODO: Use custom media queries */
+    @media only screen and (min-width: 992px) {
+        [class*="c-image-map__item-"] {
+            visibility: visible !important; /* overwrite `core.site.image-map.css` */
+        }
+    }
+    
+    
+    
+    /* STRUCTURE: Cursors */
+    
+    /* Toggle has click action only on narrow viewport, so use pointer only then */
+    @media only screen and (max-width: 991px) {
+        .c-image-map__item-toggle {
+            cursor: pointer;
+        }
+    }
+    
+    
+    
+    /* STRUCTURE: `--has-caption-counters` */
+    
+    /* Hide caption counters for unmapped items and on narrow viewports */
+    .c-image-map--has-caption-counters .c-image-map__item--unmapped .c-image-map__item-caption::before {
+        display: none;
+    }
+    @media only screen and (max-width: 991px) {
+        .c-image-map--has-caption-counters .c-image-map__item-caption::before {
+            display: none;
+        }
+    }
+    
+    
+    
+    /* STRUCTURE: `--has-caption-toggle-alignment` */
+    
+    /* Move caption to be aligned with the toggle, but to the left of it */
+    .c-image-map--has-caption-toggle-alignment .c-image-map__item-caption {
+        left: var(--caption-offset);
+    }
+    /* Position the captions and toggles per viewport */
+    @media only screen and (max-width: 991px) {
+        .c-image-map--has-caption-toggle-alignment .c-image-map__item-caption {
+            /* Layer caption above toggle */
+            z-index: 1;
+    
+            /* Position caption below toggle */
+            margin-top: var(--caption-offset-from-toggle);
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        .c-image-map--has-caption-toggle-alignment .c-image-map__item-toggle {
+            /* Layer toggle above caption */
+            z-index: 1;
+        }
+    }
+    
+    /* Fix scroll position for toggle anchor links to item */
+    .c-image-map--has-caption-toggle-alignment .c-image-map__item {
+        scroll-snap-align: start;
+        scroll-margin: var(--caption-offset-from-toggle);
+    }
+    
+    
+    
+    /* SKIN */
+    
+    @media only screen and (max-width: 991px) {
+        .c-image-map__item-caption {
+            padding: 10px 20px 20px 20px;
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        .c-image-map__item-caption {
+            padding: 10px 25px 15px 40px;
+        }
+    }
+    </style>

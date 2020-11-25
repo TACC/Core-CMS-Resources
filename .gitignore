@@ -1,0 +1,12 @@
+########################
+# PARENT REPO PROCESSES
+
+# Python
+*.pyc
+*.pyo
+__pycache__
+
+# Node & NPM
+## built Static files
+build
+!build/README.md

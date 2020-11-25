@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load cms_tags staticfiles %}
+
+{% block assets_font %}
+  {{ block.super }}
+{% endblock assets_font %}
+
+{% block assets_custom %}
+  {{ block.super }}
+
+  <link rel="stylesheet" href="{% static 'frontera-cms/css/build/site.css' %}">
+
+  <!-- HACK: Style old CMS content on new CMS -->
+  <!-- FP-459: After the redesign of Frontera, remove these -->
+  <link class="css-site-old" rel="stylesheet" href="{% static 'frontera-cms/site_cms/css/archive/bootstrap.3.3.7.css' %}">
+  <link class="css-site-old" rel="stylesheet" href="{% static 'frontera-cms/site_cms/css/archive/angular-material.1.1.8.css' %}">
+  <!-- Order of `main` stylesheets: https://bitbucket.org/taccaci/frontera/src/master/client/src/index.js -->
+  <link class="css-site-old" rel="stylesheet" href="{% static 'frontera-cms/site_cms/css/archive/main.portal.css' %}">
+  <link class="css-site-old" rel="stylesheet" href="{% static 'frontera-cms/site_cms/css/archive/main.frontera.css' %}">
+{% endblock assets_custom %}

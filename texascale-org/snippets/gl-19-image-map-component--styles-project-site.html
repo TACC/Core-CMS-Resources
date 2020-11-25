@@ -1,0 +1,156 @@
+<style id="styles-gl-19--project-site">
+    /* COMPONENTS: Image Map */
+    
+    
+    
+    /* STRUCTURE */
+    
+    /* Size the counters and actions */
+    .c-image-map--has-toggle-counters .c-image-map__item-toggle::before {
+        --size: var(--toggle-shape-size);
+    }
+    .c-image-map--has-caption-counters .c-image-map__item-close,
+    .c-image-map--has-caption-counters .c-image-map__item-caption::before {
+        --size: calc( var(--toggle-shape-size) / 1.9 );
+    
+        width: var(--size);
+        height: var(--size);
+    }
+    /* Position the close button */
+    .c-image-map__item-close {
+        margin: 1em auto 0 auto;
+    }
+    
+    /* Position the caption counters */
+    /* FAQ: Vertically center, and horizontally align atop caption's left border */
+    .c-image-map--has-caption-counters .c-image-map__item-caption::before {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-left: calc( -1 * var(--size) / 2 );
+        margin-top: calc( -1 * var(--size) / 2 );
+    }
+    
+    
+    
+    /* STRUCTURE: Cursors */
+    
+    /* If image is a link (to untoggle the active item), then
+       do not make it look like one (because the action is implied) */
+    /* WARNING: If clicking does something, then remove this style */
+    .c-image-map__image:hover {
+        cursor: default;
+    }
+    
+    
+    
+    /* SKIN */
+    
+    /* Customize properties */
+    .c-image-map {
+        --accent-color--primary: rgba(0, 0, 0);
+        --accent-color--secondary: rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Skin the toggle, counters, and actions */
+    .c-image-map__item-toggle,
+    .c-image-map--has-caption-counters .c-image-map__item-caption::before,
+    .c-image-map__item-close {
+        /* Align any text vertically and horizontally */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        /* Transform into a circle */
+        border-radius: 50%;
+    }
+    .c-image-map__item-toggle,
+    .c-image-map--has-caption-counters .c-image-map__item-caption::before {
+        border: 4px solid var(--accent-color--primary);
+        background-color: white;
+    
+        color: var(--accent-color--primary);
+    }
+    .c-image-map__item-toggle:hover {
+        color: var(--accent-color--primary);
+        text-decoration: none;
+    }
+    .c-image-map--has-toggle-counters .c-image-map__item-toggle::before,
+    .c-image-map--has-caption-counters .c-image-map__item-caption::before,
+    .c-image-map__item-close::before {
+        font-family: kepler-std-subhead, serif;
+    }
+    .c-image-map--has-toggle-counters .c-image-map__item-toggle::before,
+    .c-image-map--has-caption-counters .c-image-map__item-caption::before {
+        font-size: calc( var(--size) * 0.65);
+    }
+    .c-image-map__item-close::before {
+        content: "⌃";
+        /* Nudge character into desired vertical position */
+        /* WARNING: This value assumes the text is already vertically centered */
+        transform: translateY(15%);
+    
+        font-size: calc( var(--size) * 1.2 );
+    }
+    .c-image-map__item-close {
+        background-color: var(--accent-color--secondary);
+    
+        color: white;
+    }
+    .c-image-map__item-close:hover {
+        color: white;
+        text-decoration: none;
+    }
+    
+    /* Define when toggle should not have transparency */
+    .c-image-map__item-toggle{
+        opacity: 0.5;
+    }
+    /* FAQ: Toggle of item on hover */
+    .c-image-map__item-toggle:hover,
+    /* FAQ: Toggle of targetted item */
+    .c-image-map__item:target .c-image-map__item-toggle,
+    /* FAQ: Hover on targetted item */
+    .c-image-map__item:hover .c-image-map__item-toggle,
+    /* FAQ: Toggle of item with focus on toggle or content */
+    .c-image-map__item:focus-within .c-image-map__item-toggle,
+    /* FAQ: Some items do not match a location on the image */
+    .c-image-map__item--unmapped .c-image-map__item-toggle {
+        opacity: 1;
+    }
+    
+    /* Animate toggle and caption counter hover state */
+    .c-image-map__item-toggle,
+    .c-image-map--has-caption-counters .c-image-map__item-toggle ~ .c-image-map__item-caption::before {
+        transform: scale(1);
+    
+        transition-duration: 0.25s;
+        transition-property: all;
+    }
+    /* Scale toggle and caption counter on hover, provided its item is not already "active" */
+    .c-image-map__item:hover .c-image-map__item-toggle,
+    .c-image-map--has-caption-counters .c-image-map__item:hover .c-image-map__item-caption::before {
+        transform: scale(1.25);
+    }
+    
+    /* Skin the caption */
+    .c-image-map__item-caption {
+        background-color: white;
+        border: 3px solid var(--accent-color--primary);
+    }
+    .c-image-map__item-title {
+        display: block;
+    
+        padding-bottom: 0.5em;
+    
+        border-bottom: 2px solid var(--accent-color--secondary);
+    
+        /* TODO: Use font variable(s) */
+        /* TODO: Use `rem` when site sets base font */
+        /* font: bold normal 2em benton-sans, serif; */
+    }
+    .c-image-map__item-desc {
+        margin: 1em 0 0; /* overwrite Bootstrap or browser */
+    }
+    </style>

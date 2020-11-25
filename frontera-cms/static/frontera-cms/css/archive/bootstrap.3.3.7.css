@@ -1,0 +1,435 @@
+/*
+NOTE: Relevant styles for Pre-2020 Bootstrap 3.3.7
+      - How: https://developers.google.com/web/tools/chrome-devtools/coverage
+      - How: Include code that _is being_ used
+      - How: Include code that _could be_ used (because it includes used selector)
+            - `__selector_start__` `__used_selector__` `__selector_end__`
+      - How: Did NOT incude code that is already in Bootstrap 4.0.0
+      - How: Did NOT incude code that represents outdated web practices
+            - `outline: none`
+      - Source CSS: https://bitbucket.org/taccaci/frontera/src/master/client/css/bootstrap.min.css
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+/*!
+ * bootswatch v3.3.7
+ * Homepage: http://bootswatch.com
+ * Copyright 2012-2017 Thomas Park
+ * Licensed under MIT
+ * Based on Bootstrap
+*//*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/* … */
+
+b,
+strong {
+ font-weight:bold
+}
+
+/* … */
+
+h1 {
+ font-size:2em;
+ margin:0.67em 0
+}
+
+/* … */
+
+img {
+ border:0
+}
+
+/* … */
+
+hr {
+ -webkit-box-sizing:content-box;
+ -moz-box-sizing:content-box;
+ box-sizing:content-box;
+ height:0
+}
+
+/* … */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+ color:inherit;
+ font:inherit;
+ margin:0
+}
+button {
+ overflow:visible
+}
+button,
+select {
+ text-transform:none
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+ -webkit-appearance:button;
+ cursor:pointer
+}
+button[disabled],
+html input[disabled] {
+ cursor:default
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+ border:0;
+ padding:0
+}
+input {
+ line-height:normal
+}
+input[type="checkbox"],
+input[type="radio"] {
+ -webkit-box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ box-sizing:border-box;
+ padding:0
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+ height:auto
+}
+input[type="search"] {
+ -webkit-appearance:textfield;
+ -webkit-box-sizing:content-box;
+ -moz-box-sizing:content-box;
+ box-sizing:content-box
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+ -webkit-appearance:none
+}
+fieldset {
+ border:1px solid #c0c0c0;
+ margin:0 2px;
+ padding:0.35em 0.625em 0.75em
+}
+legend {
+ border:0;
+ padding:0
+}
+textarea {
+ overflow:auto
+}
+optgroup {
+ font-weight:bold
+}
+table {
+ border-collapse:collapse;
+ border-spacing:0
+}
+td,
+th {
+ padding:0
+}
+
+/* … */
+
+html {
+ font-size:10px;
+ -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+body {
+ font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+ font-size:15px;
+ line-height:1.4;
+ color:#222222;
+}
+
+/* … */
+
+a {
+ color:#008cba;
+ /* text-decoration:none */
+}
+a:hover,
+a:focus {
+ color:#008cba;
+ /* text-decoration:underline */
+}
+a:focus {
+ outline:5px auto -webkit-focus-ring-color;
+ outline-offset:-2px
+}
+
+/* … */
+
+.img-responsive,
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+ display:block;
+ max-width:100%;
+ height:auto
+}
+
+/* … */
+
+hr {
+ margin-top:21px;
+ margin-bottom:21px;
+ border:0;
+ border-top:1px solid #dddddd
+}
+
+/* … */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+ font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+ font-weight:300;
+ line-height:1.1;
+ /* color:inherit */
+}
+
+/* … */
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+ margin-top:21px;
+ margin-bottom:10.5px
+}
+
+/* … */
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+ margin-top:10.5px;
+ margin-bottom:10.5px
+}
+
+/* … */
+
+h1,
+.h1 {
+ font-size:39px
+}
+h2,
+.h2 {
+ font-size:32px
+}
+h3,
+.h3 {
+ font-size:26px
+}
+h4,
+.h4 {
+ font-size:19px
+}
+h5,
+.h5 {
+ font-size:15px
+}
+h6,
+.h6 {
+ font-size:13px
+}
+p {
+ margin:0 0 10.5px
+}
+
+/* … */
+
+.btn {
+ display:inline-block;
+ margin-bottom:0;
+ font-weight:normal;
+ text-align:center;
+ vertical-align:middle;
+ -ms-touch-action:manipulation;
+ touch-action:manipulation;
+ cursor:pointer;
+ background-image:none;
+ border:1px solid transparent;
+ white-space:nowrap;
+ padding:8px 12px;
+ font-size:15px;
+ line-height:1.4;
+ border-radius:0;
+ -webkit-user-select:none;
+ -moz-user-select:none;
+ -ms-user-select:none;
+ user-select:none
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+ outline:5px auto -webkit-focus-ring-color;
+ outline-offset:-2px
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+ color:#333333;
+ text-decoration:none
+}
+.btn:active,
+.btn.active {
+ outline:0;
+ background-image:none;
+ -webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.125);
+ box-shadow:inset 0 3px 5px rgba(0,0,0,0.125)
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+ cursor:not-allowed;
+ opacity:0.65;
+ filter:alpha(opacity=65);
+ -webkit-box-shadow:none;
+ box-shadow:none
+}
+a.btn.disabled,
+fieldset[disabled] a.btn {
+ pointer-events:none
+}
+
+/* … */
+
+.btn-primary {
+ color:#ffffff;
+ background-color:#008cba;
+ border-color:#0079a1
+}
+.btn-primary:focus,
+.btn-primary.focus {
+ color:#ffffff;
+ background-color:#006687;
+ border-color:#001921
+}
+.btn-primary:hover {
+ color:#ffffff;
+ background-color:#006687;
+ border-color:#004b63
+}
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+ color:#ffffff;
+ background-color:#006687;
+ border-color:#004b63
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open>.dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open>.dropdown-toggle.btn-primary.focus {
+ color:#ffffff;
+ background-color:#004b63;
+ border-color:#001921
+}
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+ background-image:none
+}
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+ background-color:#008cba;
+ border-color:#0079a1
+}
+.btn-primary .badge {
+ color:#008cba;
+ background-color:#ffffff
+}
+
+/* … */
+
+.btn-block {
+ display:block;
+ width:100%
+}
+.btn-block+.btn-block {
+ margin-top:5px
+}
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+ width:100%
+}
+
+/* … */
+
+.label {
+ display:inline;
+ padding:.2em .6em .3em;
+ font-size:75%;
+ font-weight:bold;
+ line-height:1;
+ color:#ffffff;
+ text-align:center;
+ white-space:nowrap;
+ vertical-align:baseline;
+ border-radius:.25em
+}
+
+/* … */
+
+.label:empty {
+ display:none
+}
+
+/* … */
+
+.label-success {
+ background-color:#43ac6a
+}
+.label-success[href]:hover,
+.label-success[href]:focus {
+ background-color:#358753
+}
+
+/* … */
+
+.label {
+ padding-left:1em;
+ padding-right:1em;
+ border-radius:0;
+ font-weight:300
+}
+
+/* … */

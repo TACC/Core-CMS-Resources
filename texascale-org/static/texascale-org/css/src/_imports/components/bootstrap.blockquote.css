@@ -1,0 +1,20 @@
+/* BOOTSTRAP COMPONENTS: Quote */
+
+.blockquote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.blockquote {
+  color: #b75554;
+  font-size: 18px;
+  font-style: italic;
+}
+.blockquote-footer {
+  margin-top: 5px;
+
+  color: #636466;
+  font-size: 16px;
+}
+.blockquote-footer cite {
+  font-style: normal; /* overwrite browser `cite` */
+}
