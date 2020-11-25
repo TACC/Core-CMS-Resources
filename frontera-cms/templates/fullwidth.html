@@ -5,6 +5,10 @@
   {{ block.super }}
 {% endblock assets_font %}
 
+{% block content %}
+{% placeholder "content" %}
+{% endblock content %}
+
 {% block assets_custom %}
   {{ block.super }}
 
