@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load cms_tags staticfiles %}
+
+{% block assets_font %}
+  {{ block.super }}
+{% endblock assets_font %}
+
+{% block assets_custom %}
+  {{ block.super }}
+
+  <link rel="stylesheet" href="{% static 'example-cms/css/build/site.css' %}">
+{% endblock assets_custom %}
