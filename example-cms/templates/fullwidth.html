@@ -2,7 +2,7 @@
 {% load cms_tags staticfiles %}
 
 {% block assets_font %}
-  <link rel="stylesheet" href="https://use.typekit.net/xnr7bof.css">
+  {{ block.super }}
 {% endblock assets_font %}
 
 {% block content %}
@@ -12,5 +12,5 @@
 {% block assets_custom %}
   {{ block.super }}
 
-  <link rel="stylesheet" href="{% static 'texascale-org/css/build/site.css' %}">
+  <link rel="stylesheet" href="{% static 'example-cms/css/build/site.css' %}">
 {% endblock assets_custom %}
