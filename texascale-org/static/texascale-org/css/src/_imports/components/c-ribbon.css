@@ -1,0 +1,100 @@
+/*
+Ribbon
+
+A complex ribbon decoration that requires wrapper markup and all pseduo elements
+
+Warning: This component does not support `end`s and `fold`s above `face`, yet.
+
+Based on [CSS Tricks article](https://css-tricks.com/snippets/css/ribbon/).
+
+Markup:
+<h4 class="c-ribbon">
+  <em class="c-ribbon__content">Amazing Header</em>
+</h4>
+
+Styleguide Components.Ribbon
+*/
+
+/* Root */
+
+.c-ribbon {
+  --text-color--top: hsl(160, 100%, 0%);
+
+  --face-color--top: hsl(160, 100%, 50%);
+  --face-color--fold: hsl(160, 100%, 12.5%);
+  --face-color--end: hsl(160, 100%, 43.75%);
+
+  --border-width: 2px;
+  --border-style: solid;
+  --border-color--top: hsl(160, 100%, 37.5%);
+  --border-color--end: hsl(160, 100%, 25%);
+
+  --end-width: 2em; /* must use positive value */
+  --fold-width--horz: 1em; /* must use positive value */
+  --fold-width--vert: 1em; /* must use positive value */
+
+  /* FAQ: Create stacking context */
+  position: relative;
+  z-index: 0; /* CAVEAT: May need to override for context */
+}
+
+/* Top */
+
+.c-ribbon__content {
+  display: block;
+
+  color: var(--text-color--top);
+  background: var(--face-color--top);
+  border: var(--border-width) var(--border-style) var(--border-color--top);
+
+  text-align: center;
+}
+
+/* Ends */
+
+.c-ribbon::before,
+.c-ribbon::after {
+  content: "";
+  display: block;
+  width: var(--end-width);
+  height: 100%;
+
+  position: absolute;
+  z-index: -1;
+  top: var(--fold-width--vert);
+
+  background-color: var(--face-color--end);
+  border: var(--border-width) var(--border-style) var(--border-color--end);
+}
+.c-ribbon::before {
+  right: calc( 100% - var(--fold-width--horz) );
+}
+.c-ribbon::after {
+  left: calc( 100% - var(--fold-width--horz) );
+}
+
+/* Folds */
+
+.c-ribbon__content::before,
+.c-ribbon__content::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  bottom: calc( -1 * var(--fold-width--vert) );
+
+  border-style: solid;
+  border-color: var(--face-color--fold) transparent transparent transparent;
+  border-top-width: var(--fold-width--vert);
+  border-bottom-width: 0;
+}
+.c-ribbon__content::before {
+  left: 0;
+  border-left-width: var(--fold-width--horz);
+  border-right-width: 0;
+}
+.c-ribbon__content::after {
+  right: 0;
+  border-right-width: var(--fold-width--horz);
+  border-left-width: 0;
+}
