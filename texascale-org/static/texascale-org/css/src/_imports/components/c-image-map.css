@@ -1,14 +1,6 @@
-/*
-Image Map
+/* TACC COMPONENTS: Image Map */
 
-An image with (optional) counters and (related) captions.
-
-Markup: c-image-map.twig.html
-
-Styleguide Components.ImageMap
-*/
-/* FAQ: The organization in this file follows OOCSS methodology */
+/* Styles are organized by OOCSS methodology */
 /* SEE: https://confluence.tacc.utexas.edu/x/VwALBg */
-
-@import url("_imports/components/c-image-map.structure.css");
-@import url("_imports/components/c-image-map.skin.css");
+@import url("./c-image-map.structure.css");
+@import url("./c-image-map.skin.css");
