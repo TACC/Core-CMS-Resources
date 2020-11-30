@@ -1,0 +1,51 @@
+/*
+Gallery
+
+Create gallery from children elements.
+
+Markup: s-gallery.twig.html
+
+Styleguide Trumps.Scopes.Gallery
+*/
+
+
+
+/* BLOCK */
+
+.s-gallery {
+  display: grid;
+}
+/* On very narrow viewport, no columns */
+/* WARNING: Custom standard breakpoint: 359px / 360px */
+/* SEE: https://ricostacruz.com/til/css-media-query-breakpoints */
+@media only screen and (max-width: 359px) {
+  .s-gallery { grid-template-columns: repeat(1, 1fr); }
+}
+/* On narrow viewport, less columns */
+@media only screen and (min-width: 360px) and (max-width: 991px) {
+  .s-gallery { grid-template-columns: repeat(2, 2fr); }
+}
+/* On wide viewport, more columns */
+@media only screen and (min-width: 992px) {
+  .s-gallery { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+
+/* ELEMENTS */
+
+/* TODO: When `postcss-css-next` plugin is installed, use custom selectors */
+/*
+Selectors:
+- `.s-gallery > *`: an item within a gallery defined by gallery container
+- `.s-gallery-item`: an item within a gallery defined item by item
+*/
+
+
+/* Item */
+
+.s-gallery > *,
+.s-gallery-item {
+  display: flex;
+  flex-direction: column;
+}
