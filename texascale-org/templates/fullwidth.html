@@ -5,12 +5,12 @@
   <link rel="stylesheet" href="https://use.typekit.net/xnr7bof.css">
 {% endblock assets_font %}
 
-{% block content %}
-{% placeholder "content" %}
-{% endblock content %}
-
 {% block assets_custom %}
   {{ block.super }}
 
   <link rel="stylesheet" href="{% static 'texascale-org/css/build/site.css' %}">
 {% endblock assets_custom %}
+
+{% block content %}
+{% placeholder "content" %}
+{% endblock content %}
