@@ -1,9 +1,11 @@
 {% extends "./fullwidth.html" %}
 {% load cms_tags staticfiles %}
 
-{% block custom_css %}
+{% block assets_custom %}
+  {{ block.super }}
+
 	<link rel="stylesheet" href="{% static 'texascale-org/css/build/template.article.css' %}">
-{% endblock custom_css %}
+{% endblock assets_custom %}
 
 {% block content %}
 <article class="c-page  container-fluid">
