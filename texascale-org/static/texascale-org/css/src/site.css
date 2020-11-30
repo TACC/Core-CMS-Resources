@@ -6,6 +6,7 @@
 /* SETTINGS */
 @import url("_imports/settings/props.font.css");
 @import url("_imports/settings/props.space.css");
+@import url("_imports/settings/props.border.css");
 
 /* GENERICS */
 /* … */
@@ -26,3 +27,5 @@
 
 /* TRUMPS */
 @import url("_imports/trumps/s-drop-caps.css");
+@import url("_imports/trumps/u-border.css");
+@import url("_imports/trumps/u-swallow.css");
