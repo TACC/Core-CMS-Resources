@@ -31,13 +31,13 @@ a[href="#_"].c-image-map__image:hover {
 .c-image-map__item-toggle::before {
   --size: var(--toggle-shape-size);
 }
-.c-image-map--has-item-counters .c-image-map__item-close {
+.c-image-map__item-close {
   --size: var(--button-shape-size);
 }
 .c-image-map--has-item-counters .c-image-map__item::before {
   --size: calc( var(--toggle-shape-size) / 1.9 );
 }
-.c-image-map--has-item-counters .c-image-map__item-close,
+.c-image-map__item-close,
 .c-image-map--has-item-counters .c-image-map__item::before {
   width: var(--size);
   height: var(--size);
