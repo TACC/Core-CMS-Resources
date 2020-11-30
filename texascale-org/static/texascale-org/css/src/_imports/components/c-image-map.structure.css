@@ -49,7 +49,7 @@ a[href="#_"].c-image-map__image:hover {
 .c-image-map--has-item-counters .c-image-map__item::before {
   position: absolute;
   z-index: 1;
-  left: var(--caption-offset);
+  left: var(--caption-toggle-offset-horz);
   top: 50%;
   margin-top: calc( -1 * var(--size) / 2 );
   margin-left: calc( -1 * var(--size) / 2 );

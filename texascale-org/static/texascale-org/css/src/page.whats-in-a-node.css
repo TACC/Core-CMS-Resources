@@ -24,7 +24,9 @@ COMPONENTS: Image Map: Structure
 @media only screen and (min-width: 992px) {
   .c-image-map {
     --caption-width: 445px;
-    --caption-offset: -460px;
+  }
+  .c-image-map--has-caption-toggle-alignment {
+    --caption-toggle-offset-horz: -460px;
   }
 }
 
@@ -56,7 +58,7 @@ COMPONENTS: Image Map: Structure
 #whats-in-a-node--memory .c-image-map__item-toggle { left: 17%; }
 
 #whats-in-a-node--storage                            { top: 87% }
-#whats-in-a-node--storage .c-image-map__item-toggle { left: -9%; }
+#whats-in-a-node--storage .c-image-map__item-toggle { left: 6%; }
 
 
 
