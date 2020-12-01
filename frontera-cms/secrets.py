@@ -14,10 +14,8 @@ _LDAP_ENABLED = True
 
 # …
 _CMS_TEMPLATES = (
-    # ('fullwidth.html', 'Fullwidth'),
     ('fontera-cms/templates/fullwidth.html', 'Fullwidth'),
-    # ('sidebar_left.html', 'Sidebar Left'),
-    # ('sidebar_right.html', 'Sidebar Right')
+    ('fullwidth.html', 'DEPRECATED Fullwidth'),
 )
 
 ########################
