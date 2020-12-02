@@ -57,3 +57,9 @@ _FRONTERA_LOGO =  [
 _LOGO = _FRONTERA_LOGO
 
 # …
+
+########################
+# PORTAL
+########################
+
+_PORTAL = True
