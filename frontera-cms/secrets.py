@@ -14,7 +14,7 @@ _LDAP_ENABLED = True
 
 # …
 _CMS_TEMPLATES = (
-    ('fontera-cms/templates/fullwidth.html', 'Fullwidth'),
+    ('frontera-cms/templates/fullwidth.html', 'Fullwidth'),
     ('fullwidth.html', 'DEPRECATED Fullwidth'),
 )
 
