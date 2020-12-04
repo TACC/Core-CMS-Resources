@@ -1,0 +1,23 @@
+/* DO NOT ADD STYLES HERE; ADD CUSTOM PROPERTIES TO USE IN OTHER STYLESHEETS */
+
+/*
+Border
+
+These are standard borders for a website.
+
+Weight: 0
+
+Styleguide Settings.CustomProperties.Border
+*/
+
+/* TODO: Consider promoting these to Core */
+:root {
+  --global-border-width--normal: 1px;
+  --global-border--normal: var(--global-border-width--normal) solid var(--global-color-primary--normal);
+
+  --global-border-width--thick: 2px;
+  --global-border--thick: var(--global-border-width--thick) solid var(--global-color-primary--normal);
+
+  --global-border-width--x-thick: 3px;
+  --global-border--x-thick: var(--global-border-width--x-thick) solid var(--global-color-primary--normal);
+}

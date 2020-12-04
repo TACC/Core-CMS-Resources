@@ -5,4 +5,6 @@
 
 /* COMPONENTS */
 
+/* TODO: Make alias for core's `src/` directory */
+@import url("../../../../../../taccsite_cms/static/site_cms/css/src/_imports/components/c-image-map.css");
 @import url("_imports/components/c-image-map.css");

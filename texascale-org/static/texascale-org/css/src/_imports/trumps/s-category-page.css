@@ -13,29 +13,35 @@ Markup:
 Styleguide Trumps.Scopes.CategoryPage
 */
 
-/* TODO: Document expected markup */
-/* TODO: Make this a template-specific stylesheet */
-/* TODO: When `postcss-css-next` plugin is installed,
-         then nest all styles within `.s-category-page` block */
+/* On narrow viewport, undo all wide viewport utilities */
+@media only screen and (max-width: 767px) {
+  .s-category-page .u-swallow--space-beneath-main-content {
+    padding-bottom: unset;
+    margin-bottom: unset;
+  }
 
-/* Add border between the two columns */
-/* FAQ: The border is aded to the right column,
-        because the `.u-position-sticky…` on the left column
-        shrinks the height of the left column (so, the border
-        would not be tall enough, were it added to left column) */
-.s-category-page .row:nth-of-type(2) > .col:nth-of-type(2) {
-  border-left-width: 2px;
-  border-left-style: solid;
-  /* TODO: Use a variable (when it exists) */
-  border-left-color: rgb(51, 51, 51); /* match core site header background */
+  .s-category-page .u-position-sticky,
+  .s-category-page [class*="u-position-sticky--"] {
+    position: relative; /* reset to Bootstrap value */
+    top: unset;
+  }
+  .s-category-page .u-position-sticky--flex-item {
+    align-self: unset;
+    height: unset;
+  }
 
-  margin-bottom: calc( -1 * var(--global-space-beneath-main-content) );
-  padding-bottom: var(--global-space-beneath-main-content);
+  /* FAQ: The border is added to the right column,
+          because the `.u-position-sticky…` on the left column
+          shrinks the height of the left column (so, the border
+          would not be tall enough, were it added to left column) */
+  .s-category-page .u-border--left {
+    border: none;
+  }
 }
 
 /* The header needs more vertical buffer between header and content */
-/* FAQ: No, this header is not on any page (if this kind of header is added
-        to another page, then this style must be moved to a broader layer) */
+/* FAQ: No, this header is not on any other page (if such a header is added
+        to another page, then this must be moved to wider scope stylesheet) */
 .s-category-page .row:nth-of-type(1) h2 {
   margin-top: 35px;
   margin-bottom: 35px;

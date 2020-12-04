@@ -1,321 +1,4 @@
-/* Image Map: Structure */
-/* CAVEAT: The element for `.c-image-map__item-toggle` must support `:focus` */
-/* SEE: https://stackoverflow.com/q/1599660 */
-
-
-
-
-
-/* --- BASE STYLES --- */
-/* --- Do NOT edit, unless you are working on `cms-site-template`! --- */
-
-
-
-
-
-/* PROPERTIES */
-
-.c-image-map {
-  --button-shape-size: 50px;
-  --toggle-shape-size: 60px;
-  --caption-width: 100%;
-  --caption-offset: 0px;
-
-  /* SEE: `.c-image-map--has-caption-toggle-alignment` */
-  --caption-offset-from-toggle: calc( ( var(--toggle-shape-size) / 2 ) + 1em );
-}
-
-
-
-/* ROOT */
-
-/* Shrink-wrap component */
-.c-image-map {
-  display: table;
-}
-/* On narrow viewport, center the widget */
-@media only screen and (max-width: 991px) {
-  .c-image-map { margin: 0 auto; }
-}
-
-/* Set dynamic image size */
-/* FAQ: Organized under "ROOT" only because it defines size of entire widget */
-.c-image-map__image {
-  /* FAQ: Removes inline whitespace between container and image */
-  display: block;
-  /* Stretch component */
-  width: 100%;
-  /* Prevent image from growing larger than native size */
-  max-width: 495px;
-}
-
-
-
 /* ELEMENTS */
-
-
-/* Item */
-
-.c-image-map__item {
-  width: 100%;
-}
-
-
-/* Captions */
-
-.c-image-map__item-caption {
-  width: var(--caption-width);
-}
-
-
-/* Close Buttons */
-
-/* On wide viewport, hide close button */
-@media only screen and (min-width: 992px) {
-  .c-image-map__item-close {
-    display: none !important; /* overwrite `display: flex` */
-  }
-}
-
-
-/* Toggles */
-
-.c-image-map__item-toggle {
-  width: var(--toggle-shape-size);
-  height: var(--toggle-shape-size);
-
-  /* Set transform origin to horizontal center */
-  margin-top: calc( -1 * var(--toggle-shape-size) / 2 );
-  margin-left: calc( -1 * var(--toggle-shape-size) / 2 );
-}
-
-
-/* Toggles & Captions */
-
-/* Toggles & Captions: Position Anchors */
-
-/* Anchor child elements */
-.c-image-map {
-  position: relative;
-}
-/* Prepare to position toggle horz. (directly) and vert. (via item) */
-.c-image-map:not(.c-image-map--should-position-items) .c-image-map__item {
-  position: relative;
-}
-/* Position and size items over image */
-.c-image-map:not(.c-image-map--should-position-items) .c-image-map__items {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-/* Allow relative alignment (x-axis, y-axis) and layering (z-axis) */
-.c-image-map__item-caption {
-  position: relative;
-}
-
-/* Toggles & Captions: UX */
-
-/* Toggles & Captions: UX: Cursors */
-
-/* On narrow viewport, suggest toggles' click action to users */
-@media only screen and (max-width: 991px) {
-  .c-image-map__item-toggle {
-    cursor: pointer;
-  }
-}
-
-/* Toggles & Captions: UX: Hide/Show Captions */
-
-/* Hide captions by default */
-.c-image-map__item-toggle ~ .c-image-map__item-caption {
-  visibility: hidden;
-}
-/* Show the description on item click or focus or target */
-/* FAQ: A click provides focus on focusable items */
-/*
-/* Click on item toggle should SHOW caption */
-.c-image-map__item-toggle:focus ~ .c-image-map__item-caption,
-/* Click on item caption should NOT HIDE caption */
-.c-image-map__item:focus-within .c-image-map__item-caption,
-/* Click on another item caption should HIDE caption of target item */
-/* CAVEAT: Without focus on any other item, caption of target item is shown */
-.c-image-map:not(:focus-within) .c-image-map__item:target .c-image-map__item-caption {
-  visibility: visible;
-}
-/* On wide viewport, always show captions */
-@media only screen and (min-width: 992px) {
-  .c-image-map__item-caption {
-    visibility: visible !important; /* overwrite `.c-image-map__item-toggle… .c-image-map__item-caption` */
-  }
-}
-
-
-/* Toggles & Close Buttons */
-
-/* Toggle and close markup should suggest clickability */
-button.c-image-map__item-toggle:hover,
-button.c-image-map__item-close:hover {
-  cursor: pointer;
-}
-/* As a link, toggle and close should not look like default links */
-a.c-image-map__item-toggle:hover,
-a.c-image-map__item-close:hover {
-  text-decoration: none;
-}
-/* As a button, toggle and close should not look like default buttons */
-button.c-image-map__item-toggle,
-button.c-image-map__item-close {
-  border: none;
-}
-
-
-/* Toggles, Counters, & Close Buttons */
-
-.c-image-map__item-toggle,
-.c-image-map--has-item-counters .c-image-map__item::before,
-.c-image-map__item-close {
-  /* Align any text vertically and horizontally */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-/* MODIFIERS */
-
-
-/* Position Items */
-
-/* Prepare to position toggle horz. (directly) and vert. (via item) */
-.c-image-map--should-position-items .c-image-map__item,
-.c-image-map--should-position-items .c-image-map__item-toggle {
-  position: absolute;
-}
-/* IMPORTANT: Define these per instance. Key:
-    - `unique-instance--item…` is a `c-image-map__item`
-    - `top` is the vertical y position of the item & toggle
-    - `left` is the horizontal x position of the item & toggle */
-/*
-#unique-instance--item_1_name                            { top: 10% }
-#unique-instance--item_1_name .c-image-map__item-toggle { left: 5%; }
-
-#unique-instance--item_2_name                            { top: 20% }
-#unique-instance--item_2_name .c-image-map__item-toggle { left: 5%; }
-
-#unique-instance--item_3_name                            { top: 30% }
-#unique-instance--item_3_name .c-image-map__item-toggle { left: 5%; }
-
-#unique-instance--item_4_name                             { top: 40% }
-#unique-instance--item_4_name .c-image-map__item-toggle { left: 5%; }
-
-#unique-instance--item_5_name                            { top: 50% }
-#unique-instance--item_5_name .c-image-map__item-toggle { left: 5%; }
-*/
-
-
-/* Toggle Counters */
-
-/* Assign numbers to markers */
-.c-image-map--has-toggle-counters {
-  counter-reset: items;
-}
-.c-image-map--has-toggle-counters .c-image-map__item {
-  counter-increment: items;
-}
-.c-image-map--has-toggle-counters .c-image-map__item-toggle::before {
-  content: counter(items);
-}
-
-
-/* Item Counters */
-
-/* Assign numbers to markers */
-.c-image-map--has-item-counters {
-  counter-reset: items;
-}
-.c-image-map--has-item-counters .c-image-map__item {
-  counter-increment: items;
-}
-.c-image-map--has-item-counters .c-image-map__item::before {
-  content: counter(items);
-}
-
-/* On narrow viewport, hide counters for all items */
-@media only screen and (max-width: 991px) {
-  .c-image-map--has-item-counters .c-image-map__item::before {
-    display: none;
-  }
-}
-/* On narrow viewport, hide counters for unmapped items */
-.c-image-map--has-item-counters .c-image-map__item--unmapped::before {
-  display: none;
-}
-
-
-/* Caption-Toggle Alignment */
-
-/* Fix scroll position for toggle anchor links to item */
-.c-image-map--has-caption-toggle-alignment .c-image-map__item {
-  scroll-snap-align: start;
-  scroll-margin: var(--caption-offset-from-toggle);
-}
-
-/* Align caption far left, but still aligned vertically with toggle */
-.c-image-map--has-caption-toggle-alignment .c-image-map__item-caption {
-  /* Move caption to the far left */
-  left: var(--caption-offset);
-}
-
-/* On narrow screen, move toggles of unmapped items to center of widget */
-@media only screen and (max-width: 991px) {
-  .c-image-map__item--unmapped .c-image-map__item-toggle {
-    left: 50% !important; /* overwrite item ID selector */
-  }
-}
-/* On wide screen, move toggles of unmapped items to top-right of caption */
-@media only screen and (min-width: 992px) {
-  .c-image-map__item--unmapped .c-image-map__item-toggle {
-    left: calc( var(--caption-offset) + var(--caption-width) ) !important; /* overwrite item ID */
-  }
-  .c-image-map__item--unmapped .c-image-map__item-caption {
-    margin-top: unset; /* overwrite item ID */
-  }
-}
-
-/* On narrow viewport, set caption atop (z-axis) toggles below it (y-axis) */
-@media only screen and (max-width: 991px) {
-  .c-image-map--has-caption-toggle-alignment .c-image-map__item-caption {
-    /* Layer caption above toggle */
-    z-index: 1;
-
-    /* Position caption below toggle */
-    margin-top: var(--caption-offset-from-toggle);
-  }
-}
-/* On wide viewport, set toggle atop (z-axis) its own caption (if nearby) */
-/* FAQ: An `.c-image-map__item--unmapped` places caption near toggle */
-@media only screen and (min-width: 992px) {
-  .c-image-map--has-caption-toggle-alignment .c-image-map__item-toggle {
-    /* Layer toggle above caption */
-    z-index: 1;
-  }
-}
-
-
-
-
-
-/* --- PROJECT STYLES --- */
-/* --- Styles for repos that fork `cms-site-template` go here. --- */
-
-
-
-
-
-/* ELEMENTS */
-
 
 /* Items */
 
@@ -325,14 +8,12 @@ button.c-image-map__item-close {
   z-index: 1;
 }
 
-
 /* Image */
 
 /* If image has/is a link that untoggles the active item, then do not make it look like one (because the action is implied) */
 a[href="#_"].c-image-map__image:hover {
   cursor: default;
 }
-
 
 /* Close Buttons */
 
@@ -342,10 +23,7 @@ a[href="#_"].c-image-map__image:hover {
 
 
 
-
-
 /* MODIFIERS */
-
 
 /* Toggle Counters & Item Counters */
 
@@ -353,18 +31,17 @@ a[href="#_"].c-image-map__image:hover {
 .c-image-map__item-toggle::before {
   --size: var(--toggle-shape-size);
 }
-.c-image-map--has-item-counters .c-image-map__item-close {
+.c-image-map__item-close {
   --size: var(--button-shape-size);
 }
 .c-image-map--has-item-counters .c-image-map__item::before {
   --size: calc( var(--toggle-shape-size) / 1.9 );
 }
-.c-image-map--has-item-counters .c-image-map__item-close,
+.c-image-map__item-close,
 .c-image-map--has-item-counters .c-image-map__item::before {
   width: var(--size);
   height: var(--size);
 }
-
 
 /* Item Counters */
 
@@ -372,7 +49,7 @@ a[href="#_"].c-image-map__image:hover {
 .c-image-map--has-item-counters .c-image-map__item::before {
   position: absolute;
   z-index: 1;
-  left: var(--caption-offset);
+  left: var(--caption-toggle-offset-horz);
   top: 50%;
   margin-top: calc( -1 * var(--size) / 2 );
   margin-left: calc( -1 * var(--size) / 2 );
