@@ -1,0 +1,27 @@
+/*
+Border
+
+A minimal utility to apply borders.
+
+.u-border - Border on all sides
+.u-border--left - Border only on the left side
+.u-border--top - Border only on the top side
+.u-border--right - Border only on the right side
+.u-border--bottom - Border only on the bottom side
+
+Style guide: Trumps.Utilities.Border
+*/
+
+.u-border,
+[class*="u-border--"] {
+  --border-width: var(--global-border-width--thick);
+
+  border-width: 0;
+  border-style: solid;
+  border-color: black;
+}
+.u-border { border-width: var(--border-width); }
+.u-border--top { border-top-width: var(--border-width); }
+.u-border--left { border-left-width: var(--border-width); }
+.u-border--right { border-right-width: var(--border-width); }
+.u-border--bottom { border-bottom-width: var(--border-width); }

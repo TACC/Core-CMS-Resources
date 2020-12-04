@@ -1,0 +1,56 @@
+/* ELEMENTS */
+
+/* Items */
+
+/* Position focused items atop others */
+.c-image-map__item:focus,
+.c-image-map__item:focus-within {
+  z-index: 1;
+}
+
+/* Image */
+
+/* If image has/is a link that untoggles the active item, then do not make it look like one (because the action is implied) */
+a[href="#_"].c-image-map__image:hover {
+  cursor: default;
+}
+
+/* Close Buttons */
+
+.c-image-map__item-close {
+  margin: 1em auto 0 auto;
+}
+
+
+
+/* MODIFIERS */
+
+/* Toggle Counters & Item Counters */
+
+/* Size the item counters and close buttons */
+.c-image-map__item-toggle::before {
+  --size: var(--toggle-shape-size);
+}
+.c-image-map__item-close {
+  --size: var(--button-shape-size);
+}
+.c-image-map--has-item-counters .c-image-map__item::before {
+  --size: calc( var(--toggle-shape-size) / 1.9 );
+}
+.c-image-map__item-close,
+.c-image-map--has-item-counters .c-image-map__item::before {
+  width: var(--size);
+  height: var(--size);
+}
+
+/* Item Counters */
+
+/* Vertically center. Horizontally align */
+.c-image-map--has-item-counters .c-image-map__item::before {
+  position: absolute;
+  z-index: 1;
+  left: var(--caption-toggle-offset-horz);
+  top: 50%;
+  margin-top: calc( -1 * var(--size) / 2 );
+  margin-left: calc( -1 * var(--size) / 2 );
+}

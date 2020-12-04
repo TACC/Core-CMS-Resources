@@ -1,0 +1,319 @@
+/*
+Fellow
+
+A project-specific avatar for individuals called "fellows"
+
+Markup: ../../../../../../snippets/meet-fellows.html
+
+Styleguide Components.Fellow
+*/
+
+
+
+/* BLOCK */
+
+.c-fellow {
+  /* Some properties are available from `.c-fellow-list` */
+  /*
+  --accent-color: var(--accent-color);
+  */
+  --space-between-each: 0;
+
+  text-align: center;
+}
+li.c-fellow {
+  list-style: none; /* overwrite Bootstrap <li> */
+}
+
+
+
+/* ELEMENTS */
+
+/* Add space between all fellows */
+/* FAQ: Space added on children to not overwrite parents' Bootstrap spacing */
+/* WARNING: If `.c-fellows` are wrapped flex children, then first and last elements will hug the edges */
+.c-fellow > * {
+  margin-left: var(--space-between-each);
+  margin-right: var(--space-between-each);
+}
+.c-fellow:first-child > * { margin-left: 0; }
+.c-fellow:last-child > * { margin-right: 0; }
+
+.c-fellow__caption > * {
+  display: block;
+}
+.c-fellow__avatar,
+.c-fellow__name,
+.c-fellow__caption {
+  position: relative;
+}
+.c-fellow__avatar { z-index: 0; }
+.c-fellow__name { z-index: 2; }
+.c-fellow__caption { z-index: 1; }
+
+
+/* Avatar */
+
+.c-fellow__avatar {
+  width: calc( 100% - ( var(--space-between-each) * 2 ) );
+  clip-path: circle(50%); /* approx. clip of photos in magazine */
+}
+
+
+/* Name */
+
+.c-fellow__name {
+  margin-top: -20%;
+  margin-bottom: 0; /* overwrite Bootstrap <h1>–<h6> */
+
+  /*
+  background-color: #fff;
+  border: 2px solid #000;
+  */
+
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+
+/* Caption */
+
+.c-fellow__caption {
+  /* Hide border underneath `.c-fellow__name` */
+  margin-top: -2px; /* should equal border width */
+
+  border: 2px solid var(--accent-color);
+  background-color: #fff;
+}
+
+
+/* School & Quote */
+
+.c-fellow__school,
+.c-fellow__quote {
+  padding: 0.5em;
+
+  border: var(--border-width) solid var(--accent-color);
+
+  font-family: kepler-std-caption, serif;
+}
+.c-fellow__school {
+  padding: 0.5em;
+}
+.c-fellow__quote {
+  padding: 0.5em;
+
+  color: var(--accent-color);
+
+  font-style: italic;
+}
+
+
+/* Discipline */
+
+.c-fellow__discipline {
+  --border-width: 2px;
+
+  position: relative; /* andchor for positioned children */
+  display: inline-block;
+  padding: 0 0.25em;
+  /* Overlap border when width is 100% */
+  margin: 0 calc( -1 * var(--border-width) );
+
+  color: var(--accent-color);
+  border: var(--border-width) solid var(--accent-color);
+  background-color: #fff;
+}
+.c-fellow__discipline::before {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  content: '';
+  display: block;
+  width: 1000%; /* super wide so wide screen does not show line end */
+
+  border: calc(var(--border-width)/2) solid var(--accent-color);
+}
+/* Hide lines behind `c-fellow__discipline` that overflow */
+.c-fellow__caption { overflow: hidden; }
+
+
+
+
+
+/*
+Fellow List
+
+A project-specific avatar list for individuals called "fellows"
+
+Markup: ../../../../../../snippets/meet-fellows.html
+
+Styleguide Components.FellowList
+*/
+
+
+
+/* BLOCK */
+
+.c-fellow-list {
+  --accent-color: #3452a0;
+  --accent-color--inverted: #fff;
+}
+
+
+
+/* ELEMENTS */
+
+
+/* Header */
+
+.c-fellow-list__header {
+  color: var(--accent-color--inverted);
+  background-color: var(--accent-color);
+}
+.c-fellow-list__header a {
+  color: inherit;
+  opacity: 0.8;
+}
+
+/* Header: Title & Description */
+
+.c-fellow-list__title,
+.c-fellow-list__desc {
+  margin-bottom: 0; /* overwrite Bootstrap <h1>–<h6> <p> */
+}
+
+.c-fellow-list__title {
+  font-weight: lighter;
+  line-height: 1.2;
+}
+/* Stylize the article word */
+.c-fellow-list__title::before {
+  content: attr(data-article-word);
+
+  position: absolute;
+  top: 0.32em;
+
+  background-color: var(--accent-color);
+  border-top: 0.12em solid var(--accent-color--inverted);
+  border-bottom: 0.12em solid var(--accent-color--inverted);
+
+  text-align: center;
+  font-size: 50%;
+  line-height: 1;
+  padding: 0.24em 0 0.08em; /* vertically center text between its own borders */
+}
+
+/* On very narrow viewport, do not stylize title article word */
+@media only screen and (max-width: 575px) {
+  .c-fellow-list__title { text-align: center; }
+  .c-fellow-list__title::before { display: none; }
+}
+
+/* On narrow viewport, manage vertically stacked elements */
+@media only screen and (max-width: 991px) {
+  /* Tweaks for vertical layout */
+  .c-fellow-list__header { padding: 20px 0 15px; }
+  .c-fellow-list__title {
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  /* Do not wrap text */
+  .c-fellow-list__title br { display: none; }
+  /* Hide artifacts of title article word */
+  .c-fellow-list__title::before {
+    width: 4.15em;
+    box-shadow:
+      0 -0.6em var(--accent-color), /* cover up real text on the top */
+      0 0.6em var(--accent-color); /* cover up real text on the bottom */
+  }
+
+  /* Create a fake bottom border */
+  .c-fellow-list__desc {
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+  .c-fellow-list__desc::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 15px; /* the `padding-right` of a Bootstrap `col` */
+    right: 15px; /* the `padding-right` of a Bootstrap `col` */
+
+    height: 3px;
+    background-color: var(--accent-color--inverted);
+  }
+}
+
+/* On medium viewport, manage horizontally stacked elements */
+@media only screen and (min-width: 992px) {
+  /* Tweaks for horizontal layout */
+  .c-fellow-list__header { padding: 15px 0; }
+  /* Hide artifacts of title article word */
+  .c-fellow-list__title::before {
+    width: 2.64em;
+    box-shadow:
+      0 -0.6em var(--accent-color), /* cover up real text on the top */
+      1.4em 0 var(--accent-color), /* cover up real text on the right */
+      0 0.6em var(--accent-color), /* cover up real text on the bottom */
+      1.4em -0.6em var(--accent-color), /* cover up real text at top right */
+      1.4em 0.6em var(--accent-color); /* cover up real text at bottom right */
+  }
+  /* Create a fake right border */
+  .c-fellow-list__title::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px; /* the `padding-right` of a Bootstrap `col` */
+
+    width: 3px;
+    background-color: var(--accent-color--inverted);
+  }
+}
+
+/* On different viewports, alternate font size to prevent element overlap */
+/* WARNING: Custom standard breakpoint: 1679px / 1680px */
+/* SEE: https://ricostacruz.com/til/css-media-query-breakpoints */
+@media only screen and (min-width: 768px) and (max-width: 991px),
+       only screen and (min-width: 1200px) and (max-width: 1679px) {
+  .c-fellow-list__title { font-size: 34px; }
+  .c-fellow-list__title::before { left: 6.65em; }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .c-fellow-list__title { font-size: 25px; }
+  .c-fellow-list__title::before { left: 6.9em; }
+}
+@media only screen and (max-width: 767px),
+       only screen and (min-width: 1680px) {
+  .c-fellow-list__title { font-size: 50px; }
+  .c-fellow-list__title::before { left: 6.34em; }
+}
+
+
+/* Content */
+
+.c-fellow-list__content {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  color: #000;
+
+  background-image: url('https://texascale.org/media/filer_public/a3/d0/a3d016e1-5b36-44e6-a19d-375e84e02012/fellows_background.png');
+  background-repeat: repeat;
+  background-color: #e2e2e2;
+  background-size: auto 1024px; /* height is double natural size */
+}
+ul.c-fellow-list__content {
+  margin-bottom: 0; /* overwrite Bootstrap <ul> */
+  padding-left: 0; /* overwrite browser default */
+  position: relative; /* anchor for positioned children */
+}

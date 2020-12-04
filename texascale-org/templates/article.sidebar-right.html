@@ -1,0 +1,27 @@
+{% extends "./article.html" %}
+{% load cms_tags %}
+
+{% block content %}
+<article class="c-page  container-fluid">
+  <div class="row">
+
+    <div class="c-page__sidebar  col col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+      {% placeholder "sidebar" %}
+    </div>
+
+    <div class="c-page__title  col col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+      {% placeholder "title" %}
+
+      <div class="row">
+        <div class="c-page__content  col col-12 col-sm-12 col-md-12 col-lg-7 col-xl-8 s-drop-caps">
+          {% placeholder "content" %}
+        </div>
+        <div class="c-page__content-sidebar  col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          {% placeholder "content sidebar" %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</article>
+{% endblock content %}

@@ -1,0 +1,177 @@
+/* PROPERTIES */
+
+.c-image-map {
+  --border--thin: 2px;
+  --border--normal: 3px;
+  --border--thick: 4px;
+  --accent-color--primary: rgba(0, 0, 0);
+  --accent-color--secondary: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* ELEMENTS */
+
+
+/* Toggles, Counters, & Close Buttons */
+
+/* Toggles, Counters, & Close Buttons: Borders & Colors */
+
+.c-image-map__item-toggle,
+.c-image-map--has-item-counters .c-image-map__item::before,
+.c-image-map__item-close {
+  /* Transform into a circle */
+  border-radius: 50%;
+}
+.c-image-map__item-toggle,
+.c-image-map--has-item-counters .c-image-map__item::before {
+  border-style: solid;
+  border-color: var(--accent-color--primary);
+  background-color: white;
+
+  color: var(--accent-color--primary);
+}
+.c-image-map--has-item-counters .c-image-map__item::before {
+  border-width: var(--border--normal);
+}
+.c-image-map__item-toggle {
+  border-width: var(--border--thick);
+}
+
+/* Toggles, Counters, & Close Buttons: Typography */
+
+.c-image-map--has-toggle-counters .c-image-map__item-toggle::before,
+.c-image-map--has-item-counters .c-image-map__item::before,
+.c-image-map__item-close::before {
+  font-family: kepler-std-subhead, serif;
+}
+.c-image-map--has-toggle-counters .c-image-map__item-toggle::before,
+.c-image-map--has-item-counters .c-image-map__item::before {
+  font-size: calc( var(--size) * 0.65);
+}
+
+
+/* Toggles & Counters */
+
+/* Animate toggle and item counter hover state */
+.c-image-map__item-toggle,
+.c-image-map--has-item-counters .c-image-map__item::before {
+  transform: scale(1);
+
+  transition-duration: 0.25s;
+  transition-property: all;
+}
+/* Scale toggle and item counter on hover, provided its item is not already "active" */
+.c-image-map__item:hover .c-image-map__item-toggle,
+.c-image-map--has-item-counters .c-image-map__item:hover::before {
+  transform: scale(1.25);
+}
+
+
+/* Toggles */
+
+.c-image-map__item-toggle:hover {
+  color: var(--accent-color--primary);
+  text-decoration: none;
+}
+
+/* Define when toggle should NOT have transparency */
+.c-image-map__item-toggle {
+  opacity: 0.5;
+}
+/* FAQ: Toggle of item on hover */
+.c-image-map__item-toggle:hover,
+/* FAQ: Toggle of targetted item */
+.c-image-map__item:target .c-image-map__item-toggle,
+/* FAQ: Hover on targetted item */
+.c-image-map__item:hover .c-image-map__item-toggle,
+/* FAQ: Toggle of item with focus on toggle or content */
+.c-image-map__item:focus-within .c-image-map__item-toggle,
+/* FAQ: Some items do not match a location on the image */
+.c-image-map__item--unmapped .c-image-map__item-toggle {
+  opacity: 1;
+}
+
+
+/* Close Buttons */
+
+.c-image-map__item-close::before {
+  content: "⌃";
+  /* Nudge character into desired vertical position */
+  /* WARNING: This value assumes the text is already vertically centered */
+  transform: translateY(15%);
+
+  font-size: calc( var(--size) * 1.2 );
+}
+.c-image-map__item-close {
+  background-color: var(--accent-color--secondary);
+
+  color: white;
+}
+.c-image-map__item-close:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Captions */
+
+.c-image-map__item-caption {
+  --space--desc-top: 1em;
+  --space--title-bottom: 0.5em;
+
+  background-color: white;
+  border: var(--border--normal) solid var(--accent-color--primary);
+}
+.c-image-map__item-title {
+  display: block;
+  padding-bottom: var(--space--title-bottom);
+
+  /* TODO: Use font variable(s) */
+  /* TODO: Use `rem` when site sets base font */
+  /* font: bold normal 2em benton-sans, serif; */
+  font-weight: bold;
+}
+.c-image-map__item-desc {
+  margin: var(--space--desc-top) 0 0; /* overwrite Bootstrap or browser */
+}
+
+/* On narrow viewport, less spacing */
+@media only screen and (max-width: 991px) {
+  .c-image-map__item-caption {
+    padding: 10px 20px 20px;
+  }
+}
+/* On wide viewport, more spacing */
+@media only screen and (min-width: 992px) {
+  .c-image-map__item-caption {
+    padding: 10px 25px 15px;
+  }
+  .c-image-map__item-toggle + .c-image-map__item-caption {
+    padding-left: 40px;
+  }
+}
+
+
+/* Placeholder Text */
+/* FAQ: All of these styles consider <details>/<summary> tags */
+/* WARNING: The `:not(summary)` CSS is necessary without <summary> tag */
+
+/* Decoration only for titles that are NOT collapsing content */
+/* WARNING: This `:not(summary)` selector must remain (but may be simplified) if we do not use details/summary tags */
+.c-image-map__item-title:not(summary),
+details[open] > summary.c-image-map__item-title {
+  border-bottom: var(--border--thin) solid var(--accent-color--secondary);
+}
+/* Titles that collapse content get placeholder content and fake border */
+details:not([open]) > summary.c-image-map__item-title::after {
+  /* Placeholder content */
+  display: block;
+  content: attr(data-placeholder-text);
+  font-weight: normal;
+
+  /* Fake border */
+  margin-top: var(--space--title-bottom);
+  padding-top: var(--space--desc-top);
+  border-top: var(--border--thin) solid var(--accent-color--secondary);
+}

@@ -1,0 +1,82 @@
+/*
+COMPONENTS: Image Map: Structure
+*/
+
+
+
+
+
+/* PROPERTIES */
+
+/* On narrow viewport, small custom toggle size */
+@media only screen and (max-width: 320px) {
+  .c-image-map {
+    --toggle-shape-size: 70px;
+  }
+}
+/* On wide viewport, large custom toggle size */
+@media only screen and (min-width: 321px) {
+  .c-image-map {
+    --toggle-shape-size: 90px;
+  }
+}
+/* On wide viewport, move captions to the left */
+@media only screen and (min-width: 992px) {
+  .c-image-map {
+    --caption-width: 445px;
+  }
+  .c-image-map--has-caption-toggle-alignment {
+    --caption-toggle-offset-horz: -460px;
+  }
+}
+
+
+
+
+
+/* ELEMENTS */
+
+
+/* Toggles & Captions */
+
+/* Toggles & Captions: Positions for Specific Items */
+
+/* IMPORTANT: Define these per instance. Key:
+    - `unique-instance--item…` is a `c-image-map__item`
+    - `top` is the vertical y position of the item & toggle
+    - `left` is the horizontal x position of the item & toggle */
+#whats-in-a-node--network                            { top: 27% }
+#whats-in-a-node--network .c-image-map__item-toggle { left: 35%; }
+
+#whats-in-a-node--cooling                            { top: 43% }
+#whats-in-a-node--cooling .c-image-map__item-toggle { left: 48%; }
+
+#whats-in-a-node--process                            { top: 57% }
+#whats-in-a-node--process .c-image-map__item-toggle { left: 48%; }
+
+#whats-in-a-node--memory                            { top: 72% }
+#whats-in-a-node--memory .c-image-map__item-toggle { left: 17%; }
+
+#whats-in-a-node--storage                            { top: 87% }
+#whats-in-a-node--storage .c-image-map__item-toggle { left: 6%; }
+
+
+
+
+
+/*
+COMPONENTS: Page
+*/
+
+/* On wide viewport, lower the main text */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* FAQ: This is a sibling element to `.c-image-map` */
+  /* Push text down to align just at the top of node image */
+  .c-page__content { margin-top: 15px; }
+}
+/* On wide viewport, raise the main text */
+@media only screen and (min-width: 1201px) {
+  /* FAQ: This is a sibling element to `.c-image-map` */
+  /* Push text down to align just below top of node rectangle frame */
+  .c-page__content { margin-top: 100px; }
+}

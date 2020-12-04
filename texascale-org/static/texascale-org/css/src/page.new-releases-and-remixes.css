@@ -1,0 +1,126 @@
+/*
+Trumps: Gallery
+*/
+
+
+
+
+
+/* BLOCK */
+
+.s-gallery {
+  grid-gap: 20px;
+}
+
+
+
+
+
+/* ELEMENTS */
+
+/* TODO: When `postcss-css-next` plugin is installed, use custom selectors */
+/* WARNING: Other tags could be used, and any tag could be nested */
+/*
+Selectors:
+- `… > a`: external images (even with figure) are wrapped in link
+- `… figure`: select figure, wheteher wrapped in link or not
+- `… > p`: the description is often a simple paragraph
+*/
+
+
+/* Item */
+
+/* Item: Media */
+
+/* Item: Media: Link or Figure */
+.s-gallery > * > a,
+.s-gallery-item > a,
+.s-gallery > * figure,
+.s-gallery-item figure {
+  margin-bottom: 0; /* overwrite Bootstrap */
+}
+
+/* Item: Media: Figure */
+.s-gallery > * figure,
+.s-gallery-item figure {
+  position: relative; /* anchor for positioned children */
+}
+
+/* Item: Media: Image */
+.s-gallery > * figure > :not(figcaption),
+.s-gallery-item figure > :not(figcaption) {
+  width: 100%;
+}
+
+/* Item: Media Link */
+
+.s-gallery > * > a,
+.s-gallery-item > a {
+  display: block;
+
+  position: relative; /* anchor for positioned children */
+}
+
+.s-gallery > * > a:hover::after,
+.s-gallery-item > a:hover::after {
+  content: '';
+}
+.s-gallery > * > a::after,
+.s-gallery-item > a::after {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+
+  background-color: rgba(0,0,0,0.5);
+}
+.s-gallery > * > a:hover figcaption,
+.s-gallery-item > a:hover figcaption {
+  /* Ensure text is not affected */
+  z-index: 1;
+}
+
+/* Item: Title */
+
+.s-gallery > * figure > figcaption,
+.s-gallery-item figure > figcaption {
+  --margin: 10px;
+  --line-height: inherit;
+  --font-size: inherit;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  margin: var(--margin);
+  font-size: var(--font-size);
+
+  color: #fff;
+
+  font-weight: bold;
+}
+/* When item width is narrow, reduce text size and buffer */
+@media only screen and (min-width: 320px) and (max-width:576px) {
+  .s-gallery-item figure > figcaption,
+  .s-gallery > * figure > figcaption {
+      --margin: 5px 5px 3px;
+      --line-height: 1.25;
+      --font-size: 14px;
+  }
+}
+
+/* Item: Description */
+
+.s-gallery > * > p,
+.s-gallery-item > p {
+  font-size: 14px;
+}
+
+/* Buffer between media and description */
+.s-gallery > * > a  +  p,
+.s-gallery-item > a  +  p,
+.s-gallery > * figure  +  p,
+.s-gallery-item figure  +  p {
+  margin-top: 5px;
+}
