@@ -7,8 +7,4 @@
 
 /* TRUMPS */
 
-/* FAQ: Because of third-party code and a rush to style the Frontera header
-        (which meant maintaining existing markup), scope classes were used for
-        - the search bar
-*/
 @import url("_imports/trumps/s-search-bar.css");
