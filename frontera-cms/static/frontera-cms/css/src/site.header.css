@@ -1,0 +1,14 @@
+/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
+
+/* NOTE: This file exists so that the Portal and User Guide can load isolated header styles */
+
+/* Organize via ITCSS */
+/* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
+
+/* TRUMPS */
+
+/* FAQ: Because of third-party code and a rush to style the Frontera header
+        (which meant maintaining existing markup), scope classes were used for
+        - the search bar
+*/
+@import url("_imports/trumps/s-search-bar.css");

@@ -1,0 +1,40 @@
+/* TACC TRUMPS: Search Bar */
+
+/* Overwrite */
+/* FAQ: The `.s-search-bar` is added to trump Bootstrap class specificity */
+/* FAQ: Changed `rem` to `em` to bypass Frontera CMS Bootstrap `font-size:10px;`; notice that sometimes this fails, and `px` is used instead */
+
+tacc-search-bar.s-search-bar::part(button) {
+  /* Copied from `.btn` from `archive/bootstrap.3.3.7.css` */
+  /* FAQ: See "FAQ: Changed `rem` […]" */
+  /* FAQ: The `button-radius` instance of `rem` is not included because it is overwritten by TACC styles */
+  font-size: 1em;
+}
+
+tacc-search-bar.s-search-bar::part(form) {
+  /* Copied from `.btn` from Portal */
+  /* SEE: https://github.com/TACC/Frontera-Portal/blob/master/client/src/components/DataFiles/DataFilesSearchbar/DataFilesSearchbar.module.css */
+  /* FAQ: See "FAQ: Changed `rem` […]" */
+  font-size: 0.75em;
+}
+
+tacc-search-bar.s-search-bar::part(button__icon) {
+  /* Copied from `.btn` from `src/_imports/trumps/shared/icon.css` */
+  /* FAQ: See "FAQ: Changed `rem` […]" */
+  font-size: 18px;
+
+  /* Copied from `.btn` from `src/_imports/trumps/shared/c-button.css` */
+  /* FAQ: See "FAQ: Changed `rem` […]" */
+  margin-right: 12px;
+}
+
+tacc-search-bar.s-search-bar::part(input) {
+  /* Copied from `.form-control` from `src/_imports/trumps/s-search-bar/bootstrap.delta.4.0.0-to-4.3.1` */
+  /* FAQ: See "FAQ: Changed `rem` […]" */
+  height: 32px;
+
+  /* Copied from `.btn` from Bootstrap 4.0.0 */
+  /* SEE: https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css */
+  /* FAQ: See "FAQ: Changed `rem` […]" */
+  font-size: 1em;
+}
