@@ -10,7 +10,7 @@ tacc-search-bar.s-search-bar::part(button) {
 }
 
 tacc-search-bar.s-search-bar::part(form) {
-  /* Copied from `.btn` from Portal */
+  /* Copied from `.container` from Portal */
   /* SEE: https://github.com/TACC/Frontera-Portal/blob/master/client/src/components/DataFiles/DataFilesSearchbar/DataFilesSearchbar.module.css */
   /* FAQ: See "FAQ: Changed `rem` […]" */
   font-size: 0.75em;
