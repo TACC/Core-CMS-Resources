@@ -4,20 +4,20 @@
 
 # Until this custom configuration is automatically applied, to use it one must copy the content of it and append it to `cms-site-template:/taccsite_cms/secrets.py`
 
-# EXAMPLE CONFIGURATION
+# PROTX CONFIGURATION
 
 ########################
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = False
+_LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
 _CMS_TEMPLATES = (
-    ('example-cms/templates/fullwidth.html', 'Fullwidth'),
+    ('protx-cms/templates/fullwidth.html', 'Fullwidth'),
     ('fullwidth.html', 'DEPRECATED Fullwidth'),
 )
 
@@ -32,6 +32,8 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 # BRANDING & LOGOS
 ########################
 
+# …
+
 ########################
 # BRANDING.
 
@@ -41,12 +43,12 @@ _BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
 # LOGOS.
 
 _PORTAL_LOGO = [
-    "portal",
-    "example-cms/img/org_logos/portal.png",
+    "protx",
+    "protx-cms/img/org_logos/protx-logo-temp.png",
     "",
     "/",
     "_self",
-    "Portal Logo",
+    "ProTX Logo",
     "anonymous",
     "True"
 ]
@@ -57,4 +59,4 @@ _LOGO = _PORTAL_LOGO
 # PORTAL
 ########################
 
-_PORTAL = False
+_PORTAL = True
