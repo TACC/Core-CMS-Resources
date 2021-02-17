@@ -5,7 +5,11 @@
   {{ block.super }}
 
   <link rel="stylesheet" href="{% static 'texascale-org/css/build/template.article.image-map.css' %}">
-{% endblock assets_custom %}
+
+  {# This object must exist before `{% placeholder "visual" %}` #}
+  {# FAQ: A snippet in the placeholder should add data to `imageMapProps` #}
+  <script>window.imageMapProps=[];</script>
+  {% endblock assets_custom %}
 
 {% block content %}
 <article class="c-page c-page--visual  container-fluid">
@@ -21,7 +25,7 @@
 
   <div class="row">
     <div class="c-page__fake-sidebar  col-1 col-sm-1 col-md-3 col-lg-2 col-xl-2">
-      <!-- This column is intentionally empty; it visually "restores" sidebar after full-width visual -->
+      {# This column is intentionally empty; it visually "restores" sidebar after full-width visual #}
     </div>
     <div class="c-page__content  col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4">
       {% placeholder "content" %}
@@ -36,5 +40,47 @@
 {% block assets_custom_delayed %}
   {{ block.super }}
 
-  <script src="{% static 'texascale-org/js/activateFocusTarget.js' %}" crossorigin="anonymous"></script>
+  {% include 'load_react.html' %}
+  {# Each page MUST include data for the component, like the following #}
+  {% comment %}
+  <script>
+    /* WARNING: This is sample data, not effectual unless explicitly used */
+    window.imageMapProps['sample-data'] = {
+      captions: [{
+        id: 'sample-data--one',
+        title: 'One Partidge',
+        summary: 'Partridges are medium-sized non-migratory birds.',
+        content: 'Partridges are medium-sized non-migratory birds, with a wide native distribution throughout Europe, Asia, and parts of Africa.'
+      },
+      {
+        id: 'sample-data--two',
+        title: 'Two Turtle Doves',
+        summary: 'Streptopelia is a genus of birds in the pigeon and dove family Columbidae.',
+        content: 'Streptopelia is a genus of birds in the pigeon and dove family Columbidae. These are mainly slim, small to medium-sized species.'
+      },
+      {
+        id: 'sample-data--three',
+        title: 'Three French Hens',
+        summary: 'The Faverolles is a French breed of chicken.',
+        content: `
+        <p>The Faverolles is a French breed of chicken. The breed was developed in the 1860s in north-central France, in the vicinity of the villages of Houdan and Faverolles.</p>
+        <dl>
+            <dt>Breed Origin</dt>
+            <dd>France</dd>
+            <dt>Bird Type</dt>
+            <dd>Chicken</dd>
+        </dl>
+        `,
+        contentIsMarkup: true
+      }],
+      image: 'https://texascale.org/media/filer_public/19/85/1985ac52-54d1-4ec3-a8ba-17663900f254/frontera-secret-sauce-bottlecomplete.png',
+      hasCaptionToggleAlignement: true,
+      hasItemCounters: true,
+      hasToggleCounters: true,
+    };
+  </script>
+  {% endcomment %}
+  <script src="{% static 'texascale-org/js/imageMap.js' %}" type="text/babel" defer></script>
+  {# TODO: Integrate support for `activateFocusTarget.js` into `imageMap.js` #}
+  <script src="{% static 'texascale-org/js/activateFocusTarget.js' %}" defer></script>
 {% endblock assets_custom_delayed %}
