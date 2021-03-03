@@ -1,20 +1,4 @@
-/* ELEMENTS: Main Root & Sectioning Root */
-
-body {
-  /* FAQ: This color change merely illustrates that custom styles are working */
-  background-color: yellow;
-}
-
-
-/* ELEMENTS: Content Sectioning */
-
-main,
-/* GH-25: Using ID until it is replaced with `main` */
-#content-wrap {
-  padding-bottom: var(--global-space-beneath-main-content);
-}
-
-/* ELEMENTS: Content Sectioning: Headings
+/* ELEMENTS: Sectioning (Headings)
 
 - `h1` = story titles
 - `h2` = story subtitles
