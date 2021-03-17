@@ -40,7 +40,7 @@ _BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
 # LOGOS
 
 _PORTAL_LOGO = [
-    "portal",
+    "3Dem",
     "3dem-org/img/org_logos/3dem.png",
     "",
     "/",
