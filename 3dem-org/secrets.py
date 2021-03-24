@@ -10,14 +10,14 @@
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = False
+_LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
 _CMS_TEMPLATES = (
-    ('neuronex-cms/templates/fullwidth.html', 'Fullwidth'),
+    ('3dem-org/templates/fullwidth.html', 'Fullwidth'),
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
@@ -33,29 +33,38 @@ _GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-1"
 _GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
-# BRANDING & LOGOS
+# BRANDING & LOGOS & FAVICONS
 ########################
 
 ########################
-# BRANDING.
+# BRANDING
 
 _BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
 
 ########################
-# LOGOS.
+# LOGOS
 
 _PORTAL_LOGO = [
-    "portal",
-    "neuronex-cms/img/org_logos/logo.3dem.png",
+    "3Dem",
+    "3dem-org/img/org_logos/3dem.png",
     "",
     "/",
     "_self",
-    "Portal Logo",
+    "3Dem Logo",
     "anonymous",
     "True"
 ]
 
 _LOGO = _PORTAL_LOGO
+
+########################
+# FAVICON
+
+_PORTAL_FAVICON = {
+    "img_file_src": "3dem-org/img/favicons/favicon.ico"
+}
+
+_FAVICON = _PORTAL_FAVICON                # Default Favicon.
 
 ########################
 # PORTAL
