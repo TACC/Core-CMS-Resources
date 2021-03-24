@@ -10,7 +10,7 @@
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = False
+_LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
