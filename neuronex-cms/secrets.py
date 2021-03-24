@@ -10,19 +10,14 @@
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = False
+_LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
 _CMS_TEMPLATES = (
-    ('example-cms/templates/fullwidth.html', 'Fullwidth'),
-    # Support standard template for demo purposes
-    ('fullwidth.html', 'Standard Fullwidth'),
-
-    # Support Portal pages for demo purposes
-    ('home_portal.html', 'Standard Portal Homepage'),
+    ('neuronex-cms/templates/fullwidth.html', 'Fullwidth'),
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
@@ -34,7 +29,7 @@ _CMS_TEMPLATES = (
 # GOOGLE ANALYTICS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
+_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-1"
 _GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
@@ -51,11 +46,11 @@ _BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
 
 _PORTAL_LOGO = [
     "portal",
-    "example-cms/img/org_logos/portal.png",
+    "neuronex-cms/img/org_logos/logo.3dem.png",
     "",
     "/",
     "_self",
-    "Portal Logo",
+    "3Dem Logo",
     "anonymous",
     "True"
 ]
@@ -63,7 +58,14 @@ _PORTAL_LOGO = [
 _LOGO = _PORTAL_LOGO
 
 ########################
+# FAVICON
+
+_FAVICON = {
+    "img_file_src": "neuronex-cms/img/org_logos/favicon.ico"
+}
+
+########################
 # PORTAL
 ########################
 
-_PORTAL = False
+_PORTAL = True
