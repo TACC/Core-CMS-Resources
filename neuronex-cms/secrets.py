@@ -18,7 +18,6 @@ _LDAP_ENABLED = False
 
 _CMS_TEMPLATES = (
     ('neuronex-cms/templates/fullwidth.html', 'Fullwidth'),
-    ('home_portal.html', 'Standard Portal Homepage'),
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),

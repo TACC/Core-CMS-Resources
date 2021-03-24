@@ -18,7 +18,16 @@ _LDAP_ENABLED = False
 
 _CMS_TEMPLATES = (
     ('example-cms/templates/fullwidth.html', 'Fullwidth'),
-    ('fullwidth.html', 'DEPRECATED Fullwidth'),
+    # Support standard template for demo purposes
+    ('fullwidth.html', 'Standard Fullwidth'),
+
+    # Support Portal pages for demo purposes
+    ('home_portal.html', 'Standard Portal Homepage'),
+    ('guide.html', 'Guide'),
+    ('guides/getting_started.html', 'Guide: Getting Started'),
+    ('guides/data_transfer.html', 'Guide: Data Transfer'),
+    ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
+    ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
 
 ########################
