@@ -8,8 +8,6 @@ import os
 
 # …
 _CMS_TEMPLATES = (
-    # ('fullwidth.html', 'Fullwidth'),
-    # ('sidebar_left.html', 'Sidebar Left'),
     ('texascale-org/templates/fullwidth.html', 'Fullwidth'),
     ('texascale-org/templates/category.html', 'Category'),
     ('texascale-org/templates/article.html', 'Article'),
