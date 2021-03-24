@@ -50,7 +50,7 @@ _PORTAL_LOGO = [
     "",
     "/",
     "_self",
-    "Portal Logo",
+    "3Dem Logo",
     "anonymous",
     "True"
 ]
@@ -58,7 +58,14 @@ _PORTAL_LOGO = [
 _LOGO = _PORTAL_LOGO
 
 ########################
+# FAVICON
+
+_FAVICON = {
+    "img_file_src": "neuronex-cms/img/org_logos/favicon.ico"
+}
+
+########################
 # PORTAL
 ########################
 
-_PORTAL = False
+_PORTAL = True
