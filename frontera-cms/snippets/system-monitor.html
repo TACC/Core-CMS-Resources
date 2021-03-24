@@ -1,79 +1,91 @@
 <style>
-  .single-system .label-system-status {
-    border-radius:3px;
-    font-size: medium;
-  }
-  .single-system {
+  /* Container */
+
+  .s-sysmon {
     background-color: #272024;
     font-weight: bold;
+    font-size: small;
     border-radius: 3px;
     min-width: 320px;
-  }
-  .single-system {
     padding: 0 15px 7px 8px;
   }
 
-  .single-system .table > tbody > tr > th{
-    color:#898889;
-    font-family: BentonSansMedium;
-    font-size: small;
+  /* Table */
+
+  .s-sysmon thead > tr {
+    border-bottom: 1px solid #dddddd;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
-  .single-system .table {
-    margin-bottom: 0px;
+  .s-sysmon th {
+    font-family: BentonSansMedium;
   }
-  .single-system .row {
-    min-height: 30px;
-  }
-  .single-system > .table > tbody > tr > td {
+  .s-sysmon td {
     font-size: medium;
     font-weight: 300;
-    font-family: helvetica neue;
+    font-family: "Helvetica Neue";
   }
-  .single-system > .table > tbody > tr > th,
-  .single-system > .table > thead > tr > td,
-  .single-system > .table > tbody > tr > td {
+
+  /* Overwrite Bootstrap */
+  .s-sysmon .table {
+    margin-bottom: 0px;
+  }
+  .s-sysmon .table th,
+  .s-sysmon .table td {
     border-top: 0px;
     padding-left: 0px;
     padding-bottom: 2px;
     padding-top: 7px;
   }
-  .single-system > .table > tbody > tr > th {
-    font-size: small
+  .s-sysmon .table-dark th {
+    color:#898889;
   }
-  .single-system .sysmon-header {
-    border-bottom: 1px solid #dddddd;
-    margin-left: 5px;
-    margin-right: 5px;
+
+  /* Status Label */
+
+  /* Overwrite IconWorks */
+  .s-sysmon .iconworks:before {
+    padding-right: 0.75em;
   }
-  .badge-warning {
+
+  /* Overwrite Bootstrap */
+  .s-sysmon .badge {
+    border-radius: 3px;
+    font-size: medium;
+    font-weight: 400;
+  }
+  .s-sysmon .badge-warning {
       background-color: #c7ce1d;
       color: #fff;
   }
 </style>
 
-<div class="single-system">
-  <table class="table table-dark sysmon-table">
-    <tr class="sysmon-header">
-      <th scope="col">STATUS</th>
-      <th scope="col">LOAD</th>
-      <th scope="col">RUNNING</th>
-      <th scope="col">QUEUED</th>
-    </tr>
-    <tr>
-      <td scope="row">
-        <span
-          id="frontera_status"
-          class="badge badge-success label-system-status iconworks d-none"
-          style="font-weight: 400"
-          data-icon="&#217;"
-          >&nbsp;&nbsp;Operational</span
-        >
-      </td>
-      <td id="load_percentage">-</td>
-      <td id="jobs_running">-</td>
-      <td id="jobs_queued">-</td>
-    </tr>
+<div class="s-sysmon">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">STATUS</th>
+        <th scope="col">LOAD</th>
+        <th scope="col">RUNNING</th>
+        <th scope="col">QUEUED</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">
+          <span
+            id="frontera_status"
+            class="iconworks  badge badge-success  d-none"
+            data-icon="&#217;"
+            >Operational</span
+          >
+        </td>
+        <td id="load_percentage">-</td>
+        <td id="jobs_running">-</td>
+        <td id="jobs_queued">-</td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -102,7 +114,10 @@
   }
 
   function setFronteraStatus(frontera_status) {
-    if (frontera_status && isOperational(frontera_status)) {
+    const isFound = frontera_status;
+    const isWorking = isOperational(frontera_status);
+
+    if (isFound && isWorking) {
       document.getElementById('load_percentage').innerHTML =
         frontera_status['load_percentage'] + '%';
       document.getElementById('jobs_running').innerHTML =
@@ -110,7 +125,6 @@
       document.getElementById('jobs_queued').innerHTML =
         frontera_status['jobs']['queued'];
     } else {
-      // if we're here frontera wasn't found in the json
       document
         .getElementById('frontera_status')
         .classList.remove('badge-success');
