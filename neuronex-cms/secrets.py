@@ -60,11 +60,11 @@ _LOGO = _PORTAL_LOGO
 ########################
 # FAVICON
 
-_PORTAL_FAVICON = {
+_NEURONEX_FAVICON = {
     "img_file_src": "neuronex-cms/img/org_logos/favicon.ico"
 }
 
-_FAVICON = _PORTAL_FAVICON                # Default Favicon.
+_FAVICON = _NEURONEX_FAVICON
 
 ########################
 # PORTAL
