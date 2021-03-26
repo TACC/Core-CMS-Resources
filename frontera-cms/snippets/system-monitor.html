@@ -17,9 +17,12 @@
   /* Table */
 
   .s-sysmon table {
+    /* vert. `padding` + vert. `border-spacing` + `border-width` = 14px */
+    padding: 6px 0;
+
     border: 1px solid var(--color--x-light);
-    border-radius: 10px;
-    border-spacing: 15px; /* Overwrite Bootstrap 3 */
+    border-radius: 9px;
+    border-spacing: 14px 7px; /* Overwrite Bootstrap 3 */
     border-collapse: separate; /* Overwrite Bootstrap 4 */
   }
   .s-sysmon thead > tr {
