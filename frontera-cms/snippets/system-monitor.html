@@ -2,17 +2,23 @@
   /* Container */
 
   .s-sysmon {
-    background-color: #272024;
-    font-weight: bold;
-    font-size: small;
-    border-radius: 3px;
+    --color--x-light: #ffffff;
+    --color--light: #dddddd;
+    --color--normal: #808080;
+    --color--dark: #404040;
+    --color--x-dark: #000000;
+
+    --color--warning: #c7ce1d;
+
+    font-size: 1.4rem;
     min-width: 320px;
-    padding: 0 15px 7px 8px;
   }
 
   /* Table */
 
   .s-sysmon table {
+    border: 1px solid var(--color--x-light);
+    border-radius: 10px;
     border-spacing: 15px; /* Overwrite Bootstrap 3 */
     border-collapse: separate; /* Overwrite Bootstrap 4 */
   }
@@ -21,49 +27,50 @@
     margin-right: 5px;
   }
   .s-sysmon th {
-    font-family: BentonSansMedium;
+    font-family: BentonSansBold;
   }
   .s-sysmon td {
-    font-size: medium;
-    font-weight: 300;
-    font-family: "Helvetica Neue";
+    font-family: BentonSansMedium;
   }
 
   /* Overwrite Bootstrap Class */
   .s-sysmon .table {
     margin-bottom: 0px;
   }
+  .s-sysmon .table-dark {
+    color: var(--color--light);
+  }
   .s-sysmon .table thead th {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid var(--color--normal);
   }
   .s-sysmon .table th,
   .s-sysmon .table td {
-    border-top: 0px;
-    padding-left: 0px;
-    padding-bottom: 2px;
-    padding-top: 7px;
-  }
-  .s-sysmon .table-dark th {
-    color:#898889;
+    border-top: none; /* Overwrite Bootstrap */
+    padding: 0 0 5px;
   }
 
   /* Status Label */
 
-  /* Overwrite IconWorks Class */
+  .s-sysmon .badge {
+    font-family: Roboto;
+  }
+
+  /* Overwrite Bootstrap */
+  .s-sysmon .badge {
+    border-radius: 3px;
+    font-size: unset;
+    font-weight: normal;
+  }
+  .s-sysmon .badge-warning {
+    background-color: var(--color--warning);
+    color: var(--color--x-light);
+  }
+
+  /* Overwrite IconWorks */
   .s-sysmon .iconworks:before {
     padding-right: 0.5em;
   }
 
-  /* Overwrite Bootstrap Class */
-  .s-sysmon .badge {
-    border-radius: 3px;
-    font-size: medium;
-    font-weight: 400;
-  }
-  .s-sysmon .badge-warning {
-      background-color: #c7ce1d;
-      color: #fff;
-  }
 </style>
 
 <div class="s-sysmon">
