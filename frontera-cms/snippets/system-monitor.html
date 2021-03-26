@@ -94,7 +94,6 @@
 
   function isOperational(system){
     if (system['load_percentage'] < 1 || system['load_percentage'] > 99){
-      system['load_percentage'] = 0;
       return system['jobs']['running'] > 1;
       }
     return true;
