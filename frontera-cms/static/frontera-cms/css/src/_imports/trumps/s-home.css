@@ -1,0 +1,35 @@
+/* TACC TRUMPS: Home (Page) */
+
+
+
+/* Banner */
+
+.s-home-banner p {
+  font-size: 2.4rem;
+  font-family: BentonSansBold;
+}
+
+
+
+/* Introduction */
+
+.s-home-intro p {
+  font-size: 1.8rem;
+  font-family: BentonSansBold;
+
+  /* Forces width to match design */
+  /* GH-99: Use standard spacing value */
+  padding-inline-end: 45px;
+}
+.s-home-intro div {
+  /* Forces smaller width, like design */
+  /* Uses consistent space, unlike design */
+  /* GH-99: Use standard spacing value */
+  padding: 0 30px;
+}
+
+.s-home-intro .s-sysmon {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
