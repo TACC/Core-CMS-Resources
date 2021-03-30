@@ -18,46 +18,19 @@
   height: 405px;
 }
 
-.s-home-banner p {
-  position: relative;
-  z-index: 2;
-
+.s-home-banner .o-section__banner-overlay {
   font-size: 2.4rem;
   font-family: BentonSansBold;
 
   padding: 0 30px; /* GH-99: Use standard spacing value */
   margin: 0 var(--banner-margin-horz);
-  margin-bottom: 0; /* overwrite Bootstrap */
-
-  /* Avoids the need to add placeholder markup for empty column */
-  /* FAQ: The image "leaves" the column via `position: absolute` */
-  grid-column-start: 2;
-
-  background-color: rgba(var(--color-bkgd-rgb), 0.65);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
 
   @extend .x-center--vert-inline-multiline--flex;
 }
-.s-home-banner.o-section--style-dark p {
-  --color-bkgd-rgb: var(--global-color-primary--x-dark-rgb);
-}
-.s-home-banner.o-section--style-light p {
-  --color-bkgd-rgb: var(--global-color-primary--x-light-rgb);
-}
 
-.s-home-banner img {
-  position: absolute;
-  z-index: 1;
-
-  /* Sizes image to take full width but maintain ratio */
-  width: auto;
-  height: 100%;
-  object-fit: contain;
-
-  /* Horizontally centers image */
-  left: 50%;
-  transform: translateX(-50%);
+.s-home-banner .o-section__banner-image {
+  /* The offset is to align image at 1200px to position in design */
+  top: calc(50% - 6%); /* overwrite `.o-section__banner-image` */
 }
 
 
