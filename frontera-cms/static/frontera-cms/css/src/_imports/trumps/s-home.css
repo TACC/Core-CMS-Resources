@@ -1,12 +1,58 @@
 /* TACC TRUMPS: Home (Page) */
+@import url("_imports/tools/x-center.css");
 
-
+.s-home {
+  --banner-margin-horz: 25px;
+}
 
 /* Banner */
 
+.s-home-banner {
+  position: relative; /* for `position: absolute` children */
+
+  height: 405px;
+}
+
 .s-home-banner p {
+  position: relative;
+  z-index: 2;
+
   font-size: 2.4rem;
   font-family: BentonSansBold;
+
+  padding: 0 30px; /* GH-99: Use standard spacing value */
+  margin: 0 var(--banner-margin-horz);
+  margin-bottom: 0; /* overwrite Bootstrap */
+
+  /* Avoids the need to add placeholder markup for empty column */
+  /* FAQ: The image "leaves" the column via `position: absolute` */
+  grid-column-start: 2;
+
+  background-color: rgba(var(--color-bkgd-rgb), 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  @extend .x-center--vert-inline-multiline--flex;
+}
+.s-home-banner.o-section--style-dark p {
+  --color-bkgd-rgb: var(--global-color-primary--x-dark-rgb);
+}
+.s-home-banner.o-section--style-light p {
+  --color-bkgd-rgb: var(--global-color-primary--x-light-rgb);
+}
+
+.s-home-banner img {
+  position: absolute;
+  z-index: 1;
+
+  /* Sizes image to take full width but maintain ratio */
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+
+  /* Horizontally centers image */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
@@ -18,14 +64,13 @@
   font-family: BentonSansBold;
 
   /* Forces width to match design */
-  /* GH-99: Use standard spacing value */
-  padding-inline-end: 45px;
+  padding-inline-end: 30px; /* GH-99: Use standard spacing value */
 }
 .s-home-intro div {
   /* Forces smaller width, like design */
   /* Uses consistent space, unlike design */
-  /* GH-99: Use standard spacing value */
-  padding: 0 30px;
+  padding: 0 30px; /* GH-99: Use standard spacing value */
+  margin: 0 var(--banner-margin-horz);
 }
 
 .s-home-intro .s-sysmon {
