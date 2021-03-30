@@ -1,0 +1,6 @@
+/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
+
+/* HACK: Output parsed code for use in temporary snippet on prod until deploy */
+/* FAQ: This stylesheet has future syntax not supported by browsers */
+
+@import url("_imports/trumps/s-home.css");
