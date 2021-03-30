@@ -1,7 +1,11 @@
 /* TACC TRUMPS: Home (Page) */
 @import url("_imports/tools/x-center.css");
 
-.s-home {
+/* Banner */
+/* Introduction */
+
+.s-home-banner,
+.s-home-intro {
   --banner-margin-horz: 25px;
 }
 
