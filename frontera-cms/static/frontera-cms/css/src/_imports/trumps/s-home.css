@@ -1,5 +1,6 @@
 /* TACC TRUMPS: Home (Page) */
 @import url("_imports/tools/x-center.css");
+@import url("_imports/tools/media-queries.css");
 
 /* Banner */
 /* Introduction */
@@ -66,17 +67,20 @@
 .s-home-intro p {
   font-size: 1.8rem;
   font-family: BentonSansBold;
-
-  /* Forces width to match design */
-  padding-inline-end: 30px; /* GH-99: Use standard spacing value */
 }
+@media (--wide-and-above) {
+  .s-home-intro p {
+    /* Forces width to match design */
+    padding-right: 30px; /* GH-99: Use standard spacing value */
+  }
+}
+
 .s-home-intro div {
   /* Forces smaller width, like design */
   /* Uses consistent space, unlike design */
   padding: 0 30px; /* GH-99: Use standard spacing value */
   margin: 0 var(--banner-margin-horz);
 }
-
 .s-home-intro .s-sysmon {
   display: flex;
   align-items: center;
