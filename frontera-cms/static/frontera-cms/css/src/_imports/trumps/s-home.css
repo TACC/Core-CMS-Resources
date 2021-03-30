@@ -86,3 +86,11 @@
   align-items: center;
   justify-items: center;
 }
+
+
+
+/* News */
+
+.s-home-news > img {
+  max-width: 100%;
+}
