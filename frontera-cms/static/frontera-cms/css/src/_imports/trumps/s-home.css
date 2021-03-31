@@ -2,6 +2,14 @@
 @import url("../../../../../../../../taccsite_cms/static/site_shared/css/src/_imports/tools/x-center.css");
 @import url("../../../../../../../../taccsite_cms/static/site_shared/css/src/_imports/tools/media-queries.css");
 
+
+
+/* WARNING: This MUST ONLY be loaded on homepage */
+/* FAQ: The rest of Frontera, and all of Core, is NOT ready for this change */
+html { font-size: 62.5%; /* 1rem = 10px */ }
+
+
+
 /* Banner */
 /* Introduction */
 
@@ -24,7 +32,7 @@
 
 .s-home-banner .o-section__banner-overlay {
   font-size: 2.4rem;
-  font-family: BentonSansBold;
+  font-weight: var(--bold);
 
   padding: 1em 30px; /* GH-99: Use standard spacing value */
   margin: 0 var(--banner-margin-horz);
@@ -43,7 +51,7 @@
 
 .s-home-intro p {
   font-size: 1.8rem;
-  font-family: BentonSansBold;
+  font-weight: var(--bold);
 }
 @media (--wide-and-above) {
   .s-home-intro p {
