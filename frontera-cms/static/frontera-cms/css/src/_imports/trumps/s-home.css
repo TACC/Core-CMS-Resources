@@ -14,15 +14,19 @@
 
 .s-home-banner {
   position: relative; /* for `position: absolute` children */
-
-  height: 405px;
+}
+@media (--medium-and-below) {
+  .s-home-banner { height: auto; }
+}
+@media (--medium-and-above) {
+  .s-home-banner { height: 405px; }
 }
 
 .s-home-banner .o-section__banner-overlay {
   font-size: 2.4rem;
   font-family: BentonSansBold;
 
-  padding: 0 30px; /* GH-99: Use standard spacing value */
+  padding: 1em 30px; /* GH-99: Use standard spacing value */
   margin: 0 var(--banner-margin-horz);
 
   @extend .x-center--vert-inline-multiline--flex;
@@ -48,11 +52,13 @@
   }
 }
 
-.s-home-intro div {
-  /* Forces smaller width, like design */
-  /* Uses consistent space, unlike design */
-  padding: 0 30px; /* GH-99: Use standard spacing value */
-  margin: 0 var(--banner-margin-horz);
+@media (--narrow-and-above) {
+  .s-home-intro div {
+    /* Forces smaller width, like design */
+    /* Uses consistent space, unlike design */
+    padding: 0 30px; /* GH-99: Use standard spacing value */
+    margin: 0 var(--banner-margin-horz);
+  }
 }
 .s-home-intro .s-sysmon {
   display: flex;
