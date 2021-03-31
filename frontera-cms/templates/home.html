@@ -2,21 +2,10 @@
 {% load cms_tags staticfiles %}
 
 {% block assets_custom %}
-	{{ block.super }}
-
-  <link
-    rel="stylesheet"
-    href="{% static 'frontera-cms/css/build/template.home.css' %}"
-  >
+  <link rel="stylesheet" href="{% static 'frontera-cms/css/build/site.css' %}">
+  <link rel="stylesheet" href="{% static 'frontera-cms/css/build/site.header.css' %}">
+  <link rel="stylesheet" href="{% static 'frontera-cms/css/build/template.home.css' %}">
 {% endblock assets_custom %}
-
-{% block content %}
-  {% placeholder "content" or %}
-  <div class="container">
-    <!-- ... -->
-  </div>
-  {% endplaceholder %}
-{% endblock content %}
 
 {# FAQ: Common practice but unused, and template is unnecessary long-term #}
 {# {% block page_type_class %}s-home{% endblock page_type_class %} #}
