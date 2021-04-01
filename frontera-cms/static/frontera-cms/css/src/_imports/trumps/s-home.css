@@ -78,6 +78,6 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 
 /* News */
 
-.s-home-news > img {
-  max-width: 100%;
+.s-home-news {
+  /* … */
 }

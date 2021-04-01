@@ -6,8 +6,8 @@ NOTE: Relevant styles for Pre-2020 `frontera.scss`
 */
 
 @font-face {
-  font-family: BentonSansBold;
-  src: url("/static/frontera-cms/fonts/archive/BentonSans-Bold.otf");
+    font-family: BentonSansBold;
+    src: url("/static/frontera-cms/fonts/archive/BentonSans-Bold.otf");
 }
 
 @font-face {
