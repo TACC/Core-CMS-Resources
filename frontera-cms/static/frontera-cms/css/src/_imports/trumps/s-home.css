@@ -36,10 +36,14 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
   font-size: 2.4rem;
   font-weight: var(--bold);
 
-  padding: 1em 30px; /* GH-99: Use standard spacing value */
+  padding: 1em 3.0rem; /* GH-99: Use standard spacing value */
   margin: 0 var(--banner-margin-horz);
 
   @extend .x-center--vert-inline-multiline--flex;
+}
+.s-home__banner .o-section__banner-overlay p {
+  @extend .x-truncate--many-lines;
+  --lines: 11 !important; /* WARNING: Fixing unclear specificity issue */
 }
 @media (--wide-and-above) {
   .s-home__banner .o-section__banner-image {
@@ -59,7 +63,7 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 @media (--wide-and-above) {
   .s-home__intro p {
     /* Forces width to match design */
-    padding-right: 30px; /* GH-99: Use standard spacing value */
+    padding-right: 3.0rem; /* GH-99: Use standard spacing value */
   }
 }
 
@@ -74,15 +78,15 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 }
 @media (--narrow-and-below) {
   .s-home__intro .s-sysmon {
-    padding-top: 15px; /* GH-99: Use standard spacing value */
-    padding-bottom: 15px; /* GH-99: Use standard spacing value */
+    padding-top: 0.5rem; /* GH-99: Use standard spacing value */
+    padding-bottom: 0.5rem; /* GH-99: Use standard spacing value */
   }
 }
 @media (--narrow-and-above) {
   .s-home__intro div {
     /* Forces smaller width, like design */
     /* Uses consistent space, unlike design */
-    padding: 30px; /* GH-99: Use standard spacing value */
+    padding: 1.0rem; /* GH-99: Use standard spacing value */
 
     margin: 0 var(--banner-margin-horz);
   }
@@ -93,9 +97,9 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 /* News */
 
 .s-home__news {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding-top: 2.0rem;
+  padding-bottom: 2.5rem;
 }
 .s-home__news article {
-  margin-bottom: 30px;
+  margin-bottom: 3.0rem;
 }
