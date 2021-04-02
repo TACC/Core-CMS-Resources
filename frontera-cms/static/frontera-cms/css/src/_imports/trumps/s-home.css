@@ -18,6 +18,8 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
   --banner-margin-horz: 25px;
 }
 
+
+
 /* Banner */
 
 .s-home-banner {
@@ -79,5 +81,14 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 /* News */
 
 .s-home-news {
-  /* … */
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+
+
+/* Other */
+
+.s-home-other {
+  grid-auto-rows: 500px;
 }
