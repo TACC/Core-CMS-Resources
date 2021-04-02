@@ -84,7 +84,9 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
   padding-top: 20px;
   padding-bottom: 25px;
 }
-
+.s-home__news article {
+  margin-bottom: 30px;
+}
 
 
 /* Other */
