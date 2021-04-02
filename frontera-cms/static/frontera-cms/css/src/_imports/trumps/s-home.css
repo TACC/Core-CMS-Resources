@@ -13,8 +13,8 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 /* Banner */
 /* Introduction */
 
-.s-home-banner,
-.s-home-intro {
+.s-home__banner,
+.s-home__intro {
   --banner-margin-horz: 25px;
 }
 
@@ -22,17 +22,17 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 
 /* Banner */
 
-.s-home-banner {
+.s-home__banner {
   position: relative; /* for `position: absolute` children */
 }
 @media (--medium-and-below) {
-  .s-home-banner { height: auto; }
+  .s-home__banner { height: auto; }
 }
 @media (--medium-and-above) {
-  .s-home-banner { height: 405px; }
+  .s-home__banner { height: 405px; }
 }
 
-.s-home-banner .o-section__banner-overlay {
+.s-home__banner .o-section__banner-overlay {
   font-size: 2.4rem;
   font-weight: var(--bold);
 
@@ -42,7 +42,7 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
   @extend .x-center--vert-inline-multiline--flex;
 }
 
-.s-home-banner .o-section__banner-image {
+.s-home__banner .o-section__banner-image {
   /* The offset is to align image at 1200px to position in design */
   top: calc(50% - 6%); /* overwrite `.o-section__banner-image` */
 }
@@ -51,26 +51,26 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 
 /* Introduction */
 
-.s-home-intro p {
+.s-home__intro p {
   font-size: 1.8rem;
   font-weight: var(--bold);
 }
 @media (--wide-and-above) {
-  .s-home-intro p {
+  .s-home__intro p {
     /* Forces width to match design */
     padding-right: 30px; /* GH-99: Use standard spacing value */
   }
 }
 
 @media (--narrow-and-above) {
-  .s-home-intro div {
+  .s-home__intro div {
     /* Forces smaller width, like design */
     /* Uses consistent space, unlike design */
     padding: 0 30px; /* GH-99: Use standard spacing value */
     margin: 0 var(--banner-margin-horz);
   }
 }
-.s-home-intro .s-sysmon {
+.s-home__intro .s-sysmon {
   display: flex;
   align-items: center;
   justify-items: center;
@@ -80,7 +80,7 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 
 /* News */
 
-.s-home-news {
+.s-home__news {
   padding-top: 20px;
   padding-bottom: 25px;
 }
@@ -89,6 +89,6 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 
 /* Other */
 
-.s-home-other {
+.s-home__other {
   grid-auto-rows: 500px;
 }
