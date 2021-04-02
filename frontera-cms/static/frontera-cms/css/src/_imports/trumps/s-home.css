@@ -41,10 +41,11 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 
   @extend .x-center--vert-inline-multiline--flex;
 }
-
-.s-home__banner .o-section__banner-image {
-  /* The offset is to align image at 1200px to position in design */
-  top: calc(50% - 6%); /* overwrite `.o-section__banner-image` */
+@media (--wide-and-above) {
+  .s-home__banner .o-section__banner-image {
+    /* The offset is to align image at 1200px to position in design */
+    top: calc(50% - 6%); /* overwrite `.o-section__banner-image` */
+  }
 }
 
 
@@ -86,11 +87,4 @@ html { font-size: 62.5%; /* 1rem = 10px */ }
 }
 .s-home__news article {
   margin-bottom: 30px;
-}
-
-
-/* Other */
-
-.s-home__other {
-  grid-auto-rows: 500px;
 }
