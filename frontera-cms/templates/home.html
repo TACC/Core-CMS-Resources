@@ -4,6 +4,12 @@
 {% block assets_custom %}
   <link rel="stylesheet" href="{% static 'frontera-cms/css/build/site.css' %}">
   <link rel="stylesheet" href="{% static 'frontera-cms/css/build/site.header.css' %}">
+
+  <style>
+  /* WARNING: This MUST ONLY be loaded on homepage */
+  /* FAQ: The rest of Frontera, and all of Core, is NOT ready for this change */
+  html { font-size: 62.5%; /* 1rem = 10px */ }
+  </style>
   <link rel="stylesheet" href="{% static 'frontera-cms/css/build/template.home.css' %}">
 {% endblock assets_custom %}
 
