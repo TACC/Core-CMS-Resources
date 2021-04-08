@@ -97,3 +97,11 @@
 .s-home__news article {
   margin-bottom: 3.0rem;
 }
+
+
+
+/* Other */
+
+.s-home__other [class*="s-article-list--"] {
+  min-height: 45.0rem;
+}
