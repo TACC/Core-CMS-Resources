@@ -105,3 +105,8 @@
 .s-home__other [class*="s-article-list--"] {
   min-height: 45.0rem;
 }
+
+/* To make user guides links take entire row when layout is 50/50 */
+@media (--narrow-to-medium), (--x-narrow-to-narrow) {
+  .s-home__other > :first-child { grid-column: 1 / -1; }
+}
