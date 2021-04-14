@@ -34,8 +34,10 @@ _GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-1"
 _GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
-# BRANDING & LOGOS
+# BRANDING SETTINGS
 ########################
+
+# …
 
 ########################
 # BRANDING.

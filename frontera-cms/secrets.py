@@ -33,7 +33,7 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 # …
 
 ########################
-# BRANDING & LOGOS
+# BRANDING SETTINGS
 ########################
 
 # …
