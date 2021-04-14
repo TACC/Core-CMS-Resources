@@ -5,7 +5,7 @@
 
 /* Overwrite `_imports/elements/sectioning.css` */
 main,
-/* GH-25: Using ID until it is replaced with `main` */
+/* NOTE: Using ID until it is replaced with `main` */
 #content-wrap {
   padding-bottom: 0;
 }
