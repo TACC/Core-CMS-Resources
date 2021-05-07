@@ -1,6 +1,6 @@
 # TACC CMS Per-Site Resources
 
-Each CMS project is built using the https://github.com/TACC/Core-CMS repo, and that project's directory in this repo (from which it can load assets, templates, and configuration specific to the project).
+Each CMS project is built using the [TACC/Core-CMS](https://github.com/TACC/Core-CMS) repo, and that project's directory in this repo (from which it can load assets, templates, and configuration specific to the project).
 
 ## Reference
 
