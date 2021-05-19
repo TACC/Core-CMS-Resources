@@ -1,5 +1,0 @@
-.s-header .c-logo {
-  /* To mimic Core `min-width`, because automatic width is so close to it */
-  /* TODO: GH-223: Comment this out ONLY when Portal can load it */
-  /* --width: 190px; */
-}
