@@ -5,6 +5,8 @@
 
 
 
+
+
 /* Banner */
 /* Introduction */
 
@@ -15,7 +17,11 @@
 
 
 
+
+
 /* Banner */
+
+
 
 /* Container */
 
@@ -41,6 +47,8 @@
   @extend .x-center--vert-inline-multiline--flex;
 }
 
+
+
 /* Children */
 
 /* Text */
@@ -52,12 +60,73 @@
 
   padding: var(--spacing);
 }
+
 /* Image */
 @media (--wide-and-above) {
   .s-home__banner .o-section__banner-image {
     /* The offset is to align image at 1200px to position in design */
     top: calc(50% - 6%); /* overwrite `.o-section__banner-image` */
   }
+}
+
+/* List */
+.s-home__banner .o-section__banner-overlay section {
+  flex-grow: 0;
+
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+  border-top: 1px solid var(--global-color-primary--xx-light);
+}
+
+
+
+/* Articles */
+
+.s-home__banner .o-section__banner-overlay article {
+  padding: var(--spacing);
+}
+@media (--x-narrow-and-below) {
+  .s-home__banner .o-section__banner-overlay section { flex-wrap: wrap; }
+  .s-home__banner .o-section__banner-overlay article {
+    flex-shrink: 0;
+    flex-basis: 100%;
+  }
+  .s-home__banner .o-section__banner-overlay article + article {
+    padding-top: 0;
+  }
+}
+@media (--x-narrow-and-above) {
+  .s-home__banner .o-section__banner-overlay section { flex-wrap: nowrap; }
+  .s-home__banner .o-section__banner-overlay article {
+    flex-shrink: 1;
+    flex-basis: 50%;
+  }
+  .s-home__banner .o-section__banner-overlay article + article {
+    border-left: 1px solid var(--global-color-primary--xx-light);
+  }
+}
+
+/* Image */
+.s-home__banner .o-section__banner-overlay article p:first-child {
+  margin-bottom: 0;
+}
+.s-home__banner .o-section__banner-overlay article p:first-child img {
+  height: 200px;
+  transform: unset;
+  top: unset;
+  left: unset;
+  border: 1px solid var(--global-color-primary--xx-light);
+}
+
+/* Caption */
+.s-home__banner .o-section__banner-overlay article ul {
+  position: absolute;
+  bottom: var(--spacing);
+  left: var(--spacing);
+  right: var(--spacing);
+  margin: 7px var(--spacing);
+  font-weight: 700;
 }
 
 
