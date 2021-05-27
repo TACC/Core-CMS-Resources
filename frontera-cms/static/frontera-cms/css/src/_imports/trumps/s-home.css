@@ -26,14 +26,16 @@
   .s-home__banner { height: auto; }
 }
 @media (--medium-and-above) {
-  .s-home__banner { height: 40.5rem; }
+  .s-home__banner { height: 55.5rem; }
 }
 
 .s-home__banner .o-section__banner-overlay {
+  --spacing: 1.5rem;
+
   font-size: 2.4rem;
   font-weight: var(--bold);
 
-  padding: 1em 3.0rem; /* GH-99: Use standard spacing value */
+  padding: 1em var(--spacing) var(--spacing); /* GH-99: Use standard spacing value */
   margin: 0 var(--banner-margin-horz);
 
   @extend .x-center--vert-inline-multiline--flex;
@@ -41,10 +43,16 @@
 
 /* Children */
 
+/* Text */
 .s-home__banner .o-section__banner-overlay > p {
   @extend .x-truncate--many-lines;
   --lines: 11 !important; /* WARNING: Fixing unclear specificity issue */
+
+  flex-grow: 1;
+
+  padding: var(--spacing);
 }
+/* Image */
 @media (--wide-and-above) {
   .s-home__banner .o-section__banner-image {
     /* The offset is to align image at 1200px to position in design */
