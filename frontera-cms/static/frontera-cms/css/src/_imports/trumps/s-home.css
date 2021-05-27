@@ -17,6 +17,8 @@
 
 /* Banner */
 
+/* Container */
+
 .s-home__banner {
   position: relative; /* for `position: absolute` children */
 }
@@ -36,7 +38,10 @@
 
   @extend .x-center--vert-inline-multiline--flex;
 }
-.s-home__banner .o-section__banner-overlay p {
+
+/* Children */
+
+.s-home__banner .o-section__banner-overlay > p {
   @extend .x-truncate--many-lines;
   --lines: 11 !important; /* WARNING: Fixing unclear specificity issue */
 }
