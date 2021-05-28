@@ -125,13 +125,28 @@
   bottom: var(--spacing);
   left: var(--spacing);
   right: var(--spacing);
-  margin: 7px var(--spacing);
+
+  padding: 7px var(--spacing);
+  /* To overwrite `s-article-preview` */
+  /* To let image border show through */
+  margin: 1px;
+
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(30px) brightness(115%);
+
+
   font-weight: 700;
 }
 /* Caption: Title */
 .s-home__banner .s-article-preview h3 {
   @extend %x-truncate--many-lines;
   --lines: 3;
+
+  /* To ensure consistent height of three lines */
+  /* FAQ: The `2.4rem` line-height was copied from `s-article-preview` */
+  height: calc(2.4rem * var(--lines));
+
+  margin-bottom: 0;
 
   font-size: 1.6rem;
 }
