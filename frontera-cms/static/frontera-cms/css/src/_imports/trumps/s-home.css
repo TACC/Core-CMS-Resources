@@ -38,13 +38,17 @@
 .s-home__banner .o-section__banner-overlay {
   --spacing: 1.5rem;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 0; /* allow grid item to shrink shorter than content */
+
   font-size: 2.4rem;
   font-weight: var(--bold);
 
-  padding: 1em var(--spacing) var(--spacing); /* GH-99: Use standard spacing value */
+  padding: var(--spacing); /* GH-99: Use standard spacing value */
   margin: 0 var(--banner-margin-horz);
-
-  @extend .x-center--vert-inline-multiline--flex;
 }
 
 
@@ -53,12 +57,19 @@
 
 /* Text */
 .s-home__banner .o-section__banner-overlay > p {
-  @extend .x-truncate--many-lines;
-  --lines: 11 !important; /* WARNING: Fixing unclear specificity issue */
+  /* NOTE: Design did not request truncation; Dev added it for safety */
+  @extend %x-truncate--many-lines;
+  /* WARNING: Using `!important` to fix unclear specifity issue */
+  --lines: 6 !important;
 
-  flex-grow: 1;
-
-  padding: var(--spacing);
+  /* FAQ: The top margin is N lines × 1.4 line-height (from `body`) */
+  margin: calc(var(--margin-lines, 0) * 1.4em) var(--spacing) var(--spacing);
+}
+@media (--wide-and-above) {
+  .s-home__banner .o-section__banner-overlay > p { --margin-lines: 2; }
+}
+@media (--medium-and-above) and (--wide-and-below) {
+  .s-home__banner .o-section__banner-overlay > p { --margin-lines: 1; }
 }
 
 /* Image */
