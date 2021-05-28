@@ -73,11 +73,12 @@
 }
 
 /* Image */
-@media (--wide-and-above) {
-  .s-home__banner .o-section__banner-image {
-    /* The offset is to align image at 1200px to position in design */
-    top: calc(50% - 6%); /* overwrite `.o-section__banner-image` */
-  }
+.s-home__banner .o-section__banner-image {
+  /* To overwrite `.o-section__banner-image` */
+  /* To align and size image to match design (as close as possible) */
+  top: calc(50% - 9.5%);
+  left: calc(50% - 13%);
+  width: 124.5vw;
 }
 
 /* List */
