@@ -104,8 +104,9 @@
     flex-shrink: 0;
     flex-basis: 100%;
   }
+  /* To reduce space between articles */
   .s-home__banner .o-section__banner-overlay article + article {
-    padding-top: 0;
+    margin-top: calc(-1 * var(--spacing));
   }
 }
 @media (--x-narrow-and-above) {
@@ -114,6 +115,7 @@
     flex-shrink: 1;
     flex-basis: 50%;
   }
+  /* To add line between articles */
   .s-home__banner .o-section__banner-overlay article + article {
     border-left: 1px solid var(--global-color-primary--xx-light);
   }
@@ -137,6 +139,10 @@
   bottom: var(--spacing);
   left: var(--spacing);
   right: var(--spacing);
+  /* Ensure caption shows above image (in Firefox) */
+  /* FAQ: Because `order` is ineffectual due to `position: absolute` */
+  /* SEE: https://css-tricks.com/flexbox-and-absolute-positioning/ */
+  z-index: 1;
 
   padding: 7px var(--spacing);
   /* To overwrite `s-article-preview` */
