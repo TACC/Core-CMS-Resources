@@ -165,6 +165,12 @@
 .s-home__banner .s-article-preview ul > li:nth-child(2) {
   font-size: 1.0rem;
 }
+/* Caption: Link */
+.s-home__banner .s-article-preview p:last-child > a:hover {
+  outline-color: var(--global-color-primary--xx-light);
+  outline-offset: calc(-1 * var(--spacing));
+}
+
 
 
 
