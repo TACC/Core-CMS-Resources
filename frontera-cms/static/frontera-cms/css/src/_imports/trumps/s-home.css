@@ -149,9 +149,17 @@
   /* To let image border show through */
   margin: 1px;
 
-  background-color: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(30px) brightness(115%);
-
+  @supports (backdrop-filter: none) {
+    & {
+      background-color: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(30px) brightness(115%);
+    }
+  }
+  @supports not (backdrop-filter: none) {
+    & {
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+  }
 
   font-weight: 700;
 }
