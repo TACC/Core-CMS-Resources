@@ -29,3 +29,5 @@
 @import url("_imports/trumps/s-gallery.css");
 @import url("_imports/trumps/u-border.css");
 @import url("_imports/trumps/u-swallow.css");
+/* RFC: If only used on articles, then these components could be imported into `template.article.css` instead */
+@import url("_imports/trumps/s-blockquote.css");
