@@ -31,8 +31,7 @@ Styleguide Components.Texascale.Deprecated.OffsetContent
 	}
 	.c-offset-content--left + .c-offset-content--left { clear: left; }
 }
-/* WARNING: Value `2400px` is from Texascale.org 2020 */
-@media only screen and (--medium-and-above) and (max-width: 2400px) {
+@media only screen and (--medium-and-above) and (--max-wide-and-below) {
     /* Apply negative margin only when using offset value */
 	.c-offset-content--right {
 		margin-right: calc( var(--offset-distance) * -1);
