@@ -21,7 +21,7 @@
 @import url("_imports/components/wip.byline.css");
 /* RFC: If only used on articles, then these components could be imported into `template.article.css` instead */
 @import url("_imports/components/bootstrap.figure.css");
-@import url("_imports/components/bootstrap.blockquote.css");
+@import url("_imports/components/deprecated/bootstrap.blockquote.css");
 @import url("_imports/components/deprecated/c-offset-content.css");
 
 /* TRUMPS */
