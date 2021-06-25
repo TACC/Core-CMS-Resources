@@ -236,7 +236,7 @@
 
 /* Other */
 
-.s-home__other [class*="s-article-list--"] {
+.s-home__other .c-article-list {
   min-height: 45.0rem;
 }
 
