@@ -240,6 +240,12 @@
   min-height: 45.0rem;
 }
 
+/* To make link hover repicate `outline-offset` but only horizontally */
+.s-home__other .c-article-preview__link::before {
+  width: calc(100% + 30px); /* GH-99: Use standard spacing value */
+  left: -15px;
+}
+
 /* To make user guides links take entire row when layout is 50/50 */
 @media (--narrow-to-medium), (--x-narrow-to-narrow) {
   .s-home__other > :first-child { grid-column: 1 / -1; }
