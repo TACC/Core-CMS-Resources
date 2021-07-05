@@ -241,7 +241,9 @@
 }
 
 /* To make link hover repicate `outline-offset` but only horizontally */
-.s-home__other .c-article-preview__link::before {
+.s-home__other .c-article-preview__link::before,
+/* NOTE: This scope still has some deprecated classes from before GH-93 */
+.s-article-list--layout-gapless .s-article-preview p:last-child > a {
   width: calc(100% + 30px); /* GH-99: Use standard spacing value */
   left: -15px;
 }
