@@ -1,12 +1,21 @@
 /* WARNING: Deprecated. Do NOT add this to markup! */
-/* TODO: Replace usage (Frontera New Homepage) with `c-article-preview` */
-/* SEE: ../../components/c-article-preview.css */
+/* GH-93: Delete ONLY AFTER Frontera New Homepage uses Article plugins */
 /*
 (Deprecated) Article Preview
 
 A preview of an article (to be used in a `s-article-list`). Content __must__ come in the order and use the tags defined by the example markup.
 
-Markup: s-article-preview.html
+Markup:
+<article class="s-article-preview">
+  <p><img src="…" alt="…" /></p>
+  <ul>
+    <li>
+      <h3>A Long Title of Article (Usually a News Article)</h3>
+    </li>
+    <li>Science News</li>
+  </ul>
+  <p><a href="…" /></p>
+</article>
 
 Styleguide Trumps.Deprecated.Scopes.ArticlePreview
 */

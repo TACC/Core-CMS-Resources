@@ -1,6 +1,6 @@
 /* WARNING: Deprecated. Do NOT add this to markup! */
-/* TODO: Replace usage (Frontera New Homepage) with `c-article-list` */
-/* SEE: ../../components/c-article-list.css */
+/* GH-134: Delete ONLY AFTER Frontera New Homepage uses Banner plugin */
+/* NOTE: This is independent of `taccsite_cms/.../s-article-list.css` */
 /*
 (Deprecated) Article List
 
@@ -8,9 +8,7 @@ A list of article previews. Content __must__ use the tags defined by the example
 
 Markup:
 <article class="s-article-list">
-  <h2>
-    News &amp; Stuff
-  </h2>
+  <h2>News</h2>
   <article>(Article Preview)</article>
   <article>(Article Preview)</article>
   <article>(Article Preview)</article>
