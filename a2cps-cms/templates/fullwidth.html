@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load cms_tags staticfiles %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block assets_font %}
+  {{ block.super }}
+{% endblock assets_font %}
+
+{% block content %}
+{% placeholder "content" %}
+{% endblock content %}
+
+{% block assets_custom %}
+  {{ block.super }}
+
+  <!-- TODO: GH-56 a.k.a. TACC/Core-CMS#254: Pending v1 styles -->
+  <link rel="stylesheet" href="{% static 'a2cps-cms/css/build/site.css' %}">
+{% endblock assets_custom %}
