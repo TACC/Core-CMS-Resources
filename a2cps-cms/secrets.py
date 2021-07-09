@@ -10,7 +10,7 @@
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = False
+_LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
@@ -59,4 +59,4 @@ _LOGO = _A2CPS_LOGO
 # PORTAL
 ########################
 
-_PORTAL = False
+_PORTAL = True
