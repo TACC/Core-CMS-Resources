@@ -10,7 +10,7 @@
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = False
+_LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
@@ -18,7 +18,7 @@ _LDAP_ENABLED = False
 
 _CMS_TEMPLATES = (
     ('a2cps-cms/templates/fullwidth.html', 'Fullwidth'),
-    # Support standard template for demo purposes\
+    # Support standard template for demo purposes
     # NOTE: A2CPS will use this instead if it need not load `migration.v1_v2.css
     # ('fullwidth.html', 'Standard Fullwidth'),
 )
@@ -59,4 +59,4 @@ _LOGO = _A2CPS_LOGO
 # PORTAL
 ########################
 
-_PORTAL = False
+_PORTAL = True
