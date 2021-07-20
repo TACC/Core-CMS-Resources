@@ -1,0 +1,29 @@
+<style type="text/css">
+/* To match styles that future plugin added */
+.s-article-list--links p:not(:first-child):not(:last-child) {
+    line-height: 2.4rem;
+}
+.s-article-list--links p:not(:first-child):nth-last-child(2) {
+    margin-bottom: 3rem;
+}
+
+/* To hide automated text so CMS user must enter submission date text */
+/* FAQ: Upcoming plugin will automate this in a way scope CSS cannot emulate */
+.s-article-list--allocations .s-article-preview ul > li:first-child::before {
+    content: "";
+    white-space: normal;
+    display: none;
+}
+/* To preserve spaces within text (like future plugin styles will do) */
+/* FAQ: Flexbox collapses trailing and leading whitespace */
+.s-article-preview ul > li:first-child {
+    white-space: pre;
+}
+
+/* To remove accidentlly added margin-top from non-plugin styles */
+/* FAQ: The non-plugin style is not specific enough to avoid accident styles */
+/* SEE: .s-article-list--layout-e:not(.s-article-list--style-divided) :not(h2):not(p:last-child):not(:first-of-type) */
+.s-article-list--allocations .s-article-preview time {
+    margin-top: 0 !important; /* quick temporary override to temporary styles */
+}
+</style>
