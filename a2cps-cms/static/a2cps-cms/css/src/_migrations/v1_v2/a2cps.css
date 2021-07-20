@@ -1,0 +1,77 @@
+/*
+A2CPS Migration Styles
+HOW: Manually find discrepencies in UI that seem specific to A2CPS
+*/
+
+/*!
+ * A2CPS Migration Styles
+ */
+
+
+
+
+
+/* COMPONENTS */
+
+
+
+/* COMPONENTS: TACC */
+
+/* Footer */
+
+.c-footer {
+  /* To mimic 2020 site `#footer` styles */
+  margin: 0;
+}
+
+
+
+/* COMPONENTS: Bootstrap */
+
+/* Cards */
+
+/* To mimic 2020 site faux cards via Bootstrap cards */
+/* SEE: https://a2cps.org/patients/.../ */
+/* SEE: https://a2cps.org/researchers/ */
+/* FAQ: A faux cards was a <div> (card) with two <p>'s (header, body) */
+.card {
+  /* To clear `.card` styles */
+  border: none;
+  border-radius: 0;
+
+  /* To mimic header <p> (from inline styles) */
+  margin-top: 20px;
+
+  /* To mimic body <img> (from inline styles) */
+  margin-bottom: 20px;
+}
+
+.card-header {
+  /* To clear `.card` styles */
+  border: none;
+
+  /* To mimic header <p> (from inline styles) */
+  padding: 15px;
+
+  /* To mimic header <p>'s typography (from inline styles) */
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+.card-header:first-child {
+  /* To clear `.card` styles */
+  border-radius: 0;
+}
+.card.bg-light .card-header {
+  /* To mimic header <p> (from inline styles) */
+  background-color: #DFDFDF;
+}
+.card-header p {
+  /* To prevent <p> (forced by Text plugin WYSIWIG) from breaking layout */
+  margin: 0;
+}
+
+.card-body {
+  /* To clear `.card` styles */
+  padding: 0;
+}
