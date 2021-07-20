@@ -264,6 +264,12 @@ p {
 
 /* … */
 
+table {
+ background-color: transparent
+}
+
+/* … */
+
 .btn {
  display:inline-block;
  margin-bottom:0;
@@ -425,6 +431,12 @@ input[type="button"].btn-block {
 .label-success[href]:hover,
 .label-success[href]:focus {
  background-color:#358753
+}
+
+/* … */
+
+table {
+ font-size: 12px
 }
 
 /* … */

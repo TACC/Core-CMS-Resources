@@ -11,6 +11,21 @@ HOW: Manually find discrepencies in UI that seem specific to A2CPS
 
 
 
+/* ELEMENTS */
+
+/* Table Content */
+
+table,
+td,
+th {
+  /* To mimic 2020 site by restoring browser default */
+  border-color: inherit;
+}
+
+
+
+
+
 /* COMPONENTS */
 
 
