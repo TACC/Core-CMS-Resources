@@ -19,7 +19,14 @@ table,
 td,
 th {
   /* To mimic 2020 site by restoring browser default */
-  border-color: inherit;
+  border-color: inherit; /* override `site.css` */
+}
+
+/* To mimic unscoped styles from Angular component that v1 CMS assumes exist */
+/* SEE: https://bitbucket.org/taccaci/frontera/src/8167403/client/src/angular/data_depot/projects/components/project-meta/project-meta.css?#project-meta.css-34 */
+td {
+  padding-right: 2.25em;
+  padding-bottom: 0.5em;
 }
 
 
