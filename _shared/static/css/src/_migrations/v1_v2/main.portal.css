@@ -15,7 +15,7 @@ SRC: https://bitbucket.org/taccaci/frontera/src/master/client/css/portal.css
 body {
   font-family: 'Roboto', sans-serif;
 
-  /* Disabled by TACC */
+  /* TACC: Disabled */
   /* FAQ: Wesley forgot why; this and more may be deleted anyway */
   /* min-height: 100%; */
   /* position: relative; */
