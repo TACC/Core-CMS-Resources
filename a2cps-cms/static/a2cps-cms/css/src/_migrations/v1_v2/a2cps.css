@@ -58,7 +58,6 @@ td {
 /* FAQ: A faux cards was a <div> (card) with two <p>'s (header, body) */
 .card {
   /* To clear `.card` styles */
-  border: none;
   border-radius: 0;
 
   /* To mimic header <p> (from inline styles) */
@@ -69,9 +68,6 @@ td {
 }
 
 .card-header {
-  /* To clear `.card` styles */
-  border: none;
-
   /* To mimic header <p> (from inline styles) */
   padding: 15px;
 
@@ -84,16 +80,35 @@ td {
   /* To clear `.card` styles */
   border-radius: 0;
 }
-.card.bg-light .card-header {
-  /* To mimic header <p> (from inline styles) */
-  background-color: #DFDFDF;
+
+.card-body {
+  /* SEE: https://a2cps.org/connect/ */
+  padding: 15px;
 }
-.card-header p {
+
+/* To mimic faux card inline styles */
+.card.bg-light .card-header,
+.card.bg-transparent .card-header {
+  background-color: #DFDFDF;
+  border-bottom-color: #DFDFDF;
+}
+.card.bg-light .card-body,
+.card.bg-transparent .card-body {
+  /* SEE: https://a2cps.org/connect/ */
+  border-color: #DFDFDF;
+}
+
+/* Cards: "For ..." Pages */
+.s-page-cards .card,
+.s-page-cards .card-header {
+  /* To clear `.card` styles */
+  border: none;
+}
+.s-page-cards .card-header p {
   /* To prevent <p> (forced by Text plugin WYSIWIG) from breaking layout */
   margin: 0;
 }
-
-.card-body {
+.s-page-cards .card-body {
   /* To clear `.card` styles */
   padding: 0;
 }
