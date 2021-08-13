@@ -87,6 +87,7 @@ Styleguide Trumps.Deprecated.Scopes.ArticlePreview
   margin-top: 0; /* overwrite Bootstrap and browser */
   margin-bottom: 0.8rem; /* overwrite Bootstrap and browser */
 
+  color: inherit;
   font-size: 1.8rem;
   font-weight: var(--bold);
   line-height: 2.4rem;
