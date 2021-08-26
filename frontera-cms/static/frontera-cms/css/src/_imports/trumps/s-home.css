@@ -196,7 +196,7 @@
   }
 }
 
-.s-home__intro .s-sysmon {
+.s-home__intro .s-system-monitor {
   align-self: center;
 
   display: flex;
@@ -206,7 +206,7 @@
   overflow-x: auto;
 }
 @media (--narrow-and-below) {
-  .s-home__intro .s-sysmon {
+  .s-home__intro .s-system-monitor {
     padding-top: 0.5rem; /* GH-99: Use standard spacing value */
     padding-bottom: 0.5rem; /* GH-99: Use standard spacing value */
   }
