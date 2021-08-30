@@ -14,6 +14,7 @@ _LDAP_ENABLED = True
 
 # …
 _CMS_TEMPLATES = (
+    ('frontera-cms/templates/standard.html', 'Standard'),
     ('frontera-cms/templates/fullwidth.html', 'Full Width'),
 
     ('frontera-cms/templates/home.html', 'Homepage'),
