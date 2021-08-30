@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load cms_tags staticfiles %}
+{% load cms_tags %}
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
@@ -12,11 +12,5 @@
 {% endblock content %}
 
 {% block assets_custom %}
-  {{ block.super }}
-
-  <!-- To style old CMS content on new CMS -->
-  <link rel="stylesheet" href="{% static 'a2cps-cms/css/build/migrate.v1_v2.css' %}">
-
-  <!-- To customize styles for this project -->
-  <link rel="stylesheet" href="{% static 'a2cps-cms/css/build/site.css' %}">
+  {% include "./assets_custom.html" %}
 {% endblock assets_custom %}
