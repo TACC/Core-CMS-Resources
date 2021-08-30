@@ -18,7 +18,7 @@ _LDAP_ENABLED = True
 
 _CMS_TEMPLATES = (
     ('a2cps-cms/templates/standard.html', 'Standard'),
-    ('a2cps-cms/templates/fullwidth.html', 'Fullwidth')
+    ('a2cps-cms/templates/fullwidth.html', 'Full Width')
 )
 
 ########################
