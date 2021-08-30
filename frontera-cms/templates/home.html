@@ -1,9 +1,8 @@
-{% extends "./fullwidth.html" %}
+{% extends "fullwidth.html" %}
 {% load cms_tags staticfiles %}
 
 {% block assets_custom %}
-  <link rel="stylesheet" href="{% static 'frontera-cms/css/build/site.css' %}">
-  <link rel="stylesheet" href="{% static 'frontera-cms/css/build/site.header.css' %}">
+  {% include "./assets_custom.html" %}
 
   <style>
   /* To simplify calculation of `rem` values */
