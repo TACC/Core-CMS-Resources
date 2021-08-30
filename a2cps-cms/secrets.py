@@ -17,10 +17,8 @@ _LDAP_ENABLED = True
 ########################
 
 _CMS_TEMPLATES = (
-    ('a2cps-cms/templates/fullwidth.html', 'Fullwidth'),
-    # Support standard template for demo purposes
-    # NOTE: A2CPS will use this instead if it need not load `migration.v1_v2.css
-    # ('fullwidth.html', 'Standard Fullwidth'),
+    ('a2cps-cms/templates/standard.html', 'Standard'),
+    ('a2cps-cms/templates/fullwidth.html', 'Fullwidth')
 )
 
 ########################
