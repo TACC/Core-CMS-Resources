@@ -17,7 +17,8 @@ _LDAP_ENABLED = True
 ########################
 
 _CMS_TEMPLATES = (
-    ('protx-cms/templates/fullwidth.html', 'Fullwidth'),
+    ('protx-cms/templates/standard.html', 'Standard'),
+    ('protx-cms/templates/fullwidth.html', 'Full Width'),
 
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
