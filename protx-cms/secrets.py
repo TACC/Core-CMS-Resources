@@ -17,7 +17,14 @@ _LDAP_ENABLED = True
 ########################
 
 _CMS_TEMPLATES = (
-    ('protx-cms/templates/fullwidth.html', 'Fullwidth')
+    ('protx-cms/templates/standard.html', 'Standard'),
+    ('protx-cms/templates/fullwidth.html', 'Full Width'),
+
+    ('guide.html', 'Guide'),
+    ('guides/getting_started.html', 'Guide: Getting Started'),
+    ('guides/data_transfer.html', 'Guide: Data Transfer'),
+    ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
+    ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
 
 ########################
@@ -31,7 +38,32 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 # BRANDING.
 ########################
 
-_BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
+
+# Add custom sponsor branding assets here.
+# One unique entry per asset.
+
+_COOKS_BRANDING = [
+    "cooks",
+    "protx-cms/img/org_logos/CClogo_Standard_White_Transparent.png",
+    "branding-tacc",
+    "https://cookchildrens.org",
+    "_blank",
+    "Cooks Childrens Logo",
+    "anonymous",
+    "True"
+]
+
+# Add custom _SPONSOR_BRANDING assets here.
+_CUSTOM_BRANDING = [_COOKS_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
+
+# NSF Funded TACC Portal.
+_NSF_SPONSORED_BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
+
+# Default TACC Portal.
+_DEFAULT_BRANDING = [_TACC_BRANDING, _UTEXAS_BRANDING]
+
+# Assign branding selection.
+_BRANDING = _CUSTOM_BRANDING
 
 ########################
 # LOGOS.
