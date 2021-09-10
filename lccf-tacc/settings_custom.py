@@ -3,9 +3,8 @@
 ########################
 # GOOGLE ANALYTICS
 ########################
-
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-15"
-_GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-15"
+GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
 # BRANDING & LOGOS
@@ -18,12 +17,12 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 
 # …
 
-_BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
+BRANDING = [ NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING ]
 
 ########################
 # LOGOS.
 
-_LCCF_LOGO = [
+LCCF_LOGO = [
     "lccf",
     "lccf-tacc/img/org_logos/lccf-white.png",
     "",
@@ -34,4 +33,4 @@ _LCCF_LOGO = [
     "True"
 ]
 
-_LOGO = _LCCF_LOGO
+LOGO = LCCF_LOGO

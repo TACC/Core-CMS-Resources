@@ -4,7 +4,7 @@
 
 # …
 
-_LDAP_ENABLED = True
+LDAP_ENABLED = True
 
 # …
 
@@ -13,7 +13,7 @@ _LDAP_ENABLED = True
 ########################
 
 # …
-_CMS_TEMPLATES = (
+CMS_TEMPLATES = (
     ('frontera-cms/templates/fullwidth.html', 'Fullwidth'),
     ('fullwidth.html', 'DEPRECATED Fullwidth'),
 
@@ -30,8 +30,8 @@ _CMS_TEMPLATES = (
 # GOOGLE ANALYTICS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-13"
-_GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-13"
+GOOGLE_ANALYTICS_PRELOAD = True
 
 # …
 
@@ -46,7 +46,7 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 
 # …
 
-_TACC_BRANDING = [
+TACC_BRANDING = [
     # …
     "frontera-cms/img/org_logos/tacc-white.png",
     # …
@@ -54,12 +54,12 @@ _TACC_BRANDING = [
 
 # …
 
-_BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
+BRANDING = [ NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING ]
 
 ########################
 # LOGOS.
 
-_FRONTERA_LOGO =  [
+FRONTERA_LOGO =  [
     "frontera",
     "frontera-cms/img/org_logos/frontera-white-solo.png",
     "",
@@ -70,12 +70,11 @@ _FRONTERA_LOGO =  [
     "True"
 ]
 
-_LOGO = _FRONTERA_LOGO
-
+LOGO = FRONTERA_LOGO
 # …
 
 ########################
 # PORTAL
 ########################
 
-_PORTAL = True
+PORTAL = True

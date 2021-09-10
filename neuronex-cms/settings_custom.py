@@ -1,6 +1,3 @@
-# TACC CMS Per-Site Resources - Configuration
-
-# In a project-specific configuration file like this, edit existing configuration values from `cms-site-template:/taccsite_cms/default_secrets.py` that must change to suit this project.
 
 # Until this custom configuration is automatically applied, to use it one must copy the content of it and append it to `cms-site-template:/taccsite_cms/secrets.py`
 
@@ -10,13 +7,13 @@
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = True
+LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
-_CMS_TEMPLATES = (
+CMS_TEMPLATES = (
     ('neuronex-cms/templates/fullwidth.html', 'Fullwidth'),
     ('home_portal.html', 'Standard Portal Homepage'),
     ('guide.html', 'Guide'),
@@ -30,8 +27,8 @@ _CMS_TEMPLATES = (
 # GOOGLE ANALYTICS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-1"
-_GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-1"
+GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
 # BRANDING & LOGOS
@@ -40,12 +37,12 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 ########################
 # BRANDING.
 
-_BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
+BRANDING = [NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
 
 ########################
 # LOGOS.
 
-_PORTAL_LOGO = [
+PORTAL_LOGO = [
     "portal",
     "neuronex-cms/img/org_logos/logo.3dem.png",
     "",
@@ -56,12 +53,12 @@ _PORTAL_LOGO = [
     "True"
 ]
 
-_LOGO = _PORTAL_LOGO
+LOGO = PORTAL_LOGO
 
 ########################
 # FAVICON
 
-_FAVICON = {
+FAVICON = {
     "img_file_src": "neuronex-cms/img/org_logos/favicon.ico"
 }
 
@@ -69,4 +66,4 @@ _FAVICON = {
 # PORTAL
 ########################
 
-_PORTAL = True
+PORTAL = True

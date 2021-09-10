@@ -4,8 +4,8 @@
 # GOOGLE ANALYTICS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-17"
-_GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-17"
+GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
 # BRANDING & LOGOS
@@ -18,7 +18,7 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 
 # …
 
-_UHAWAII_BRANDING = [
+UHAWAII_BRANDING = [
     "uhawaii",
     "site_cms/img/org_logos/hawaii-header-trimmed.png",
     "branding-uhawaii",
@@ -29,12 +29,12 @@ _UHAWAII_BRANDING = [
     "True"
 ]
 
-_BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, _UHAWAII_BRANDING ]
+BRANDING = [ NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING, UHAWAII_BRANDING ]
 
 ########################
 # LOGOS.
 
-_TAPIS_LOGO =  [
+TAPIS_LOGO =  [
     "tapis",
     "tapis-project-org/img/org_logos/tapis-logo-navbar.png",
     "",
@@ -45,4 +45,4 @@ _TAPIS_LOGO =  [
     "True"
 ]
 
-_LOGO = _TAPIS_LOGO
+LOGO = TAPIS_LOGO

@@ -7,7 +7,7 @@ import os
 ########################
 
 # …
-_CMS_TEMPLATES = (
+CMS_TEMPLATES = (
     ('texascale-org/templates/fullwidth.html', 'Fullwidth'),
     ('texascale-org/templates/category.html', 'Category'),
     ('texascale-org/templates/article.html', 'Article'),
@@ -21,8 +21,8 @@ _CMS_TEMPLATES = (
 # GOOGLE ANALYTICS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-18"
-_GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-18"
+GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
 # BRANDING & LOGOS
@@ -33,7 +33,7 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 ########################
 # LOGOS.
 
-_TEXASCALE_LOGO =  [
+TEXASCALE_LOGO =  [
     "texascale",
     "texascale-org/img/org_logos/texascale-wordmark.png",
     "",
@@ -44,6 +44,4 @@ _TEXASCALE_LOGO =  [
     "True"
 ]
 
-_LOGO = _TEXASCALE_LOGO
-
-# …
+LOGO = _TEXASCALE_LOGO

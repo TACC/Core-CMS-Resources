@@ -1,6 +1,3 @@
-# TACC CMS Per-Site Resources - Configuration
-
-# In a project-specific configuration file like this, edit existing configuration values from `cms-site-template:/taccsite_cms/default_secrets.py` that must change to suit this project.
 
 # Until this custom configuration is automatically applied, to use it one must copy the content of it and append it to `cms-site-template:/taccsite_cms/secrets.py`
 
@@ -10,13 +7,13 @@
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = False
+LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
-_CMS_TEMPLATES = (
+CMS_TEMPLATES = (
     ('example-cms/templates/fullwidth.html', 'Fullwidth'),
     # Support standard template for demo purposes
     ('fullwidth.html', 'Standard Fullwidth'),
@@ -34,8 +31,8 @@ _CMS_TEMPLATES = (
 # GOOGLE ANALYTICS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
-_GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
+GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
 # BRANDING & LOGOS
@@ -44,12 +41,12 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 ########################
 # BRANDING.
 
-_BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
+BRANDING = [NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
 
 ########################
 # LOGOS.
 
-_PORTAL_LOGO = [
+PORTAL_LOGO = [
     "portal",
     "example-cms/img/org_logos/portal.png",
     "",
@@ -60,10 +57,10 @@ _PORTAL_LOGO = [
     "True"
 ]
 
-_LOGO = _PORTAL_LOGO
+LOGO = PORTAL_LOGO
 
 ########################
 # PORTAL
 ########################
 
-_PORTAL = False
+PORTAL = False

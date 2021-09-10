@@ -5,8 +5,8 @@
 # GOOGLE ANALYTICS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
-_GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
+GOOGLE_ANALYTICS_PRELOAD = True
 
 # …
 
@@ -19,7 +19,7 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 ########################
 # LOGOS.
 
-_SCIVISCOLOR_LOGO =  [
+SCIVISCOLOR_LOGO =  [
     "sciviscolor",
     "sciviscolor-cms/img/org_logos/sciviscolor-logo-white.png",
     "",
@@ -30,4 +30,4 @@ _SCIVISCOLOR_LOGO =  [
     "True"
 ]
 
-_LOGO = _SCIVISCOLOR_LOGO
+LOGO = SCIVISCOLOR_LOGO

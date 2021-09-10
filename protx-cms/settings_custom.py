@@ -1,6 +1,3 @@
-# TACC CMS Per-Site Resources - Configuration
-
-# In a project-specific configuration file like this, edit existing configuration values from `cms-site-template:/taccsite_cms/default_secrets.py` that must change to suit this project.
 
 # Until this custom configuration is automatically applied, to use it one must copy the content of it and append it to `cms-site-template:/taccsite_cms/secrets.py`
 
@@ -10,13 +7,13 @@
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = True
+LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
-_CMS_TEMPLATES = (
+CMS_TEMPLATES = (
     ('protx-cms/templates/standard.html', 'Standard'),
     ('protx-cms/templates/fullwidth.html', 'Full Width'),
 
@@ -31,8 +28,8 @@ _CMS_TEMPLATES = (
 # GOOGLE ANALYTICS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
-_GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
+GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
 # BRANDING.
@@ -42,7 +39,7 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 # Add custom sponsor branding assets here.
 # One unique entry per asset.
 
-_COOKS_BRANDING = [
+COOKS_BRANDING = [
     "cooks",
     "protx-cms/img/org_logos/CClogo_Standard_White_Transparent.png",
     "branding-tacc",
@@ -54,22 +51,22 @@ _COOKS_BRANDING = [
 ]
 
 # Add custom _SPONSOR_BRANDING assets here.
-_CUSTOM_BRANDING = [_COOKS_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
+CUSTOM_BRANDING = [COOKS_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
 
 # NSF Funded TACC Portal.
-_NSF_SPONSORED_BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
+NSF_SPONSORED_BRANDING = [NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
 
 # Default TACC Portal.
-_DEFAULT_BRANDING = [_TACC_BRANDING, _UTEXAS_BRANDING]
+DEFAULT_BRANDING = [TACC_BRANDING, UTEXAS_BRANDING]
 
 # Assign branding selection.
-_BRANDING = _CUSTOM_BRANDING
+BRANDING = CUSTOM_BRANDING
 
 ########################
 # LOGOS.
 ########################
 
-_PORTAL_LOGO = [
+PORTAL_LOGO = [
     "protx",
     "protx-cms/img/org_logos/protx-logo-temp.png",
     "",
@@ -80,10 +77,10 @@ _PORTAL_LOGO = [
     "True"
 ]
 
-_LOGO = _PORTAL_LOGO
+LOGO = PORTAL_LOGO
 
 ########################
 # PORTAL
 ########################
 
-_PORTAL = True
+PORTAL = True
