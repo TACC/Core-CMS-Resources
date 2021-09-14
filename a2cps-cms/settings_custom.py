@@ -57,4 +57,4 @@ LOGO = A2CPS_LOGO
 # PORTAL
 ########################
 
-PORTAL = True
+INCLUDES_CORE_PORTAL = True

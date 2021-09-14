@@ -54,4 +54,4 @@ LOGO = PORTAL_LOGO
 # PORTAL
 ########################
 
-PORTAL = False
+INCLUDES_CORE_PORTAL = False
