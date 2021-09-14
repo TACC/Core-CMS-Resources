@@ -10,13 +10,13 @@
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = True
+LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
-_CMS_TEMPLATES = (
+CMS_TEMPLATES = (
     ('a2cps-cms/templates/standard.html', 'Standard'),
     ('a2cps-cms/templates/fullwidth.html', 'Full Width')
 )
@@ -25,8 +25,8 @@ _CMS_TEMPLATES = (
 # GOOGLE ANALYTICS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-10"
-_GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-10"
+GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
 # BRANDING & LOGOS
@@ -35,12 +35,12 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 ########################
 # BRANDING.
 
-_BRANDING = [_TACC_BRANDING, _UTEXAS_BRANDING]
+BRANDING = [TACC_BRANDING, UTEXAS_BRANDING]
 
 ########################
 # LOGOS.
 
-_A2CPS_LOGO = [
+A2CPS_LOGO = [
     "a2cps",
     "a2cps-cms/img/org_logos/a2cps.png",
     "",
@@ -51,10 +51,10 @@ _A2CPS_LOGO = [
     "True"
 ]
 
-_LOGO = _A2CPS_LOGO
+LOGO = A2CPS_LOGO
 
 ########################
 # PORTAL
 ########################
 
-_PORTAL = True
+PORTAL = True

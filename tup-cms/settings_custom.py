@@ -10,13 +10,13 @@
 # DJANGO SETTINGS
 ########################
 
-_LDAP_ENABLED = False
+LDAP_ENABLED = False
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
-_CMS_TEMPLATES = (
+CMS_TEMPLATES = (
     ('tup-cms/templates/fullwidth.html', 'Fullwidth')
 )
 
@@ -24,8 +24,8 @@ _CMS_TEMPLATES = (
 # GOOGLE ANALYTICS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-96034853-2"
-_GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-96034853-2"
+GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
 # BRANDING.
@@ -37,7 +37,7 @@ _BRANDING = [_TACC_BRANDING, _UTEXAS_BRANDING]
 # LOGOS.
 ########################
 
-_PORTAL_LOGO = [
+PORTAL_LOGO = [
     "tup",
     "tup-cms/img/org_logos/tacc-logo.svg",
     "",
@@ -48,10 +48,10 @@ _PORTAL_LOGO = [
     "True"
 ]
 
-_LOGO = _PORTAL_LOGO
+LOGO = PORTAL_LOGO
 
 ########################
 # PORTAL
 ########################
 
-_PORTAL = False
+PORTAL = False
