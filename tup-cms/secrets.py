@@ -13,14 +13,6 @@
 _LDAP_ENABLED = False
 
 ########################
-# DJANGO CMS SETTINGS
-########################
-
-_CMS_TEMPLATES = (
-    ('tup-cms/templates/fullwidth.html', 'Fullwidth')
-)
-
-########################
 # GOOGLE ANALYTICS
 ########################
 
