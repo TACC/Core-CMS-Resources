@@ -35,10 +35,6 @@ GOOGLE_ANALYTICS_PRELOAD = True
 # BRANDING.
 ########################
 
-
-# Add custom sponsor branding assets here.
-# One unique entry per asset.
-
 COOKS_BRANDING = [
     "cooks",
     "protx-cms/img/org_logos/CClogo_Standard_White_Transparent.png",
@@ -50,25 +46,39 @@ COOKS_BRANDING = [
     "True"
 ]
 
-# Add custom _SPONSOR_BRANDING assets here.
+# ???: Must we have this? It's in Core settings, already
+_TACC_BRANDING = [
+    "tacc",
+    "site_cms/img/org_logos/tacc-white.png",
+    "branding-tacc",
+    "https://www.tacc.utexas.edu/",
+    "_blank",
+    "TACC Logo",
+    "anonymous",
+    "True"
+]
+
+# ???: Must we have this? It's in Core settings, already
+_UTEXAS_BRANDING = [
+    "utexas",
+    "site_cms/img/org_logos/utaustin-white.png",
+    "branding-utaustin",
+    "https://www.utexas.edu/",
+    "_blank",
+    "University of Texas at Austin Logo",
+    "anonymous",
+    "True"
+]
+
 CUSTOM_BRANDING = [COOKS_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
-
-# NSF Funded TACC Portal.
-NSF_SPONSORED_BRANDING = [NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
-
-# Default TACC Portal.
-DEFAULT_BRANDING = [TACC_BRANDING, UTEXAS_BRANDING]
-
-# Assign branding selection.
-BRANDING = CUSTOM_BRANDING
 
 ########################
 # LOGOS.
 ########################
 
-PORTAL_LOGO = [
+LOGO = [
     "protx",
-    "protx-cms/img/org_logos/protx-logo-temp.png",
+    "protx-cms/img/org_logos/ProTx-logo-nobg.png",
     "",
     "/",
     "_self",
@@ -76,8 +86,6 @@ PORTAL_LOGO = [
     "anonymous",
     "True"
 ]
-
-LOGO = PORTAL_LOGO
 
 ########################
 # PORTAL
