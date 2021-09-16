@@ -92,3 +92,15 @@ LOGO = [
 ########################
 
 INCLUDES_CORE_PORTAL = True
+
+########################
+# EXPORT
+########################
+
+SETTINGS_EXPORT = [
+    'BRANDING',
+    'LOGO',
+    'FAVICON',
+    'GOOGLE_ANALYTICS_PROPERTY_ID',
+    'GOOGLE_ANALYTICS_PRELOAD'
+]
