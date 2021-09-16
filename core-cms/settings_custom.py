@@ -5,7 +5,7 @@
 # DJANGO SETTINGS
 ########################
 
-DEBUG = False       # False for Prod.
+DEBUG = True       # False for Prod.
 
 # Specify allowed hosts or use an asterisk to allow any host and simplify the config.
 # ALLOWED_HOSTS = ['hostname.tacc.utexas.edu', 'host.ip.v4.address', '0.0.0.0', 'localhost', '127.0.0.1']   # In production.
@@ -38,6 +38,8 @@ CMS_TEMPLATES = (
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack'),
     ('style_guide.html', 'Style Guide')
 )
+
+CEP_AUTH_VERIFICATION_ENDPOINT='https://dev.cep.tacc.utexas.edu'
 
 ########################
 # GOOGLE ANALYTICS
