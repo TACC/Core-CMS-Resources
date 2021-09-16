@@ -1,7 +1,5 @@
-
-# Until this custom configuration is automatically applied, to use it one must copy the content of it and append it to `cms-site-template:/taccsite_cms/secrets.py`
-
-# PROTX CONFIGURATION
+# TACC WMA CMS SITE: *.PROTX.TACC.UTEXAS.EDU
+# CUSTOM SETTINGS VALUES.
 
 ########################
 # DJANGO SETTINGS
