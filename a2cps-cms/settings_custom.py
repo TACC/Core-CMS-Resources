@@ -16,8 +16,6 @@ SITE_ID = 1
 CMS_TEMPLATES = (
     ('a2cps-cms/templates/standard.html', 'Standard'),
     ('a2cps-cms/templates/fullwidth.html', 'Full Width'),
-
-    # May or may not be used; we can remove them when that is confirmed
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
