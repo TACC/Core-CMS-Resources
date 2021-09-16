@@ -38,13 +38,7 @@ GOOGLE_ANALYTICS_PRELOAD = False
 # FEATURES
 ########################
 
-FEATURES = {
-    # Blog/News & Social Media Metadata
-    # GL-42: Split this into two features
-    # SEE: https://confluence.tacc.utexas.edu/x/EwDeCg
-    # SEE: https://confluence.tacc.utexas.edu/x/FAA9Cw
-    "blog": False,
-}
+# NONE.
 
 ########################
 # BRANDING
@@ -102,42 +96,6 @@ FAVICON = {
 ########################
 
 INCLUDES_CORE_PORTAL = True
-
-########################
-# LINKS (for Portal).
-########################
-
-_DASH_AUTH_LINK = {
-    "name": "dash",
-    "url": "/workbench/dashboard/",
-    "text": "My Dashboard",
-    "icon": "desktop",
-}
-
-_PROFILE_AUTH_LINK = {
-    "name": "profile",
-    "url": "/accounts/profile/",
-    "text": "My Account",
-    "icon": "user-circle",
-}
-
-_LOGOUT_AUTH_LINK = {
-    "name": "logout",
-    "url": "/accounts/logout/",
-    "text": "Log Out",
-    "icon": "sign-out-alt",
-}
-
-_LOGIN_UNAUTH_LINK = {
-    "name": "login",
-    "url": "/login/",
-    "text": "Log In",
-    "icon": "sign-in-alt",
-}
-
-PORTAL_AUTH_LINKS = [_DASH_AUTH_LINK, _PROFILE_AUTH_LINK, _LOGOUT_AUTH_LINK]
-
-PORTAL_UNAUTH_LINKS = [_LOGIN_UNAUTH_LINK]
 
 SETTINGS_EXPORT = [
     'BRANDING',
