@@ -35,7 +35,7 @@ GOOGLE_ANALYTICS_PRELOAD = True
 # BRANDING.
 ########################
 
-COOKS_BRANDING = [
+_COOKS_BRANDING = [
     "cooks",
     "protx-cms/img/org_logos/CClogo_Standard_White_Transparent.png",
     "branding-tacc",
@@ -70,7 +70,7 @@ _UTEXAS_BRANDING = [
     "True"
 ]
 
-CUSTOM_BRANDING = [COOKS_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
+CUSTOM_BRANDING = [_COOKS_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
 
 ########################
 # LOGOS.

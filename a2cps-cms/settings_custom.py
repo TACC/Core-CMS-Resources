@@ -28,6 +28,13 @@ CMS_TEMPLATES = (
 CMS_PERMISSION = True
 
 ########################
+# GOOGLE ANALYTICS
+########################
+
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-xx"
+GOOGLE_ANALYTICS_PRELOAD = False
+
+########################
 # FEATURES
 ########################
 
@@ -71,7 +78,7 @@ BRANDING = [_TACC_BRANDING, _UTEXAS_BRANDING]
 # LOGOS
 ########################
 
-_A2CPS_LOGO = [
+LOGO = [
     "a2cps",
     "a2cps-cms/img/org_logos/a2cps.png",
     "",
@@ -81,8 +88,6 @@ _A2CPS_LOGO = [
     "anonymous",
     "True"
 ]
-
-LOGO = _A2CPS_LOGO 
 
 ########################
 # FAVICON
