@@ -2,6 +2,14 @@
 # CUSTOM SETTINGS VALUES.
 
 ########################
+# DJANGO SETTINGS
+########################
+
+# Boolean check to see if ldap is being used by the site.
+# Requires django-auth-ldap ≥ 2.0.0
+LDAP_ENABLED = True
+
+########################
 # DJANGO CMS SETTINGS
 ########################
 
