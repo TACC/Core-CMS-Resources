@@ -42,18 +42,18 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 ########################
 # LOGOS
 
-_UTRC_LOGO = [
-    "utrc",
+_TACC_LOGO = [
+    "portal",
     "utrc-cms/img/org_logos/tacc-white.png",
     "",
     "/",
     "_self",
-    "UTRC Logo",
+    "TACC Logo",
     "anonymous",
     "True"
 ]
 
-_LOGO = _PORTAL_LOGO
+_LOGO = _TACC_LOGO
 
 ########################
 # FAVICON
