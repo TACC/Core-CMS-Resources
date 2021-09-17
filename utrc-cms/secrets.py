@@ -44,7 +44,7 @@ _GOOGLE_ANALYTICS_PRELOAD = True
 
 _UTRC_LOGO = [
     "utrc",
-    "utrc-cms/img/org_logos/???.png",
+    "utrc-cms/img/org_logos/tacc-white.png",
     "",
     "/",
     "_self",
