@@ -17,13 +17,6 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# GOOGLE ANALYTICS
-########################
-
-# GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
-GOOGLE_ANALYTICS_PROPERTY_ID = "UA-96034853-2"  # What is this property?
-
-########################
 # LOGOS.
 ########################
 
