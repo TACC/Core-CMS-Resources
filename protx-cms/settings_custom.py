@@ -2,6 +2,9 @@
 # TACC WMA CMS SITE:
 # *.PROTX.TACC.UTEXAS.EDU
 
+# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
+#      because current infrastructure lacks ability to reference default values
+
 ########################
 # DJANGO CMS SETTINGS
 ########################
@@ -17,8 +20,11 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# BRANDING.
+# BRANDING & LOGOS
 ########################
+
+########################
+# BRANDING
 
 COOKS_BRANDING = [
     "cooks",
@@ -31,11 +37,32 @@ COOKS_BRANDING = [
     "True"
 ]
 
-CUSTOM_BRANDING = [COOKS_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
+_TACC_BRANDING = [
+    "tacc",
+    "site_cms/img/org_logos/tacc-white.png",
+    "branding-tacc",
+    "https://www.tacc.utexas.edu/",
+    "_blank",
+    "TACC Logo",
+    "anonymous",
+    "True"
+]
+
+_UTEXAS_BRANDING = [
+    "utexas",
+    "site_cms/img/org_logos/utaustin-white.png",
+    "branding-utaustin",
+    "https://www.utexas.edu/",
+    "_blank",
+    "University of Texas at Austin Logo",
+    "anonymous",
+    "True"
+]
+
+CUSTOM_BRANDING = [ COOKS_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
 
 ########################
-# LOGOS.
-########################
+# LOGOS
 
 LOGO = [
     "protx",

@@ -1,28 +1,56 @@
-# …
+# CUSTOM SETTINGS VALUES.
+# TACC WMA CMS SITE:
+# *.LCCF.TACC.UTEXAS.EDU
 
-########################
-# GOOGLE ANALYTICS
-########################
-GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-15"
-GOOGLE_ANALYTICS_PRELOAD = True
+# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
+#      because current infrastructure lacks ability to reference default values
 
 ########################
 # BRANDING & LOGOS
 ########################
 
-# …
-
 ########################
-# BRANDING.
+# BRANDING
 
-# …
+_NSF_BRANDING = [
+    "nsf",
+    "site_cms/img/org_logos/nsf-white.png",
+    "branding-nsf",
+    "https://www.nsf.gov/",
+    "_blank",
+    "NSF Logo",
+    "anonymous",
+    "True"
+]
+
+_TACC_BRANDING = [
+    "tacc",
+    "site_cms/img/org_logos/tacc-white.png",
+    "branding-tacc",
+    "https://www.tacc.utexas.edu/",
+    "_blank",
+    "TACC Logo",
+    "anonymous",
+    "True"
+]
+
+_UTEXAS_BRANDING = [
+    "utexas",
+    "site_cms/img/org_logos/utaustin-white.png",
+    "branding-utaustin",
+    "https://www.utexas.edu/",
+    "_blank",
+    "University of Texas at Austin Logo",
+    "anonymous",
+    "True"
+]
 
 BRANDING = [ NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING ]
 
 ########################
-# LOGOS.
+# LOGOS
 
-LCCF_LOGO = [
+LOGO = [
     "lccf",
     "lccf-tacc/img/org_logos/lccf-white.png",
     "",
@@ -33,4 +61,8 @@ LCCF_LOGO = [
     "True"
 ]
 
-LOGO = LCCF_LOGO
+########################
+# PORTAL
+########################
+
+INCLUDES_CORE_PORTAL = False
