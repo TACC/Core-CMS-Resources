@@ -33,18 +33,6 @@ GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
 GOOGLE_ANALYTICS_PRELOAD = False
 
 ########################
-# FEATURES
-########################
-
-# NONE.
-
-########################
-# BRANDING
-########################
-
-# DEFAULT.
-
-########################
 # LOGOS
 ########################
 
@@ -60,18 +48,14 @@ LOGO = [
 ]
 
 ########################
-# FAVICON
-########################
-
-FAVICON = {
-    "img_file_src": "site_cms/img/favicons/favicon.ico"
-}
-
-########################
 # PORTAL
 ########################
 
 INCLUDES_CORE_PORTAL = True
+
+########################
+# EXPORT
+########################
 
 SETTINGS_EXPORT = [
     'BRANDING',
