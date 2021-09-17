@@ -3,22 +3,16 @@
 # *.TUP.TACC.UTEXAS.EDU
 
 ########################
-# DJANGO SETTINGS
-########################
-
-#LDAP_ENABLED = False
-
-########################
 # DJANGO CMS SETTINGS
 ########################
 
 CMS_TEMPLATES = (
     ('tup-cms/templates/fullwidth.html', 'Fullwidth'),
-    # ('guide.html', 'Guide'),
-    # ('guides/getting_started.html', 'Guide: Getting Started'),
-    # ('guides/data_transfer.html', 'Guide: Data Transfer'),
-    # ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
-    # ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
+    ('guide.html', 'Guide'),
+    ('guides/getting_started.html', 'Guide: Getting Started'),
+    ('guides/data_transfer.html', 'Guide: Data Transfer'),
+    ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
+    ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
 
 ########################
@@ -28,16 +22,10 @@ CMS_TEMPLATES = (
 LOGO = [
     "tup",
     "tup-cms/img/org_logos/tacc-logo.svg",
-    "",
+    "tup",
     "/",
     "_self",
     "TACC Logo",
     "anonymous",
     "True"
 ]
-
-########################
-# PORTAL
-########################
-
-#INCLUDES_CORE_PORTAL = False
