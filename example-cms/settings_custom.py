@@ -1,13 +1,8 @@
-
-# Until this custom configuration is automatically applied, to use it one must copy the content of it and append it to `cms-site-template:/taccsite_cms/secrets.py`
+# CUSTOM SETTINGS VALUES.
+# TACC WMA CMS SITE:
+#   ENV.PROJECT-DOMAIN.TACC.UTEXAS.EDU
 
 # EXAMPLE CONFIGURATION
-
-########################
-# DJANGO SETTINGS
-########################
-
-LDAP_ENABLED = True
 
 ########################
 # DJANGO CMS SETTINGS
@@ -28,25 +23,16 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# GOOGLE ANALYTICS
+# BRANDING
 ########################
-
-GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
-GOOGLE_ANALYTICS_PRELOAD = True
-
-########################
-# BRANDING & LOGOS
-########################
-
-########################
-# BRANDING.
 
 BRANDING = [NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
 
 ########################
 # LOGOS.
+########################
 
-PORTAL_LOGO = [
+LOGO = [
     "portal",
     "example-cms/img/org_logos/portal.png",
     "",
@@ -56,8 +42,6 @@ PORTAL_LOGO = [
     "anonymous",
     "True"
 ]
-
-LOGO = PORTAL_LOGO
 
 ########################
 # PORTAL
