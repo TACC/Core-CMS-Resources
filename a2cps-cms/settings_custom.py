@@ -29,7 +29,7 @@ CMS_PERMISSION = True
 # GOOGLE ANALYTICS
 ########################
 
-GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-xx"
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
 GOOGLE_ANALYTICS_PRELOAD = False
 
 ########################
@@ -42,29 +42,7 @@ GOOGLE_ANALYTICS_PRELOAD = False
 # BRANDING
 ########################
 
-_TACC_BRANDING = [
-    "tacc",
-    "site_cms/img/org_logos/tacc-white.png",
-    "branding-tacc",
-    "https://www.tacc.utexas.edu/",
-    "_blank",
-    "TACC Logo",
-    "anonymous",
-    "True"
-]
-
-_UTEXAS_BRANDING = [
-    "utexas",
-    "site_cms/img/org_logos/utaustin-white.png",
-    "branding-utaustin",
-    "https://www.utexas.edu/",
-    "_blank",
-    "University of Texas at Austin Logo",
-    "anonymous",
-    "True"
-]
-
-BRANDING = [_TACC_BRANDING, _UTEXAS_BRANDING]
+# DEFAULT.
 
 ########################
 # LOGOS

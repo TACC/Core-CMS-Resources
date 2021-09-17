@@ -11,6 +11,8 @@ LDAP_ENABLED = True
 # DJANGO CMS SETTINGS
 ########################
 
+SITE_ID = 1
+
 CMS_TEMPLATES = (
     ('protx-cms/templates/standard.html', 'Standard'),
     ('protx-cms/templates/fullwidth.html', 'Full Width'),
@@ -22,18 +24,20 @@ CMS_TEMPLATES = (
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
 
+CMS_PERMISSION = True
+
 ########################
 # GOOGLE ANALYTICS
 ########################
 
 GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
-GOOGLE_ANALYTICS_PRELOAD = True
+GOOGLE_ANALYTICS_PRELOAD = False
 
 ########################
 # BRANDING.
 ########################
 
-_COOKS_BRANDING = [
+COOKS_BRANDING = [
     "cooks",
     "protx-cms/img/org_logos/CClogo_Standard_White_Transparent.png",
     "branding-tacc",
@@ -44,31 +48,7 @@ _COOKS_BRANDING = [
     "True"
 ]
 
-# ???: Must we have this? It's in Core settings, already
-_TACC_BRANDING = [
-    "tacc",
-    "site_cms/img/org_logos/tacc-white.png",
-    "branding-tacc",
-    "https://www.tacc.utexas.edu/",
-    "_blank",
-    "TACC Logo",
-    "anonymous",
-    "True"
-]
-
-# ???: Must we have this? It's in Core settings, already
-_UTEXAS_BRANDING = [
-    "utexas",
-    "site_cms/img/org_logos/utaustin-white.png",
-    "branding-utaustin",
-    "https://www.utexas.edu/",
-    "_blank",
-    "University of Texas at Austin Logo",
-    "anonymous",
-    "True"
-]
-
-CUSTOM_BRANDING = [_COOKS_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
+CUSTOM_BRANDING = [COOKS_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
 
 ########################
 # LOGOS.
