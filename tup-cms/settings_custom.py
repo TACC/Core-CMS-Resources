@@ -29,3 +29,19 @@ LOGO = [
     "anonymous",
     "True"
 ]
+
+
+########################
+# CMS BUG FIX
+# See: 
+# https://github.com/django-cms/django-cms/issues/6687
+########################
+
+from cms.utils import conf
+
+def get_templates():
+    templates = conf.get_templates()
+    return [(x, str(y)) for x, y in templates]
+
+
+conf.COMPLEX['TEMPLATES'] = get_templates
