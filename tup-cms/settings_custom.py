@@ -6,14 +6,19 @@
 # DJANGO SETTINGS
 ########################
 
-LDAP_ENABLED = False
+#LDAP_ENABLED = False
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
 CMS_TEMPLATES = (
-    ('tup-cms/templates/fullwidth.html', 'Fullwidth')
+    ('tup-cms/templates/fullwidth.html', 'Fullwidth'),
+    # ('guide.html', 'Guide'),
+    # ('guides/getting_started.html', 'Guide: Getting Started'),
+    # ('guides/data_transfer.html', 'Guide: Data Transfer'),
+    # ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
+    # ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
 
 ########################
@@ -35,4 +40,4 @@ LOGO = [
 # PORTAL
 ########################
 
-INCLUDES_CORE_PORTAL = False
+#INCLUDES_CORE_PORTAL = False
