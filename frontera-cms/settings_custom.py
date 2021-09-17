@@ -1,18 +1,14 @@
-########################
-# DJANGO SETTINGS
-########################
+# CUSTOM SETTINGS VALUES.
+# TACC WMA CMS SITE:
+# *.FRONTERA-PORTAL.TACC.UTEXAS.EDU
 
-# …
-
-LDAP_ENABLED = True
-
-# …
+# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
+#      because current infrastructure lacks ability to reference default values
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
-# …
 CMS_TEMPLATES = (
     ('frontera-cms/templates/fullwidth.html', 'Fullwidth'),
     ('fullwidth.html', 'DEPRECATED Fullwidth'),
@@ -27,39 +23,51 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# GOOGLE ANALYTICS
-########################
-
-GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-13"
-GOOGLE_ANALYTICS_PRELOAD = True
-
-# …
-
-########################
 # BRANDING & LOGOS
 ########################
 
-# …
-
 ########################
-# BRANDING.
+# BRANDING
 
-# …
-
-TACC_BRANDING = [
-    # …
-    "frontera-cms/img/org_logos/tacc-white.png",
-    # …
+_NSF_BRANDING = [
+    "nsf",
+    "site_cms/img/org_logos/nsf-white.png",
+    "branding-nsf",
+    "https://www.nsf.gov/",
+    "_blank",
+    "NSF Logo",
+    "anonymous",
+    "True"
 ]
 
-# …
+_FRONTERA_TACC_BRANDING = [
+    "tacc",
+    "frontera-cms/img/org_logos/tacc-white.png", # TACC/Core-CMS#283 & #284
+    "branding-tacc",
+    "https://www.tacc.utexas.edu/",
+    "_blank",
+    "TACC Logo",
+    "anonymous",
+    "True"
+]
 
-BRANDING = [ NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING ]
+_UTEXAS_BRANDING = [
+    "utexas",
+    "site_cms/img/org_logos/utaustin-white.png",
+    "branding-utaustin",
+    "https://www.utexas.edu/",
+    "_blank",
+    "University of Texas at Austin Logo",
+    "anonymous",
+    "True"
+]
+
+BRANDING = [ _NSF_BRANDING, _FRONTERA_TACC_BRANDING, _UTEXAS_BRANDING ]
 
 ########################
-# LOGOS.
+# LOGOS
 
-FRONTERA_LOGO =  [
+LOGO =  [
     "frontera",
     "frontera-cms/img/org_logos/frontera-white-solo.png",
     "",
@@ -69,12 +77,3 @@ FRONTERA_LOGO =  [
     "anonymous",
     "True"
 ]
-
-LOGO = FRONTERA_LOGO
-# …
-
-########################
-# PORTAL
-########################
-
-INCLUDES_CORE_PORTAL = True
