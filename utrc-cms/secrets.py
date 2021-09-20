@@ -36,8 +36,13 @@ _GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-4"
 _GOOGLE_ANALYTICS_PRELOAD = True
 
 ########################
-# BRANDING
+# BRANDING & LOGOS
 ########################
+
+########################
+# BRANDING
+
+_BRANDING = [ _UTEXAS_BRANDING ]
 
 ########################
 # LOGOS
