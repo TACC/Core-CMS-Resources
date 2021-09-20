@@ -1,57 +1,34 @@
-# TACC CMS Per-Site Resources - Configuration
-
-# In a project-specific configuration file like this, edit existing configuration values from `cms-site-template:/taccsite_cms/default_secrets.py` that must change to suit this project.
-
-# Until this custom configuration is automatically applied, to use it one must copy the content of it and append it to `cms-site-template:/taccsite_cms/secrets.py`
-
-# TUP CONFIGURATION
-
-########################
-# DJANGO SETTINGS
-########################
-
-_LDAP_ENABLED = False
+# CUSTOM SETTINGS VALUES.
+# TACC WMA CMS SITE:
+# *.TUP.TACC.UTEXAS.EDU
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
-_CMS_TEMPLATES = (
-    ('tup-cms/templates/fullwidth.html', 'Fullwidth')
+CMS_TEMPLATES = (
+    ('tup-cms/templates/fullwidth.html', 'Fullwidth'),
+    ('guide.html', 'Guide'),
+    ('guides/getting_started.html', 'Guide: Getting Started'),
+    ('guides/data_transfer.html', 'Guide: Data Transfer'),
+    ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
+    ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
 
 ########################
-# GOOGLE ANALYTICS
+# BRANDING & LOGOS
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-96034853-2"
-_GOOGLE_ANALYTICS_PRELOAD = True
-
 ########################
-# BRANDING.
-########################
+# LOGOS
 
-_BRANDING = [_TACC_BRANDING, _UTEXAS_BRANDING]
-
-########################
-# LOGOS.
-########################
-
-_PORTAL_LOGO = [
+LOGO = [
     "tup",
     "tup-cms/img/org_logos/tacc-logo.svg",
-    "",
+    "tup",
     "/",
     "_self",
     "TACC Logo",
     "anonymous",
     "True"
 ]
-
-_LOGO = _PORTAL_LOGO
-
-########################
-# PORTAL
-########################
-
-_PORTAL = False

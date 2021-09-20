@@ -1,25 +1,15 @@
-# …
-
-
-########################
-# GOOGLE ANALYTICS
-########################
-
-GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
-GOOGLE_ANALYTICS_PRELOAD = True
-
-# …
+## CUSTOM SETTINGS VALUES.
+# TACC WMA CMS SITE:
+# SCIVISCOLOR.ORG
 
 ########################
 # BRANDING & LOGOS
 ########################
 
-# …
-
 ########################
 # LOGOS.
 
-SCIVISCOLOR_LOGO =  [
+LOGO =  [
     "sciviscolor",
     "sciviscolor-cms/img/org_logos/sciviscolor-logo-white.png",
     "",
@@ -30,4 +20,8 @@ SCIVISCOLOR_LOGO =  [
     "True"
 ]
 
-LOGO = SCIVISCOLOR_LOGO
+########################
+# PORTAL
+########################
+
+INCLUDES_CORE_PORTAL = False

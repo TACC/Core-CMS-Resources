@@ -1,13 +1,9 @@
+# CUSTOM SETTINGS VALUES.
+# TACC WMA CMS SITE:
+# *.PROTX.TACC.UTEXAS.EDU
 
-# Until this custom configuration is automatically applied, to use it one must copy the content of it and append it to `cms-site-template:/taccsite_cms/secrets.py`
-
-# PROTX CONFIGURATION
-
-########################
-# DJANGO SETTINGS
-########################
-
-LDAP_ENABLED = True
+# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
+#      because current infrastructure lacks ability to reference default values
 
 ########################
 # DJANGO CMS SETTINGS
@@ -16,7 +12,6 @@ LDAP_ENABLED = True
 CMS_TEMPLATES = (
     ('protx-cms/templates/standard.html', 'Standard'),
     ('protx-cms/templates/fullwidth.html', 'Full Width'),
-
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
@@ -25,19 +20,11 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# GOOGLE ANALYTICS
+# BRANDING & LOGOS
 ########################
 
-GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-##"
-GOOGLE_ANALYTICS_PRELOAD = True
-
 ########################
-# BRANDING.
-########################
-
-
-# Add custom sponsor branding assets here.
-# One unique entry per asset.
+# BRANDING
 
 COOKS_BRANDING = [
     "cooks",
@@ -50,25 +37,36 @@ COOKS_BRANDING = [
     "True"
 ]
 
-# Add custom _SPONSOR_BRANDING assets here.
-CUSTOM_BRANDING = [COOKS_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
+_TACC_BRANDING = [
+    "tacc",
+    "site_cms/img/org_logos/tacc-white.png",
+    "branding-tacc",
+    "https://www.tacc.utexas.edu/",
+    "_blank",
+    "TACC Logo",
+    "anonymous",
+    "True"
+]
 
-# NSF Funded TACC Portal.
-NSF_SPONSORED_BRANDING = [NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING]
+_UTEXAS_BRANDING = [
+    "utexas",
+    "site_cms/img/org_logos/utaustin-white.png",
+    "branding-utaustin",
+    "https://www.utexas.edu/",
+    "_blank",
+    "University of Texas at Austin Logo",
+    "anonymous",
+    "True"
+]
 
-# Default TACC Portal.
-DEFAULT_BRANDING = [TACC_BRANDING, UTEXAS_BRANDING]
-
-# Assign branding selection.
-BRANDING = CUSTOM_BRANDING
+CUSTOM_BRANDING = [ COOKS_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
 
 ########################
-# LOGOS.
-########################
+# LOGOS
 
-PORTAL_LOGO = [
+LOGO = [
     "protx",
-    "protx-cms/img/org_logos/protx-logo-temp.png",
+    "protx-cms/img/org_logos/ProTx-logo-nobg.png",
     "",
     "/",
     "_self",
@@ -76,11 +74,3 @@ PORTAL_LOGO = [
     "anonymous",
     "True"
 ]
-
-LOGO = PORTAL_LOGO
-
-########################
-# PORTAL
-########################
-
-PORTAL = True
