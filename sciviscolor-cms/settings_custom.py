@@ -3,11 +3,12 @@
 # SCIVISCOLOR.ORG
 
 ########################
-# BRANDING & LOGOS
+# BRANDING
 ########################
 
 ########################
 # LOGOS.
+########################
 
 LOGO =  [
     "sciviscolor",

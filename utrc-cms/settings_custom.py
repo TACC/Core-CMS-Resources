@@ -20,11 +20,8 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# BRANDING & LOGOS
-########################
-
-########################
 # BRANDING
+########################
 
 _UTEXAS_BRANDING = [
     "utexas",
@@ -41,6 +38,7 @@ BRANDING = [ _UTEXAS_BRANDING ]
 
 ########################
 # LOGOS
+########################
 
 LOGO = [
     "portal",
@@ -55,7 +53,8 @@ LOGO = [
 
 ########################
 # FAVICON
+########################
 
-_FAVICON = {
+FAVICON = {
     "img_file_src": "utrc-cms/img/org_logos/favicon.ico"
 }

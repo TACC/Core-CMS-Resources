@@ -12,9 +12,7 @@
 CMS_TEMPLATES = (
     ('frontera-cms/templates/fullwidth.html', 'Fullwidth'),
     ('fullwidth.html', 'DEPRECATED Fullwidth'),
-
     ('frontera-cms/templates/home.html', 'Homepage'),
-
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
@@ -23,11 +21,8 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# BRANDING & LOGOS
-########################
-
-########################
 # BRANDING
+########################
 
 _NSF_BRANDING = [
     "nsf",
@@ -66,6 +61,7 @@ BRANDING = [ _NSF_BRANDING, _FRONTERA_TACC_BRANDING, _UTEXAS_BRANDING ]
 
 ########################
 # LOGOS
+########################
 
 LOGO =  [
     "frontera",

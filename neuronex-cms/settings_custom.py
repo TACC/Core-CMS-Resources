@@ -20,11 +20,8 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# BRANDING & LOGOS
-########################
-
-########################
 # BRANDING
+########################
 
 _NSF_BRANDING = [
     "nsf",
@@ -63,6 +60,7 @@ BRANDING = [ _NSF_BRANDING, _FRONTERA_TACC_BRANDING, _UTEXAS_BRANDING ]
 
 ########################
 # LOGOS
+########################
 
 LOGO = [
     "portal",
@@ -77,6 +75,7 @@ LOGO = [
 
 ########################
 # FAVICON
+########################
 
 FAVICON = {
     "img_file_src": "neuronex-cms/img/org_logos/favicon.ico"

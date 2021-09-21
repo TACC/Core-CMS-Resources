@@ -6,22 +6,22 @@
 #      because current infrastructure lacks ability to reference default values
 
 ########################
-# GOOGLE ANALYTICS
+# DJANGO CMS SETTINGS
 ########################
 
-GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-17"
-GOOGLE_ANALYTICS_PRELOAD = True
-
-########################
-# BRANDING & LOGOS
-########################
-
-# …
+# CMS_TEMPLATES = (
+#     ('tapis-project-org/templates/standard.html', 'Standard'),
+#     ('tapis-project-org/templates/fullwidth.html', 'Full Width'),
+#     ('guide.html', 'Guide'),
+#     ('guides/getting_started.html', 'Guide: Getting Started'),
+#     ('guides/data_transfer.html', 'Guide: Data Transfer'),
+#     ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
+#     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
+# )
 
 ########################
 # BRANDING
-
-# …
+########################
 
 UHAWAII_BRANDING = [
     "uhawaii",
@@ -71,6 +71,7 @@ BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, UHAWAII_BRANDING ]
 
 ########################
 # LOGOS
+########################
 
 LOGO =  [
     "tapis",
@@ -88,3 +89,9 @@ LOGO =  [
 ########################
 
 INCLUDES_CORE_PORTAL = False
+
+########################
+# GOOGLE ANALYTICS
+########################
+
+GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-17"

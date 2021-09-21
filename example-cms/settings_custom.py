@@ -13,7 +13,6 @@ CMS_TEMPLATES = (
     ('example-cms/templates/fullwidth.html', 'Fullwidth'),
     # Support standard template for demo purposes
     ('fullwidth.html', 'Standard Fullwidth'),
-
     # Support Portal pages for demo purposes
     ('home_portal.html', 'Standard Portal Homepage'),
     ('guide.html', 'Guide'),

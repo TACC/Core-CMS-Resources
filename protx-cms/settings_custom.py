@@ -20,11 +20,8 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# BRANDING & LOGOS
-########################
-
-########################
 # BRANDING
+########################
 
 COOKS_BRANDING = [
     "cooks",
@@ -63,6 +60,7 @@ BRANDING = [ COOKS_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
 
 ########################
 # LOGOS
+########################
 
 LOGO = [
     "protx",
