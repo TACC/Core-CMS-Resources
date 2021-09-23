@@ -20,33 +20,16 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# BRANDING
-########################
-
-_UTEXAS_BRANDING = [
-    "utexas",
-    "site_cms/img/org_logos/utaustin-white.png",
-    "branding-utaustin",
-    "https://www.utexas.edu/",
-    "_blank",
-    "University of Texas at Austin Logo",
-    "anonymous",
-    "True"
-]
-
-BRANDING = [ _UTEXAS_BRANDING ]
-
-########################
 # LOGOS
 ########################
 
 LOGO = [
     "portal",
-    "utrc-cms/img/org_logos/tacc-white.png",
+    "utrc-cms/img/org_logos/utrc-horizontal-logo-white-simple.svg",
     "",
     "/",
     "_self",
-    "TACC Logo",
+    "UTRC Logo",
     "anonymous",
     "True"
 ]
