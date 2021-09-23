@@ -10,8 +10,13 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('utrc-cms/templates/standard.html', 'Standard'),
-    ('utrc-cms/templates/fullwidth.html', 'Full Width'),
+    ('standard.html', 'Standard'),
+    ('fullwidth.html', 'Full Width'),
+
+    # DEPRECATED! Remove once unused on prod environment
+    ('utrc-cms/templates/standard.html', 'DEPRECATED Standard'),
+    ('utrc-cms/templates/fullwidth.html', 'DEPRECATED Full Width'),
+
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
