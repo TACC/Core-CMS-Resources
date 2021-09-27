@@ -12,6 +12,8 @@
 CMS_TEMPLATES = (
     ('utrc-cms/templates/standard.html', 'Standard'),
     ('utrc-cms/templates/fullwidth.html', 'Full Width'),
+    ('utrc-cms/templates/home.html', 'Home'),
+
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
