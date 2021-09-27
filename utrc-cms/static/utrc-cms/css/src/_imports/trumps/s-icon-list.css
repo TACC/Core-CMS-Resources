@@ -29,9 +29,14 @@ Styleguide Trumps.Scopes.IconList
 
   list-style: none;
 }
+
 .s-icon-list li {
   @extend %x-truncate--one-line;
 }
+.s-icon-list a {
+  color: inherit;
+}
+
 .s-icon-list .icon {
   vertical-align: middle;
 
