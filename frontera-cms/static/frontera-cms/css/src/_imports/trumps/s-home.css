@@ -1,5 +1,6 @@
 /* TACC TRUMPS: Home (Page) */
 @import url("../../../../../../../../taccsite_cms/static/site_cms/css/src/_imports/tools/x-truncate.css");
+@import url("../../../../../../../../taccsite_cms/static/site_cms/css/src/_imports/tools/x-overlay.css");
 @import url("../../../../../../../../taccsite_cms/static/site_cms/css/src/_imports/tools/x-center.css");
 @import url("../../../../../../../../taccsite_cms/static/site_cms/css/src/_imports/tools/media-queries.css");
 
@@ -38,6 +39,10 @@
 .s-home__banner .o-section__banner-overlay {
   --spacing: 1.5rem;
 
+  /* To avoid the need to add placeholder markup for empty column */
+  /* FAQ: The `.o-section__banner-image` is not part of the grid */
+  grid-column-start: 2;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,7 +53,23 @@
   font-weight: var(--bold);
 
   padding: var(--spacing); /* GH-99: Use standard spacing value */
-  margin: 0 var(--banner-margin-horz);
+}
+/* To reduce width of banner when it only sits on right-side of banner */
+@media (--medium-and-above) {
+  .s-home__banner .o-section__banner-overlay {
+    margin: 0 var(--banner-margin-horz);
+  }
+}
+
+/* To style the overlay */
+.s-home__banner .o-section__banner-overlay {
+  @extend .x-overlay--curtain;
+}
+.s-home__banner .o-section--style-dark .o-section__banner-overlay {
+  --color-bkgd-rgb: var(--global-color-primary--x-dark-rgb);
+}
+.s-home__banner .o-section--style-light .o-section__banner-overlay {
+  --color-bkgd-rgb: var(--global-color-primary--x-light-rgb);
 }
 
 

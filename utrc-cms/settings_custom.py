@@ -2,8 +2,6 @@
 # TACC WMA CMS SITE:
 # *.UTRC.TACC.UTEXAS.EDU
 
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
-#      because current infrastructure lacks ability to reference default values
 
 ########################
 # DJANGO CMS SETTINGS
@@ -12,6 +10,8 @@
 CMS_TEMPLATES = (
     ('utrc-cms/templates/standard.html', 'Standard'),
     ('utrc-cms/templates/fullwidth.html', 'Full Width'),
+    ('utrc-cms/templates/home.html', 'Home'),
+
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
