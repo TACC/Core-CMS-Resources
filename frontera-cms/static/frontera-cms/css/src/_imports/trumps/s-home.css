@@ -48,7 +48,12 @@
   font-weight: var(--bold);
 
   padding: var(--spacing); /* GH-99: Use standard spacing value */
-  margin: 0 var(--banner-margin-horz);
+}
+/* To reduce width of banner when it only sits on right-side of banner */
+@media (--medium-and-above) {
+  .s-home__banner .o-section__banner-overlay {
+    margin: 0 var(--banner-margin-horz);
+  }
 }
 
 
