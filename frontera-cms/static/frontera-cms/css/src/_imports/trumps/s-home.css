@@ -54,13 +54,13 @@
 
   padding: var(--spacing); /* GH-99: Use standard spacing value */
 }
-.o-section__banner-overlay {
+.s-home__banner .o-section__banner-overlay {
   @extend .x-overlay--curtain;
 }
-.o-section--style-dark .o-section__banner-overlay {
+.s-home__banner .o-section--style-dark .o-section__banner-overlay {
   --color-bkgd-rgb: var(--global-color-primary--x-dark-rgb);
 }
-.o-section--style-light .o-section__banner-overlay {
+.s-home__banner .o-section--style-light .o-section__banner-overlay {
   --color-bkgd-rgb: var(--global-color-primary--x-light-rgb);
 }
 
