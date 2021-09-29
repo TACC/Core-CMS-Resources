@@ -1,13 +1,12 @@
-import os
-
-# …
+## CUSTOM SETTINGS VALUES.
+# TACC WMA CMS SITE:
+# SCIVISCOLOR.ORG
 
 ########################
 # DJANGO CMS SETTINGS
 ########################
 
-# …
-_CMS_TEMPLATES = (
+CMS_TEMPLATES = (
     ('texascale-org/templates/fullwidth.html', 'Fullwidth'),
     ('texascale-org/templates/category.html', 'Category'),
     ('texascale-org/templates/article.html', 'Article'),
@@ -18,22 +17,14 @@ _CMS_TEMPLATES = (
 )
 
 ########################
-# GOOGLE ANALYTICS
+# BRANDING
 ########################
 
-_GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-18"
-_GOOGLE_ANALYTICS_PRELOAD = True
-
 ########################
-# BRANDING & LOGOS
+# LOGOS
 ########################
 
-# …
-
-########################
-# LOGOS.
-
-_TEXASCALE_LOGO =  [
+LOGO =  [
     "texascale",
     "texascale-org/img/org_logos/texascale-wordmark.png",
     "",
@@ -44,6 +35,8 @@ _TEXASCALE_LOGO =  [
     "True"
 ]
 
-_LOGO = _TEXASCALE_LOGO
+########################
+# PORTAL
+########################
 
-# …
+INCLUDES_CORE_PORTAL = False

@@ -1,0 +1,9 @@
+/*!
+ * TACC v2 site.css Overrides
+ */
+
+/* ELEMENTS: Content Sectioning: Headings */
+
+h4, h5, h6 {
+	text-transform: unset;
+}
