@@ -2,6 +2,8 @@
 {% load cms_tags static %}
 
 {% block assets_custom %}
+  {{ block.super }}
+
   {% include "./assets_custom.html" %}
 
   <!-- To style old CMS content on new CMS -->
