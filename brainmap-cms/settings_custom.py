@@ -27,7 +27,6 @@ _SGCI_BRANDING = [
     "nsf",
     None,
     "branding-logo--tall",
-    "branding-logo--tall",
     "https://www.nsf.gov/",
     "_blank",
     "NSF Logo",
