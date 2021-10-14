@@ -31,3 +31,11 @@ LOGO = [
     "anonymous",
     "True"
 ]
+
+########################
+# FAVICON
+########################
+
+FAVICON = {
+    "img_file_src": "a2cps-cms/img/org_logos/favicon.ico"
+}
