@@ -10,9 +10,10 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('frontera-cms/templates/fullwidth.html', 'Fullwidth'),
-    ('fullwidth.html', 'DEPRECATED Fullwidth'),
+    ('frontera-cms/templates/standard.html', 'Standard'),
+    ('frontera-cms/templates/fullwidth.html', 'Full Width'),
     ('frontera-cms/templates/home.html', 'Homepage'),
+
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
