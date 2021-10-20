@@ -24,12 +24,12 @@ CMS_TEMPLATES = (
 ########################
 
 _SGCI_BRANDING = [
-    "nsf",
+    "sgci",
     None,
     "branding-logo--tall",
     "https://www.nsf.gov/",
     "_blank",
-    "NSF Logo",
+    "SGCI Logo",
     None,
     "True",
     "https://sciencegateways.org/documents/20182/20809/sgci-new-logo-words-horiz-white.png/dca0198d-0145-4208-a71e-275c98c919fe?t=1493995638000",
@@ -65,7 +65,7 @@ BRANDING = [ _SGCI_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
 
 LOGO = [
     "brainmap",
-    "brainmap-cms/img/org_logos/brainmap-logo.svg",
+    "brainmap-cms/img/org_logos/brainmap-logo.png",
     "",
     "/",
     "_self",
