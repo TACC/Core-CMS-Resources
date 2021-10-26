@@ -188,6 +188,8 @@
   margin-bottom: 0;
 
   font-size: 1.6rem;
+  /* FP-1318: Migrate this to Section plugin which can handle all headings */
+  color: var(--global-color-primary--xx-light);
 }
 /* Caption: Type */
 .s-home__banner .s-article-preview ul > li:nth-child(2) {
