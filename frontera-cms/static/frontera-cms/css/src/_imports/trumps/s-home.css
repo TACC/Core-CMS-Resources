@@ -188,6 +188,7 @@
   margin-bottom: 0;
 
   font-size: 1.6rem;
+  color: var(--global-color-primary--xx-light);
 }
 /* Caption: Type */
 .s-home__banner .s-article-preview ul > li:nth-child(2) {
