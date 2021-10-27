@@ -54,7 +54,7 @@ Styleguide Trumps.Scopes.CategoryPage
   margin-top: 25px;
 }
 
-/* Remove space between image and title */
-.s-category-page .row:nth-of-type(1) h5 {
+/* Remove space above minor titles */
+.s-category-page h5 {
   margin-top: 0; /* override `site.css` */
 }
