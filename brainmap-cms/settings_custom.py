@@ -72,3 +72,11 @@ LOGO = [
     "anonymous",
     "True"
 ]
+
+########################
+# FAVICON
+########################
+
+FAVICON = {
+    "img_file_src": "brainmap-cms/img/org_logos/favicon.ico"
+}
