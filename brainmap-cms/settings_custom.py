@@ -66,7 +66,7 @@ LOGO = [
     "brainmap",
     "brainmap-cms/img/org_logos/brainmap-logo.png",
     "",
-    "/",
+    "https://brainmap.org",
     "_self",
     "BrainMap Logo",
     "anonymous",
