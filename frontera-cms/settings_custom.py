@@ -74,3 +74,11 @@ LOGO =  [
     "anonymous",
     "True"
 ]
+
+########################
+# FAVICON
+########################
+
+FAVICON = {
+    "img_file_src": "frontera-cms/img/org_logos/favicon.ico"
+}
