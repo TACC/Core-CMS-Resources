@@ -59,7 +59,7 @@
   }
 }
 .s-home__banner.o-section--banner .o-section__banner-overlay {
-  @extend .x-overlay--callout;
+  @extend %x-overlay--callout;
 
   --color-text: inherit;
   --color-bkgd-rgb: var(--global-color-primary--normal);
