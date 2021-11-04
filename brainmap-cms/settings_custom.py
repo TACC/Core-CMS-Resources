@@ -27,7 +27,7 @@ _SGCI_BRANDING = [
     "sgci",
     "brainmap-cms/img/org_logos/sgci-logo.png",
     "branding-logo--tall",
-    "https://www.nsf.gov/",
+    "https://sciencegateways.org/",
     "_blank",
     "SGCI Logo",
     "anonymous",
