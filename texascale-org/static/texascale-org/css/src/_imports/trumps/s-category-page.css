@@ -53,3 +53,8 @@ Styleguide Trumps.Scopes.CategoryPage
 .s-category-page .row:nth-of-type(2) .col:nth-of-type(2) p + p img {
   margin-top: 25px;
 }
+
+/* Remove space above minor titles */
+.s-category-page h5 {
+  margin-top: 0; /* override `site.css` */
+}
