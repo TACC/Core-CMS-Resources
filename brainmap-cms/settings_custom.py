@@ -23,6 +23,17 @@ CMS_TEMPLATES = (
 # BRANDING
 ########################
 
+_UTHSCSA_BRANDING = [
+    "uthscsa",
+    "brainmap-cms/img/org_logos/uthscsa-logo-white.png",
+    "branding-logo--tall",
+    "https://www.uthscsa.edu/",
+    "_blank",
+    "UTHSC-SA Logo",
+    "anonymous",
+    "True",
+]
+
 _SGCI_BRANDING = [
     "sgci",
     "brainmap-cms/img/org_logos/sgci-logo.png",
@@ -56,7 +67,10 @@ _UTEXAS_BRANDING = [
     "True"
 ]
 
-BRANDING = [ _SGCI_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
+# BRANDING = [ _UTHSCSA_BRANDING, _SGCI_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
+# BRANDING = [ _SGCI_BRANDING, _UTHSCSA_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
+# BRANDING = [ _SGCI_BRANDING, _TACC_BRANDING, _UTHSCSA_BRANDING, _UTEXAS_BRANDING ]
+BRANDING = [ _SGCI_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, _UTHSCSA_BRANDING ]
 
 ########################
 # LOGOS
