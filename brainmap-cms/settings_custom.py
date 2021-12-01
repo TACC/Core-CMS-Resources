@@ -36,7 +36,7 @@ _UTHSCSA_BRANDING = [
 
 _SGCI_BRANDING = [
     "sgci",
-    "brainmap-cms/img/org_logos/sgci-logo.png",
+    "brainmap-cms/img/org_logos/sgci-logo-sans-text.svg",
     "branding-logo--tall",
     "https://sciencegateways.org/",
     "_blank",
