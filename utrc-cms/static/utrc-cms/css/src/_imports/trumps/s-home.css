@@ -78,6 +78,16 @@
 
 
 
+/* Banner: Image */
+
+/* Temporary fix to get rid of white border on top of banner */
+.o-section--banner .o-section__banner-image {
+  top: 0%;
+  transform: translate(-50%, 0%);
+}
+
+
+
 
 
 /* Introduction */
