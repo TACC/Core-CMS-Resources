@@ -1,5 +1,5 @@
 {
-  "name": "core-cms-resources",
+  "name": "@tacc/core-cms-resources",
   "version": "3.14.0",
   "license": "MIT",
   "description": "Any custom code for all new and updated TACC CMS sites.",
