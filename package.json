@@ -15,11 +15,13 @@
   },
   "repository": "git@github.com:TACC/Core-CMS-Resources.git",
   "devDependencies": {
-    "core-styles": "tacc-wbomar/Core-Styles.git#test/as-npm-package",
-    "node-cmd": "^5.0.0",
     "yarn": "^1.22.17"
   },
-  "// devDependencies": {
+  "dependencies": {
+    "core-styles": "tacc-wbomar/Core-Styles.git",
+    "node-cmd": "^5.0.0"
+  },
+  "// dependencies": {
     "node-cmd": "Only for `_shared/build-css-via-cli.js`"
   },
   "author": "TACC ACI WMA <wma-portals@gmail.com>"
