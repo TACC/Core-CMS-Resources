@@ -1049,6 +1049,11 @@ mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.5"
 
+node-cmd@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/node-cmd/-/node-cmd-5.0.0.tgz#a4a850b569e009bec0199a131c9db607144fdbc0"
+  integrity sha512-4sQTJmsS5uZKAPz/Df9fnIbmvOySfGdW+UreH4X5NcAOOpKjaE+K5wf4ehNBbZVPo0vQ36RkRnhhsXXJAT+Syw==
+
 node-releases@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.1.tgz#3d1d395f204f1f2f29a54358b9fb678765ad2fc5"
@@ -2035,12 +2040,13 @@ svgo@^1.0.0:
 
 tacc-core-styles@tacc-wbomar/Core-Styles.git#test/as-npm-package:
   version "0.1.0"
-  resolved "https://codeload.github.com/tacc-wbomar/Core-Styles/tar.gz/880d333d2bcfdc1f1c1e03934f9f43211179695c"
+  resolved "https://codeload.github.com/tacc-wbomar/Core-Styles/tar.gz/a02082d22b8b91b65c1ae075d78e3716b15a5ea6"
   dependencies:
     commander "^9.0.0"
     cssnano "^4.1.10"
     js-yaml "^3.13.1"
     merge-lite "^1.0.2"
+    node-cmd "^5.0.0"
     postcss-cli "^7.1.2"
     postcss-extend "^1.0.5"
     postcss-import "^12.0.1"
