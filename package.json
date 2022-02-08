@@ -1,0 +1,22 @@
+{
+  "name": "core-cms-resources",
+  "version": "2.1.0",
+  "license": "MIT",
+  "description": "Any custom code for all new and updated TACC CMS sites.",
+  "scripts": {
+    "build": "npm run build:css --project=core-cms & npm run build:css --project=$npm_config_project",
+    "build:css": "tacc-core-styles -i \"$npm_config_project/static/$npm_config_project/css/src\" -o \"$npm_config_project/static/$npm_config_project/css/build\" -c \".postcssrc.yml\" \"$npm_config_project/static/$npm_config_project/css/src/.postcssrc.yml\" --verbose"
+  },
+  "// scripts": {
+    "build": "Run all build commands for core and given project",
+    "build:css": "Build stylesheets from source files for any project",
+    "build:css:help": "The `$npm_config` is `--project=...` passed to script",
+    "build:css:example": "npm run build --project=example-cms"
+  },
+  "repository": "git@github.com:TACC/Core-CMS-Resources.git",
+  "devDependencies": {
+    "tacc-core-styles": "tacc-wbomar/Core-Styles.git#test/as-npm-package",
+    "yarn": "^1.22.5"
+  },
+  "author": "TACC, Wesley Bomar <wbomar@tacc.utexas.edu>"
+}

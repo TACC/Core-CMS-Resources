@@ -1,0 +1,10 @@
+@import url("_version.css");
+/*! site.header.docs.css */
+
+/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
+
+/* NOTE: This file exists so User Guide can load header styles only it needs */
+
+/* FAQ: User Guide lacks the vars that _imports/trumps/s-header.css expects */
+@import url("_imports/settings/color.css");
+@import url("_imports/settings/border.css");

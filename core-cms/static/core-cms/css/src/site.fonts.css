@@ -1,9 +1,10 @@
+@import url("_version.css");
+/*! site.fonts.css */
+
 /* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
 
 /* Organize via ITCSS */
 /* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
 
-/* COMPONENTS */
-
-@import url("__ROOT__/_imports/components/c-image-map.css");
-@import url("_imports/components/c-image-map.css");
+/* GENERICS */
+@import url("_imports/generics/fonts.css");

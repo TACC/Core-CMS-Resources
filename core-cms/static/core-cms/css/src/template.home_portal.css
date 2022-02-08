@@ -1,9 +1,11 @@
+@import url("_version.css");
+/*! template.home_portal.css */
+
 /* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
 
 /* Organize via ITCSS */
 /* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
 
-/* COMPONENTS */
+/* TRUMPS */
 
-@import url("__ROOT__/_imports/components/c-image-map.css");
-@import url("_imports/components/c-image-map.css");
+@import url("_imports/trumps/s-document.css");

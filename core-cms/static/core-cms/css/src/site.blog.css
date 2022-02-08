@@ -1,0 +1,13 @@
+@import url("_version.css");
+/*! site.blog.css */
+
+/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
+
+/* NOTE: This file exists so that the Blog/News styles can be loaded only if feature is enabled */
+
+/* Organize via ITCSS */
+/* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
+
+/* COMPONENTS */
+@import url("_imports/components/django.cms.blog.css");
+@import url("_imports/components/django.cms.post.css");

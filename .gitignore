@@ -1,12 +1,13 @@
-########################
-# PARENT REPO PROCESSES
-
-# Python
-*.pyc
-*.pyo
-__pycache__
-
 # Node & NPM
 ## built Static files
 build
 !build/README.md
+
+# Dependencies
+node_modules
+
+# Parent Repository Processes
+## Python
+*.pyc
+*.pyo
+__pycache__
