@@ -17,7 +17,7 @@
   "devDependencies": {
     "node-cmd": "^5.0.0",
     "tacc-core-styles": "tacc-wbomar/Core-Styles.git#test/as-npm-package",
-    "yarn": "^1.22.5"
+    "yarn": "^1.22.17"
   },
   "// devDependencies": {
     "node-cmd": "Only for `_shared/build-css-via-cli.js`"
