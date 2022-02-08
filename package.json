@@ -22,5 +22,5 @@
   "// devDependencies": {
     "node-cmd": "Only for `_shared/build-css-via-cli.js`"
   },
-  "author": "TACC, Wesley Bomar <wbomar@tacc.utexas.edu>"
+  "author": "TACC ACI WMA <wma-portals@gmail.com>"
 }
