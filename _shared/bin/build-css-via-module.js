@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-const taccCoreStyles = require('tacc-core-styles');
+const coreStyles = require('core-styles');
 const projectName = process.env.npm_config_project;
 
 const ROOT = __dirname + '/../..';
 
 build('core-cms');
-if ( projectName !== 'core-cms') {
+if ( projectName && projectName !== 'core-cms') {
   build( projectName );
 }
 
@@ -14,10 +14,10 @@ if ( projectName !== 'core-cms') {
  * Execute command to build CSS for given project (directory)
  * @param {string} projectName - The name of the project
  */
- function build(projectName) {
+ function build( projectName ) {
   const path = projectName + '/static/' + projectName + '/css';
 
-  taccCoreStyles(
+  coreStyles(
     `${ROOT}/${path}/src`,
     `${ROOT}/${path}/build`, {
       customConfigFiles: [

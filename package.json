@@ -15,8 +15,8 @@
   },
   "repository": "git@github.com:TACC/Core-CMS-Resources.git",
   "devDependencies": {
+    "core-styles": "tacc-wbomar/Core-Styles.git#test/as-npm-package",
     "node-cmd": "^5.0.0",
-    "tacc-core-styles": "tacc-wbomar/Core-Styles.git#test/as-npm-package",
     "yarn": "^1.22.17"
   },
   "// devDependencies": {
