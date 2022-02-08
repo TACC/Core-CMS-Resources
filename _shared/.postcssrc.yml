@@ -3,6 +3,7 @@
 plugins:
   postcss-import:
     path:
+      - '_shared/static/css/src'
       - 'node_modules/tacc-core-styles/source'
   postcss-env-function:
     importFrom:

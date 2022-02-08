@@ -4,8 +4,9 @@
   "license": "MIT",
   "description": "Any custom code for all new and updated TACC CMS sites.",
   "scripts": {
-    "build": "npm run build:css --project=core-cms & npm run build:css --project=$npm_config_project",
-    "build:css": "tacc-core-styles -i \"$npm_config_project/static/$npm_config_project/css/src\" -o \"$npm_config_project/static/$npm_config_project/css/build\" -c \".postcssrc.yml\" \"$npm_config_project/static/$npm_config_project/css/src/.postcssrc.yml\" --verbose"
+    "build": "npm run build:css --project=core-cms && npm run build:css --project=$npm_config_project",
+    "build:css": "tacc-core-styles -i \"$npm_config_project/static/$npm_config_project/css/src\" -o \"$npm_config_project/static/$npm_config_project/css/build\" -c \"_shared/.postcssrc.yml\" \"$npm_config_project/static/$npm_config_project/css/src/.postcssrc.yml\" --verbose",
+    "update-version": "_shared/bin/update-version.js"
   },
   "// scripts": {
     "build": "Run all build commands for core and given project",
