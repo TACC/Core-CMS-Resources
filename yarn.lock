@@ -293,7 +293,7 @@ commander@^9.0.0:
 
 core-styles@tacc-wbomar/Core-Styles.git:
   version "0.1.0"
-  resolved "https://codeload.github.com/tacc-wbomar/Core-Styles/tar.gz/f97b974ea37bc42e818b4073430a42baef32611e"
+  resolved "https://codeload.github.com/tacc-wbomar/Core-Styles/tar.gz/250d2cf1f00cf5a13552be5e76f47d451a7340bc"
   dependencies:
     commander "^9.0.0"
     cssnano "^4.1.10"

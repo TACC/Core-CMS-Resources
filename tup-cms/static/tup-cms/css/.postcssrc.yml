@@ -1,0 +1,7 @@
+# Merged on top of Core-CMS-Resources base config
+# SEE: https://github.com/tacc-wbomar/Core-CMS-Resources/blob/test/core-styles/_shared/static/css/.postcssrc.base.yml
+plugins:
+  postcss-env-function:
+    importFrom:
+      - 'node_modules/core-styles/source/_themes/default.json'
+      # - 'node_modules/core-styles/source/_themes/blue-header.json'
