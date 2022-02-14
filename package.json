@@ -18,7 +18,7 @@
     "yarn": "^1.22.17"
   },
   "dependencies": {
-    "core-styles": "tacc-wbomar/Core-Styles.git",
+    "@tacc/core-styles": "tacc-wbomar/Core-Styles.git",
     "node-cmd": "^5.0.0"
   },
   "// dependencies": {

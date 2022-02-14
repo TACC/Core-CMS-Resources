@@ -28,6 +28,20 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@tacc/core-styles@tacc-wbomar/Core-Styles.git":
+  version "0.1.0"
+  resolved "https://codeload.github.com/tacc-wbomar/Core-Styles/tar.gz/e88455e1eb58be0b019ce55f1a85f15110148454"
+  dependencies:
+    commander "^9.0.0"
+    cssnano "^4.1.10"
+    js-yaml "^3.13.1"
+    merge-lite "^1.0.2"
+    node-cmd "^5.0.0"
+    postcss-cli "^7.1.2"
+    postcss-extend "^1.0.5"
+    postcss-import "^12.0.1"
+    postcss-preset-env "^6.7.0"
+
 "@types/q@^1.5.1":
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.5.tgz#75a2a8e7d8ab4b230414505d92335d1dcb53a6df"
@@ -290,20 +304,6 @@ commander@^9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-9.0.0.tgz#86d58f24ee98126568936bd1d3574e0308a99a40"
   integrity sha512-JJfP2saEKbQqvW+FI93OYUB4ByV5cizMpFMiiJI8xDbBvQvSkIk0VvQdn1CZ8mqAO8Loq2h0gYTYtDFUZUeERw==
-
-core-styles@tacc-wbomar/Core-Styles.git:
-  version "0.1.0"
-  resolved "https://codeload.github.com/tacc-wbomar/Core-Styles/tar.gz/e88455e1eb58be0b019ce55f1a85f15110148454"
-  dependencies:
-    commander "^9.0.0"
-    cssnano "^4.1.10"
-    js-yaml "^3.13.1"
-    merge-lite "^1.0.2"
-    node-cmd "^5.0.0"
-    postcss-cli "^7.1.2"
-    postcss-extend "^1.0.5"
-    postcss-import "^12.0.1"
-    postcss-preset-env "^6.7.0"
 
 cosmiconfig@^5.0.0:
   version "5.2.1"
