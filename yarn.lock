@@ -30,7 +30,7 @@
 
 "@tacc/core-styles@tacc-wbomar/Core-Styles.git":
   version "0.1.0"
-  resolved "https://codeload.github.com/tacc-wbomar/Core-Styles/tar.gz/1b6a6f9197ea2be39768ba7d7efa1f632dc51776"
+  resolved "https://codeload.github.com/tacc-wbomar/Core-Styles/tar.gz/530dfb51499ecb95320bc65ab8b832b33998db28"
   dependencies:
     commander "^9.0.0"
     cssnano "^4.1.10"
