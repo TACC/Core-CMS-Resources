@@ -1,12 +1,10 @@
 # Node & NPM
-## built Static files
+## built stylesheets
 build
-!build/README.md
-
-# Dependencies
+## dependencies
 node_modules
 
-# Parent Repository Processes
+# Parent Repository Process
 ## Python
 *.pyc
 *.pyo

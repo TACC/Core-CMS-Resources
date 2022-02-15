@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/** Build CSS using the Core-Styles module */
+
 const coreStyles = require('core-styles');
 
 const ROOT = __dirname + '/../..';
@@ -16,6 +18,8 @@ function build( projectName ) {
   const corePath = getPath(CORE_NAME);
   const projectPath = getPath(projectName);
 
+  // To illustrate Project is built on top of Core:
+  // // build Core first  coreStyles(
   coreStyles(
     `${ROOT}/${corePath}/src`,
     `${ROOT}/${corePath}/build`, {
@@ -25,7 +29,7 @@ function build( projectName ) {
       verbose: true,
     }
   );
-
+  // // build Project next (if not Core)
   if (corePath !== projectPath) {
     coreStyles(
       `${ROOT}/${projectPath}/src`,

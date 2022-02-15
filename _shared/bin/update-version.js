@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/** Create CSS file to import that prints project version */
+
 const fs = require('fs');
 
 const root = __dirname;

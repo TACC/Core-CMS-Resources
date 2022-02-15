@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/** Build CSS using the Core-Styles CLI */
+
 const cmd = require('node-cmd');
 
 const ROOT = __dirname + '/../..';
@@ -16,6 +18,8 @@ function build( projectName ) {
   const corePath = getPath(CORE_NAME);
   const projectPath = getPath(projectName);
 
+  // To illustrate Project is built on top of Core:
+  // // build Core first
   cmd.runSync(`
     core-styles\
     --input-dir "${ROOT}/${corePath}/src"\
@@ -24,7 +28,7 @@ function build( projectName ) {
       "${ROOT}/${corePath}/.postcssrc.yml"\
     --verbose\
   `);
-
+  // // build Project next (if not Core)
   if (corePath !== projectPath) {
     cmd.runSync(`
       core-styles\
