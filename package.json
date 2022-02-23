@@ -14,9 +14,6 @@
     "build:css": "Build stylesheets from source files for any project"
   },
   "repository": "git@github.com:TACC/Core-CMS-Resources.git",
-  "devDependencies": {
-    "yarn": "^1.22.17"
-  },
   "dependencies": {
     "@tacc/core-styles": "tacc-wbomar/Core-Styles.git",
     "node-cmd": "^5.0.0"
