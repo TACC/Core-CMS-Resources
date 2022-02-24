@@ -15,7 +15,7 @@
   /* FAQ: Extra specificty to overwrite Core `site.css` */
   .s-home__banner.o-section,
   .s-home__content.o-section {
-    margin-block: 116px;
+    margin-inline: 116px;
   }
 }
 
