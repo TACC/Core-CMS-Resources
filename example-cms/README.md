@@ -15,4 +15,4 @@ Store custom configuration for this project. See [project `README.md` at "Custom
 
 <!-- Link Aliases -->
 
-[Core CMS]: https://gitlab.tacc.utexas.edu/wma-cms/cms-site-template
+[Core CMS]: https://github.com/TACC/Core-CMS
