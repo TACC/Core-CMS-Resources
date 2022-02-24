@@ -12,13 +12,10 @@
 
 /* To avoid banner overlay being off-screen */
 @media (--medium-and-above) and (--x-wide-and-below) {
-  /* FAQ: Extra specificty to overwrite Core `site.css` */
-  .s-home__banner.o-section,
-  .s-home__content.o-section {
+  .o-section {
     margin-inline: 116px;
   }
-  .s-home__banner.o-section.container,
-  .s-home__content.o-section.container {
+  .o-section.container {
     width: auto;
   }
 }
