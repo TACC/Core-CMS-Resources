@@ -17,6 +17,10 @@
   .s-home__content.o-section {
     margin-inline: 116px;
   }
+  .s-home__banner.o-section.container,
+  .s-home__content.o-section.container {
+    width: auto;
+  }
 }
 
 
