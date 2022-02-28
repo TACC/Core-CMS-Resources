@@ -1,4 +1,4 @@
-# TACC Core Styles
+# TACC CMS Per-Site Resources
 
 The custom CMS code for TACC WMA Workspace Portals & Websites
 
