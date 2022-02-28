@@ -5,8 +5,7 @@
   "description": "Any custom code for all new and updated TACC CMS sites.",
   "scripts": {
     "build": "npm run build:css --project=$npm_config_project",
-    "build:css": "_shared/bin/build-css-via-cli.js",
-    "update-version": "_shared/bin/update-version.js"
+    "build:css": "_shared/bin/update-css-version.js && _shared/bin/build-css-via-cli.js"
   },
   "// scripts": {
     "build": "Run all build commands for core and given project",

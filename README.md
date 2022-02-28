@@ -46,9 +46,8 @@ Pattern testing is done manually. The process is not documented. See [Pattern Li
 ## Deployment Steps
 
 1. Update version in `package.json`.
-2. Run `yarn update-version`.
-3. Commit and push the change.
-4. Deploy with CMS (see [Core-CMS README] deployment steps).
+2. Commit and push the change.
+3. Deploy with CMS (see [Core-CMS README] deployment steps).
 
 
 ## Contributing

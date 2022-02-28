@@ -5,14 +5,12 @@
 const fs = require('fs');
 
 const root = __dirname;
-const inFile = root + '/update-version.css';
 const outFile = root + '/../static/css/src/_version.css';
 
 const ver = process.env.npm_package_version;
 const rev = getGitRev( getSubmodGitDir() ).substring(0, 7);
 
-const input = fs.readFileSync(inFile, 'utf8');
-const output = input.replace(/{{ver}}/g, ver).replace(/{{rev}}/g, rev );
+const output = `/*! @tacc/core-cms-resources#${rev} (≥ v${ver}) | MIT License | github.com/TACC/Core-CMS-Resources */`;
 
 /**
  * Get the Git revision of the current working directory code
@@ -29,7 +27,6 @@ function getGitRev(gitDir='.git') {
     rev = fs.readFileSync(revFile).toString().trim();
   }
 
-  console.log('Read Git revision: ' + rev);
   return rev;
 }
 
@@ -43,4 +40,5 @@ function getSubmodGitDir() {
   return ref.substring(8);
 }
 
+console.log(`Updating CSS version to package version ${ver} and Git revision ${rev}[...]`);
 fs.writeFileSync(outFile, output, 'utf8');
