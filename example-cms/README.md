@@ -1,6 +1,6 @@
-# TACC CMS Per-Site Resources - Example
+# TACC Example CMS
 
-All custom resources (assets, templates, configuration) specific to this project __must__ be placed in this directory. Failure to do so will make them unavailable via [Core CMS].
+All custom resources (assets, templates, configuration) specific to this project __must__ be placed in this directory. Failure to do so will make them unavailable to [Core CMS].
 
 ## Configuration
 
@@ -8,9 +8,9 @@ All custom resources (assets, templates, configuration) specific to this project
 
 Treat directory as an app so that it can overwrite other apps. See `INSTALLED_APPS` in [`/taccsite_cms/settings.py`](/taccsite_cms/settings.py).
 
-### `secrets.py`
+### `settings_custom.py`
 
-Store custom configuration for this project. See [project `README.md` at "Custom Configuration"](/README.md#Custom%20Configuration).
+Store custom configuration for this project. See [project `README.md` at "Code Configuration"](/README.md#code-configuration).
 
 
 <!-- Link Aliases -->
