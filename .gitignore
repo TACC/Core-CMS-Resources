@@ -1,11 +1,10 @@
-# Node & NPM
-## built stylesheets
-build
-## dependencies
-node_modules
+########################
+# PARENT REPO PROCESSES
 
-# Parent Repository Process
-## Python
+# Python
 *.pyc
 *.pyo
 __pycache__
+
+# Built Static Files
+build
