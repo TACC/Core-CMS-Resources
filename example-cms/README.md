@@ -1,8 +1,6 @@
 # TACC Example CMS
 
-All custom resources (assets, templates, configuration) specific to this project __must__ be placed in this directory. Failure to do so will make them unavailable via [Core CMS][core-cms-repo].
-
-[core-cms-repo]: https://gitlab.tacc.utexas.edu/wma-cms/cms-site-template
+All custom resources (assets, templates, configuration) specific to this project __must__ be placed in this directory. Failure to do so will make them unavailable to [Core CMS].
 
 ## Configuration
 
@@ -12,4 +10,9 @@ Treat directory as an app so that it can overwrite other apps. See `INSTALLED_AP
 
 ### `settings_custom.py`
 
-Store custom configuration for this project. See [project `README.md` at "Custom Configuration"](/README.md#Custom%20Configuration).
+Store custom configuration for this project. See [project `README.md` at "Code Configuration"](/README.md#code-configuration).
+
+
+<!-- Link Aliases -->
+
+[Core CMS]: https://github.com/TACC/Core-CMS
