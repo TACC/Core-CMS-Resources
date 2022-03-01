@@ -6,5 +6,6 @@
 *.pyo
 __pycache__
 
-# Built Static Files
+# Node & NPM
+## built Static files
 build
