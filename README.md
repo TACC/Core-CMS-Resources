@@ -1,6 +1,8 @@
 # TACC CMS Per-Site Resources
 
-The custom CMS code for TACC WMA Workspace Portals & Websites
+The custom CMS code for TACC WMA Workspace Websites
+
+To build such a CMS project, use https://github.com/TACC/Core-CMS.
 
 
 ## Related Repositories
