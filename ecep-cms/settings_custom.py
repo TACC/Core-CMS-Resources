@@ -83,4 +83,4 @@ LOGO = [
 # PORTAL
 ########################
 
-INCLUDES_CORE_PORTAL = False
+INCLUDES_CORE_PORTAL = True
