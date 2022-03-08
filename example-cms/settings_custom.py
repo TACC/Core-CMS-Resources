@@ -65,4 +65,5 @@ BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
 # PORTAL
 ########################
 
-INCLUDES_CORE_PORTAL = False
+# Should a user be able to see link to Portal? (default value: True)
+# INCLUDES_CORE_PORTAL = False # True to show login link, False to hide login link
