@@ -3,7 +3,7 @@
 Static assets[^1] specific to this project __must__ be in this directory.
 Otherwise, they will be unavailable to [Core CMS] loading this project.
 
-[^1]: Static assets like CSS, Images (`img`), Fonts, and JavaScript (`js`).
+[^1]: Static assets like CSS, images (`img`), fonts, and JavaScript (`js`).
 
 [Core CMS]: https://github.com/TACC/Core-CMS
 

@@ -6,7 +6,7 @@ Otherwise, they will be unavailable to [Core CMS] loading this project.
 The directory structure here __should__ mirror [Core CMS]:
   [`/taccsite_cms/templates`][core-tpl-dir]
 
-This consistency lets us override tempaltes in Django fashion.
+This consistency lets us override templates in Django fashion.
 
 [Core CMS]: https://github.com/TACC/Core-CMS
 [core-tpl-dir]: https://github.com/TACC/Core-CMS/blob/main/taccsite_cms/static/site_cms
