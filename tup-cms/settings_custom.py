@@ -15,8 +15,6 @@ CMS_TEMPLATES = (
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
     ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack'),
-
-    ('style_guide.html', 'Style Guide'),
 )
 
 ########################
