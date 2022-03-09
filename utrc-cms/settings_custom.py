@@ -8,8 +8,9 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('utrc-cms/templates/standard.html', 'Standard'),
-    ('utrc-cms/templates/fullwidth.html', 'Full Width'),
+    ('standard.html', 'Standard'),
+    ('fullwidth.html', 'Full Width'),
+
     ('utrc-cms/templates/home.html', 'Home'),
 
     ('guide.html', 'Guide'),
