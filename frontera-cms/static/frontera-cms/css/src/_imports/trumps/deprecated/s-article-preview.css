@@ -170,10 +170,6 @@ Styleguide Trumps.Deprecated.Scopes.ArticlePreview
   margin-bottom: 0.8rem; /* overwrite Bootstrap */
   font-size: 1.0rem;
 }
-.s-article-list--news .s-article-preview ul > li:nth-child(1)::before {
-  content: 'Published: ';
-  white-space: pre;
-}
 /* (List) Events */
 .s-article-list--events .s-article-preview ul > li:nth-child(1) {
   font-size: 1.4rem;
@@ -182,10 +178,6 @@ Styleguide Trumps.Deprecated.Scopes.ArticlePreview
 /* (List) Allocations */
 .s-article-list--allocations .s-article-preview ul > li:nth-child(1) {
   font-size: 1.6rem;
-}
-.s-article-list--allocations .s-article-preview ul > li:nth-child(1)::before {
-  content: 'Submission Deadlines: ';
-  white-space: pre;
 }
 
 /* Children: Metadata: Type */
