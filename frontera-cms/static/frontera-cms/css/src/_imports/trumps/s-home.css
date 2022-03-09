@@ -187,7 +187,7 @@
 /* Caption: Title */
 .s-home__banner .s-article-preview h3 {
   @extend %x-truncate--many-lines;
-  --lines: 3;
+  --lines: 2;
 
   /* To ensure consistent height of three lines */
   /* FAQ: The `2.4rem` line-height was copied from `s-article-preview` */
