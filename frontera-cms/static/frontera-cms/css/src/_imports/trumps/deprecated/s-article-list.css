@@ -1,5 +1,5 @@
 /* WARNING: Deprecated. Do NOT add this to markup! */
-/* GH-134: Delete ONLY AFTER Frontera New Homepage uses Banner plugin */
+/* GH-134: Delete ONLY AFTER Frontera New Homepage uses Article plugins */
 /* NOTE: This is independent of `taccsite_cms/.../s-article-list.css` */
 /*
 (Deprecated) Article List
@@ -33,10 +33,15 @@ Styleguide Trumps.Deprecated.Scopes.ArticleList
 
 /* Children: All */
 
-/* Not "Title" & Not "See More" */
+/* (Any Layout) Not "Title" & Not "See More" */
 .s-article-list--layout-e > :not(h2):not(p:last-child) {
-  /* To shrink heading */
-  flex-grow: 1;
+  /* To reduce vertical space between items */
+  flex-grow: 0;
+}
+/* (Compact Layout) Not "Title" & Not "See More" & Not first item */
+.s-article-list--layout-e:not(.s-article-list--layout-divided) :not(h2):not(p:last-child):not(:first-of-type) {
+  /* To increase vertical space between items */
+    margin-top: 0.8rem;
 }
 
 
@@ -100,7 +105,7 @@ Styleguide Trumps.Deprecated.Scopes.ArticleList
   border-top-width: var(--global-border-width--thick);
   border-top-style: solid;
 
-  margin-top: 3.0rem; /* GH-99: Use standard spacing value */
+  margin-top: auto; /* to move anchor to bottom of flex box */
   margin-bottom: -1.0rem; /* to "undo" space added from `padding-bottom` */
 
   font-size: 1.2rem;
@@ -221,10 +226,6 @@ Styleguide Trumps.Deprecated.Scopes.ArticleList
 
 .s-article-list--layout-gapless {
   gap: 0;
-}
-
-.s-article-list--layout-compact > p:last-child {
-  margin-top: 0;
 }
 
 .s-article-list--layout-divided > :not(h2):not(p:last-child) {
