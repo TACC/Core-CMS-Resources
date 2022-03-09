@@ -3,5 +3,5 @@ User-agent: *
 # FAQ: This is temporary way to block search engines from early-published pages
 # SEE: https://support.google.com/webmasters/answer/6062608?hl=en&ref_topic=6061961
 # SEE: https://www.matthewedgar.net/noindex-vs-nofollow-vs-disallow/
-Disallow: /2021
-Disallow: /2021/
+Disallow: /2022
+Disallow: /2022/
