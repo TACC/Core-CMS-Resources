@@ -1,7 +1,15 @@
-<!-- Previously known as `gh-93-css-article-list-styles-update-non-plugin-styles` -->
+<!-- Previously known as `gh-93-css-article-list-styles-update-...` -->
 <style type="text/css" id="fp-1249-css-article-list-styles-update-non-plugin-styles">
 /* To match styles that future plugin added */
 .s-article-list--links p:not(:first-child):not(:last-child) {
     line-height: 2.4rem;
+}
+
+/* TEMP: To hide automated text so CMS user must enter submission date text */
+/* Code this overwrites already removed in task/GH-93-GH-... */
+.s-article-list--allocations .s-article-preview ul > li:first-child::before {
+    content: "";
+    white-space: normal;
+    display: none;
 }
 </style>
