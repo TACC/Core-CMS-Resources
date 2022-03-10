@@ -151,10 +151,7 @@
 }
 
 /* Image */
-.s-home__banner .o-section__banner-overlay article p:first-child {
-  margin-bottom: 0;
-}
-.s-home__banner .o-section__banner-overlay article p:first-child img {
+.s-home__banner .o-section__banner-overlay article > img:first-child {
   height: 200px;
   transform: unset;
   top: unset;
