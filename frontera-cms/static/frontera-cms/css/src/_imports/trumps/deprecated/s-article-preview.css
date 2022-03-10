@@ -225,6 +225,13 @@ Styleguide Trumps.Deprecated.Scopes.ArticlePreview
 .s-article-preview p:last-child > a {
   color: transparent; /* ensure Link _text_ is invisible (allow decoration) */
 
+  /* CAVEAT: With [Dark Reader plugin](https://darkreader.org/) on, user can:
+          1. Select all text on page (ctrl/cmd + a)
+          2. Hover over this link.
+          3. See underline appear.
+  */
+  user-select: none;
+
   @extend %x-article-link-stretch;
 }
 .s-article-list--layout-gapless .s-article-preview p:last-child > a {
