@@ -1,6 +1,6 @@
 # CUSTOM SETTINGS VALUES.
 # TACC WMA CMS SITE:
-# *.PROJECT-DOMAIN.TACC.UTEXAS.EDU
+# *.ECEP.TACC.UTEXAS.EDU
 
 # FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
 #      because current infrastructure lacks ability to reference default values
@@ -10,17 +10,20 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('example-cms/templates/fullwidth.html', 'Fullwidth'),
-    # Support standard template for demo purposes
-    ('fullwidth.html', 'Standard Fullwidth'),
-    # Support Portal pages for demo purposes
-    ('home_portal.html', 'Standard Portal Homepage'),
+    ('ecep-cms/templates/standard.html', 'Standard'),
+    ('ecep-cms/templates/fullwidth.html', 'Full Width'),
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
     ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
+
+########################
+# THEME
+########################
+
+# THEME = 'has-dark-logo'
 
 ########################
 # BRANDING
@@ -59,11 +62,25 @@ _UTEXAS_BRANDING = [
     "True"
 ]
 
-BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
+BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
+
+########################
+# LOGOS
+########################
+
+LOGO = [
+    "ecep",
+    "ecep-cms/img/org_logos/ECEP_logo_PurpleNoText.jpeg",
+    "",
+    "/",
+    "_self",
+    "ECEP Logo",
+    "anonymous",
+    "True"
+]
 
 ########################
 # PORTAL
 ########################
 
-# Should a user be able to see link to Portal? (default value: True)
-# INCLUDES_CORE_PORTAL = False # True to show login link, False to hide login link
+INCLUDES_CORE_PORTAL = True

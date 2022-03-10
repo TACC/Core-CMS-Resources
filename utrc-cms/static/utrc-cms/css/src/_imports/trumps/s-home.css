@@ -12,10 +12,11 @@
 
 /* To avoid banner overlay being off-screen */
 @media (--medium-and-above) and (--x-wide-and-below) {
-  /* FAQ: Extra specificty to overwrite Core `site.css` */
-  .s-home__banner.o-section.container,
-  .s-home__content.o-section.container {
-    --horz-space: 116px;
+  .o-section {
+    margin-inline: 116px;
+  }
+  .o-section.container {
+    width: auto;
   }
 }
 
@@ -74,6 +75,16 @@
 .s-home__banner.o-section--banner.o-section--style-light .o-section__banner-overlay {
   --color-text: var(--global-color-primary--xx-dark);
   --color-bkgd-rgb: var(--global-color-primary--xx-light-rgb);
+}
+
+
+
+/* Banner: Image */
+
+/* Temporary fix to get rid of white border on top of banner */
+.o-section--banner .o-section__banner-image {
+  top: 0%;
+  transform: translate(-50%, 0%);
 }
 
 
