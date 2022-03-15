@@ -4,9 +4,8 @@
 /* ELEMENTS: (Content) Sectioning Elements */
 
 /* Overwrite `_imports/elements/sectioning.css` */
-main,
-/* NOTE: Using ID until it is replaced with `main` */
-#content-wrap {
+main /* SEE: https://github.com/TACC/Core-CMS/pull/151 */,
+#content-wrap /* HACK: Using ID selector until <main> exists */ {
   padding-bottom: 0;
 }
 
