@@ -172,7 +172,7 @@
 /* Content: Focus List */
 
 .s-home__content .s-focus-list {
-  font--size: var(--global-font-size--large);
+  font-size: var(--global-font-size--large);
 }
 
 
