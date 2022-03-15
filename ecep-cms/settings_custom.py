@@ -130,4 +130,4 @@ BLOG_AUTO_APP_TITLE = 'News'
 ########################
 
 # TACC/Core-CMS-Resources#75: Load custom urls.py so we can add urlpatterns for taggit_autosuggest
-ROOT_URLCONF = 'taccsite_custom.texascale-org.urls'
+ROOT_URLCONF = 'taccsite_custom.ecep-cms.urls'
