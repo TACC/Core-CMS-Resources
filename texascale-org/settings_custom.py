@@ -72,10 +72,11 @@ BLOG_PLUGIN_TEMPLATE_FOLDERS = (
 
 # Blog/News: Change default values for the auto-setup of one `BlogConfig`
 # SEE: https://github.com/nephila/djangocms-blog/issues/629
-BLOG_AUTO_SETUP = True
+BLOG_AUTO_SETUP = False # Set to False after setup (minimize overhead)
 BLOG_AUTO_HOME_TITLE ='Home'
 BLOG_AUTO_BLOG_TITLE = 'News'
 BLOG_AUTO_APP_TITLE = 'News'
+BLOG_AUTO_NAMESPACE = 'News'
 
 ########################
 # CLIENT BUILD SETTINGS
