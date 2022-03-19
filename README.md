@@ -24,3 +24,4 @@ Please see the [Core CMS README].
 [Core CMS]: https://github.com/TACC/Core-CMS
 [Core Styles]: https://github.com/TACC/Core-Styles
 [Core CMS README]: https://github.com/TACC/Core-CMS/blob/main/README.md
+[Camino]: https://github.com/TACC/Camino
