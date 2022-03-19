@@ -1,8 +1,10 @@
 # TACC CMS Project
 
-The project-specific CMS code for TACC WMA Workspace Websites
+The project-specific CMS code for TACC WMA Workspace Websites.
 
-To build such a CMS project, use https://github.com/TACC/Core-CMS.
+To add resources for a new project, clone `/example-cms`.
+
+To build such a CMS project, use [TACC/Core-CMS](https://github.com/TACC/Core-CMS).
 
 ## Related Repositories
 
