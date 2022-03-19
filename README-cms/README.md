@@ -1,7 +1,7 @@
 # TACC CMS Project - Example
 
-Resources[^1] specific to this project __must__ be in this directory.
-Otherwise, they will be unavailable to [Core CMS] loading this project.
+Resources[^1] specific to any project __must__ be in that project's directory.
+Otherwise, they will be unavailable to [Core CMS] loading that project.
 
 [^1]: Resources like static assets, templates, and settings.
 
