@@ -1,14 +1,15 @@
-# TACC CMS Per-Site Resources
+# TACC CMS Project
 
-The custom CMS code for TACC WMA Workspace Websites
+The project-specific CMS code for TACC WMA Workspace Websites.
 
-To build such a CMS project, use https://github.com/TACC/Core-CMS.
+To add resources for a new project, clone `/example-cms`.
 
+To build such a CMS project, use [TACC/Core-CMS](https://github.com/TACC/Core-CMS).
 
 ## Related Repositories
 
+- [Camino], a Docker container-based deployment scheme
 - [Core CMS], the base CMS code for TACC WMA CMS Websites
-- [Core Styles], the base CMS code for TACC WMA CMS Websites
 
 
 ## Intended Usage
@@ -25,3 +26,4 @@ Please see the [Core CMS README].
 [Core CMS]: https://github.com/TACC/Core-CMS
 [Core Styles]: https://github.com/TACC/Core-Styles
 [Core CMS README]: https://github.com/TACC/Core-CMS/blob/main/README.md
+[Camino]: https://github.com/TACC/Camino
