@@ -1,4 +1,4 @@
-# TACC CMS Per-Site Resources - Shared - Stylesheets
+# TACC CMS Project - Shared - Stylesheets
 
 See [Core CMS Stylesheets `README.md`][core-css-readme].
 
