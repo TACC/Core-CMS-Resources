@@ -10,8 +10,9 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('ecep-cms/templates/standard.html', 'Standard'),
-    ('ecep-cms/templates/fullwidth.html', 'Full Width'),
+    ('standard.html', 'Standard'),
+    ('fullwidth.html', 'Full Width'),
+
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
