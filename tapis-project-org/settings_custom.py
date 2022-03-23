@@ -6,20 +6,6 @@
 #      because current infrastructure lacks ability to reference default values
 
 ########################
-# DJANGO CMS SETTINGS
-########################
-
-# CMS_TEMPLATES = (
-#     ('tapis-project-org/templates/standard.html', 'Standard'),
-#     ('tapis-project-org/templates/fullwidth.html', 'Full Width'),
-#     ('guide.html', 'Guide'),
-#     ('guides/getting_started.html', 'Guide: Getting Started'),
-#     ('guides/data_transfer.html', 'Guide: Data Transfer'),
-#     ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
-#     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
-# )
-
-########################
 # BRANDING
 ########################
 
