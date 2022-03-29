@@ -115,7 +115,7 @@ urlpatterns += [
 # - Users can choose alt. templates from `templates/djangocms_blog/plugins/*`.
 # - Devs can customize alt. templates at `templates/djangocms_blog/plugins/*`.
 BLOG_PLUGIN_TEMPLATE_FOLDERS = (
-    # ('plugins', 'Default'),
+    ('plugins', 'Default'),
     # ('plugins/alternate', 'Alternate'),
 )
 
