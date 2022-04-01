@@ -5,6 +5,11 @@
 	--offset-distance: 8.5vw;
 }
 
+@media only screen and (--medium-and-above) {
+  .figure:is(:--o-offset-content) .figure-caption {
+    padding-right: unset;
+  }
+}
 @media only screen and (--medium-and-above) and (--max-wide-and-below) {
   .o-offset-content--left,
   .o-offset-content--right {
