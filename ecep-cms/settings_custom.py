@@ -92,7 +92,8 @@ INCLUDES_CORE_PORTAL = True
 
 from taccsite_cms.settings import INSTALLED_APPS
 
-INSTALLED_APPS += [
+tacc_app_index = INSTALLED_APPS.index('taccsite_cms')
+INSTALLED_APPS[tacc_app_index:tacc_app_index] = [
     # 'filer',              # already in Core
     # 'easy_thumbnails',    # already in Core
     'parler',
