@@ -1,7 +1,7 @@
 /* TACC TRUMPS: Home (Page) */
-@import url("../../../../../../../../taccsite_cms/static/site_cms/css/src/_imports/tools/x-overlay.css");
-@import url("../../../../../../../../taccsite_cms/static/site_cms/css/src/_imports/tools/media-queries.css");
-@import url("../../../../../../../../taccsite_cms/static/site_cms/css/src/_imports/settings/border.css");
+@import url("_imports/tools/x-overlay.css");
+@import url("_imports/tools/media-queries.css");
+@import url("_imports/settings/border.css");
 
 
 
