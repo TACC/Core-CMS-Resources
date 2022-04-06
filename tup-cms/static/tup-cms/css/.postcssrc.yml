@@ -1,5 +1,4 @@
-# Merged on top of Core-CMS-Resources base config
-# SEE: https://github.com/tacc-wbomar/Core-CMS-Resources/blob/test/core-styles/_shared/static/css/.postcssrc.base.yml
+# Merged on top of TACC/Core-CMS base config
 plugins:
   postcss-env-function:
     importFrom:
