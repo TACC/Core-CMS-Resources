@@ -1,5 +1,4 @@
 # Merged on top of TACC/Core-CMS base config
-# SEE: https://github.com/TACC/Core-CMS-Resources/blob/main/taccsite_cms/static/site_cms/css/.postcssrc.yml
 plugins:
   postcss-env-function:
     importFrom:
