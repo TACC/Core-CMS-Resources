@@ -1,5 +1,13 @@
-/* To overwrite Core colors */
+/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
+
+/* Organize via ITCSS */
+/* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
+
+/* SETTINGS */
 @import url("./_imports/settings/color.css");
 
-/* NOTE: This is ONLY allowed because branding was added to Footer via CMS */
-#header-branding { display: none; }
+/* TRUMPS */
+@import url("./_imports/trumps/s-header.css");
+
+/* UNORGANIZED */
+@import url("./_imports/branding_logos.css");

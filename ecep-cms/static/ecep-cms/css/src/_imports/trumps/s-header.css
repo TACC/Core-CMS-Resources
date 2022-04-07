@@ -1,0 +1,5 @@
+/* https://github.com/TACC/Core-Styles/blob/main/source/_imports/trumps/s-header.css */
+
+.s-header .navbar-brand {
+  min-width: 76px;
+}
