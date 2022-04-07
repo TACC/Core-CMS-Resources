@@ -26,7 +26,7 @@ CMS_TEMPLATES = (
 _UTHSCSA_BRANDING = [
     "uthscsa",
     "brainmap-cms/img/org_logos/uthscsa-logo-white.png",
-    "branding-logo--tall",
+    "branding-logo",
     "https://www.uthscsa.edu/",
     "_blank",
     "UTHSC-SA Logo",
