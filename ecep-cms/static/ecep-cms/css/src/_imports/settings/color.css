@@ -1,0 +1,12 @@
+/* https://github.com/TACC/Core-Styles/blob/main/source/_imports/settings/color.css */
+:root {
+  --global-color-accent--normal: #4F008F;
+  --global-color-accent--x-light: #A12EFF;
+  --global-color-accent--xxx-light: #DAADFF;
+
+  /* CAVEAT: Not accessible within paragraph text */
+  /* SEE: https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=FFFFFF&lcolor=4F008F */
+  --global-color-link-on-light--normal: var(--global-color-accent--normal);
+  /* WARNING: Color from Dev not Design */
+  --global-color-link-on-dark--normal: var(--global-color-accent--xxx-light);
+}
