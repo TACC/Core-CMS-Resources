@@ -26,7 +26,7 @@ CMS_TEMPLATES = (
 _UTHSCSA_BRANDING = [
     "uthscsa",
     "brainmap-cms/img/org_logos/uthscsa-logo-white.png",
-    "branding-logo",
+    "branding-logo--short",
     "https://www.uthscsa.edu/",
     "_blank",
     "UTHSC-SA Logo",
@@ -37,7 +37,7 @@ _UTHSCSA_BRANDING = [
 _SGCI_BRANDING = [
     "sgci",
     "brainmap-cms/img/org_logos/sgci-logo-sans-text.svg",
-    "branding-logo",
+    "branding-logo--short",
     "https://sciencegateways.org/",
     "_blank",
     "SGCI Logo",
