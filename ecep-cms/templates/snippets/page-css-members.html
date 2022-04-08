@@ -1,7 +1,7 @@
 <style id="page-css-members">
-/* Replace space betwen <hr> and main headings with space above their anchors */
+/* To replace space betwen <hr> and headings with space above their anchors */
 /* CAVEAT: If heading level is changed, then must update each selector here */
-/* - add space above headign anchor target */
+/* - add space above heading anchor target */
 h3 > a[id] {
   padding-top: var(--global-space--hr-margin, 1em);
   display: inline-block;
@@ -12,6 +12,7 @@ h3 ~ hr { margin-bottom: 0; }
 hr + h3 { margin-top: 0; }
 </style>
 
+{# NOTE: This was used on this page until `href` was added to headings #}
 <style id="page-css-members--potential-global-styles-for-core">
 /* Disable onclick/active animation for non-linking anchors */
 a:not([href]) {
