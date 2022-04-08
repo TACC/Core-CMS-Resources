@@ -1,4 +1,6 @@
 <style id="page-css-members">
+/* Scroll to <HR> Above Heading */
+
 /* To replace space betwen <hr> and headings with space above their anchors */
 /* CAVEAT: If heading level is changed, then must update each selector here */
 /* - add space above heading anchor target */
@@ -10,15 +12,46 @@ h3 > a[id] {
 h3 ~ hr { margin-bottom: 0; }
 /* - if <hr> sibling, remove space above heading */
 hr + h3 { margin-top: 0; }
-</style>
 
-{# NOTE: This was used on this page until `href` was added to headings #}
-<style id="page-css-members--potential-global-styles-for-core">
-/* Disable onclick/active animation for non-linking anchors */
-a:not([href]) {
-    pointer-events: none;
+
+
+/* Permalink */
+
+/* Permalink: Structure */
+
+h3 > a[id] {
+  --buffer: 0.5ex;
+  margin-left: calc( -1em - var(--buffer) );
+}
+h3 > a[id]::before {
+  margin-right: var(--buffer);
+
+  font-family: 'Cortal-Icons' !important /* prevent browser ext. font change */;
+  content: "\e92c";
+  line-height: 1;
+
+  opacity: 0.5;
+  visibility: hidden;
+}
+h3 > a[id]:hover::before { opacity: 1 }
+h3:hover > a[id]::before { visibility: visible }
+
+/* Permalink: Style */
+
+h3 > a[id] {
+  color: inherit; /* only the icon should have color */
+  text-decoration: none !important;
+}
+:not(.o-section) h3 > a[id]:hover::before,
+.o-section--style-light h3 > a[id]:hover::before {
+  color: var(--global-color-link-on-light--normal);
+}
+.o-section--style-dark h3 a[id]:hover::before {
+  color: var(--global-color-link-on-dark--normal);
 }
 </style>
+
+
 
 {# The {{ html }} allows DjangoCMS Snippet to pass in more markup #}
 {{ html }}
