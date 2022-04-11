@@ -1,17 +1,14 @@
+<!-- CAVEAT: If heading level changes then update each heading selector here -->
 <style id="page-css-members">
 /* Scroll to <HR> Above Heading */
 
 /* To replace space betwen <hr> and headings with space above their anchors */
-/* CAVEAT: If heading level is changed, then must update each selector here */
-/* - add space above heading anchor target */
+hr { margin-bottom: 0; }
+h3 { margin-top: 0; }
 h3 > a[id] {
   padding-top: var(--global-space--hr-margin, 1em);
   display: inline-block;
 }
-/* - if heading sibling, remove space below <hr> */
-h3 ~ hr { margin-bottom: 0; }
-/* - if <hr> sibling, remove space above heading */
-hr + h3 { margin-top: 0; }
 
 
 
