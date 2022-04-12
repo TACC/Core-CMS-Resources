@@ -87,6 +87,14 @@ LOGO = [
 INCLUDES_CORE_PORTAL = True
 
 ########################
+# TACC: NEWS/BLOG
+########################
+
+# TACC settings
+TACC_BLOG_SHOW_CATEGORIES = False
+TACC_BLOG_SHOW_TAGS = False
+
+########################
 # NEWS / BLOG
 ########################
 
