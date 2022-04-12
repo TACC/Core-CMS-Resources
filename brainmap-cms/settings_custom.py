@@ -20,7 +20,7 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# BRANDING
+# TACC: BRANDING
 ########################
 
 _UTHSCSA_BRANDING = [
@@ -70,7 +70,7 @@ _UTEXAS_BRANDING = [
 BRANDING = [ _SGCI_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, _UTHSCSA_BRANDING ]
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO = [
@@ -83,10 +83,6 @@ LOGO = [
     "anonymous",
     "True"
 ]
-
-########################
-# FAVICON
-########################
 
 FAVICON = {
     "img_file_src": "brainmap-cms/img/org_logos/favicon.ico"

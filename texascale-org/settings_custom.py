@@ -17,7 +17,7 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO =  [
@@ -32,7 +32,7 @@ LOGO =  [
 ]
 
 ########################
-# PORTAL
+# TACC: PORTAL
 ########################
 
 INCLUDES_CORE_PORTAL = False
