@@ -22,7 +22,7 @@
 # )
 
 ########################
-# BRANDING
+# TACC: BRANDING
 ########################
 
 # from taccsite_cms.settings import TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING
@@ -41,7 +41,7 @@
 # BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING, _CUSTOM_BRANDING ]
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO =  [
@@ -56,7 +56,7 @@ LOGO =  [
 ]
 
 ########################
-# PORTAL
+# TACC: PORTAL
 ########################
 
 # Should a user be able to see link to Portal? (default value: True)

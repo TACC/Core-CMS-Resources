@@ -21,13 +21,7 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# THEME
-########################
-
-# THEME = 'has-dark-logo'
-
-########################
-# BRANDING
+# TACC: BRANDING
 ########################
 
 _NSF_BRANDING = [
@@ -66,7 +60,7 @@ _UTEXAS_BRANDING = [
 BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO = [
@@ -81,7 +75,7 @@ LOGO = [
 ]
 
 ########################
-# PORTAL
+# TACC: PORTAL
 ########################
 
 INCLUDES_CORE_PORTAL = True

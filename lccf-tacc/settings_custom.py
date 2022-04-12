@@ -6,7 +6,7 @@
 #      because current infrastructure lacks ability to reference default values
 
 ########################
-# BRANDING
+# TACC: BRANDING
 ########################
 
 _NSF_BRANDING = [
@@ -45,7 +45,7 @@ _UTEXAS_BRANDING = [
 BRANDING = [ NSF_BRANDING, TACC_BRANDING, UTEXAS_BRANDING ]
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO = [
@@ -60,7 +60,7 @@ LOGO = [
 ]
 
 ########################
-# PORTAL
+# TACC: PORTAL
 ########################
 
 INCLUDES_CORE_PORTAL = False

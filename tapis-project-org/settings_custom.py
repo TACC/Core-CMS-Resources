@@ -6,7 +6,7 @@
 #      because current infrastructure lacks ability to reference default values
 
 ########################
-# BRANDING
+# TACC: BRANDING
 ########################
 
 UHAWAII_BRANDING = [
@@ -56,7 +56,7 @@ _UTEXAS_BRANDING = [
 BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, UHAWAII_BRANDING ]
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO =  [
@@ -71,13 +71,13 @@ LOGO =  [
 ]
 
 ########################
-# PORTAL
+# TACC: PORTAL
 ########################
 
 INCLUDES_CORE_PORTAL = False
 
 ########################
-# GOOGLE ANALYTICS
+# TACC: GOOGLE ANALYTICS
 ########################
 
 GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-17"
