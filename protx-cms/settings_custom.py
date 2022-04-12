@@ -21,13 +21,13 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# THEME
+# TACC: (DEPRECATED)
 ########################
 
 THEME = 'has-dark-logo'
 
 ########################
-# BRANDING
+# TACC: BRANDING
 ########################
 
 COOKS_BRANDING = [
@@ -66,7 +66,7 @@ _UTEXAS_BRANDING = [
 BRANDING = [ COOKS_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO = [
