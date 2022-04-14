@@ -1,0 +1,17 @@
+/* https://github.com/TACC/Core-Styles/blob/main/source/_imports/components/django.cms.blog.css */
+
+/* To hide tags & categories */
+/* FAQ: Display none is not enough on grid instances */
+.app-blog.no-tags :--article .tags,
+.app-blog.no-categories :--article .categories {
+  display: none;
+}
+.app-blog.no-categories:not(.no-tags) :--article-item header {
+  --row-one-areas: 'tags tags';
+}
+.app-blog.no-tags:not(.no-categories) :--article-item header {
+  --row-one-areas: 'cats cats';
+}
+.app-blog.no-categories.no-tags :--article-item header {
+  --row-one-areas: 'none none';
+}
