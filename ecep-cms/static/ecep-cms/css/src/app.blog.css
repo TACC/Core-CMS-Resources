@@ -1,4 +1,7 @@
 /* https://github.com/TACC/Core-Styles/blob/main/source/_imports/components/django.cms.blog.css */
+@import url("_imports/components/django.cms.blog-selectors.css");
+
+
 
 /* To hide tags & categories */
 /* FAQ: Display none is not enough on grid instances */
