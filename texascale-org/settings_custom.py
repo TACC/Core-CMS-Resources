@@ -17,7 +17,7 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO =  [
@@ -32,7 +32,7 @@ LOGO =  [
 ]
 
 ########################
-# PORTAL
+# TACC: PORTAL
 ########################
 
 INCLUDES_CORE_PORTAL = False
@@ -41,7 +41,7 @@ INCLUDES_CORE_PORTAL = False
 
 
 ########################
-# FEATURES
+# TACC: (DEPRECATED)
 ########################
 
 from taccsite_cms.settings import INSTALLED_APPS

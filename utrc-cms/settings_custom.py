@@ -21,7 +21,7 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO = [
@@ -34,10 +34,6 @@ LOGO = [
     "anonymous",
     "True"
 ]
-
-########################
-# FAVICON
-########################
 
 FAVICON = {
     "img_file_src": "utrc-cms/img/org_logos/favicon.ico"
