@@ -6,7 +6,8 @@
 
 
 /* SETTINGS */
-/* SEE: TACC/Core-Styles/blob/main/source/_imports/settings/color.css */
+
+/* https://github.com/TACC/Core-Styles/blob/main/source/_imports/settings/color.css */
 :root {
   --global-color-accent--normal: #4F008F;
   --global-color-accent--x-light: #A12EFF;
@@ -24,6 +25,7 @@
 
 
 /* TRUMPS */
+
 /* SEE: TACC/Core-Styles/blob/main/source/_imports/trumps/s-header.css */
 .s-header .navbar-brand {
   min-width: 76px;

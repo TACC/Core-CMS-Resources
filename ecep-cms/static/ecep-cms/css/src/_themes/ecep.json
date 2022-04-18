@@ -5,11 +5,11 @@
   "environment-variables": {
     "// HEADER": "",
     "--header-text-color": "var(--global-color-primary--xx-light)",
-    "--header-bkgd-color": "var(--global-color-accent--normal)",
-    "--header-minor-border-color": "var(--global-color-accent--xxx-light)",
+    "--header-bkgd-color": "#4F008F",
+    "--header-minor-border-color": "#DAADFF",
     "// To 'hide' border by setting its color to match background color": "",
-    "--header-major-border-color": "var(--global-color-accent--normal)",
-    "--header-search-brdr-color": "var(--global-color-accent--x-light)",
+    "--header-major-border-color": "#4F008F",
+    "--header-search-brdr-color": "#A12EFF",
     "--header-search-bkgd-color": "#5f00ad",
     "// To set the bootstrap navbar-toggler-icon svg color for current theme": "",
     "--menu-toggle-icon": "none"
