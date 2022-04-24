@@ -11,6 +11,6 @@ Style guide: Trumps.Utilities.Border
 */
 
 .u-swallow--space-beneath-main-content {
-  padding-bottom: var(--global-space--above-footer);
-  margin-bottom: calc( -1 * var(--global-space--above-footer) );
+  padding-bottom: var(--global-space--beneath-main-content);
+  margin-bottom: calc( -1 * var(--global-space--beneath-main-content) );
 }
