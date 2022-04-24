@@ -5,8 +5,8 @@
 
 /* COMPONENTS */
 
-@import url("_imports/components/c-page.css");
+@import url("./_imports/components/c-page.css");
 
 /* TRUMPS */
 
-@import url("_imports/trumps/s-article-page.css");
+@import url("./_imports/trumps/s-article-page.css");

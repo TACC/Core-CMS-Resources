@@ -1,16 +1,12 @@
-## CUSTOM SETTINGS VALUES.
+# CUSTOM SETTINGS VALUES.
 # TACC WMA CMS SITE:
 # SCIVISCOLOR.ORG
 
 ########################
-# BRANDING
+# TACC: LOGOS
 ########################
 
-########################
-# LOGOS.
-########################
-
-LOGO =  [
+LOGO = [
     "sciviscolor",
     "sciviscolor-cms/img/org_logos/sciviscolor-logo-white.png",
     "",
@@ -21,8 +17,12 @@ LOGO =  [
     "True"
 ]
 
+FAVICON = {
+    "img_file_src": "sciviscolor-cms/img/org_logos/favicon.ico"
+}
+
 ########################
-# PORTAL
+# TACC: PORTAL
 ########################
 
 INCLUDES_CORE_PORTAL = False

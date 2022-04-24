@@ -10,8 +10,9 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('protx-cms/templates/standard.html', 'Standard'),
-    ('protx-cms/templates/fullwidth.html', 'Full Width'),
+    ('standard.html', 'Standard'),
+    ('fullwidth.html', 'Full Width'),
+
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
@@ -20,13 +21,13 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# THEME
+# TACC: (DEPRECATED)
 ########################
 
 THEME = 'has-dark-logo'
 
 ########################
-# BRANDING
+# TACC: BRANDING
 ########################
 
 COOKS_BRANDING = [
@@ -65,7 +66,7 @@ _UTEXAS_BRANDING = [
 BRANDING = [ COOKS_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO = [

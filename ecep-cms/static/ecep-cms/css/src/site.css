@@ -1,22 +1,35 @@
-/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
-
-/* Organize via ITCSS */
-/* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
-
 /* SETTINGS */
-/* … */
 
-/* GENERICS */
-/* … */
+/* https://github.com/TACC/Core-Styles/blob/main/source/_imports/settings/color.css */
+:root {
+  --global-color-accent--normal: #4F008F;
+  --global-color-accent--x-light: #A12EFF;
+  --global-color-accent--xxx-light: #DAADFF;
 
-/* ELEMENTS */
-@import url("_imports/elements/html-elements.css");
+  /* CAVEAT: Not accessible within paragraph text */
+  /* SEE: https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=FFFFFF&lcolor=4F008F */
+  --global-color-link-on-light--normal: var(--global-color-accent--normal);
+  /* WARNING: Color from Dev not Design */
+  --global-color-link-on-dark--normal: var(--global-color-accent--xxx-light);
+}
 
-/* OBJECTS */
-/* … */
 
-/* COMPONENTS */
-/* … */
+
+
 
 /* TRUMPS */
-/* … */
+
+/* SEE: TACC/Core-Styles/blob/main/source/_imports/trumps/s-header.css */
+.s-header .navbar-brand {
+  min-width: 76px;
+}
+
+
+
+
+
+/* UNORGANIZED */
+
+/* SEE: TACC/Core-Styles/blob/main/source/_imports/branding_logos.css */
+/* NOTE: This is ONLY allowed because branding was added to Footer via CMS */
+#header-branding { display: none; }

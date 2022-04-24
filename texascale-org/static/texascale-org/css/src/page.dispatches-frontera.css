@@ -1,11 +1,10 @@
-@import url("_imports/components/c-fellow.css");
-@import url("_imports/components/c-ribbon.css");
+@import url("./_imports/components/c-fellow.css");
+@import url("./_imports/components/c-ribbon.css");
 
 /* ELEMENTS: (Content) Sectioning Elements */
 
 /* Overwrite `_imports/elements/sectioning.css` */
-main /* SEE: https://github.com/TACC/Core-CMS/pull/151 */,
-#content-wrap /* HACK: Using ID selector until <main> exists */ {
+main {
   padding-bottom: 0;
 }
 

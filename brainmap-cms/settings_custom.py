@@ -20,13 +20,13 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# BRANDING
+# TACC: BRANDING
 ########################
 
 _UTHSCSA_BRANDING = [
     "uthscsa",
     "brainmap-cms/img/org_logos/uthscsa-logo-white.png",
-    "branding-logo--tall",
+    "branding-logo--short",
     "https://www.uthscsa.edu/",
     "_blank",
     "UTHSC-SA Logo",
@@ -37,7 +37,7 @@ _UTHSCSA_BRANDING = [
 _SGCI_BRANDING = [
     "sgci",
     "brainmap-cms/img/org_logos/sgci-logo-sans-text.svg",
-    "branding-logo--tall",
+    "branding-logo--short",
     "https://sciencegateways.org/",
     "_blank",
     "SGCI Logo",
@@ -70,7 +70,7 @@ _UTEXAS_BRANDING = [
 BRANDING = [ _SGCI_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, _UTHSCSA_BRANDING ]
 
 ########################
-# LOGOS
+# TACC: LOGOS
 ########################
 
 LOGO = [
@@ -83,10 +83,6 @@ LOGO = [
     "anonymous",
     "True"
 ]
-
-########################
-# FAVICON
-########################
 
 FAVICON = {
     "img_file_src": "brainmap-cms/img/org_logos/favicon.ico"

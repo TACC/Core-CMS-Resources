@@ -1,3 +1,9 @@
+/* ELEMENTS: Content Sectioning */
+
+main {
+  padding-bottom: var(--global-space-beneath-main-content);
+}
+
 /* ELEMENTS: Content Sectioning: Headings
 
 - `h1` = story titles
@@ -8,7 +14,7 @@
 - `h6` = byline/category header
 */
 
-/* NOTE: If scope classes are implemented, then these would be nested under a `.s-cms-content` */
+/* NOTE: If scope classes are implemented, then these would be nested under a `.s-cms-text` */
 
 h1, h3 {
 	font-family: benton-sans, sans-serif;
