@@ -16,11 +16,10 @@
   import TargetSiblingHider from '/static/site_cms/js/modules/targetSiblingHider.js';
 
   const targetSiblingHider = new TargetSiblingHider({
-    mustCreateShowAllLink: true,
     mustScrollToTarget: true,
     scopeElement: within,
     ancestorSelector: wrapWith,
-    showAllLinkClassNames: ['show-all'],
+    showAllLink: document.getElementsByClassName('show-all')[0],
     ignoreElements: [ within.querySelector('h2') ]
   });
   targetSiblingHider.toggleOnHashChange();
