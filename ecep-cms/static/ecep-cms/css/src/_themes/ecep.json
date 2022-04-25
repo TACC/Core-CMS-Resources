@@ -3,6 +3,9 @@
   "see": "https://github.com/TACC/Core-Styles/blob/main/source/_themes/default.json",
 
   "environment-variables": {
+    "// CMS": "",
+    "--cms-toolbar-height": "46px",
+
     "// HEADER": "",
     "--header-text-color": "var(--global-color-primary--xx-light)",
     "--header-bkgd-color": "#4F008F",
