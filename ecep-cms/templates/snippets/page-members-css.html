@@ -51,12 +51,16 @@ h3 > a[id] {
 
 /* Show All Link (from JavaScript) */
 
-.js-members-list a.show-all {
-  margin-top: var(--global-space--hr-margin, 1em);
+.c-nav + a.show-all {
+  display: inline-block;
 
-  position: absolute;
-  right: 0;
-  top: 0;
+  margin-top: 1em;
+  padding-inline: 0.5em; /* mimic `.c-nav a` */
+}
+.c-nav--boxed + a.show-all {
+  margin-left: calc(
+    var(--global-space--list-indent) / 2
+  ); /* from `c-nav.css` */
 }
 </style>
 
