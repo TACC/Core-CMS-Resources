@@ -62,7 +62,7 @@ urlpatterns += [
 ]
 """
 
-# Paths for alternate templatess that user can choose for blog-specific plugin
+# Paths for alternate templates that user can choose for blog-specific plugin
 # - Devs can customize core templates at `templates/djangocms_blog/`.
 # - Users can choose alt. templates from `templates/djangocms_blog/plugins/*`.
 # - Devs can customize alt. templates at `templates/djangocms_blog/plugins/*`.
