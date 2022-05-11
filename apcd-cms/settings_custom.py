@@ -8,8 +8,8 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('apcd-cms/templates/standard.html', 'Standard'),
-    ('apcd-cms/templates/fullwidth.html', 'Full Width'),
+    ('standard.html', 'Standard'),
+    ('fullwidth.html', 'Full Width'),
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
