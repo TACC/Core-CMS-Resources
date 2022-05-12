@@ -10,9 +10,10 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('frontera-cms/templates/standard.html', 'Standard'),
-    ('frontera-cms/templates/fullwidth.html', 'Full Width'),
-    ('frontera-cms/templates/home.html', 'Homepage'),
+    ('standard.html', 'Standard'),
+    ('fullwidth.html', 'Full Width'),
+
+    ('home.html', 'Homepage'),
 
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
@@ -20,6 +21,14 @@ CMS_TEMPLATES = (
     ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
+
+# FP-1645: Remove CMS_TEMPLATES_DEPRECATED
+CMS_TEMPLATES_DEPRECATED = (
+    ('frontera-cms/templates/standard.html', 'DEPRECATED Standard'),
+    ('frontera-cms/templates/fullwidth.html', 'DEPRECATED Full Width'),
+    ('frontera-cms/templates/home.html', 'DEPRECATED Homepage'),
+)
+CMS_TEMPLATES = CMS_TEMPLATES + CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: BRANDING

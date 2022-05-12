@@ -10,14 +10,22 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('neuronex-cms/templates/fullwidth.html', 'Fullwidth'),
+    ('fullwidth.html', 'Fullwidth'),
+
     ('home_portal.html', 'Standard Portal Homepage'),
+
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
     ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
+
+# FP-1645: Remove CMS_TEMPLATES_DEPRECATED
+CMS_TEMPLATES_DEPRECATED = (
+    ('neuronex-cms/templates/fullwidth.html', 'DEPRECATED Fullwidth'),
+)
+CMS_TEMPLATES = CMS_TEMPLATES + CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: BRANDING

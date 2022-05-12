@@ -1,32 +1,19 @@
 # TACC CMS Project - Example - Templates
 
-Templates specific to this project __must__ be in this directory.
-Otherwise, they will be unavailable to [Core CMS] loading this project.
+You may overwrite Core CMS templates and 3rd-party apps/plugin templates.
 
-The directory structure here __should__ mirror [Core CMS]:
-  [`/taccsite_cms/templates`][core-tpl-dir]
+## Page Templates
 
-This consistency lets us override templates in Django fashion.
+To make new templates available as page templates for CMS editors, replace or add to `CMS_TEMPLATES` setting.
 
-[Core CMS]: https://github.com/TACC/Core-CMS
-[core-tpl-dir]: https://github.com/TACC/Core-CMS/blob/main/taccsite_cms/static/site_cms
+## Overwrite Core
 
-## How to Write Template Path
-
-Where `name-of-project` is a CMS projects with custom templates:
-
-- `/name-of-project/templates/___.html`
-
-### How to Overwrite Core Templates
-
-1. Create a template of the same name here.
-2. Reference the template (where needed) with the correct path.
-
-⚠️ A project __must not__ overwrite the Core CMS `base.html`.
+1. Create a template of the same name as the [Core CMS template][core-tpl-dir] to overwrite.
+2. Replace or extend the content of the overwritten template.
 
 ## Overwrite Apps or Plugins
 
-You may overwrite apps [like Core][core-overwrite-doc].
-But you msut do so relative to this directory.
+Follow [Core CMS instructions][core-tpl-doc], but within _this_ directory instead.
 
-[core-overwrite-doc]: https://github.com/TACC/Core-CMS/tree/main/taccsite_cms/templates/README.md#overwrite-apps-or-plugins
+[core-tpl-dir]: https://github.com/TACC/Core-CMS/blob/main/taccsite_cms/static/site_cms
+[core-tpl-doc]: https://github.com/TACC/Core-CMS/tree/main/taccsite_cms/templates

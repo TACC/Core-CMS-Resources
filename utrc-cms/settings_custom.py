@@ -11,7 +11,7 @@ CMS_TEMPLATES = (
     ('standard.html', 'Standard'),
     ('fullwidth.html', 'Full Width'),
 
-    ('utrc-cms/templates/home.html', 'Home'),
+    ('home.html', 'Home'),
 
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
@@ -19,6 +19,12 @@ CMS_TEMPLATES = (
     ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
+
+# FP-1645: Remove CMS_TEMPLATES_DEPRECATED
+CMS_TEMPLATES_DEPRECATED = (
+    ('utrc-cms/templates/home.html', 'DEPRECATED Home'),
+)
+CMS_TEMPLATES = CMS_TEMPLATES + CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: LOGOS

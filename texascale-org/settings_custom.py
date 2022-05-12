@@ -7,14 +7,26 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('texascale-org/templates/fullwidth.html', 'Fullwidth'),
-    ('texascale-org/templates/category.html', 'Category'),
-    ('texascale-org/templates/article.html', 'Article'),
-    ('texascale-org/templates/article.freeform.html', 'Article (Free-Form)'),
-    ('texascale-org/templates/article.sidebar-right.html', 'Article (Right Sidebar)'),
-    ('texascale-org/templates/article.visual.html', 'Article (Full-Size Visual)'),
-    ('texascale-org/templates/article.image-map.html', 'Article (Image Map)'),
+    ('fullwidth.html', 'Fullwidth'),
+    ('category.html', 'Category'),
+    ('article.html', 'Article'),
+    ('article.freeform.html', 'Article (Free-Form)'),
+    ('article.sidebar-right.html', 'Article (Right Sidebar)'),
+    ('article.visual.html', 'Article (Full-Size Visual)'),
+    ('article.image-map.html', 'Article (Image Map)'),
 )
+
+# FP-1645: Remove CMS_TEMPLATES_DEPRECATED
+CMS_TEMPLATES_DEPRECATED = (
+    ('texascale-org/templates/fullwidth.html', 'DEPRECATED Fullwidth'),
+    ('texascale-org/templates/category.html', 'DEPRECATED Category'),
+    ('texascale-org/templates/article.html', 'DEPRECATED Article'),
+    ('texascale-org/templates/article.freeform.html', 'DEPRECATED Article (Free-Form)'),
+    ('texascale-org/templates/article.sidebar-right.html', 'DEPRECATED Article (Right Sidebar)'),
+    ('texascale-org/templates/article.visual.html', 'DEPRECATED Article (Full-Size Visual)'),
+    ('texascale-org/templates/article.image-map.html', 'DEPRECATED Article (Image Map)'),
+)
+CMS_TEMPLATES = CMS_TEMPLATES + CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: LOGOS
