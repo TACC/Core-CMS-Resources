@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load staticfiles get_url_match %}
+
+{% block assets_custom %}
+  {{ block.super }}
+
+  {% with path|get_url_match:"/20\d\d/" as year_slug %}
+    {% if year_slug %}
+      {% with path = "texascale-org/css/build/site."|add:year_slug:add|".css" %}
+  <link rel="stylesheet" href="{% static path %}">
+      {% endwith %}
+    {% endif %}
+  {% endwith %}
+{% endblock assets_custom %}
