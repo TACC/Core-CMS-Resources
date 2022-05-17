@@ -5,9 +5,9 @@
 {% block content_assets %}
   {{ block.super }}
 
-  {% with path|get_url_match:"/20\d\d/" as year_slug %}
+  {% with year_slug=request.path|get_url_match:"/(20\d\d)/" %}
     {% if year_slug %}
-      {% with path = "texascale-org/css/build/app.blog."|add:year_slug:add|".css" %}
+      {% with path="texascale-org/css/build/app.blog."|add:year_slug|add:".css" %}
   <link rel="stylesheet" href="{% static path %}">
       {% endwith %}
     {% endif %}
