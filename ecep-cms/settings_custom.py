@@ -2,8 +2,7 @@
 # TACC WMA CMS SITE:
 # *.ECEP.TACC.UTEXAS.EDU
 
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
-#      because current infrastructure lacks ability to reference default values
+from taccsite_cms.settings import *
 
 ########################
 # DJANGO CMS SETTINGS
@@ -92,10 +91,7 @@ TACC_BLOG_SHOW_TAGS = False
 # NEWS / BLOG
 ########################
 
-from taccsite_cms.settings import INSTALLED_APPS
-
-tacc_app_index = INSTALLED_APPS.index('taccsite_cms')
-INSTALLED_APPS[tacc_app_index:tacc_app_index] = [
+INSTALLED_APPS = INSTALLED_APPS + [
     # 'filer',              # already in Core
     # 'easy_thumbnails',    # already in Core
     'parler',
@@ -137,4 +133,4 @@ BLOG_ENABLE_COMMENTS = False
 # CLIENT BUILD SETTINGS
 ########################
 
-ROOT_URLCONF = 'taccsite_custom.ecep-cms.urls'
+ROOT_URLCONF = TACC_CUSTOM_ROOT + '.ecep-cms.urls'

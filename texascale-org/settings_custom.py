@@ -1,6 +1,8 @@
 ## CUSTOM SETTINGS VALUES.
 # TACC WMA CMS SITE:
-# SCIVISCOLOR.ORG
+# TEXASCALE(-DEV).TACC.UTEXAS.EDU
+
+from taccsite_cms.settings import *
 
 ########################
 # DJANGO CMS SETTINGS
@@ -53,10 +55,7 @@ INCLUDES_CORE_PORTAL = False
 # NEWS / BLOG
 ########################
 
-from taccsite_cms.settings import INSTALLED_APPS
-
-tacc_app_index = INSTALLED_APPS.index('taccsite_cms')
-INSTALLED_APPS[tacc_app_index:tacc_app_index] = [
+INSTALLED_APPS = INSTALLED_APPS + [
     # 'filer',              # already in Core
     # 'easy_thumbnails',    # already in Core
     'parler',
@@ -99,4 +98,4 @@ BLOG_ENABLE_COMMENTS = False
 ########################
 
 # TACC/Core-CMS-Resources#75: Load custom urls.py so we can add urlpatterns for taggit_autosuggest
-ROOT_URLCONF = 'taccsite_custom.texascale-org.urls'
+ROOT_URLCONF = TACC_CUSTOM_ROOT + '.texascale-org.urls'
