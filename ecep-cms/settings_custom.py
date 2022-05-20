@@ -134,3 +134,8 @@ BLOG_ENABLE_COMMENTS = False
 ########################
 
 ROOT_URLCONF = TACC_CUSTOM_ROOT + '.ecep-cms.urls'
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass

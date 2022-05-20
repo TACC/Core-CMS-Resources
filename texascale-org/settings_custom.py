@@ -99,3 +99,8 @@ BLOG_ENABLE_COMMENTS = False
 
 # TACC/Core-CMS-Resources#75: Load custom urls.py so we can add urlpatterns for taggit_autosuggest
 ROOT_URLCONF = TACC_CUSTOM_ROOT + '.texascale-org.urls'
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass
