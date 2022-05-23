@@ -8,14 +8,22 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('a2cps-cms/templates/standard.html', 'Standard'),
-    ('a2cps-cms/templates/fullwidth.html', 'Full Width'),
+    ('standard.html', 'Standard'),
+    ('fullwidth.html', 'Full Width'),
+
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
     ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
+
+# Deprecated Templates
+# TODO: FP-1645: Remove
+CMS_TEMPLATES += [
+    ('a2cps-cms/templates/standard.html', 'Standard'),
+    ('a2cps-cms/templates/fullwidth.html', 'Full Width'),
+]
 
 ########################
 # TACC: LOGOS
