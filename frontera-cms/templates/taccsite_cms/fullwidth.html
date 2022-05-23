@@ -1,12 +1,8 @@
 {% extends "fullwidth.html" %}
 {% load cms_tags static %}
 
-{# DEPRECATED TEMPLATE #}
-
 {% block assets_custom %}
   {{ block.super }}
-
-  {% include "./assets_custom.html" %}
 
   <!-- To style old CMS content on new CMS -->
   <!-- NOTE: This should probably be loaded BEFORE "To customize styles …", but:

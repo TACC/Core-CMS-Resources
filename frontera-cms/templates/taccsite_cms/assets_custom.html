@@ -1,0 +1,8 @@
+{% extends "assets_custom.html" %}
+{% load cms_tags static %}
+
+{% block assets %}
+  {{ block.super }}
+
+  <link rel="stylesheet" href="{% static 'frontera-cms/css/build/site.css' %}">
+{% endblock assets %}

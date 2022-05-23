@@ -22,13 +22,13 @@ CMS_TEMPLATES = (
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
 
-# FP-1645: Remove CMS_TEMPLATES_DEPRECATED
-CMS_TEMPLATES_DEPRECATED = (
+# Deprecated Templates
+# TODO: FP-1645: Remove
+CMS_TEMPLATES += (
     ('frontera-cms/templates/standard.html', 'DEPRECATED Standard'),
     ('frontera-cms/templates/fullwidth.html', 'DEPRECATED Full Width'),
     ('frontera-cms/templates/home.html', 'DEPRECATED Homepage'),
 )
-CMS_TEMPLATES += CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: BRANDING
