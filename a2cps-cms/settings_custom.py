@@ -2,6 +2,7 @@
 # TACC WMA CMS SITE:
 # *.A2CPS.TACC.UTEXAS.EDU
 
+from taccsite_cms.settings import *
 
 ########################
 # DJANGO CMS SETTINGS
@@ -43,3 +44,12 @@ LOGO = [
 FAVICON = {
     "img_file_src": "a2cps-cms/img/org_logos/favicon.ico"
 }
+
+########################
+# IMPORT & EXPORT
+########################
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass

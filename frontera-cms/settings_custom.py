@@ -2,8 +2,7 @@
 # TACC WMA CMS SITE:
 # *.FRONTERA-PORTAL.TACC.UTEXAS.EDU
 
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
-#      because current infrastructure lacks ability to reference default values
+from taccsite_cms.settings import *
 
 ########################
 # DJANGO CMS SETTINGS
@@ -87,3 +86,12 @@ LOGO =  [
 FAVICON = {
     "img_file_src": "frontera-cms/img/org_logos/favicon.ico"
 }
+
+########################
+# IMPORT & EXPORT
+########################
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass

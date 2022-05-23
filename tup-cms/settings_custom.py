@@ -2,6 +2,8 @@
 # TACC WMA CMS SITE:
 # *.TUP.TACC.UTEXAS.EDU
 
+from taccsite_cms.settings import *
+
 ########################
 # DJANGO CMS SETTINGS
 ########################
@@ -31,3 +33,12 @@ LOGO = [
     "anonymous",
     "True"
 ]
+
+########################
+# IMPORT & EXPORT
+########################
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass

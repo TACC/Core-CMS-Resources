@@ -2,6 +2,8 @@
 # TACC WMA CMS SITE:
 # *.PROJECT_DOMAIN.TACC.UTEXAS.EDU
 
+from taccsite_cms.settings import *
+
 ########################
 # DJANGO CMS SETTINGS
 ########################
@@ -61,3 +63,12 @@ LOGO =  [
 
 # Should a user be able to see link to Portal? (default value: True)
 # INCLUDES_CORE_PORTAL = False # True to show login link, False to hide login link
+
+########################
+# IMPORT & EXPORT
+########################
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass

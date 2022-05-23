@@ -2,6 +2,8 @@
 # TACC WMA CMS SITE:
 # SCIVISCOLOR.ORG
 
+from taccsite_cms.settings import *
+
 ########################
 # TACC: LOGOS
 ########################
@@ -26,3 +28,12 @@ FAVICON = {
 ########################
 
 INCLUDES_CORE_PORTAL = False
+
+########################
+# IMPORT & EXPORT
+########################
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass

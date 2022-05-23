@@ -2,6 +2,8 @@
 # TACC WMA CMS SITE:
 # *.BRAINMAP.TACC.UTEXAS.EDU
 
+from taccsite_cms.settings import *
+
 ########################
 # DJANGO CMS SETTINGS
 ########################
@@ -87,3 +89,12 @@ LOGO = [
 FAVICON = {
     "img_file_src": "brainmap-cms/img/org_logos/favicon.ico"
 }
+
+########################
+# IMPORT & EXPORT
+########################
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass

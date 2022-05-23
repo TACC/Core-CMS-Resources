@@ -2,8 +2,7 @@
 # TACC WMA CMS SITE:
 # *.TAPIS-PROJECT.ORG
 
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
-#      because current infrastructure lacks ability to reference default values
+from taccsite_cms.settings import *
 
 ########################
 # TACC: BRANDING
@@ -81,3 +80,12 @@ INCLUDES_CORE_PORTAL = False
 ########################
 
 GOOGLE_ANALYTICS_PROPERTY_ID = "UA-125525035-17"
+
+########################
+# IMPORT & EXPORT
+########################
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass

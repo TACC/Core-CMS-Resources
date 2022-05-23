@@ -2,8 +2,7 @@
 # TACC WMA CMS SITE:
 # *.LCCF.TACC.UTEXAS.EDU
 
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
-#      because current infrastructure lacks ability to reference default values
+from taccsite_cms.settings import *
 
 ########################
 # TACC: BRANDING
@@ -64,3 +63,12 @@ LOGO = [
 ########################
 
 INCLUDES_CORE_PORTAL = False
+
+########################
+# IMPORT & EXPORT
+########################
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass

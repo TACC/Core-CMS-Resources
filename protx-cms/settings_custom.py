@@ -2,8 +2,7 @@
 # TACC WMA CMS SITE:
 # *.PROTX.TACC.UTEXAS.EDU
 
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
-#      because current infrastructure lacks ability to reference default values
+from taccsite_cms.settings import *
 
 ########################
 # DJANGO CMS SETTINGS
@@ -85,3 +84,12 @@ LOGO = [
     "anonymous",
     "True"
 ]
+
+########################
+# IMPORT & EXPORT
+########################
+
+try:
+    from taccsite_cms.settings_local import *
+except ModuleNotFoundError:
+    pass
