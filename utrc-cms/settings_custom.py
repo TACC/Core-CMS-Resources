@@ -21,11 +21,11 @@ CMS_TEMPLATES = (
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
 
-# FP-1645: Remove CMS_TEMPLATES_DEPRECATED
-CMS_TEMPLATES_DEPRECATED = (
+# Deprecated Templates
+# TODO: FP-1645: Remove
+CMS_TEMPLATES += (
     ('utrc-cms/templates/home.html', 'DEPRECATED Home'),
 )
-CMS_TEMPLATES += CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: LOGOS
