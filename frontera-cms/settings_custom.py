@@ -28,7 +28,7 @@ CMS_TEMPLATES_DEPRECATED = (
     ('frontera-cms/templates/fullwidth.html', 'DEPRECATED Full Width'),
     ('frontera-cms/templates/home.html', 'DEPRECATED Homepage'),
 )
-CMS_TEMPLATES = CMS_TEMPLATES + CMS_TEMPLATES_DEPRECATED
+CMS_TEMPLATES += CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: BRANDING

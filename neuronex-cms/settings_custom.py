@@ -25,7 +25,7 @@ CMS_TEMPLATES = (
 CMS_TEMPLATES_DEPRECATED = (
     ('neuronex-cms/templates/fullwidth.html', 'DEPRECATED Fullwidth'),
 )
-CMS_TEMPLATES = CMS_TEMPLATES + CMS_TEMPLATES_DEPRECATED
+CMS_TEMPLATES += CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: BRANDING

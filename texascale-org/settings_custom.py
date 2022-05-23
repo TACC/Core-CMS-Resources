@@ -28,7 +28,7 @@ CMS_TEMPLATES_DEPRECATED = (
     ('texascale-org/templates/article.visual.html', 'DEPRECATED Article (Full-Size Visual)'),
     ('texascale-org/templates/article.image-map.html', 'DEPRECATED Article (Image Map)'),
 )
-CMS_TEMPLATES = CMS_TEMPLATES + CMS_TEMPLATES_DEPRECATED
+CMS_TEMPLATES += CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: LOGOS

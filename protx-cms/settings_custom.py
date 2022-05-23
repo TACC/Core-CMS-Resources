@@ -24,7 +24,7 @@ CMS_TEMPLATES = (
 CMS_TEMPLATES_DEPRECATED = (
     ('protx-cms/templates/getting_started.html', 'DEPRECATED Guide: Getting Started'),
 )
-CMS_TEMPLATES = CMS_TEMPLATES + CMS_TEMPLATES_DEPRECATED
+CMS_TEMPLATES += CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: (DEPRECATED)
