@@ -18,8 +18,9 @@ CMS_TEMPLATES = (
     ('article.image-map.html', 'Article (Image Map)'),
 )
 
-# FP-1645: Remove CMS_TEMPLATES_DEPRECATED
-CMS_TEMPLATES_DEPRECATED = (
+# Deprecated Templates
+# TODO: FP-1645: Remove
+CMS_TEMPLATES += (
     ('texascale-org/templates/fullwidth.html', 'DEPRECATED Fullwidth'),
     ('texascale-org/templates/category.html', 'DEPRECATED Category'),
     ('texascale-org/templates/article.html', 'DEPRECATED Article'),
@@ -28,7 +29,6 @@ CMS_TEMPLATES_DEPRECATED = (
     ('texascale-org/templates/article.visual.html', 'DEPRECATED Article (Full-Size Visual)'),
     ('texascale-org/templates/article.image-map.html', 'DEPRECATED Article (Image Map)'),
 )
-CMS_TEMPLATES += CMS_TEMPLATES_DEPRECATED
 
 ########################
 # TACC: LOGOS
