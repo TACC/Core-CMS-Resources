@@ -65,7 +65,7 @@ BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
 
 LOGO = [
     "ecep",
-    "ecep-cms/img/org_logos/ecep-white-has_text.svg",
+    "ecep-cms/img/org_logos/ecep-white-no_words.svg",
     "",
     "/",
     "_self",
