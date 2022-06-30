@@ -3,6 +3,12 @@
 # *.TUP.TACC.UTEXAS.EDU
 
 ########################
+# DJANGO SETTINGS
+########################
+
+LDAP_ENABLED = False
+
+########################
 # DJANGO CMS SETTINGS
 ########################
 
