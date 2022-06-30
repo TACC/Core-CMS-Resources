@@ -4,7 +4,7 @@
 {% block assets_custom %}
   {{ block.super }}
 
-  {% with year_slug=request.path|get_url_match:"/(20\d\d)/" %}
+  {% with year_slug=request.path|get_url_match:"/(202\d)/" %}
     {% if year_slug %}
       {% with src="texascale-org/css/build/site."|add:year_slug|add:".css" %}
   <link rel="stylesheet" href="{% static src %}" data-year_slug="{{year_slug}}">
