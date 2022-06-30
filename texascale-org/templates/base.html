@@ -6,9 +6,13 @@
 
   {% with year_slug=request.path|get_url_match:"/(20\d\d)/" %}
     {% if year_slug %}
-      {% with path="texascale-org/css/build/site."|add:year_slug|add:".css" %}
-  <link rel="stylesheet" href="{% static path %}">
+      {% with src="texascale-org/css/build/site."|add:year_slug|add:".css" %}
+  <link rel="stylesheet" href="{% static src %}" data-year_slug="{{year_slug}}">
       {% endwith %}
+    {% else %}
+      {% if settings.DEBUG %}
+  <!-- will not load annual CSS cuz year_slug is {{year_slug}} not /(202\d)/ -->
+      {% endif %}
     {% endif %}
   {% endwith %}
 {% endblock assets_custom %}
