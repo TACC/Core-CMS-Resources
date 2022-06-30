@@ -65,7 +65,7 @@ BRANDING = [_NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING]
 
 LOGO = [
     "ecep",
-    "ecep-cms/img/org_logos/ECEP_logo_PurpleNoText.jpeg",
+    "ecep-cms/img/org_logos/ecep-white-no_words.svg",
     "",
     "/",
     "_self",
@@ -73,6 +73,10 @@ LOGO = [
     "anonymous",
     "True"
 ]
+
+FAVICON = {
+    "img_file_src": "ecep-cms/img/org_logos/favicon.ico"
+}
 
 ########################
 # TACC: PORTAL
