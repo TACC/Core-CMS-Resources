@@ -74,6 +74,10 @@ LOGO = [
     "True"
 ]
 
+FAVICON = {
+    "img_file_src": "ecep-cms/img/org_logos/favicon.ico"
+}
+
 ########################
 # TACC: PORTAL
 ########################
