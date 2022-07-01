@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load staticfiles get_url_match %}
+
+{% block assets_custom %}
+  {{ block.super }}
+
+  {% with year_slug=request.path|get_url_match:"/(2019|202\d)/" %}
+    {% if year_slug %}
+      {% with src="texascale-org/css/build/site."|add:year_slug|add:".css" %}
+  <link rel="stylesheet" href="{% static src %}" data-year_slug="{{year_slug}}">
+      {% endwith %}
+    {% else %}
+      {% if settings.DEBUG %}
+  <!-- will not load annual CSS cuz year_slug is {{year_slug}} not 2019…2029 -->
+      {% endif %}
+    {% endif %}
+  {% endwith %}
+{% endblock assets_custom %}
