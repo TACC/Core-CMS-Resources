@@ -2,4 +2,4 @@
 plugins:
   postcss-env-function:
     importFrom:
-      - 'node_modules/@tacc/core-styles/source/_themes/default.json'
+      - node_modules/@tacc/core-styles/src/lib/_themes/default.json
