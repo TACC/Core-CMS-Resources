@@ -9,14 +9,19 @@
 
 /* https://github.com/TACC/Core-Styles/blob/main/source/_imports/settings/color.css */
 :root {
-  --global-color-accent--normal: #4F008F;
-  --global-color-accent--x-light: #A12EFF;
+  /* Accent */
   --global-color-accent--xxx-light: #DAADFF;
+  --global-color-accent--x-light: #A12EFF;
+  --global-color-accent--light: #6E00C8;
+  --global-color-accent--normal: #4F008F;
+  --global-color-accent--dark: #2F0054;
+  --global-color-accent--x-dark: #1E0037;
 
-  /* CAVEAT: Not accessible within paragraph text */
-  /* SEE: https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=FFFFFF&lcolor=4F008F */
+  --global-color-accent--alt: #DDC4F2;
+  --global-color-accent--weak: #5B00A440;
+
+  /* Link */
   --global-color-link-on-light--normal: var(--global-color-accent--normal);
-  /* WARNING: Color from Dev not Design */
   --global-color-link-on-dark--normal: var(--global-color-accent--xxx-light);
 }
 
