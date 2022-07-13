@@ -12,10 +12,12 @@
 
 /* To avoid banner overlay being off-screen */
 @media (--medium-and-above) and (--x-wide-and-below) {
-  .o-section {
+  .s-home__banner,
+  .s-home__content {
     margin-inline: 116px;
   }
-  .o-section.container {
+  .s-home__banner.container,
+  .s-home__content.container {
     width: auto;
   }
 }
