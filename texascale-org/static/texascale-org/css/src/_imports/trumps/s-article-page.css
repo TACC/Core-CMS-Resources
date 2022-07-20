@@ -12,7 +12,7 @@ Markup:
 
 Styleguide Trumps.Scopes.Article
 */
-@import url("_imports/tools/media-queries.css");
+@import url("@tacc/core-styles/src/lib/_imports/tools/media-queries.css");
 
 /* Prevent content after article from wrapping around floated content in article */
 .s-article-page .container,

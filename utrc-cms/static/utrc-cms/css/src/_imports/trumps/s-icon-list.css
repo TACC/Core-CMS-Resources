@@ -17,7 +17,7 @@ Markup:
 
 Styleguide Trumps.Scopes.IconList
 */
-@import url("_imports/tools/x-truncate.css");
+@import url("@tacc/core-styles/src/lib/_imports/tools/x-truncate.css");
 
 
 
