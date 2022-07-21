@@ -1,22 +1,11 @@
-/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
+:root {
+  /* Accent Hues */
+  --global-color-accent--x-light: #F2DFBD;
+  --global-color-accent--light: #BDA374;
+  --global-color-accent--normal: #877453;
+  --global-color-accent--dark: #64563E;
+  --global-color-accent--x-dark: #403014;
 
-/* Organize via ITCSS */
-/* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
-
-/* SETTINGS */
-@import url("./_imports/settings/color.css");
-
-/* GENERICS */
-/* … */
-
-/* ELEMENTS */
-/* … */
-
-/* OBJECTS */
-/* … */
-
-/* COMPONENTS */
-/* … */
-
-/* TRUMPS */
-/* … */
+  --global-color-accent--alt: #E0D8C9;
+  --global-color-accent--weak: #9D702140;
+}
