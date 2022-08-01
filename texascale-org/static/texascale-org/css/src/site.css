@@ -12,7 +12,7 @@
 /* … */
 
 /* ELEMENTS */
-@import url("./_imports/elements/html-elements.css");
+@import url("@tacc/core-styles/src/lib/_imports/elements/html-elements.cms.css");
 
 /* OBJECTS */
 @import url("./_imports/objects/o-offset-content.css");
