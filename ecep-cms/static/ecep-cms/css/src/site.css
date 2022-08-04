@@ -29,6 +29,18 @@
 
 
 
+/* COMPONENTS */
+
+/* https://github.com/TACC/Core-CMS/blob/main/taccsite_cms/static/site_cms/css/src/_imports/components/django.cms.blog.app.item.css */
+.blog-list article .byline,
+article.post-detail .byline {
+  display: none;
+}
+
+
+
+
+
 /* TRUMPS */
 
 /* SEE: TACC/Core-Styles/blob/main/source/_imports/trumps/s-header.css */
