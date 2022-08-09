@@ -6,6 +6,14 @@
 #      because current infrastructure lacks ability to reference default values
 
 ########################
+# TACC: GOOGLE ANALYTICS
+########################
+
+# IMPORTANT: Not used via these Python setting!
+# SEE: /ecep-cms/templates/snippets/site-js.html
+# GOOGLE_ANALYTICS_PROPERTY_ID = "UA-37515320-1"
+
+########################
 # DJANGO CMS SETTINGS
 ########################
 
