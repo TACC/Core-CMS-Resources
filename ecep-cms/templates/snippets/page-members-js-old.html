@@ -9,6 +9,20 @@
   const wrapStarter = true;
 
   wrapElements( startWith, endBefore, wrapWith, { wrapStarter, within });
+
+
+
+  /* When user navigates to article on page, hide other articles */
+  import TargetSiblingHider from '/static/site_cms/js/modules/targetSiblingHider.js';
+
+  const targetSiblingHider = new TargetSiblingHider({
+    mustScrollToTarget: true,
+    scopeElement: within,
+    ancestorSelector: wrapWith,
+    showAllLink: document.getElementsByClassName('show-all')[0],
+    ignoreElements: [ within.querySelector('h2') ]
+  });
+  targetSiblingHider.toggleOnHashChange();
 </script>
 
 

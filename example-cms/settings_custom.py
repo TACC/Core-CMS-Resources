@@ -10,12 +10,13 @@
 #     ('standard.html', 'Standard'),
 #     ('fullwidth.html', 'Full Width'),
 
-#     # Support placeholder Portal homepage
+#     # Portal homepage placeholder
 #     ('home_portal.html', 'Standard Portal Homepage'),
 
-#     # Support temporary Portal guide pages
+#     # Portal guide pages
 #     ('guide.html', 'Guide'),
-#     ('guides/getting_started.html', 'Guide: Getting Started'),
+#     ('guides/getting_started.tam.html', 'Guide: Getting Started'),
+#     # ('guides/getting_started.v2.html', 'Guide: Getting Started'),
 #     ('guides/data_transfer.html', 'Guide: Data Transfer'),
 #     ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
 #     ('guides/portal_technology.html', 'Guide: Portal Technology Stack'),
