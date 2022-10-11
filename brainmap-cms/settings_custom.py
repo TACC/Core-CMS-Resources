@@ -85,5 +85,5 @@ LOGO = [
 ]
 
 FAVICON = {
-    "img_file_src": "brainmap-cms/img/org_logos/favicon.ico"
+    "img_file_src": "brainmap-cms/img/org_logos/brainmap-logo--dark-text-trans-bkgd--icon-only.png"
 }
