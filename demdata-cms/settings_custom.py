@@ -22,12 +22,12 @@ CMS_TEMPLATES = (
 ########################
 
 LOGO = [ 
-    "demdata",
+    "tacc",
     "demdata-cms/img/org_logos/tacc-white.png",
     "",
     "/",
     "_self",
-    "Demdata Logo for CMS/Portal",
+    "TACC Logo for CMS/Portal",
     "anonymous",
     "True"
 ]
