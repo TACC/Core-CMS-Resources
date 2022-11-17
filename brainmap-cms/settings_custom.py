@@ -75,7 +75,7 @@ BRANDING = [ _SGCI_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, _UTHSCSA_BRANDING
 
 LOGO = [
     "brainmap",
-    "brainmap-cms/img/org_logos/brainmap-logo.png",
+    "brainmap-cms/img/org_logos/brainmap-logo--light-text-trans-bkgd--icon-only.png",
     "",
     "/",
     "_self",
@@ -85,5 +85,5 @@ LOGO = [
 ]
 
 FAVICON = {
-    "img_file_src": "brainmap-cms/img/org_logos/favicon.ico"
+    "img_file_src": "brainmap-cms/img/org_logos/brainmap-logo--dark-text-trans-bkgd--icon-only.png"
 }
