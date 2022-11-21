@@ -60,5 +60,7 @@ LOGO =  [
 # TACC: PORTAL
 ########################
 
-# Should a user be able to see link to Portal? (default value: True)
-# INCLUDES_CORE_PORTAL = False # True to show login link, False to hide login link
+# Does this CMS site have a portal?
+# INCLUDES_CORE_PORTAL = False # (default value: True)
+# INCLUDES_PORTAL_NAV = INCLUDES_CORE_PORTAL
+# INCLUDES_SEARCH_BAR = INCLUDES_CORE_PORTAL
