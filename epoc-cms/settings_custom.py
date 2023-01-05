@@ -27,8 +27,8 @@
 # TACC: BRANDING
 ########################
 
-# from taccsite_cms.settings import TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING
-#
+from taccsite_cms.settings import TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING
+
 # _CUSTOM_BRANDING = [
 #     "example",
 #     "example-cms/img/org_logos/example-logo.png",
@@ -41,6 +41,7 @@
 # ]
 
 # BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING, _CUSTOM_BRANDING ]
+BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING ]
 
 ########################
 # TACC: LOGOS
@@ -57,11 +58,15 @@ LOGO =  [
     "True"
 ]
 
+FAVICON = {
+    "img_file_src": "frontera-cms/img/org_logos/favicon.ico"
+}
+
 ########################
 # TACC: PORTAL
 ########################
 
 # Does this CMS site have a portal?
-# INCLUDES_CORE_PORTAL = False # (default value: True)
-# INCLUDES_PORTAL_NAV = INCLUDES_CORE_PORTAL
-# INCLUDES_SEARCH_BAR = INCLUDES_CORE_PORTAL
+INCLUDES_CORE_PORTAL = False # (default value: True)
+INCLUDES_PORTAL_NAV = INCLUDES_CORE_PORTAL
+INCLUDES_SEARCH_BAR = INCLUDES_CORE_PORTAL
