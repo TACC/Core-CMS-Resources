@@ -66,17 +66,6 @@ CMS_TEMPLATES = (
 # LOOK INTO THIS SOLUTION.
 # from taccsite_cms.settings import TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING
 
-NSF_BRANDING = [
-    "nsf",
-    "epoc-cms/img/org_logos/nsf-white.png",
-    "branding-nsf",
-    "https://www.nsf.gov/",
-    "_blank",
-    "NSF Logo",
-    "anonymous",
-    "True"
-]
-
 TACC_BRANDING = [
     "tacc",
     "epoc-cms/img/org_logos/tacc-white.png",
@@ -99,6 +88,17 @@ UTEXAS_BRANDING = [
     "True"
 ]
 
+NSF_BRANDING = [
+    "nsf",
+    "epoc-cms/img/org_logos/nsf-white.png",
+    "branding-nsf",
+    "https://www.nsf.gov/",
+    "_blank",
+    "NSF Logo",
+    "anonymous",
+    "True"
+]
+
 _CUSTOM_BRANDING = [
     "epoc",
     "epoc-cms/img/org_logos/epoc-color-logo.svg",
@@ -110,8 +110,7 @@ _CUSTOM_BRANDING = [
     "True",
 ]
 
-# BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING, _CUSTOM_BRANDING ]
-BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING ]
+BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING ]
 
 ########################
 # TACC: LOGOS
