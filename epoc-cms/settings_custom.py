@@ -99,18 +99,18 @@ NSF_BRANDING = [
     "True"
 ]
 
-_CUSTOM_BRANDING = [
+CUSTOM_BRANDING = [
     "epoc",
-    "epoc-cms/img/org_logos/epoc-color-logo.svg",
+    "epoc-cms/img/org_logos/esnet-white-logo.png",
     "branding-logo--short",
-    "https://epoc.global/",
+    "https://www.es.net/",
     "_blank",
-    "EPOC Logo",
+    "ESnet Logo",
     "anonymous",
     "True",
 ]
 
-BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING ]
+BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING, CUSTOM_BRANDING ]
 
 ########################
 # TACC: LOGOS
