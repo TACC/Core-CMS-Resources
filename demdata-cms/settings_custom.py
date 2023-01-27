@@ -27,7 +27,7 @@ LOGO = [
     "",
     "/",
     "_self",
-    "TACC Logo for CMS/Portal",
+    "TACC Logo",
     "anonymous",
     "True"
 ]
@@ -36,12 +36,3 @@ FAVICON = {
     "img_file_src": "demdata-cms/img/favicons/favicon.ico"
 }
 
-########################
-# DJANGO (EMAIL)
-########################
-
-# Set on server, NOT here
-# https://confluence.tacc.utexas.edu/x/coR9E
-# EMAIL_BACKEND = "..."
-# EMAIL_HOST = "..."
-# DEFAULT_FROM_EMAIL = "..."
