@@ -6,4 +6,9 @@ It is loaded by Nginx because of import of an extra Nginx config file.
 
 ## To Do
 
+- Learn whether [djangocms-page-meta] allows setting `noindex` for many pages at once.[^1]
 - Allow extending and/or overwriting `robots.txt` per site.
+
+[djangocms-page-meta]: https://github.com/nephila/djangocms-page-meta
+
+[^1]: To set `noindex` for one page, read [Django CMS - Admin Guide - Do Not Let Google Index/Crawl a Page](https://confluence.tacc.utexas.edu/x/XIVbEQ).
