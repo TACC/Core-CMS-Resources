@@ -112,12 +112,12 @@ BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING ]
 ########################
 
 LOGO = [ 
-    "tacc",
-    "demdata-cms/img/org_logos/tacc-white.png",
+    "demdata",
+    "demdata-cms/img/org_logos/Demo-Data.svg",
     "",
     "/",
     "_self",
-    "TACC Logo",
+    "Democratizing Data Logo",
     "anonymous",
     "True"
 ]
