@@ -9,9 +9,38 @@
 
 /* To enlarge height for all screen widths */
 /* TODO: Change in Core-Styles */
-/* TODO: Fix bottom border of :hover links so it aligns to bottom of nav without mis-aligning nav links vertically */
-.s-header.navbar {
-    height: 60px;
+@media only screen and (min-width: 1201px) {
+    .s-header {
+        height: 60px;
+    }
+}
+
+/* To stretch nav items to header height (while retaining vertical centering) */
+/* TODO: Change in Core-Styles */
+.s-header,
+.s-header .navbar-collapse {
+    align-items: stretch;
+}
+@media only screen and (min-width: 1201px) {
+  .s-header .nav-item {
+      display: flex;
+  }
+}
+.s-header .nav-link {
+    display: flex;
+    align-items: center;
+}
+@media only screen and (min-width: 1201px) {
+    .s-header[class*="navbar-expand-"] .navbar-nav .nav-link {
+        padding-block: 0; /* overwrite core-styles.header.css */
+    }
+}
+.portal-logo {
+    height: unset; /* undo core-styles.header.css */
+}
+.s-header .navbar-brand {
+    display: grid;
+    align-content: center;
 }
 
 .s-header .dropdown-item:focus,
