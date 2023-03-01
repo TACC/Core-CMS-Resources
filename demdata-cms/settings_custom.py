@@ -124,3 +124,8 @@ FAVICON = {
     "img_file_src": "demdata-cms/img/favicons/favicon.ico"
 }
 
+########################
+# TACC: CORE STYLES
+########################
+
+TACC_CORE_STYLES_VERSION = 1
