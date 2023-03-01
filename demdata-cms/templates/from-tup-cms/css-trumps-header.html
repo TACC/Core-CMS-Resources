@@ -1,0 +1,21 @@
+<style id="css-trumps-header">
+/* NOTE: Minimal tweaks from Designer (in lieu of TACC/Core-CMS#222) */
+/* WARNING: Might conflict with TACC/Core-CMS#222 */
+.s-header {
+    font-size: var(--global-font-size--medium);
+    font-weight: var(--bold);
+    letter-spacing: 0.025px; /* 14px * 0.025em equals design-requested 0.35px */
+}
+
+/* To enlarge height for all screen widths */
+/* TODO: Change in Core-Styles */
+/* TODO: Fix bottom border of :hover links so it aligns to bottom of nav without mis-aligning nav links vertically */
+.s-header.navbar {
+    height: 60px;
+}
+
+.s-header .dropdown-item:focus,
+.s-header .dropdown-item:hover {
+    background-color: rgba(var(--global-color-primary--light-rgb), 0.3);
+}
+</style>

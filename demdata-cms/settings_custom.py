@@ -42,6 +42,8 @@ INCLUDES_SEARCH_BAR = False
 CMS_TEMPLATES = (
     ('standard.html', 'Standard'),
     ('fullwidth.html', 'Full Width'),
+    ('demdata-cms/templates/standard.html', 'Standard (with CSS from TUP)'),
+    ('demdata-cms/templates/fullwidth.html', 'Full Width (with CSS from TUP)'),
     ('guide.html', 'Guide'),
     ('guides/getting_started.tam.html', 'Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),

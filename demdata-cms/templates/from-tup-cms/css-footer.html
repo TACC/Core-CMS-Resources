@@ -1,0 +1,45 @@
+<!-- Footer -->
+<style id="css-footer">
+/* To undo anceint, bloated footer styles */
+/* TODO: Load from TACC/Core-Styles#daada8b */
+.c-footer {
+    /* To overwrite ancient CMS footer padding */
+    padding-top: 36px; /* undecided value, but bigger than before */
+    padding-inline: 36px; /* copied from `.s-header.navbar { --nav-padding-horz }` */
+
+    /* To fix content overflow */
+    min-height: unset; /* undo core-styles.base.css */
+}
+
+/* To add a full-width border above CMS footer */
+:root {
+    /* TACC/Core-Styles#4d7cece (just before daada8b) */
+    --global-color-secondary--light: #d5b57c; /* from designer *//* from header */
+}
+html:not(#page-portal) .c-footer::before /* trans id */ {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    margin-left: -36px;
+    content: '';
+
+    border-top: 2px solid var(--global-color-secondary--light);
+}
+
+/* To hide/show CMS/Portal footer */
+/* IMPORTANT: Requires TACC/tup-ui#135 */
+html#page-portal #cms-footer, /* new id */
+html:not(#page-portal) #portal-footer /* trans id */ {
+    display: none;
+}
+
+/* To reduce size of Portal footer */
+/* TODO: Move to tup-ui CSS */
+html#page-portal .c-footer {
+    padding: 0 15px;
+}
+html#page-portal .c-footer p {
+    margin-bottom: revert; /* undo Bootstrap */
+}
+</style>
