@@ -1,11 +1,7 @@
 # CUSTOM SETTINGS VALUES.
 # TACC WMA CMS SITE:
 # *.DEMOCTRATIZING-SITE.TACC.UTEXAS.EDU
-
-# CUSTOM SETTINGS VALUES.
-# TACC WMA CMS SITE:
-# _*.EPOC.TACC.UTEXAS.EDU
-# https:///epoc.global
+# https://democratizingdata.ai/
 
 '''
 A `settings_custom.py` file can override default values in `settings.py`.
@@ -35,7 +31,7 @@ AUTH_LDAP_SERVER_URI = "ldap://cluster.ldap.tacc.utexas.edu"
 ########################
 
 # Does this CMS site have a portal (default value: True)?
-INCLUDES_CORE_PORTAL = False 
+INCLUDES_CORE_PORTAL = False
 INCLUDES_PORTAL_NAV = False
 INCLUDES_SEARCH_BAR = False
 
@@ -111,7 +107,7 @@ BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING ]
 # TACC: LOGOS
 ########################
 
-LOGO = [ 
+LOGO = [
     "demdata",
     "demdata-cms/img/org_logos/Demo-Data.svg",
     "",
