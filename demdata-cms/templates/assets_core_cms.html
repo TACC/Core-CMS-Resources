@@ -1,0 +1,9 @@
+{# https://github.com/TACC/Core-CMS/blob/task/get-core-styles-beyond-0.11.0/taccsite_cms/templates/assets_core_cms.html #}
+{% load staticfiles %}
+
+<style>
+  @import url("{% static 'site_cms/css/build/core-styles.cms.css' %}") layer(base);
+  @import url("{% static 'site_cms/css/build/core-styles.header.theme-has-dark-logo.css' %}") layer(base);
+
+  @import url("{% static 'site_cms/css/build/site.cms.css' %}") layer(project);
+</style>
