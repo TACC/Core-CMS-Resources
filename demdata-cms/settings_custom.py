@@ -111,7 +111,7 @@ BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING ]
 
 LOGO = [
     "demdata",
-    "demdata-cms/img/org_logos/Demo-Data.svg",
+    "demdata-cms/img/org_logos/demdata.svg",
     "",
     "/",
     "_self",
