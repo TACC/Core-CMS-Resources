@@ -121,7 +121,7 @@ LOGO = [
 ]
 
 FAVICON = {
-    "img_file_src": "demdata-cms/img/favicons/favicon.ico"
+    "img_file_src": "demdata-cms/img/favicons/Favicon_64x64.svg"
 }
 
 ########################
