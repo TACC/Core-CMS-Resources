@@ -12,7 +12,8 @@
 /* … */
 
 /* ELEMENTS */
-@import url("https://unpkg.com/@tacc/core-styles@0.11.0/src/lib/_imports/elements/html-elements.cms.css");
+@import url("./_imports/elements/headings.css");
+@import url("./_imports/elements/html-elements.css");
 
 /* OBJECTS */
 @import url("./_imports/objects/o-offset-content.css");

@@ -1,6 +1,6 @@
 ## CUSTOM SETTINGS VALUES.
 # TACC WMA CMS SITE:
-# SCIVISCOLOR.ORG
+# *.TEXASCALE.ORG
 
 ########################
 # DJANGO CMS SETTINGS
@@ -36,6 +36,8 @@ LOGO =  [
 ########################
 
 INCLUDES_CORE_PORTAL = False
+INCLUDES_PORTAL_NAV = False
+INCLUDES_SEARCH_BAR = False
 
 ########################
 # NEWS / BLOG
