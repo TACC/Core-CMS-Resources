@@ -9,6 +9,7 @@ To add resources for a new project:
 
 To build such a CMS project, use [TACC/Core-CMS](https://github.com/TACC/Core-CMS).
 
+
 ## Related Repositories
 
 - [Camino], a Docker container-based deployment scheme
@@ -23,6 +24,26 @@ The Core CMS Resources is __not__ run independently.
 
 Please see the [Core CMS README].
 
+
+## Websites Maintained
+
+- https://prod.a2cps.tacc.utexas.edu/
+- https://prod.apcd.tacc.utexas.edu/ a.k.a. https://txapcd.org/<br />
+  <sup>code has moved to https://github.com/TACC/Core-CMS-Custom/blob/main/apcd-cms/</sup>
+- https://portal.brainmap.org/
+- https://democratizingdata.ai/
+- https://prod.ecep.tacc.utexas.edu/ a.k.a. https://ecepalliance.org/
+- https://prod.epoc.tacc.utexas.edu/
+- https://frontera-portal.tacc.utexas.edu/
+- https://lccf.tacc.utexas.edu/
+- https://3dem.org/
+- https://prod.protx.tacc.utexas.edu/
+- https://prod.sciviscolor.tacc.utexas.edu/
+- https://tapis-project.org/
+- https://texascale.org/
+- https://dev.tup.tacc.utexas.edu/<br />
+  <sup>code has moved to https://github.com/TACC/tup-ui/blob/main/apps/tup-cms/</sup>
+- https://utrc.tacc.utexas.edu/
 
 <!-- Link Aliases -->
 
