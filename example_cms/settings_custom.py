@@ -30,7 +30,7 @@
 #
 # _CUSTOM_BRANDING = [
 #     "example",
-#     "example-cms/img/org_logos/example-logo.png",
+#     "example_cms/img/org_logos/example-logo.png",
 #     "",
 #     "https://example.com",
 #     "_blank",
@@ -47,7 +47,7 @@
 
 LOGO =  [
     "example",
-    "example-cms/img/org_logos/portal.png",
+    "example_cms/img/org_logos/portal.png",
     "",
     "/",
     "_self",
