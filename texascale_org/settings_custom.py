@@ -22,7 +22,7 @@ CMS_TEMPLATES = (
 
 LOGO =  [
     "texascale",
-    "texascale-org/img/org_logos/texascale-wordmark.png",
+    "texascale_org/img/org_logos/texascale-wordmark.png",
     "",
     "/",
     "_self",
@@ -89,4 +89,4 @@ BLOG_ENABLE_COMMENTS = False
 ########################
 
 # TACC/Core-CMS-Resources#75: Load custom urls.py so we can add urlpatterns for taggit_autosuggest
-ROOT_URLCONF = 'taccsite_custom.texascale-org.urls'
+ROOT_URLCONF = 'taccsite_custom.texascale_org.urls'

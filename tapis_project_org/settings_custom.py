@@ -11,7 +11,7 @@
 
 UHAWAII_BRANDING = [
     "uhawaii",
-    "tapis-project-org/img/org_logos/hawaii-header-trimmed.png",
+    "tapis_project_org/img/org_logos/hawaii-header-trimmed.png",
     "branding-uhawaii",
     "https://www.hawaii.edu/",
     "_blank",
@@ -61,7 +61,7 @@ BRANDING = [ _NSF_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, UHAWAII_BRANDING ]
 
 LOGO =  [
     "tapis",
-    "tapis-project-org/img/org_logos/tapis-logo-navbar.png",
+    "tapis_project_org/img/org_logos/tapis-logo-navbar.png",
     "",
     "/",
     "_self",
