@@ -29,7 +29,7 @@ Please see the [Core CMS README].
 
 - https://prod.a2cps.tacc.utexas.edu/
 - https://prod.apcd.tacc.utexas.edu/ a.k.a. https://txapcd.org/<br />
-  <sup>code has moved to https://github.com/TACC/Core-CMS-Custom/blob/main/apcd-cms/</sup>
+  <sup>code has moved to https://github.com/TACC/Core-CMS-Custom/blob/main/apcd_cms/</sup>
 - https://portal.brainmap.org/
 - https://democratizingdata.ai/
 - https://prod.ecep.tacc.utexas.edu/ a.k.a. https://ecepalliance.org/

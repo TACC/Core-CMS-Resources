@@ -1,0 +1,5 @@
+# Merged on top of TACC/Core-CMS base config
+plugins:
+  postcss-env-function:
+    importFrom:
+      - 'taccsite_custom/ecep_cms/static/ecep_cms/css/src/_themes/ecep.json'
