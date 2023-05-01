@@ -10,7 +10,7 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('neuronex-cms/templates/fullwidth.html', 'Fullwidth'),
+    ('neuronex_cms/templates/fullwidth.html', 'Fullwidth'),
     ('home_portal.html', 'Standard Portal Homepage'),
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),

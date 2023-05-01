@@ -7,13 +7,13 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('texascale-org/templates/fullwidth.html', 'Fullwidth'),
-    ('texascale-org/templates/category.html', 'Category'),
-    ('texascale-org/templates/article.html', 'Article'),
-    ('texascale-org/templates/article.freeform.html', 'Article (Free-Form)'),
-    ('texascale-org/templates/article.sidebar-right.html', 'Article (Right Sidebar)'),
-    ('texascale-org/templates/article.visual.html', 'Article (Full-Size Visual)'),
-    ('texascale-org/templates/article.image-map.html', 'Article (Image Map)'),
+    ('texascale_org/templates/fullwidth.html', 'Fullwidth'),
+    ('texascale_org/templates/category.html', 'Category'),
+    ('texascale_org/templates/article.html', 'Article'),
+    ('texascale_org/templates/article.freeform.html', 'Article (Free-Form)'),
+    ('texascale_org/templates/article.sidebar-right.html', 'Article (Right Sidebar)'),
+    ('texascale_org/templates/article.visual.html', 'Article (Full-Size Visual)'),
+    ('texascale_org/templates/article.image-map.html', 'Article (Image Map)'),
 )
 
 ########################
