@@ -25,7 +25,7 @@
   --global-color-link-on-dark--normal: var(--global-color-accent--xxx-light);
 }
 
-/* https://github.com/TACC/Core-Styles/blob/v0.12.1/src/lib/theme.default.css */
+/* https://github.com/TACC/Core-Styles/blob/v0.13.0/src/lib/_imports/theme.default.css */
 :root {
   --header-bkgd-color: #4F008F;
   --header-minor-border-color: #DAADFF;
