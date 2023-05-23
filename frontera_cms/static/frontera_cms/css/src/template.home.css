@@ -6,5 +6,5 @@
 /* TRUMPS */
 @import url("./_imports/trumps/s-home.css");
 
-@import url("_imports/trumps/s-article-list.css");
-@import url("_imports/trumps/s-article-preview.css");
+@import url("https://unpkg.com/@tacc/core-styles@0.13.0/dist/trumps/s-article-list.css");
+@import url("https://unpkg.com/@tacc/core-styles@0.13.0/dist/trumps/s-article-preview.css");
