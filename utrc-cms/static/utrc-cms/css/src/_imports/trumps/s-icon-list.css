@@ -17,7 +17,8 @@ Markup:
 
 Styleguide Trumps.Scopes.IconList
 */
-@import url("_imports/tools/x-truncate.css");
+/* FAQ: These Core-Styles are unchanged from v0.12 (Core-CMS v3.9) to v2.7 */
+@import url("@tacc/core-styles/src/lib/_imports/tools/x-truncate.css");
 
 
 

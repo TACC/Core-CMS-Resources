@@ -9,7 +9,10 @@ Content that should be offset from the flow of text within which it is placed.
 
 Styleguide Components.Texascale.Deprecated.OffsetContent
 */
-@import url("_imports/tools/media-queries.css");
+/* NOTE: We had loaded media-queries.css from Core-CMS:/taccsite_cms,
+         but here we only used custom ranges from installed Core-Styles,
+         so now we import custom ranges directly from installed Core-Styles */
+@import url("@tacc/core-styles/src/lib/_imports/tools/media-queries.css");
 
 [class*="c-offset-content--"] {
   --offset-distance: 8.5vw; /* NOTE: Value is from Texascale.org 2020 */
