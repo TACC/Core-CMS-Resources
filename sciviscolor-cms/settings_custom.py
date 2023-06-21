@@ -26,3 +26,5 @@ FAVICON = {
 ########################
 
 INCLUDES_CORE_PORTAL = False
+INCLUDES_PORTAL_NAV = False
+INCLUDES_SEARCH_BAR = False

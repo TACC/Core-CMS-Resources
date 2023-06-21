@@ -35,9 +35,9 @@ AUTH_LDAP_SERVER_URI = "ldap://cluster.ldap.tacc.utexas.edu"
 ########################
 
 # Does this CMS site have a portal?
-INCLUDES_CORE_PORTAL = False # (default value: True)
-INCLUDES_PORTAL_NAV = INCLUDES_CORE_PORTAL
-INCLUDES_SEARCH_BAR = INCLUDES_CORE_PORTAL
+INCLUDES_CORE_PORTAL = False
+INCLUDES_PORTAL_NAV = False
+INCLUDES_SEARCH_BAR = False
 
 ########################
 # DJANGO CMS SETTINGS

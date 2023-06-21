@@ -83,6 +83,8 @@ FAVICON = {
 ########################
 
 INCLUDES_CORE_PORTAL = True
+INCLUDES_PORTAL_NAV = True
+INCLUDES_SEARCH_BAR = True
 
 ########################
 # TACC: NEWS/BLOG
