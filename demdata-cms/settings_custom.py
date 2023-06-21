@@ -44,11 +44,6 @@ CMS_TEMPLATES = (
     ('fullwidth.html', 'Full Width'),
     ('demdata-cms/templates/standard.html', 'Standard (with CSS from TUP)'),
     ('demdata-cms/templates/fullwidth.html', 'Full Width (with CSS from TUP)'),
-    ('guide.html', 'Guide'),
-    ('guides/getting_started.tam.html', 'Guide: Getting Started'),
-    ('guides/data_transfer.html', 'Guide: Data Transfer'),
-    ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
-    ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
 )
 
 ########################
@@ -102,8 +97,9 @@ UTEXAS_BRANDING = [
 #     "True",
 # ]
 
-# BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING, CUSTOM_BRANDING ]
-BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING ]
+# BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING ]
+BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING ] # this matches prod 2022
+# BRANDING = [] # prod 2022 hides bar via snippet CSS but should also do this
 
 ########################
 # TACC: LOGOS
@@ -128,4 +124,5 @@ FAVICON = {
 # TACC: CORE STYLES
 ########################
 
-TACC_CORE_STYLES_VERSION = 1
+# Only use integer numbers (not "v1", not "0.11.0")
+TACC_CORE_STYLES_VERSION = 2
