@@ -19,9 +19,9 @@ Unless modifying default behavior for the CMS Core (and thus all custom Projects
 # WALKTHROUGH
 ########################
 
-# To change LDAP auth settings for a custom CMS Project (e.g. `epoc-cms`):
+# To change LDAP auth settings for a custom CMS Project (e.g. `demdata-cms`):
 # 1. Copy the setting from `settings.py`
-# 2. Assign the new value in `Core-CMS/taccsite_custom/epoc-cms/settings_custom.py`.
+# 2. Assign the new value in `Core-CMS/taccsite_custom/demdata-cms/settings_custom.py`.
 AUTH_LDAP_SERVER_URI = "ldap://cluster.ldap.tacc.utexas.edu"
 
 # The same goes for other more commonly customized values like below.
@@ -55,7 +55,7 @@ CMS_TEMPLATES = (
 
 TACC_BRANDING = [
     "tacc",
-    "epoc-cms/img/org_logos/tacc-white.png",
+    "site_cms/img/org_logos/tacc-white.png",
     "branding-tacc",
     "https://www.tacc.utexas.edu/",
     "_blank",
@@ -66,7 +66,7 @@ TACC_BRANDING = [
 
 UTEXAS_BRANDING = [
     "utexas",
-    "epoc-cms/img/org_logos/utaustin-white.png",
+    "site_cms/img/org_logos/utaustin-white.png",
     "branding-utaustin",
     "https://www.utexas.edu/",
     "_blank",
@@ -77,7 +77,7 @@ UTEXAS_BRANDING = [
 
 # NSF_BRANDING = [
 #     "nsf",
-#     "epoc-cms/img/org_logos/nsf-white.png",
+#     "site_cms/img/org_logos/nsf-white.png",
 #     "branding-nsf",
 #     "https://www.nsf.gov/",
 #     "_blank",
@@ -88,7 +88,7 @@ UTEXAS_BRANDING = [
 
 # CUSTOM_BRANDING = [
 #     "epoc",
-#     "epoc-cms/img/org_logos/esnet-white-logo.png",
+#     "site_cms/img/org_logos/esnet-white-logo.png",
 #     "branding-logo--short",
 #     "https://www.es.net/",
 #     "_blank",
