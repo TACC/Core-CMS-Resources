@@ -3,7 +3,7 @@
 Project-specific code built into the [Core CMS] project
 
 > **Note**
-> You do not need to clone this repository to work on a CMS project. You may work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
+> You need not clone this repository to work on a CMS project. You may work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
 
 ## Table of Contents
 
