@@ -1,4 +1,4 @@
-# Core-CMS-Custom
+# Core-CMS-Resources
 
 Project-specific code built into the [Core CMS] project
 
