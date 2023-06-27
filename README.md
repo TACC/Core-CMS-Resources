@@ -145,13 +145,9 @@ Update an existing local CMS instance.
 
     ```sh
     docker exec -it core_cms /bin/bash
-    ```
-
-    (Run these commands within the container.)
-
-    ```sh
-    python manage.py migrate
-    python manage.py collectstatic --no-input
+    # That opens a command prompt within the container.
+        python manage.py migrate
+        python manage.py collectstatic --no-input
     ```
 
 ## Run Project
