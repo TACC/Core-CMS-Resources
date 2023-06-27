@@ -55,10 +55,10 @@ Within a `/custom_project_dir` can be:
 - [Git Submodules]
 - [Core CMS]
 
-A CMS project is run within [Core CMS]. [Git Submodules] must be pre-installed on the system on which you will run the CMS project.
+A CMS project is run within [Core CMS]. Also, [Git Submodules] must be pre-installed on the system on which you will run the CMS project.
 
 > **Note**
-> The [Core CMS] has its own requirements
+> The [Core CMS] has its own prerequisites.
 
 ## Start Project
 
@@ -66,16 +66,16 @@ Set up a new local CMS instance.
 
 0. Core CMS:
 
-    0. If not already done:
+    1. If not already done:
         1. Clone [Core CMS] repository.
         2. [Set up Core CMS](https://github.com/TACC/Core-CMS#readme) completely.
-    1. Be in your [Core CMS] clone:
+    2. Be in your [Core CMS] clone:
 
         ```sh
         cd Core-CMS
         ```
 
-    2. Register and populate `/taccsite-custom`.
+    3. Register and populate `/taccsite-custom`.
 
         ```sh
         git submodule init
@@ -84,7 +84,7 @@ Set up a new local CMS instance.
         # This populates from this repository into `/taccsite_custom`.
         ```
 
-    3. Create a symlink from `taccsite_cms/settings_custom.py` to `taccsite_custom/custom_project_dir/settings_custom.py`, e.g.
+    4. Create a symlink from `taccsite_cms/settings_custom.py` to `taccsite_custom/custom_project_dir/settings_custom.py`, e.g.
 
         ```sh
         ln -s '../taccsite_custom/custom_project_dir/settings_custom.py' 'taccsite_cms/settings_custom.py'
