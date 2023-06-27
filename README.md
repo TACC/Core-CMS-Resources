@@ -15,7 +15,7 @@ Project-specific code built into the [Core CMS] project
 - [Update Project](#update-project)
 - [Run Project](#run-project)
 - [Debug Project](#debug-project)
-- [Build & Deploy Project] (at "Core-CMS-Resources" section)
+- [Build & Deploy Project](#build--deploy-project)
 - [Port Project](./docs/port-project.md)
 
 ## Related Repositories
