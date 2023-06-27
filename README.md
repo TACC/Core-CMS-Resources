@@ -10,6 +10,7 @@ Project-specific code built into the [Core CMS] project
 - [Related Repositories](#related-repositories)
 - [Project Websites](#project-websites)
 - [Project Architecture](#project-architecture)
+- [Prerequisites](#prerequisites)
 - [Start Project](#start-project)
 - [Update Project](#update-project)
 - [Run Project](#run-project)
@@ -161,7 +162,7 @@ To run multiple projects, first read [Multiple Projects](./docs/run-project.md#m
 
 ## Debug Project
 
-See [Debug Project](./docs/debug-project.md) for miscellaneous tips.
+Read [Debug Project](./docs/debug-project.md) for miscellaneous tips.
 
 ## Build & Deploy Project
 
