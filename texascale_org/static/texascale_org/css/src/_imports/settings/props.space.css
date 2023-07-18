@@ -1,0 +1,5 @@
+/* CUSTOM PROPERTY SETTINGS: Space */
+
+:root {
+    --global-space--beneath-main-content: var(--global-space--section-gap);
+}

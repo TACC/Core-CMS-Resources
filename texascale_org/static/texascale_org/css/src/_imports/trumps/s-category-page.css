@@ -1,0 +1,60 @@
+/*
+Category
+
+Style category pages.
+
+Warining: This was made a scope only so it could be applied to Texascale quickly. At the time of its creation, there was no architecture for template-specific styles, and limited use of templates.
+
+Markup:
+<div class="s-category-page">
+  <!-- ??? -->
+</div>
+
+Styleguide Trumps.Scopes.CategoryPage
+*/
+
+/* On narrow viewport, undo all wide viewport utilities */
+@media only screen and (max-width: 767px) {
+  .s-category-page .u-swallow--space-beneath-main-content {
+    padding-bottom: unset;
+    margin-bottom: unset;
+  }
+
+  .s-category-page .u-position-sticky,
+  .s-category-page [class*="u-position-sticky--"] {
+    position: relative; /* reset to Bootstrap value */
+    top: unset;
+  }
+  .s-category-page .u-position-sticky--flex-item {
+    align-self: unset;
+    height: unset;
+  }
+
+  /* FAQ: The border is added to the right column,
+          because the `.u-position-sticky…` on the left column
+          shrinks the height of the left column (so, the border
+          would not be tall enough, were it added to left column) */
+  .s-category-page .u-border--left {
+    border: none;
+  }
+}
+
+/* The header needs more vertical buffer between header and content */
+/* FAQ: No, this header is not on any other page (if such a header is added
+        to another page, then this must be moved to wider scope stylesheet) */
+.s-category-page .row:nth-of-type(1) h2 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+/* Every article summary needs space between it and the article summary above */
+/* FAQ: Article summaries do not have container, so add space to
+        the image container (topmost element of article summary) */
+.s-category-page .row:nth-of-type(2) .col:nth-of-type(2) p + p img {
+  margin-top: 25px;
+}
+
+/* Remove space above minor titles */
+.s-category-page h5 {
+  margin-top: 0; /* override `site.css` */
+}
