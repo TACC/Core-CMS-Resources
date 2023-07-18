@@ -5,9 +5,8 @@ Project-specific code built into the [Core CMS] project
 > **Note**
 > You need not clone this repository to work on a CMS project. You may work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
 
-## Status
-
-⚠️ Deprecated
+> **Warning**
+> This solution to customize a [Core CMS] is deprecated.
 
 > **Warning**
 > Do **not** deploy these websites via this repository with [TACC/Core-CMS#v3.12.0](https://github.com/TACC/Core-CMS/releases/tag/v3.12.0) or greater. **Instead**, [migrate them to Core CMS Custom](#port-project).[^1]
