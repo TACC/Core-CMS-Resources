@@ -5,6 +5,15 @@ Project-specific code built into the [Core CMS] project
 > **Note**
 > You need not clone this repository to work on a CMS project. You may work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
 
+## Status
+
+⚠️ Deprecated
+
+> **Warning**
+> Do **not** deploy these websites via this repository with [TACC/Core-CMS#v3.12.0](https://github.com/TACC/Core-CMS/releases/tag/v3.12.0) or greater. **Instead**, [migrate them to Core CMS Custom](#port-project).[^1]
+
+[^1]: [Websites with custom templates will experience a major problem.](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603194690) Even though not all websites have such templates **and** there is a [tested solution](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603215969), website development benefits so much from migration, that every opportunity is taken to encourage it.
+
 ## Table of Contents
 
 - [Related Repositories](#related-repositories)
@@ -21,23 +30,22 @@ Project-specific code built into the [Core CMS] project
 ## Related Repositories
 
 - [Core CMS], the base CMS code for TACC WMA CMS Websites
-- [Core Styles], the shared UI pattern code for TACC WMA CMS Websites
-- [Core CMS Custom], the new solution for extensions of the [Core CMS] project
+- [Core CMS Custom], the custom CMS code (new solution) for TACC WMA CMS Websites
 
 ## Project Websites
 
-| Abbr. | URL
-| - | -
-| a2cps | https://a2cps.org/
+| Abbr. | URL | Status
+| - | - | -
+| a2cps | https://a2cps.org/ | [migrating](https://github.com/TACC/Core-CMS-Custom/pull/175)
 | brainmap | https://portal.brainmap.org/
-| ecep | https://ecepalliance.org/
+| ecep | https://ecepalliance.org/ | [migrating](https://github.com/TACC/Core-CMS-Custom/pull/184)
+| brainmap | https://portal.b
 | epoc | https://prod.epoc.tacc.utexas.edu/
 | frontera | https://frontera-portal.tacc.utexas.edu/
 | lccf | https://lccf.tacc.utexas.edu/
 | 3dem | https://3dem.org/
 | protx | https://ccprotx.org/
 | sciviscolor | https://sciviscolor.org/
-| tapis | https://tapis-project.org/
 | texascale | https://texascale.org/
 | utrc | https://utrc.tacc.utexas.edu/
 
@@ -171,7 +179,6 @@ To port a project to [Core CMS Custom], read [Port Project].
 <!-- Link Aliases -->
 
 [Core CMS]: https://github.com/TACC/Core-CMS
-[Core Styles]: https://github.com/TACC/tup-ui/tree/main/libs/core-styles
 [Core CMS Custom]: https://github.com/TACC/Core-CMS-Custom
 
 [Git Submodules]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
