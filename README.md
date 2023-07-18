@@ -35,7 +35,6 @@ Project-specific code built into the [Core CMS] project
 | a2cps | https://a2cps.org/ | [migrating](https://github.com/TACC/Core-CMS-Custom/pull/175)
 | brainmap | https://portal.brainmap.org/
 | ecep | https://ecepalliance.org/ | [migrating](https://github.com/TACC/Core-CMS-Custom/pull/184)
-| brainmap | https://portal.b
 | epoc | https://prod.epoc.tacc.utexas.edu/
 | frontera | https://frontera-portal.tacc.utexas.edu/
 | lccf | https://lccf.tacc.utexas.edu/
