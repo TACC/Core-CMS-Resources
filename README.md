@@ -6,10 +6,7 @@ Project-specific code built into the [Core CMS] project
 > You need not clone this repository to work on a CMS project. You may work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
 
 > **Warning**
-> This solution to customize a [Core CMS] is deprecated.
-
-> **Warning**
-> Do **not** deploy these websites via this repository with [TACC/Core-CMS#v3.12.0](https://github.com/TACC/Core-CMS/releases/tag/v3.12.0) or greater. **Instead**, [migrate them to Core CMS Custom](#port-project).[^1]
+> This repository is deprecated. Do **not** deploy these websites via this repository with [TACC/Core-CMS#v3.12.0](https://github.com/TACC/Core-CMS/releases/tag/v3.12.0) or greater. **Instead**, [migrate them to Core CMS Custom](#port-project).[^1]
 
 [^1]: [Websites with custom templates will experience a major problem.](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603194690) Even though not all websites have such templates **and** there is a [tested solution](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603215969), website development benefits so much from migration, that every opportunity is taken to encourage it.
 
