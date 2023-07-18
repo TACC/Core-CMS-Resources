@@ -5,7 +5,7 @@ The project-specific CMS code for TACC WMA Workspace Websites.
 To add resources for a new project:
 
 1. Clone `/example_cms`.
-2. Read `/_readme-cms`.
+2. Read `/_readme_cms`.
 
 To build such a CMS project, use [TACC/Core-CMS](https://github.com/TACC/Core-CMS).
 
