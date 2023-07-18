@@ -1,0 +1,31 @@
+/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
+
+/* Organize via ITCSS */
+/* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
+
+/* SETTINGS */
+@import url("_imports/settings/props.font.css");
+@import url("_imports/settings/props.space.css");
+@import url("_imports/settings/props.border.css");
+
+/* GENERICS */
+/* … */
+
+/* ELEMENTS */
+@import url("_imports/elements/html-elements.css");
+
+/* OBJECTS */
+/* … */
+
+/* COMPONENTS */
+@import url("_imports/components/wip.byline.css");
+/* RFC: If only used on articles, then these components could be imported into `template.article.css` instead */
+@import url("_imports/components/tacc.c-offset-content.css");
+@import url("_imports/components/bootstrap.figure.css");
+@import url("_imports/components/bootstrap.blockquote.css");
+
+/* TRUMPS */
+@import url("_imports/trumps/s-drop-caps.css");
+@import url("_imports/trumps/s-gallery.css");
+@import url("_imports/trumps/u-border.css");
+@import url("_imports/trumps/u-swallow.css");
