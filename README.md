@@ -9,11 +9,14 @@ To add resources for a new project:
 
 To build such a CMS project, use [TACC/Core-CMS](https://github.com/TACC/Core-CMS).
 
+> **Warning**
+> Do **not** deploy these websites via this repository with [TACC/Core-CMS#v3.12.0](https://github.com/TACC/Core-CMS/releases/tag/v3.12.0) or greater. **Instead**, migrate them to [Core CMS Custom].[^1]
 
 ## Related Repositories
 
 - [Camino], a Docker container-based deployment scheme
 - [Core CMS], the base CMS code for TACC WMA CMS Websites
+- [Core CMS Custom], the custom CMS code (new solution) for TACC WMA CMS Websites
 
 
 ## Intended Usage
@@ -49,5 +52,8 @@ Please see the [Core CMS README].
 
 [Core CMS]: https://github.com/TACC/Core-CMS
 [Core Styles]: https://github.com/TACC/Core-Styles
+[Core CMS Custom]: https://github.com/TACC/Core-CMS-Custom
 [Core CMS README]: https://github.com/TACC/Core-CMS/blob/main/README.md
 [Camino]: https://github.com/TACC/Camino
+
+[^1]: [Websites with custom templates will experience a major problem.](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603194690) Even though not all websites have such templates **and** there is a [tested solution](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603215969), website development benefits so much from migration, that every opportunity is taken to encourage it.
