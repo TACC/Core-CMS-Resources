@@ -13,6 +13,9 @@ CMS_TEMPLATES = (
     ('frontera_cms/templates/standard.html', 'Standard'),
     ('frontera_cms/templates/fullwidth.html', 'Full Width'),
     ('frontera_cms/templates/home.html', 'Homepage'),
+    ('frontera-cms/templates/standard.html', 'DEPRECATED Standard'),
+    ('frontera-cms/templates/fullwidth.html', 'DEPRECATED Full Width'),
+    ('frontera-cms/templates/home.html', 'DEPRECATED Homepage'),
 
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
