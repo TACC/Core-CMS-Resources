@@ -8,7 +8,7 @@ Project-specific code built into the [Core CMS] project
 > **Warning**
 > This repository is deprecated. Do **not** deploy these websites via this repository with [TACC/Core-CMS#v3.12.0](https://github.com/TACC/Core-CMS/releases/tag/v3.12.0) or greater. **Instead**, [migrate them to Core CMS Custom](#port-project).[^1]
 
-[^1]: [Websites with custom templates will experience a major problem.](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603194690) Even though not all websites have such templates **and** there is a [tested solution](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603215969), website development benefits so much from migration, that every opportunity is taken to encourage it.
+[^1]: Deploying websites that are still in Core-CMS-Resources **and** have [old custom templates will trigger a major problem](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603194690). The prefered solution is [migration](#port-project). If you must deploy without migration, then [upgrade the website for Core-CMS v3.12](./docs/upgrade-project.md#for-core-cms-v312).
 
 ## Table of Contents
 
