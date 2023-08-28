@@ -109,7 +109,7 @@ Set up a new local CMS instance.
     # For projects that install apps
     # e.g. ECEP installs News/Blog
     npm ci
-    npm run build --project="custom_project_dir"
+    npm run build:css --project="custom_project_dir"
     # If output includes
     # "Input Error: You must pass a valid"
     # then double check you have the directory

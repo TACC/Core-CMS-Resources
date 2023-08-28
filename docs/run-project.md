@@ -41,7 +41,7 @@ To stop one project, and run another:
 
     ```sh
     python manage.py migrate
-    npm run build --project="custom_project_dir"
+    npm run build:css --project="custom_project_dir"
     python manage.py collectstatic --no-input
     ```
 
