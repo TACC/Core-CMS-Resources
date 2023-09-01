@@ -33,7 +33,6 @@ Project-specific code built into the [Core CMS] project
 | Abbr. | URL | Status
 | - | - | -
 | brainmap | https://portal.brainmap.org/
-| ecep | https://ecepalliance.org/ | [migrating](https://github.com/TACC/Core-CMS-Custom/pull/184)
 | epoc | https://prod.epoc.tacc.utexas.edu/
 | frontera | https://frontera-portal.tacc.utexas.edu/
 | lccf | https://lccf.tacc.utexas.edu/
