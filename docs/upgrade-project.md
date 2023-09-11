@@ -6,9 +6,10 @@
 
 **If** the custom project directory:
 
-- has `templates/standard.html` or
-- has `templates/fullwidth.html` or
-- has `templates/home.html`
+- has any `templates/*.html` e.g.
+  - `templates/standard.html`
+  - `templates/fullwidth.html`
+  - `templates/home.html`
 
 Then:
 
