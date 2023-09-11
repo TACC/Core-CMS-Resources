@@ -8,6 +8,7 @@
 
 CMS_TEMPLATES = (
     ('texascale_org/templates/fullwidth.html', 'Fullwidth'),
+    ('texascale-org/templates/fullwidth.html', 'DEPRECATED Fullwidth'),
     ('texascale_org/templates/category.html', 'Category'),
     ('texascale_org/templates/article.html', 'Article'),
     ('texascale_org/templates/article.freeform.html', 'Article (Free-Form)'),
