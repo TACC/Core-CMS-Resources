@@ -7,13 +7,13 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('texascale_org/templates/fullwidth.html', 'Fullwidth'),
-    ('texascale_org/templates/category.html', 'Category'),
-    ('texascale_org/templates/article.html', 'Article'),
-    ('texascale_org/templates/article.freeform.html', 'Article (Free-Form)'),
-    ('texascale_org/templates/article.sidebar-right.html', 'Article (Right Sidebar)'),
-    ('texascale_org/templates/article.visual.html', 'Article (Full-Size Visual)'),
-    ('texascale_org/templates/article.image-map.html', 'Article (Image Map)'),
+    ('texascale_cms/templates/fullwidth.html', 'Fullwidth'),
+    ('texascale_cms/templates/category.html', 'Category'),
+    ('texascale_cms/templates/article.html', 'Article'),
+    ('texascale_cms/templates/article.freeform.html', 'Article (Free-Form)'),
+    ('texascale_cms/templates/article.sidebar-right.html', 'Article (Right Sidebar)'),
+    ('texascale_cms/templates/article.visual.html', 'Article (Full-Size Visual)'),
+    ('texascale_cms/templates/article.image-map.html', 'Article (Image Map)'),
     # DEPRECATED
     ('texascale-org/templates/fullwidth.html', 'DEPRECATED Fullwidth'),
     ('texascale-org/templates/category.html', 'DEPRECATED Category'),
@@ -30,7 +30,7 @@ CMS_TEMPLATES = (
 
 LOGO =  [
     "texascale",
-    "texascale_org/img/org_logos/texascale-wordmark.png",
+    "texascale_cms/img/org_logos/texascale-wordmark.png",
     "",
     "/",
     "_self",
@@ -97,4 +97,4 @@ BLOG_ENABLE_COMMENTS = False
 ########################
 
 # TACC/Core-CMS-Resources#75: Load custom urls.py so we can add urlpatterns for taggit_autosuggest
-ROOT_URLCONF = 'taccsite_custom.texascale_org.urls'
+ROOT_URLCONF = 'taccsite_custom.texascale_cms.urls'
