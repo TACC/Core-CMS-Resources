@@ -30,17 +30,17 @@ Project-specific code built into the [Core CMS] project
 
 ## Project Websites
 
-| Abbr. | URL | Status
-| - | - | -
-| brainmap | https://portal.brainmap.org/
-| epoc | https://prod.epoc.tacc.utexas.edu/
-| frontera | https://frontera-portal.tacc.utexas.edu/
-| lccf | https://lccf.tacc.utexas.edu/
-| 3dem | https://3dem.org/
-| protx | https://ccprotx.org/
-| sciviscolor | https://sciviscolor.org/
-| texascale | https://texascale.org/
-| utrc | https://utrc.tacc.utexas.edu/
+| Abbr. | URL | Core-CMS Version |
+| - | - | - |
+| brainmap | https://portal.brainmap.org/ | v3.11 |
+| epoc | https://prod.epoc.tacc.utexas.edu/ | v3.11 |
+| frontera | https://frontera-portal.tacc.utexas.edu/ | v3.11 |
+| lccf | https://lccf.tacc.utexas.edu/ | v3.11 |
+| 3dem | https://3dem.org/ | v3.11 |
+| protx | https://ccprotx.org/ | v3.11 |
+| sciviscolor | https://sciviscolor.org/ | v3.11 |
+| texascale | https://texascale.org/ | v3.12 |
+| utrc | https://utrc.tacc.utexas.edu/ | v3.11 |
 
 ## Project Architecture
 
