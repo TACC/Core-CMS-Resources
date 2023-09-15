@@ -34,3 +34,8 @@ Then:
     +   ('custom-project-dir/templates/standard.html', 'DEPRECATED Standard'),
     +   ('custom-project-dir/templates/fullwidth.html', 'DEPRECATED Full Width'),
     ```
+
+### After Deploy
+
+1. Change template of every page on project to **not** use deprecated template.
+2. Remove its deprecated templates from repository.
