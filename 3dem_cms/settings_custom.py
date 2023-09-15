@@ -11,6 +11,7 @@
 
 CMS_TEMPLATES = (
     ('3dem_cms/templates/fullwidth.html', 'Fullwidth'),
+    ('neuronex-cms/templates/fullwidth.html', 'DEPRECATED Fullwidth'),
     ('home_portal.html', 'Standard Portal Homepage'),
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
