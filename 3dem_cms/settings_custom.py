@@ -10,7 +10,7 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('neuronex_cms/templates/fullwidth.html', 'Fullwidth'),
+    ('3dem_cms/templates/fullwidth.html', 'Fullwidth'),
     ('home_portal.html', 'Standard Portal Homepage'),
     ('guide.html', 'Guide'),
     ('guides/getting_started.html', 'Guide: Getting Started'),
@@ -64,7 +64,7 @@ BRANDING = [ _NSF_BRANDING, _FRONTERA_TACC_BRANDING, _UTEXAS_BRANDING ]
 
 LOGO = [
     "portal",
-    "neuronex_cms/img/org_logos/logo.3dem.png",
+    "3dem_cms/img/org_logos/logo.3dem.png",
     "",
     "/",
     "_self",
@@ -74,5 +74,5 @@ LOGO = [
 ]
 
 FAVICON = {
-    "img_file_src": "neuronex_cms/img/org_logos/favicon.ico"
+    "img_file_src": "3dem_cms/img/org_logos/favicon.ico"
 }
