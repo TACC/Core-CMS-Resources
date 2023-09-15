@@ -1,0 +1,7 @@
+{% extends "guides/getting_started.v2.html" %}
+{% load static %}
+
+{% block assets_custom %}
+  {{ block.super }}
+  {% include "../assets_custom.html" %}
+{% endblock assets_custom %}

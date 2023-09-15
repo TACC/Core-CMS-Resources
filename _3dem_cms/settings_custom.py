@@ -10,13 +10,19 @@
 ########################
 
 CMS_TEMPLATES = (
-    ('neuronex_cms/templates/fullwidth.html', 'Fullwidth'),
+    ('_3dem_cms/templates/fullwidth.html', 'Fullwidth'),
     ('home_portal.html', 'Standard Portal Homepage'),
     ('guide.html', 'Guide'),
-    ('guides/getting_started.html', 'Guide: Getting Started'),
-    ('guides/data_transfer.html', 'Guide: Data Transfer'),
-    ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
-    ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
+    ('_3dem_cms/templates/guides/getting_started.v2.html', 'Guide: Getting Started (v2)'),
+    ('_3dem_cms/templates/guides/getting_started.tam.html', 'Guide: Getting Started (TAM)'),
+    ('_3dem_cms/templates/guides/data_transfer.html', 'Guide: Data Transfer'),
+    ('_3dem_cms/templates/guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
+    # DEPRECATED
+    ('neuronex-cms/templates/fullwidth.html', 'DEPRECATED Fullwidth'),
+    # CORE-CMS v3.11 (used by 3Dem before it ran on Core-CMS v3.12)
+    ('guides/getting_started.html', 'CORE-CMS Guide: Getting Started'),
+    ('guides/data_transfer.html', 'CORE-CMS Guide: Data Transfer'),
+    ('guides/data_transfer.globus.html', 'CORE-CMS Guide: Globus Data Transfer'),
 )
 
 ########################
@@ -64,7 +70,7 @@ BRANDING = [ _NSF_BRANDING, _FRONTERA_TACC_BRANDING, _UTEXAS_BRANDING ]
 
 LOGO = [
     "portal",
-    "neuronex_cms/img/org_logos/logo.3dem.png",
+    "_3dem_cms/img/org_logos/logo.3dem.png",
     "",
     "/",
     "_self",
@@ -74,5 +80,5 @@ LOGO = [
 ]
 
 FAVICON = {
-    "img_file_src": "neuronex_cms/img/org_logos/favicon.ico"
+    "img_file_src": "_3dem_cms/img/org_logos/favicon.ico"
 }
