@@ -15,6 +15,7 @@ CMS_TEMPLATES = (
 
     ('guide.html', 'Guide'),
     ('protx_cms/templates/getting_started.html', 'Guide: Getting Started'),
+    ('protx-cms/templates/getting_started.html', 'DEPRECATED Guide: Getting Started'),
     ('guides/data_transfer.html', 'Guide: Data Transfer'),
     ('guides/data_transfer.globus.html', 'Guide: Globus Data Transfer'),
     ('guides/portal_technology.html', 'Guide: Portal Technology Stack')
