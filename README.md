@@ -38,7 +38,7 @@ Project-specific code built into the [Core CMS] project
 | lccf | https://lccf.tacc.utexas.edu/ | v3.**11** |
 | 3dem | https://3dem.org/ | v3.**11** |
 | protx | https://ccprotx.org/ | v3.**11** |
-| sciviscolor | https://sciviscolor.org/ | v3.**11** |
+| sciviscolor | https://sciviscolor.org/ | v3.**12** |
 | texascale | https://texascale.org/ | v3.**12** |
 | utrc | https://utrc.tacc.utexas.edu/ | v3.**11** |
 
