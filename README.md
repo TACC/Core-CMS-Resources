@@ -6,7 +6,7 @@ Project-specific code built into the [Core CMS] project
 > You need not clone this repository to work on a CMS project. You may work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
 
 > **Warning**
-> This repository is deprecated. Do **not** deploy these websites via this repository with [TACC/Core-CMS#v3.12.0](https://github.com/TACC/Core-CMS/releases/tag/v3.12.0) or greater. **Instead**, [migrate them to Core CMS Custom](#port-project).[^1]
+> This repository is deprecated. To work on these projects further, first [migrate them to Core CMS Custom](#port-project).[^1]
 
 [^1]: Deploying websites that are still in Core-CMS-Resources **and** have [old custom templates will trigger a major problem](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603194690). The prefered solution is [migration](#port-project). If you must deploy without migration, then [upgrade the website for Core-CMS v3.12](./docs/upgrade-project.md#for-core-cms-v312).
 
@@ -30,18 +30,19 @@ Project-specific code built into the [Core CMS] project
 
 ## Project Websites
 
-| Abbr. | URL | Status
-| - | - | -
-| brainmap | https://portal.brainmap.org/
-| ecep | https://ecepalliance.org/ | [migrating](https://github.com/TACC/Core-CMS-Custom/pull/184)
-| epoc | https://prod.epoc.tacc.utexas.edu/
-| frontera | https://frontera-portal.tacc.utexas.edu/
-| lccf | https://lccf.tacc.utexas.edu/
-| 3dem | https://3dem.org/
-| protx | https://ccprotx.org/
-| sciviscolor | https://sciviscolor.org/
-| texascale | https://texascale.org/
-| utrc | https://utrc.tacc.utexas.edu/
+| Abbr. | URL | Version[^2] |
+| - | - | - |
+| 3dem | https://3dem.org/ | v3.**12** |
+| brainmap | https://portal.brainmap.org/ | v3.**11** |
+| epoc | https://prod.epoc.tacc.utexas.edu/ | v3.**11** |
+| frontera | https://frontera-portal.tacc.utexas.edu/ | v3.**11** |
+| lccf | https://lccf.tacc.utexas.edu/ | v3.**11** |
+| protx | https://ccprotx.org/ | v3.**12** |
+| sciviscolor | https://sciviscolor.org/ | v3.**12** |
+| texascale | https://texascale.org/ | v3.**12** |
+| utrc | https://utrc.tacc.utexas.edu/ | v3.**11** |
+
+[^2]: The version of https://github.com/TACC/Core-CMS that each requires.
 
 ## Project Architecture
 

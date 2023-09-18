@@ -6,9 +6,10 @@
 
 **If** the custom project directory:
 
-- has `templates/standard.html` or
-- has `templates/fullwidth.html` or
-- has `templates/home.html`
+- has any `templates/*.html` e.g.
+  - `templates/standard.html`
+  - `templates/fullwidth.html`
+  - `templates/home.html`
 
 Then:
 
@@ -33,3 +34,8 @@ Then:
     +   ('custom-project-dir/templates/standard.html', 'DEPRECATED Standard'),
     +   ('custom-project-dir/templates/fullwidth.html', 'DEPRECATED Full Width'),
     ```
+
+### After Deploy
+
+1. Change template of every page on project to **not** use deprecated template.
+2. Remove its deprecated templates from repository.
