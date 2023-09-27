@@ -6,7 +6,7 @@ Style article pages.
 Waringing: This was made a scope only so it could be applied to Texascale quickly. At the time of its creation, there was no architecture for template-specific styles, and limited use of templates.
 
 Markup:
-<div class="s-article">
+<body class="s-article-page">
   <!-- ??? -->
 </div>
 
