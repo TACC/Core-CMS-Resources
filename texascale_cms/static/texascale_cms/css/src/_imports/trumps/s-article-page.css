@@ -34,3 +34,18 @@ Styleguide Trumps.Scopes.Article
     max-width: calc( var(--offset-distance) * 4 );
   }
 }
+
+.s-article-page .logos--social {
+  justify-content: start;
+  display: flex;
+  gap: 0.25em;
+
+  margin: 10px 15px;
+}
+.s-article-page .logos--social svg {
+  height: var(--global-font-size--x-large);
+}
+.s-article-page .logos__facebook svg       { fill: #0866FF; }
+.s-article-page .logos__facebook svg:hover { fill: inherit; }
+.s-article-page .logos__linkedin svg       { fill: #0a66c2; }
+.s-article-page .logos__linkedin svg:hover { fill: inherit; }
