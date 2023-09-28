@@ -17,6 +17,10 @@ Styleguide Trumps.Scopes.Article
          so now we import custom ranges directly from installed Core-Styles */
 @import url("@tacc/core-styles/src/lib/_imports/tools/media-queries.css");
 
+
+
+/* Bootstrap: Container */
+
 /* Prevent content after article from wrapping around floated content in article */
 .s-article-page .container,
 .s-article-page .container-fluid::after {
@@ -25,6 +29,10 @@ Styleguide Trumps.Scopes.Article
   content: "";
   clear: both;
 }
+
+
+
+/* TACC: Offset Content */
 
 /* Do this only for those viewports when content is actually offset */
 @media only screen and (--medium-and-above) and (--max-wide-and-below) {
@@ -35,17 +43,37 @@ Styleguide Trumps.Scopes.Article
   }
 }
 
-.s-article-page .logos--social {
-  justify-content: start;
-  display: flex;
-  gap: 0.25em;
 
+
+/* TACC: Logos */
+
+.s-article-page .logos--social {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.s-article-page .logos--social > a {
+  display: flex; /* to vertically center the svg (as needed) */
+}
+.s-article-page .logos__text-before {
+  white-space: nowrap;
+  transform: translateY(2px); /* to better vertically center text */
+  font-size: var(--global-font-size--small);
+}
+
+.s-article-page .logos--social svg {
+  fill: var(--global-color-primary--x-dark);
+  height: var(--global-font-size--large);
+  width: var(--global-font-size--x-large);
+}
+.s-article-page .logos__facebook svg:hover { fill: #0866FF; }
+.s-article-page .logos__linkedin svg:hover { fill: #0a66c2; }
+
+/* TODO: Pick one and integrate */
+.s-article-page .col:nth-of-type(1) .logos--social {
   margin: 10px 15px;
 }
-.s-article-page .logos--social svg {
-  height: var(--global-font-size--x-large);
+.s-article-page .col:nth-of-type(2) .logos--social {
+  margin-top: -20px;
 }
-.s-article-page .logos__facebook svg       { fill: #0866FF; }
-.s-article-page .logos__facebook svg:hover { fill: inherit; }
-.s-article-page .logos__linkedin svg       { fill: #0a66c2; }
-.s-article-page .logos__linkedin svg:hover { fill: inherit; }
