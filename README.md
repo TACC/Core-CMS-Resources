@@ -134,11 +134,18 @@ Set up a new local CMS instance.
 
 ## Update Project
 
-Update an existing local CMS instance.
+To update an existing CMS instance.
 
-1. If CMS `Dockerfile` changed, rebuild Docker Containers:
+### New Major [Core CMS] Version (or v3.12)
+
+Read [Upgrade Project] for developer instructions.
+
+### New Branch (or Minor or Patch [Core CMS] Version)
+
+1. If CMS Docker files changed, rebuild Docker Containers:
 
     ```sh
+    cd custom_project_dir
     make stop
     make build
     make start
@@ -151,6 +158,8 @@ Update an existing local CMS instance.
     # That opens a command prompt within the container.
         python manage.py migrate
         python manage.py collectstatic --no-input
+        # If the project has no new/changed assets,
+        # then expect output of "0 static files […]"
     ```
 
 ## Run Project
@@ -180,3 +189,4 @@ To port a project to [Core CMS Custom], read [Port Project].
 
 [Build & Deploy Project]: https://confluence.tacc.utexas.edu/x/Lo99E
 [Port Project]: https://github.com/TACC/Core-CMS-Custom/blob/main/docs/port-project.md
+[Upgrade Project]: https://github.com/TACC/Core-CMS/blob/main/docs/upgrade-project.md
