@@ -96,7 +96,7 @@ BLOG_ENABLE_COMMENTS = False
 # TACC: SOCIAL MEDIA
 ########################
 
-TACC_SOCIAL_SHARE_PLATFORMS = ['facebook', 'linkedin']
+TACC_SOCIAL_SHARE_PLATFORMS = ['facebook', 'linkedin', 'email']
 
 ########################
 # CLIENT BUILD SETTINGS

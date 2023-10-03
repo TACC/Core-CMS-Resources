@@ -89,5 +89,6 @@ Styleguide Trumps.Scopes.Article
   height: var(--global-font-size--large);
   width: var(--global-font-size--x-large);
 }
-.s-article-page .logos__facebook svg:hover { fill: #0866FF; }
+.s-article-page .logos__facebook svg:hover { fill: #0866ff; }
 .s-article-page .logos__linkedin svg:hover { fill: #0a66c2; }
+.s-article-page .logos__email svg:hover { fill: #0000ff; }
