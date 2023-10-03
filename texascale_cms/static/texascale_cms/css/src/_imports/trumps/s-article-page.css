@@ -19,6 +19,14 @@ Styleguide Trumps.Scopes.Article
 
 
 
+/* Variables */
+
+.s-article-page {
+  --sidebar-margin: 15px; /* clone value entered via CMS styles */
+}
+
+
+
 /* Bootstrap: Container */
 
 /* Prevent content after article from wrapping around floated content in article */
@@ -49,8 +57,15 @@ Styleguide Trumps.Scopes.Article
 
 .s-article-page .logos--social {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0;
+  column-gap: 0.25em;
+  padding-inline: var(--sidebar-margin);
+
+  /* To add border and space above */
+  margin-top: var(--sidebar-margin);
+  border-top: var(--global-color-primary--light) var(--global-border-width--normal) solid;
+  padding-top: var(--sidebar-margin);
 }
 
 .s-article-page .logos--social > a {
@@ -59,7 +74,14 @@ Styleguide Trumps.Scopes.Article
 .s-article-page .logos__text-before {
   white-space: nowrap;
   transform: translateY(2px); /* to better vertically center text */
-  font-size: var(--global-font-size--small);
+
+  /* To mimic .byline-title */
+  color: #999;
+  font-size: 12px;
+
+  /* To push logos beneath this text */
+  flex-basis: 100%;
+  padding-bottom: 10px;
 }
 
 .s-article-page .logos--social svg {
@@ -69,11 +91,3 @@ Styleguide Trumps.Scopes.Article
 }
 .s-article-page .logos__facebook svg:hover { fill: #0866FF; }
 .s-article-page .logos__linkedin svg:hover { fill: #0a66c2; }
-
-/* TODO: Pick one and integrate */
-.s-article-page .col:nth-of-type(1) .logos--social {
-  margin: 10px 15px;
-}
-.s-article-page .col:nth-of-type(2) .logos--social {
-  margin-top: -20px;
-}
