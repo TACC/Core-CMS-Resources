@@ -3,7 +3,7 @@
 Project-specific code built into the [Core CMS] project
 
 > **Note**
-> You need not clone this repo to work on a CMS project. Work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
+> Do not clone this repo to work on a CMS project. Work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
 
 > **Warning**
 > This repository is deprecated. To work on these projects further, first [migrate them to Core CMS Custom](#port-project).[^1]
