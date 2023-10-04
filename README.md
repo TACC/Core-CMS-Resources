@@ -39,8 +39,10 @@ Project-specific code built into the [Core CMS] project
 | lccf | https://lccf.tacc.utexas.edu/ | v3.**11** |
 | protx | https://ccprotx.org/ | v3.**12** |
 | sciviscolor | https://sciviscolor.org/ | v3.**12** |
-| texascale | https://texascale.org/ | v3.**12** |
+| texascale | https://texascale.org/ | v**4**.1.0 |
 | utrc | https://utrc.tacc.utexas.edu/ | v3.**11** |
+
+_Last updated: 2023-10-04_
 
 [^2]: The version of https://github.com/TACC/Core-CMS that each requires.
 
