@@ -164,11 +164,9 @@ Read [Upgrade Project] for developer instructions.
         # then expect output of "0 static files […]"
     ```
 
-## Run Project
+## Run Multiple Projects
 
-No developer instruction beyond those for Core CMS.
-
-To run multiple projects, first read [Multiple Projects](./docs/run-project.md#multiple-projects).
+Read [Multiple Projects](./docs/run-project.md#multiple-projects).
 
 ## Debug Project
 
