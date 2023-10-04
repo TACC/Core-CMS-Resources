@@ -93,6 +93,12 @@ BLOG_AUTO_NAMESPACE = 'News'
 BLOG_ENABLE_COMMENTS = False
 
 ########################
+# TACC: SOCIAL MEDIA
+########################
+
+TACC_SOCIAL_SHARE_PLATFORMS = ['facebook', 'linkedin', 'email']
+
+########################
 # CLIENT BUILD SETTINGS
 ########################
 
