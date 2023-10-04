@@ -185,6 +185,7 @@ To port a project to [Core CMS Custom], read [Port Project].
 <!-- Link Aliases -->
 
 [Core CMS]: https://github.com/TACC/Core-CMS
+[Core Portal]: https://github.com/TACC/Core-Portal
 [Core CMS Custom]: https://github.com/TACC/Core-CMS-Custom
 
 [Git Submodules]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
