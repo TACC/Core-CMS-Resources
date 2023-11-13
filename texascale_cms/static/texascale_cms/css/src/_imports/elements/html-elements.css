@@ -1,0 +1,16 @@
+/* ELEMENTS: Content Sectioning */
+
+main {
+  padding-bottom: var(--global-space--beneath-main-content);
+}
+
+
+
+/* ELEMENTS: Table Content */
+
+table,
+td,
+th {
+  /* A table is only used on the homepage, and a border is not expected */
+  border: none;
+}

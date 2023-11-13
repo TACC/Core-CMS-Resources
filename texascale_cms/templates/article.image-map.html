@@ -1,0 +1,41 @@
+{% extends "./article.html" %}
+{% load cms_tags static %}
+
+{% block assets_custom %}
+  {{ block.super }}
+
+  <link rel="stylesheet" href="{% static 'texascale_cms/css/build/template.article.image-map.css' %}">
+{% endblock assets_custom %}
+
+{% block content %}
+<article class="c-page c-page--visual  container-fluid">
+  <div class="row">
+    <div class="c-page__sidebar  col col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+      {% placeholder "sidebar" %}
+      {% include 'share_on_social.html' %}
+    </div>
+
+    <div class="c-page__title  col col-12 col-sm-12 col-md-9 col-lg-10 col-xl-10">
+      {% placeholder "title" %}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="c-page__fake-sidebar  col-1 col-sm-1 col-md-3 col-lg-2 col-xl-2">
+      <!-- This column is intentionally empty; it visually "restores" sidebar after full-width visual -->
+    </div>
+    <div class="c-page__content  col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4">
+      {% placeholder "content" %}
+    </div>
+    <div class="c-page__visual  col col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+      {% placeholder "visual" %}
+    </div>
+  </div>
+</article>
+{% endblock content %}
+
+{% block assets_custom_delayed %}
+  {{ block.super }}
+
+  <script src="{% static 'texascale_cms/js/activateFocusTarget.js' %}" crossorigin="anonymous"></script>
+{% endblock assets_custom_delayed %}

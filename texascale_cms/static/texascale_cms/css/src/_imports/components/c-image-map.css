@@ -1,0 +1,8 @@
+/* TACC COMPONENTS: Image Map */
+
+@import url("https://unpkg.com/@tacc/core-styles@0.13.0/dist/components/c-image-map.structure.css");
+
+/* Styles are organized by OOCSS methodology */
+/* SEE: https://confluence.tacc.utexas.edu/x/VwALBg */
+@import url("./c-image-map.structure.css");
+@import url("./c-image-map.skin.css");

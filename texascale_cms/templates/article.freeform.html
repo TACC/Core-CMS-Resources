@@ -1,0 +1,23 @@
+{% extends "./article.html" %}
+{% load cms_tags %}
+
+{% block content %}
+  <article>{% placeholder "content" %}</article>
+{% endblock content %}
+
+{% block js %}
+  {{ block.super }}
+
+  {# Add social media share links to sidebar column dynamically #}
+  {# WARNING: Relies on specific markup (that is unlikely to change) #}
+  <template id="share-links-template">
+    {% include 'share_on_social.html' %}
+  </template>
+  <script type="module">
+    const sidebar = document.querySelector('.row:first-of-type > .col:first-of-type');
+    const linksTemplate = document.getElementById('share-links-template');
+    const links = linksTemplate.content.cloneNode(true);
+
+    sidebar.appendChild(links);
+  </script>
+{% endblock js %}

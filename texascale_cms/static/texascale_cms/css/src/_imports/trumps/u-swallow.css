@@ -1,0 +1,16 @@
+/*
+Swallow
+
+A strange utility to remove space in one direction, and restore space in the opposite direction.
+
+_The "swallow" refers to _swallowing_ space above and _excreting_ space below._
+
+.u-swallow--space-beneath-main-content - Space beneath main content on all pages
+
+Style guide: Trumps.Utilities.Border
+*/
+
+.u-swallow--space-beneath-main-content {
+  padding-bottom: var(--global-space--beneath-main-content);
+  margin-bottom: calc( -1 * var(--global-space--beneath-main-content) );
+}

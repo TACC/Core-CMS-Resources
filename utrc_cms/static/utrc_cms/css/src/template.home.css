@@ -1,0 +1,9 @@
+/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
+
+/* Organize via ITCSS */
+/* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
+
+/* TRUMPS */
+@import url("./_imports/trumps/s-home.css");
+@import url("./_imports/trumps/s-focus-list.css");
+@import url("./_imports/trumps/s-icon-list.css");

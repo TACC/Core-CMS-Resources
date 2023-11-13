@@ -1,0 +1,44 @@
+@import url("./_imports/components/c-fellow.css");
+@import url("./_imports/components/c-ribbon.css");
+
+/* ELEMENTS: (Content) Sectioning Elements */
+
+/* Overwrite `_imports/elements/sectioning.css` */
+main {
+  padding-bottom: 0;
+}
+
+/* COMPONENTS: Fellow */
+
+.c-fellow {
+  /* FAQ: Set `--space-between-each: 0` to avoid caveat on wrapped flex items */
+  --space-between-each: 0;
+}
+/* Prevent `.c-ribbon` style from overwriting `.c-fellow__name` style */
+/* .c-ribbon */.c-fellow__name { z-index: 2; }
+
+/* COMPONENTS: Ribbon */
+
+.c-ribbon {
+  --face-color--top: #fff;
+  --face-color--fold: #000;
+  --face-color--end: #fff;
+
+  --border-width: 2px;
+  --border-style: solid;
+  --border-color--end: #000;
+  --border-color--top: #000;
+
+  --text-color--top: #000;
+
+  /* NOTE: Would like `--end-width: 2em`, but `--space-between-each: 0` */
+  --end-width: 1.75em; /* must use positive value */
+  --fold-width--horz: 1em; /* must use positive value */
+  --fold-width--vert: 0.5em; /* must use positive value */
+}
+.c-ribbon__content {
+  padding: 0.125em 0 0; /* vertically center text */
+}
+em.c-ribbon__content {
+  font-style: normal; /* overwrite browser default */
+}

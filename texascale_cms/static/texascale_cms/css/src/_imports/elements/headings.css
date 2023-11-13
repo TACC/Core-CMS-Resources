@@ -1,0 +1,59 @@
+/* Headings
+- `h1` = story titles
+- `h2` = story subtitles
+- `h3` = in-story header one
+- `h4` = in-story header two
+- `h5` = in-story header three
+- `h6` = byline/category header
+*/
+
+/* NOTE: If scope classes are implemented, then these would be nested under a `.s-cms-text` */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: revert;
+  font-weight: var(--bold);
+  color: var(--global-color-primary--xx-dark)
+}
+
+h1, h3 {
+	font-family: benton-sans, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 50px;
+	margin: 28px 0px 5px 0px;
+	padding: 0px;
+}
+h2 {
+	font-family: kepler-std-subhead, serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 25px;
+	margin: 0px 0px 25px 0px;
+}
+h3 {
+	font-size: 30px;
+}
+
+h4, h5, h6 {
+	font-family: benton-sans, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+h5, h6 {
+	text-transform: capitalize;
+}
+h4 {
+	font-size: 25px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 20px;
+	color: #999999;
+	margin: 35px 15px 15px 15px;
+	padding: 0px;
+}

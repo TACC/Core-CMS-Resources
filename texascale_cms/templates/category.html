@@ -1,0 +1,14 @@
+{% extends "./fullwidth.html" %}
+{% load cms_tags static %}
+
+{% block assets_custom %}
+	{{ block.super }}
+
+	<link rel="stylesheet" href="{% static 'texascale_cms/css/build/template.category.css' %}">
+{% endblock assets_custom %}
+
+{# Add class to the <html> #}
+{# SEE: TACC/Core-CMS before 2023-02-08@16:30 #}
+{% block template_class %}s-category-page{% endblock template_class %}
+{# SEE: TACC/Core-CMS after 2023-02-08@16:30 #}
+{% block html_page_class %}s-category-page{% endblock html_page_class %}

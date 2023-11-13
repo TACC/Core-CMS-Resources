@@ -1,0 +1,7 @@
+User-agent: *
+# Prevent crawling (indexing could happen, but only if we link to the page/s)
+# FAQ: This is temporary way to block search engines from early-published pages
+# SEE: https://support.google.com/webmasters/answer/6062608?hl=en&ref_topic=6061961
+# SEE: https://www.matthewedgar.net/noindex-vs-nofollow-vs-disallow/
+Disallow: /2023
+Disallow: /2023/
