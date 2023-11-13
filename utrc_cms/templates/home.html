@@ -1,0 +1,10 @@
+{% extends "fullwidth.html" %}
+{% load cms_tags static %}
+
+{% block assets_custom %}
+  {{ block.super }}
+
+  <link rel="stylesheet" href="{% static 'utrc_cms/css/build/template.home.css' %}">
+{% endblock assets_custom %}
+
+{% block page_type_class %}s-home{% endblock page_type_class %}

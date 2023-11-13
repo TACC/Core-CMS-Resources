@@ -1,0 +1,10 @@
+/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
+
+/* Organize via ITCSS */
+/* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
+
+/* COMPONENTS */
+@import url("./_imports/components/c-page.css");
+
+/* TRUMPS */
+@import url("./_imports/trumps/s-article-page.css");

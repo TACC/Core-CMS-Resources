@@ -1,0 +1,28 @@
+{% extends "./fullwidth.html" %}
+{% load cms_tags static %}
+
+{% block assets_custom %}
+  {{ block.super }}
+
+	<link rel="stylesheet" href="{% static 'texascale_cms/css/build/template.article.css' %}">
+{% endblock assets_custom %}
+
+{% block content %}
+<article class="c-page  container-fluid">
+  <div class="row">
+
+    <div class="c-page__sidebar  col col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+      {% placeholder "sidebar" %}
+      {% include 'share_on_social.html' %}
+    </div>
+
+    <div class="col col-12 col-sm-12 col-md-8 col-lg-7 col-xl-7">
+      <header class="c-page__title">{% placeholder "title" %}</header>
+      <div class="c-page__content  s-drop-caps">{% placeholder "content" %}</div>
+    </div>
+
+  </div>
+</article>
+{% endblock content %}
+
+{% block page_type_class %}s-article-page{% endblock page_type_class %}
