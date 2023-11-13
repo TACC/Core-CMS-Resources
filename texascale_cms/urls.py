@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from taccsite_cms.urls import *
 
-from django.conf.urls import include, url
+from django.urls import include, re_path
 
 urlpatterns += [
     # Support `taggit_autosuggest` (from `djangocms-blog`)
-    url(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
+    re_path(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
 ]

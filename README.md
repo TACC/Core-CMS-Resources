@@ -3,7 +3,7 @@
 Project-specific code built into the [Core CMS] project
 
 > **Note**
-> You need not clone this repository to work on a CMS project. You may work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
+> Do not clone this repo to work on a CMS project. Work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
 
 > **Warning**
 > This repository is deprecated. To work on these projects further, first [migrate them to Core CMS Custom](#port-project).[^1]
@@ -18,7 +18,7 @@ Project-specific code built into the [Core CMS] project
 - [Prerequisites](#prerequisites)
 - [Start Project](#start-project)
 - [Update Project](#update-project)
-- [Run Project](#run-project)
+- [Run Multiple Projects](#run-multiple-projects)
 - [Debug Project](#debug-project)
 - [Build & Deploy Project](#build--deploy-project)
 - [Port Project](#port-project)
@@ -39,8 +39,10 @@ Project-specific code built into the [Core CMS] project
 | lccf | https://lccf.tacc.utexas.edu/ | v3.**11** |
 | protx | https://ccprotx.org/ | v3.**12** |
 | sciviscolor | https://sciviscolor.org/ | v3.**12** |
-| texascale | https://texascale.org/ | v3.**12** |
+| texascale | https://texascale.org/ | v**4**.1.0 |
 | utrc | https://utrc.tacc.utexas.edu/ | v3.**11** |
+
+_Last updated: 2023-10-04_
 
 [^2]: The version of https://github.com/TACC/Core-CMS that each requires.
 
@@ -134,11 +136,18 @@ Set up a new local CMS instance.
 
 ## Update Project
 
-Update an existing local CMS instance.
+To update an existing CMS instance.
 
-1. If CMS `Dockerfile` changed, rebuild Docker Containers:
+### New Major [Core CMS] Version (or v3.12)
+
+Read [Upgrade Project] for developer instructions.
+
+### New Branch (or Minor or Patch [Core CMS] Version)
+
+1. If CMS Docker files changed, rebuild Docker Containers:
 
     ```sh
+    cd custom_project_dir
     make stop
     make build
     make start
@@ -151,13 +160,13 @@ Update an existing local CMS instance.
     # That opens a command prompt within the container.
         python manage.py migrate
         python manage.py collectstatic --no-input
+        # If the project has no new/changed assets,
+        # then expect output of "0 static files […]"
     ```
 
-## Run Project
+## Run Multiple Projects
 
-No developer instruction beyond those for Core CMS.
-
-To run multiple projects, first read [Multiple Projects](./docs/run-project.md#multiple-projects).
+Read [Multiple Projects](./docs/run-project.md#multiple-projects).
 
 ## Debug Project
 
@@ -174,9 +183,11 @@ To port a project to [Core CMS Custom], read [Port Project].
 <!-- Link Aliases -->
 
 [Core CMS]: https://github.com/TACC/Core-CMS
+[Core Portal]: https://github.com/TACC/Core-Portal
 [Core CMS Custom]: https://github.com/TACC/Core-CMS-Custom
 
 [Git Submodules]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 [Build & Deploy Project]: https://confluence.tacc.utexas.edu/x/Lo99E
 [Port Project]: https://github.com/TACC/Core-CMS-Custom/blob/main/docs/port-project.md
+[Upgrade Project]: https://github.com/TACC/Core-CMS/blob/main/docs/upgrade-project.md
