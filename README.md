@@ -140,7 +140,7 @@ Follow "via Core CMS Resources" section of [Core CMS: Develop Custom Project](ht
 
 ## Debug Project
 
-Read [Core CMS: Debug Project](https://github.com/TACC/Core-CMS/blob/main/docs/debug-project.md).
+Read [Debug Project](./docs/debug-project.md) for miscellaneous tips.
 
 ## Build & Deploy Project
 
