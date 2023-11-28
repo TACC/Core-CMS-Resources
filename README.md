@@ -70,7 +70,7 @@ A CMS project is run within [Core CMS]. Also, [Git Submodules] must be pre-insta
 
 Set up a new local CMS instance.
 
-0. Core CMS:
+0. Set up Core CMS to run a local Core CMS Resources:
 
     1. If not already done:
         1. Clone [Core CMS] repository.
@@ -96,31 +96,27 @@ Set up a new local CMS instance.
         ln -s '../taccsite_custom/custom_project_dir/settings_custom.py' 'taccsite_cms/settings_custom.py'
         ```
 
-1. Docker Containers:
+1. Enter the CMS Docker Container:
 
     ```sh
     docker exec -it core_cms /bin/bash
-    # This opens a command prompt within the container.
+    # This opens a command prompt within the container
     ```
 
-2. Django Application:
+2. Update the Django Application:
 
     (Run these commands within the container.)
 
     ```sh
     python manage.py migrate
-    # For projects that install apps
-    # e.g. ECEP installs News/Blog
-    npm ci
-    npm run build:css --project="custom_project_dir"
-    # If output includes
-    # "Input Error: You must pass a valid"
-    # then double check you have the directory
-    # `taccsite_cms/…/static/…/css/src`
+    python manage.py createsuperuser
+    # To use default "Username" and skip "Email address", press Enter at both prompts.
+    # At "Password" prompts, you may use an easy-to-remember password.
     python manage.py collectstatic --no-input
+
     ```
 
-3. Django CMS:
+3. Open Django CMS:
     1. Open http://localhost:8000/.
     2. Verify anything specific to the custom project is present e.g.
         - logo
@@ -132,49 +128,27 @@ Set up a new local CMS instance.
 > A local machine CMS will be empty. It will **not** have content from staging nor production. To have that, follow and adapt instructions to [copy a database](https://confluence.tacc.utexas.edu/x/W4DZDg).
 
 > **Note**
-> A local machine CMS does **not** include **nor** integrate with an instance of [Core Portal]. There are no reliable instructions to do either. **Help welcome.**
+> A local machine CMS does **not** include **nor** integrate with an instance of [Core Portal]. To attempt to do that, follow [How to Use a Custom Docker Compose File](https://github.com/TACC/Core-CMS/wiki/How-to-Use-a-Custom-Docker-Compose-File) and [Locally Develop CMS Portal Docs](https://github.com/TACC/Core-CMS/wiki/Locally-Develop-CMS---Portal---Docs). **Help welcome.**
 
 ## Update Project
 
-To update an existing CMS instance.
+Follow [Core CMS: Update Project](https://github.com/TACC/Core-CMS/blob/main/README.md#update-project) instructions.
 
-### New Major [Core CMS] Version (or v3.12)
+## Develop Project
 
-Read [Upgrade Project] for developer instructions.
-
-### New Branch (or Minor or Patch [Core CMS] Version)
-
-1. If CMS Docker files changed, rebuild Docker Containers:
-
-    ```sh
-    cd custom_project_dir
-    make stop
-    make build
-    make start
-    ```
-
-2. If static assets or database models changed, update the Django Application:
-
-    ```sh
-    docker exec -it core_cms /bin/bash
-    # That opens a command prompt within the container.
-        python manage.py migrate
-        python manage.py collectstatic --no-input
-        # If the project has no new/changed assets,
-        # then expect output of "0 static files […]"
-    ```
-
-## Run Multiple Projects
-
-Read [Multiple Projects](./docs/run-project.md#multiple-projects).
+Follow "via Core CMS Resources" section of [Core CMS: Develop Custom Project](https://github.com/TACC/Core-CMS/blob/main/docs/develop-custom-project.md#via-core-cms-resources).
 
 ## Debug Project
 
-Read [Debug Project](./docs/debug-project.md) for miscellaneous tips.
+Read [Core CMS: Debug Project](https://github.com/TACC/Core-CMS/blob/main/docs/debug-project.md).
 
 ## Build & Deploy Project
 
 Follow "Core-CMS-Resources" section of [How To Build & Deploy][Build & Deploy Project].
+
+## Run Multiple Projects
+
+Read [Run Multiple Projects](./docs/run-multiple-projects.md).
 
 ## Port Project
 
