@@ -30,21 +30,21 @@ Project-specific code built into the [Core CMS] project
 
 ## Project Websites
 
-| Abbr. | URL | Version[^2] |
-| - | - | - |
+| Abbr. | URL | Version[^2] | Notes |
+| - | - | - | - |
 | 3dem | https://3dem.org/ | v3.**12** |
 | brainmap | https://portal.brainmap.org/ | v3.**11** |
 | epoc | https://prod.epoc.tacc.utexas.edu/ | v3.**11** |
-| frontera | https://frontera-portal.tacc.utexas.edu/ | v3.**11** |
+| frontera | https://frontera-portal.tacc.utexas.edu/ | v3.**11** | [Tested w/ v4.4](https://github.com/TACC/Core-Portal-Deployments/commit/49b385e) |
 | lccf | https://lccf.tacc.utexas.edu/ | v3.**11** |
 | protx | https://ccprotx.org/ | v3.**12** |
 | sciviscolor | https://sciviscolor.org/ | v3.**12** |
 | texascale | https://texascale.org/ | v**4**.1.0 |
-| utrc | https://utrc.tacc.utexas.edu/ | v3.**11** |
+| utrc | https://utrc.tacc.utexas.edu/ | v3.**11** | [Tested w/ v4.4](https://github.com/TACC/Core-Portal-Deployments/commit/49b385e) |
 
-_Last updated: 2023-10-04_
+_Last updated: 2024-01-03_
 
-[^2]: The version of https://github.com/TACC/Core-CMS that each requires.
+[^2]: The production version of https://github.com/TACC/Core-CMS that each requires.
 
 ## Project Architecture
 
