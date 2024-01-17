@@ -144,7 +144,7 @@ Read [Debug Project](./docs/debug-project.md) for miscellaneous tips.
 
 ## Build & Deploy Project
 
-Follow "Core-CMS-Resources" section of [How To Build & Deploy][Build & Deploy Project].
+Follow "Core-CMS-Resources" section of [How To Build & Deploy](https://tacc-main.atlassian.net/l/cp/3U2WHbVB).
 
 ## Run Multiple Projects
 
