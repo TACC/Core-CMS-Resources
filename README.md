@@ -144,7 +144,7 @@ Read [Debug Project](./docs/debug-project.md) for miscellaneous tips.
 
 ## Build & Deploy Project
 
-Follow "Core-CMS-Resources" section of [How To Build & Deploy](https://tacc-main.atlassian.net/l/cp/3U2WHbVB).
+Follow "Core-CMS-Resources" section of [How To Build & Deploy][Build & Deploy Project].
 
 ## Run Multiple Projects
 
@@ -162,6 +162,6 @@ To port a project to [Core CMS Custom], read [Port Project].
 
 [Git Submodules]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
-[Build & Deploy Project]: https://confluence.tacc.utexas.edu/x/Lo99E
+[Build & Deploy Project]: https://tacc-main.atlassian.net/l/cp/3U2WHbVB
 [Port Project]: https://github.com/TACC/Core-CMS-Custom/blob/main/docs/port-project.md
 [Upgrade Project]: https://github.com/TACC/Core-CMS/blob/main/docs/upgrade-project.md
