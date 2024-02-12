@@ -2,7 +2,6 @@
 # TACC WMA CMS SITE:
 # *.UTRC.TACC.UTEXAS.EDU
 
-
 ########################
 # DJANGO_CMS
 ########################
