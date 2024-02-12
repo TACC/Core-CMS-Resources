@@ -1,9 +1,9 @@
 ## CUSTOM SETTINGS VALUES.
 # TACC WMA CMS SITE:
-# *.TEXASCALE.ORG
+# *.TEXASCALE.TACC.UTEXAS.EDU
 
 ########################
-# DJANGO CMS SETTINGS
+# DJANGO_CMS
 ########################
 
 CMS_TEMPLATES = (
@@ -25,7 +25,7 @@ CMS_TEMPLATES = (
 )
 
 ########################
-# TACC: LOGOS
+# TACC: LOGO & FAVICON
 ########################
 
 LOGO =  [
@@ -48,7 +48,7 @@ INCLUDES_PORTAL_NAV = False
 INCLUDES_SEARCH_BAR = False
 
 ########################
-# NEWS / BLOG
+# DJANGOCMS_BLOG
 ########################
 
 from taccsite_cms.settings import INSTALLED_APPS

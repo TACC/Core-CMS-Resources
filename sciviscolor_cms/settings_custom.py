@@ -3,7 +3,7 @@
 # SCIVISCOLOR.ORG
 
 ########################
-# TACC: LOGOS
+# TACC: LOGO & FAVICON
 ########################
 
 LOGO = [

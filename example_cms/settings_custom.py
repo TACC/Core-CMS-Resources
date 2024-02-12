@@ -3,7 +3,7 @@
 # *.PROJECT_DOMAIN.TACC.UTEXAS.EDU
 
 ########################
-# DJANGO CMS SETTINGS
+# DJANGO_CMS
 ########################
 
 # CMS_TEMPLATES = (
@@ -42,7 +42,7 @@
 # BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING, NSF_BRANDING, _CUSTOM_BRANDING ]
 
 ########################
-# TACC: LOGOS
+# TACC: LOGO & FAVICON
 ########################
 
 LOGO =  [
@@ -55,12 +55,3 @@ LOGO =  [
     "anonymous",
     "True"
 ]
-
-########################
-# TACC: PORTAL
-########################
-
-# Does this CMS site have a portal?
-# INCLUDES_CORE_PORTAL = False
-# INCLUDES_PORTAL_NAV = False
-# INCLUDES_SEARCH_BAR = False

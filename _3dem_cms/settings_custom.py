@@ -1,12 +1,9 @@
 ## CUSTOM SETTINGS VALUES.
 # TACC WMA CMS SITE:
-# 3DEM[...]
-
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_")
-#      because current infrastructure lacks ability to reference default values
+# *.3DEM.TACC.UTEXAS.EDU
 
 ########################
-# DJANGO CMS SETTINGS
+# DJANGO_CMS
 ########################
 
 CMS_TEMPLATES = (
@@ -28,6 +25,8 @@ CMS_TEMPLATES = (
 ########################
 # TACC: BRANDING
 ########################
+
+# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_") cuz current infrastructure lacks ability to reference default values
 
 _NSF_BRANDING = [
     "nsf",
@@ -65,7 +64,7 @@ _UTEXAS_BRANDING = [
 BRANDING = [ _NSF_BRANDING, _FRONTERA_TACC_BRANDING, _UTEXAS_BRANDING ]
 
 ########################
-# TACC: LOGOS
+# TACC: LOGO & FAVICON
 ########################
 
 LOGO = [

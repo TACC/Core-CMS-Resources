@@ -3,7 +3,7 @@
 # *.BRAINMAP.TACC.UTEXAS.EDU
 
 ########################
-# DJANGO CMS SETTINGS
+# DJANGO_CMS
 ########################
 
 CMS_TEMPLATES = (
@@ -22,6 +22,8 @@ CMS_TEMPLATES = (
 ########################
 # TACC: BRANDING
 ########################
+
+# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_") cuz current infrastructure lacks ability to reference default values
 
 _UTHSCSA_BRANDING = [
     "uthscsa",
@@ -70,7 +72,7 @@ _UTEXAS_BRANDING = [
 BRANDING = [ _SGCI_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, _UTHSCSA_BRANDING ]
 
 ########################
-# TACC: LOGOS
+# TACC: LOGO & FAVICON
 ########################
 
 LOGO = [
