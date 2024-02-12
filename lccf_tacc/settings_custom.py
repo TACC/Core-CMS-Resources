@@ -3,6 +3,12 @@
 # *.LCCF.TACC.UTEXAS.EDU
 
 ########################
+# DJANGO: AUTH
+########################
+
+AUTH_LDAP_SERVER_URI = "ldap://cluster.ldap.tacc.utexas.edu"
+
+########################
 # TACC: BRANDING
 ########################
 
