@@ -93,14 +93,14 @@ BLOG_AUTO_NAMESPACE = 'News'
 BLOG_ENABLE_COMMENTS = False
 
 ########################
-# TACC: SOCIAL MEDIA
-########################
-
-TACC_SOCIAL_SHARE_PLATFORMS = ['facebook', 'linkedin', 'email']
-
-########################
-# CLIENT BUILD SETTINGS
+# DJANGOCMS_BLOG: DJANGO
 ########################
 
 # TACC/Core-CMS-Resources#75: Load custom urls.py so we can add urlpatterns for taggit_autosuggest
 ROOT_URLCONF = 'taccsite_custom.texascale_cms.urls'
+
+########################
+# TACC: SOCIAL MEDIA
+########################
+
+TACC_SOCIAL_SHARE_PLATFORMS = ['facebook', 'linkedin', 'email']
