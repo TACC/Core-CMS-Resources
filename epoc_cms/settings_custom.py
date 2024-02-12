@@ -81,7 +81,7 @@ BRANDING = [ TACC_BRANDING, UTEXAS_BRANDING, CUSTOM_BRANDING ]
 # TACC: LOGO & FAVICON
 ########################
 
-LOGO =  [
+LOGO = [
     "epoc",
     "epoc_cms/img/org_logos/epoc-color-logo.png",
     "",

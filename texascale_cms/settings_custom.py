@@ -28,7 +28,7 @@ CMS_TEMPLATES = (
 # TACC: LOGO & FAVICON
 ########################
 
-LOGO =  [
+LOGO = [
     "texascale",
     "texascale_cms/img/org_logos/texascale-wordmark.png",
     "",

@@ -45,7 +45,7 @@
 # TACC: LOGO & FAVICON
 ########################
 
-LOGO =  [
+LOGO = [
     "example",
     "example_cms/img/org_logos/portal.png",
     "",

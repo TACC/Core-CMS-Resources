@@ -66,7 +66,7 @@ BRANDING = [ _NSF_BRANDING, _FRONTERA_TACC_BRANDING, _UTEXAS_BRANDING ]
 # TACC: LOGO & FAVICON
 ########################
 
-LOGO =  [
+LOGO = [
     "frontera",
     "frontera_cms/img/org_logos/frontera-white-solo.png",
     "",
