@@ -1,5 +1,5 @@
 # CUSTOM SETTINGS VALUES.
-# TACC WMA CMS SITE:
+# TACC WMA (SAD) CMS SITE:
 # *.TEXASCALE.TACC.UTEXAS.EDU
 
 ########################
@@ -14,6 +14,7 @@ CMS_TEMPLATES = (
     ('texascale_cms/templates/article.sidebar-right.html', 'Article (Right Sidebar)'),
     ('texascale_cms/templates/article.visual.html', 'Article (Full-Size Visual)'),
     ('texascale_cms/templates/article.image-map.html', 'Article (Image Map)'),
+
     # DEPRECATED
     ('texascale-org/templates/fullwidth.html', 'DEPRECATED Fullwidth'),
     ('texascale-org/templates/category.html', 'DEPRECATED Category'),
