@@ -25,9 +25,9 @@ CMS_TEMPLATES = (
 # TACC: BRANDING
 ########################
 
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_") cuz current infrastructure lacks ability to reference default values
+# NOTE: Variables NSF_BRANDING, TACC_BRANDING, and UTEXAS_BRANDING are duplicated from Core-CMS cuz current infrastructure lacks ability to reference default values.
 
-_NSF_BRANDING = [
+NSF_BRANDING = [
     "nsf",
     "site_cms/img/org_logos/nsf-white.png",
     "branding-nsf",
@@ -38,7 +38,7 @@ _NSF_BRANDING = [
     "True"
 ]
 
-_FRONTERA_TACC_BRANDING = [
+FRONTERA_TACC_BRANDING = [
     "tacc",
     "frontera_cms/img/org_logos/tacc-white.png", # TACC/Core-CMS#283 & #284
     "branding-tacc",
@@ -49,7 +49,7 @@ _FRONTERA_TACC_BRANDING = [
     "True"
 ]
 
-_UTEXAS_BRANDING = [
+UTEXAS_BRANDING = [
     "utexas",
     "site_cms/img/org_logos/utaustin-white.png",
     "branding-utaustin",
@@ -60,7 +60,7 @@ _UTEXAS_BRANDING = [
     "True"
 ]
 
-BRANDING = [ _NSF_BRANDING, _FRONTERA_TACC_BRANDING, _UTEXAS_BRANDING ]
+BRANDING = [ NSF_BRANDING, FRONTERA_TACC_BRANDING, UTEXAS_BRANDING ]
 
 ########################
 # TACC: LOGO & FAVICON

@@ -22,7 +22,7 @@ CMS_TEMPLATES = (
 # TACC: BRANDING
 ########################
 
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_") cuz current infrastructure lacks ability to reference default values
+# NOTE: Variables NSF_BRANDING, TACC_BRANDING, and UTEXAS_BRANDING are duplicated from Core-CMS cuz current infrastructure lacks ability to reference default values.
 
 COOKS_BRANDING = [
     "cooks",
@@ -35,7 +35,7 @@ COOKS_BRANDING = [
     "True"
 ]
 
-_TACC_BRANDING = [
+TACC_BRANDING = [
     "tacc",
     "site_cms/img/org_logos/tacc-white.png",
     "branding-tacc",
@@ -46,7 +46,7 @@ _TACC_BRANDING = [
     "True"
 ]
 
-_UTEXAS_BRANDING = [
+UTEXAS_BRANDING = [
     "utexas",
     "site_cms/img/org_logos/utaustin-white.png",
     "branding-utaustin",
@@ -57,7 +57,7 @@ _UTEXAS_BRANDING = [
     "True"
 ]
 
-BRANDING = [ COOKS_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING ]
+BRANDING = [ COOKS_BRANDING, TACC_BRANDING, UTEXAS_BRANDING ]
 
 ########################
 # TACC: LOGO & FAVICON

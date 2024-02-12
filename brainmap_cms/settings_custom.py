@@ -23,9 +23,9 @@ CMS_TEMPLATES = (
 # TACC: BRANDING
 ########################
 
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_") cuz current infrastructure lacks ability to reference default values
+# NOTE: Variables NSF_BRANDING, TACC_BRANDING, and UTEXAS_BRANDING are duplicated from Core-CMS cuz current infrastructure lacks ability to reference default values.
 
-_UTHSCSA_BRANDING = [
+UTHSCSA_BRANDING = [
     "uthscsa",
     "brainmap_cms/img/org_logos/uthscsa-logo-white.png",
     "branding-logo--short",
@@ -36,7 +36,7 @@ _UTHSCSA_BRANDING = [
     "True",
 ]
 
-_SGCI_BRANDING = [
+SGCI_BRANDING = [
     "sgci",
     "brainmap_cms/img/org_logos/sgci-logo-sans-text.svg",
     "branding-logo--short",
@@ -47,7 +47,7 @@ _SGCI_BRANDING = [
     "True",
 ]
 
-_TACC_BRANDING = [
+TACC_BRANDING = [
     "tacc",
     "site_cms/img/org_logos/tacc-white.png",
     "branding-tacc",
@@ -58,7 +58,7 @@ _TACC_BRANDING = [
     "True"
 ]
 
-_UTEXAS_BRANDING = [
+UTEXAS_BRANDING = [
     "utexas",
     "site_cms/img/org_logos/utaustin-white.png",
     "branding-utaustin",
@@ -69,7 +69,7 @@ _UTEXAS_BRANDING = [
     "True"
 ]
 
-BRANDING = [ _SGCI_BRANDING, _TACC_BRANDING, _UTEXAS_BRANDING, _UTHSCSA_BRANDING ]
+BRANDING = [ SGCI_BRANDING, TACC_BRANDING, UTEXAS_BRANDING, UTHSCSA_BRANDING ]
 
 ########################
 # TACC: LOGO & FAVICON

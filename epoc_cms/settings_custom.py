@@ -29,7 +29,7 @@ CMS_TEMPLATES = (
 # TACC: BRANDING
 ########################
 
-# FAQ: Some _VARIABLES are duplicated from settings.py (but prefixed with "_") cuz current infrastructure lacks ability to reference default values
+# NOTE: Variables NSF_BRANDING, TACC_BRANDING, and UTEXAS_BRANDING are duplicated from Core-CMS cuz current infrastructure lacks ability to reference default values.
 
 TACC_BRANDING = [
     "tacc",
