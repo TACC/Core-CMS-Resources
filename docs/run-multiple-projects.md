@@ -18,14 +18,9 @@ To stop one project, and run another:
     make stop
     ```
 
-3. Replace existing symlink.
+3. Update custom settings.
 
-    Replace symlink `taccsite_cms/settings_custom.py` with one to `taccsite_custom/custom_project_dir/settings_custom.py`, e.g.
-
-    ```sh
-    rm -f 'taccsite_cms/settings_custom.py'
-    ln -s '../taccsite_custom/custom_project_dir/settings_custom.py' 'taccsite_cms/settings_custom.py'
-    ```
+    Update `taccsite_cms/settings_custom.py` with respective `cms.settings_custom.py` from [Core Portal Deployments] e.g. [`/lccf/camino/cms.settings_custom.py`](https://github.com/TACC/Core-Portal-Deployments/blob/d8e31d9/lccf/camino/cms.settings_custom.py).
 
 4. Start the other project.
 
@@ -53,3 +48,4 @@ To run multiple projects simultaneously:
 <!-- Link Aliases -->
 
 [Core CMS]: https://github.com/TACC/Core-CMS
+[Core Portal Deployments]: https://github.com/TACC/Core-Portal-Deployments
