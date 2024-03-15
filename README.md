@@ -56,7 +56,7 @@ Within a `/custom_project_dir` can be:
 | `templates` | templates and saved snippets |
 | `settings_custom.py`[^3] | project-specific values for [Core CMS] settings |
 
-[^3]: The `cms.settings_custom.py` is committed in [Core Portal Deployments]. A `settings_custom.py` in [Core CMS Resources] is `.gitignore`'d.
+[^3]: The `cms.settings_custom.py` is committed in [Core Portal Deployments]. A `settings_custom.py` in [Core CMS] is `.gitignore`'d.
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ A CMS project is run within [Core CMS]. Also, [Git Submodules] must be pre-insta
 
 Set up a new local CMS instance.
 
-0. Set up Core CMS to run a local Core CMS Resources:
+0. Set up [Core CMS] to run a local [Core CMS Resources]:
 
     1. If not already done:
         1. Clone [Core CMS] repository.
@@ -134,7 +134,7 @@ Follow [Core CMS: Update Project](https://github.com/TACC/Core-CMS/blob/main/REA
 
 ## Develop Project
 
-Follow "via Core CMS Resources" section of [Core CMS: Develop Custom Project](https://github.com/TACC/Core-CMS/blob/main/docs/develop-custom-project.md#via-core-cms-resources).
+Follow "via [Core CMS Resources]" section of [Core CMS: Develop Custom Project](https://github.com/TACC/Core-CMS/blob/main/docs/develop-custom-project.md#via-core-cms-resources).
 
 ## Debug Project
 
