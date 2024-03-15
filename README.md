@@ -56,7 +56,7 @@ Within a `/custom_project_dir` can be:
 | `templates` | templates and saved snippets |
 | `settings_custom.py`[^3] | project-specific values for [Core CMS] settings |
 
-[^3]: The `settings_custom.py` is committed in [Core Portal Deployments]. A `settings_custom.py` is `.gitignore`'d.
+[^3]: The `cms.settings_custom.py` is committed in [Core Portal Deployments]. A `settings_custom.py` in [Core CMS Resources] is `.gitignore`'d.
 
 ## Prerequisites
 
