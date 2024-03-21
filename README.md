@@ -54,7 +54,9 @@ Within a `/custom_project_dir` can be:
 | - | - |
 | `static` | static assets, organized as Django CMS expects |
 | `templates` | templates and saved snippets |
-| `settings_custom.py` | project-specific values for [Core CMS] settings |
+| `settings_custom.py`[^3] | project-specific values for [Core CMS] settings |
+
+[^3]: The `cms.settings_custom.py` is committed in [Core Portal Deployments]. A `settings_custom.py` in [Core CMS] is `.gitignore`'d.
 
 ## Prerequisites
 
@@ -70,7 +72,7 @@ A CMS project is run within [Core CMS]. Also, [Git Submodules] must be pre-insta
 
 Set up a new local CMS instance.
 
-0. Set up Core CMS to run a local Core CMS Resources:
+0. Set up [Core CMS] to run a local [Core CMS Resources]:
 
     1. If not already done:
         1. Clone [Core CMS] repository.
@@ -90,11 +92,7 @@ Set up a new local CMS instance.
         # This populates from this repository into `/taccsite_custom`.
         ```
 
-    4. Create a symlink from `taccsite_cms/settings_custom.py` to `taccsite_custom/custom_project_dir/settings_custom.py`, e.g.
-
-        ```sh
-        ln -s '../taccsite_custom/custom_project_dir/settings_custom.py' 'taccsite_cms/settings_custom.py'
-        ```
+    4. Create `/taccsite_cms/settings_custom.py`[^3] and populate it with respective `cms.settings_custom.py` from [Core Portal Deployments] e.g. [`/lccf/camino/cms.settings_custom.py`](https://github.com/TACC/Core-Portal-Deployments/blob/d8e31d9/lccf/camino/cms.settings_custom.py).
 
 1. Enter the CMS Docker Container:
 
@@ -136,7 +134,7 @@ Follow [Core CMS: Update Project](https://github.com/TACC/Core-CMS/blob/main/REA
 
 ## Develop Project
 
-Follow "via Core CMS Resources" section of [Core CMS: Develop Custom Project](https://github.com/TACC/Core-CMS/blob/main/docs/develop-custom-project.md#via-core-cms-resources).
+Follow "via [Core CMS Resources]" section of [Core CMS: Develop Custom Project](https://github.com/TACC/Core-CMS/blob/main/docs/develop-custom-project.md#via-core-cms-resources).
 
 ## Debug Project
 
@@ -159,6 +157,8 @@ To port a project to [Core CMS Custom], read [Port Project].
 [Core CMS]: https://github.com/TACC/Core-CMS
 [Core Portal]: https://github.com/TACC/Core-Portal
 [Core CMS Custom]: https://github.com/TACC/Core-CMS-Custom
+[Core CMS Resources]: https://github.com/TACC/Core-CMS-Resources
+[Core Portal Deployments]: https://github.com/TACC/Core-Portal-Deployments
 
 [Git Submodules]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
