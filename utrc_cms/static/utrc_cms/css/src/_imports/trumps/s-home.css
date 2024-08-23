@@ -67,16 +67,15 @@
 .o-section--banner .s-home__banner .o-section__banner-overlay {
   @extend %x-overlay--callout;
 
-  --color-text: inherit;
-  --color-bkgd: var(--global-color-primary--normal);
+  background-color: rgba( from design-token('color.gray.medium'), 0.9 );
 }
 .o-section--banner.o-section--style-dark .s-home__banner .o-section__banner-overlay {
-  --color-text: var(--global-color-primary--xx-light);
-  --color-bkgd: var(--global-color-primary--xx-dark);
+  color: var(--global-color-primary--xx-light);
+  background-color: rgba( from design-token('color.gray.dark-2x'), 0.9 );
 }
 .o-section--banner.o-section--style-light .s-home__banner .o-section__banner-overlay {
-  --color-text: var(--global-color-primary--xx-dark);
-  --color-bkgd: var(--global-color-primary--xx-light);
+  color: var(--global-color-primary--xx-dark);
+  background-color: rgba( from design-token('color.gray.light-2x'), 0.9 );
 }
 
 
