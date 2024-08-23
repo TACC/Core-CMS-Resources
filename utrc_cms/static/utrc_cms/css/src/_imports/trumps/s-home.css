@@ -69,9 +69,6 @@
 
   --color-text: inherit;
   --color-bkgd: var(--global-color-primary--normal);
-
-  color: var(--color-text);
-  background-color: rgba( from var(--color-bkgd) r g b / 0.9);
 }
 .o-section--banner.o-section--style-dark .s-home__banner .o-section__banner-overlay {
   --color-text: var(--global-color-primary--xx-light);
