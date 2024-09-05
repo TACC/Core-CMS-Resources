@@ -15,10 +15,9 @@
   --global-color-accent--dark: hsl(229 45% 35%);
   --global-color-accent--x-dark: hsl(229 45% 30%);
 
+  /* DEPRECATED */
   --global-color-accent--alt: hsl(229 22% 77%);
   --global-color-accent--weak: hsl(229, 45%, 52%, 0.25);
-
-  /* Link */
   --global-color-link-on-light--normal: var(--global-color-accent--normal);
   --global-color-link-on-dark--normal: var(--global-color-accent--x-light);
 }

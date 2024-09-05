@@ -67,19 +67,15 @@
 .o-section--banner .s-home__banner .o-section__banner-overlay {
   @extend %x-overlay--callout;
 
-  --color-text: inherit;
-  --color-bkgd-rgb: var(--global-color-primary--normal);
-
-  color: var(--color-text);
-  background-color: rgba(var(--color-bkgd-rgb), 0.9);
+  background-color: rgb( from design-token('color.gray.medium') r g b / 0.9 );
 }
 .o-section--banner.o-section--style-dark .s-home__banner .o-section__banner-overlay {
-  --color-text: var(--global-color-primary--xx-light);
-  --color-bkgd-rgb: var(--global-color-primary--xx-dark-rgb);
+  color: var(--global-color-primary--xx-light);
+  background-color: rgb( from design-token('color.gray.dark-2x') r g b / 0.9 );
 }
 .o-section--banner.o-section--style-light .s-home__banner .o-section__banner-overlay {
-  --color-text: var(--global-color-primary--xx-dark);
-  --color-bkgd-rgb: var(--global-color-primary--xx-light-rgb);
+  color: var(--global-color-primary--xx-dark);
+  background-color: rgb( from design-token('color.gray.light-2x') r g b / 0.9 );
 }
 
 
