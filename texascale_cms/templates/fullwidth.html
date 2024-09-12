@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="{% static 'texascale_cms/css/build/site.css' %}">
 {% endblock assets_custom %}
 
+{# To remove container and breadcrumbs #}
+{% block breadcrumbs %}{% endblock breadcrumbs %}
 {% block content %}
 {% placeholder "content" %}
 {% endblock content %}
