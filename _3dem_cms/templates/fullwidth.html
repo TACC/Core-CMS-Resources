@@ -8,9 +8,11 @@
 {% endblock assets_font %}
 
 {# To remove container and breadcrumbs #}
-{% block breadcrumbs %}{% endblock breadcrumbs %}
 {% block content %}
-{% placeholder "content" %}
+  {% block cms_content %}
+    {% placeholder "content" %}
+  {% endblock cms_content %}
+  {% block app_content %}{% endblock app_content %}
 {% endblock content %}
 
 {% block assets_custom %}
