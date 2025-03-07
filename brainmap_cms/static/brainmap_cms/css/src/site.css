@@ -1,5 +1,5 @@
 /* Organize via ITCSS */
-/* SEE: https://confluence.tacc.utexas.edu/x/IAA9Cw */
+/* SEE: https://tacc-main.atlassian.net/wiki/x/QQhv */
 
 
 
@@ -7,7 +7,6 @@
 
 /* SETTINGS */
 
-/* https://github.com/TACC/Core-Styles/blob/22783d8/src/lib/_imports/settings/color.css */
 :root {
   /* Accent */
   --global-color-accent--x-light: hsl(229 45% 77%);
@@ -16,10 +15,9 @@
   --global-color-accent--dark: hsl(229 45% 35%);
   --global-color-accent--x-dark: hsl(229 45% 30%);
 
+  /* DEPRECATED */
   --global-color-accent--alt: hsl(229 22% 77%);
   --global-color-accent--weak: hsl(229, 45%, 52%, 0.25);
-
-  /* Link */
   --global-color-link-on-light--normal: var(--global-color-accent--normal);
   --global-color-link-on-dark--normal: var(--global-color-accent--x-light);
 }

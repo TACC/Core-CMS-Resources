@@ -59,7 +59,7 @@ Styleguide Trumps.Scopes.Article
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 0.25em;
+  column-gap: 0.5em;
   padding-inline: var(--sidebar-margin);
 
   /* To add border and space above */
@@ -87,8 +87,9 @@ Styleguide Trumps.Scopes.Article
 .s-article-page .logos--social svg {
   fill: var(--global-color-primary--x-dark);
   height: var(--global-font-size--large);
-  width: var(--global-font-size--x-large);
+  width: var(--global-font-size--large);
 }
-.s-article-page .logos__facebook svg:hover { fill: #0866ff; }
-.s-article-page .logos__linkedin svg:hover { fill: #0a66c2; }
-.s-article-page .logos__email svg:hover { fill: #0000ff; }
+.s-article-page a.logos__facebook:hover svg { fill: #0866ff; }
+.s-article-page a.logos__linkedin:hover svg { fill: #0a66c2; }
+.s-article-page a.logos__email:hover svg { fill: #0000ff; }
+.s-article-page a.logos__instagram:hover svg { fill: #bc1888; }

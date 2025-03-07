@@ -11,4 +11,4 @@ It is loaded by Nginx because of import of an extra Nginx config file.
 
 [djangocms-page-meta]: https://github.com/nephila/djangocms-page-meta
 
-[^1]: To set `noindex` for one page, read [Django CMS - Admin Guide - Do Not Let Google Index/Crawl a Page](https://confluence.tacc.utexas.edu/x/XIVbEQ).
+[^1]: To set `noindex` for one page, read [Django CMS - Admin Guide - Do Not Let Google Index/Crawl a Page](https://tacc-main.atlassian.net/wiki/x/6Ahv).
