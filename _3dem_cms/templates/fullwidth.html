@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% load cms_tags static %}
 
-{% block assets_font %}
-  {{ block.super }}
-{% endblock assets_font %}
-
 {# To remove container and breadcrumbs #}
 {% block content %}
   {% block cms_content %}
