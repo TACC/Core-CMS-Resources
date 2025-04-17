@@ -39,7 +39,7 @@ Project-specific code built into the [Core CMS] project
 | sciviscolor | https://sciviscolor.org/ | **v4**.8.0 |
 | texascale | https://texascale.org/ | **v4**.1.0 |
 
-_Last updated: 2024-02-29_
+_Last updated: 2025-04-17_
 
 [^2]: The production version of https://github.com/TACC/Core-CMS that each requires.
 
