@@ -38,7 +38,6 @@ Project-specific code built into the [Core CMS] project
 | protx | https://ccprotx.org/ | **v4**.2.0 |
 | sciviscolor | https://sciviscolor.org/ | **v4**.8.0 |
 | texascale | https://texascale.org/ | **v4**.1.0 |
-| utrc | https://utrc.tacc.utexas.edu/ | **v4**.4.1 |
 
 _Last updated: 2024-02-29_
 
