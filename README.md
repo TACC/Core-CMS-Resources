@@ -30,15 +30,15 @@ Project-specific code built into the [Core CMS] project
 
 ## Project Websites
 
-| Abbr. | URL | Version[^2] | Notes |
-| - | - | - | - |
-| 3dem | https://3dem.org/ | **v4**.4.2 |
-| brainmap | https://portal.brainmap.org/ | **v4**.4.2 |
-| protx | https://ccprotx.org/ | **v4**.2.0 |
-| sciviscolor | https://sciviscolor.org/ | **v4**.8.0 |
-| texascale | https://texascale.org/ | **v4**.1.0 |
+| Abbr. | URL | Version[^2] |
+| - | - | - |
+| 3dem | https://3dem.org/ | **v4** |
+| brainmap | https://portal.brainmap.org/ | **v4** |
+| protx | https://ccprotx.org/ | **v4** |
+| sciviscolor | https://sciviscolor.org/ | **v4** |
+| texascale | https://texascale.org/ | **v4** |
 
-_Last updated: 2025-04-17_
+_Last updated: 2025-05-05_
 
 [^2]: The production version of https://github.com/TACC/Core-CMS that each requires.
 
