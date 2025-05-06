@@ -34,7 +34,6 @@ Project-specific code built into the [Core CMS] project
 | - | - | - | - |
 | 3dem | https://3dem.org/ | **v4**.4.2 |
 | brainmap | https://portal.brainmap.org/ | **v4**.4.2 |
-| frontera | https://frontera-portal.tacc.utexas.edu/ | **v4**.4.2 |
 | protx | https://ccprotx.org/ | **v4**.2.0 |
 | sciviscolor | https://sciviscolor.org/ | **v4**.8.0 |
 | texascale | https://texascale.org/ | **v4**.1.0 |
