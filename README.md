@@ -32,13 +32,12 @@ Project-specific code built into the [Core CMS] project
 
 | Abbr. | URL | Version[^2] |
 | - | - | - |
-| 3dem | https://3dem.org/ | **v4** |
 | brainmap | https://portal.brainmap.org/ | **v4** |
 | protx | https://ccprotx.org/ | **v4** |
 | sciviscolor | https://sciviscolor.org/ | **v4** |
 | texascale | https://texascale.org/ | **v4** |
 
-_Last updated: 2025-05-05_
+_Last updated: 2025-05-13_
 
 [^2]: The production version of https://github.com/TACC/Core-CMS that each requires.
 
