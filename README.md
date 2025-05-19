@@ -2,11 +2,11 @@
 
 Project-specific code built into the [Core CMS] project
 
-> **Note**
-> Do not clone this repo to work on a CMS project. Work on it directly within [Core CMS] as a [Git submodule][Git Submodules].
+> [!NOTE]
+> Do **not** clone this repo to work on a CMS project. Work on it via [Core CMS] as a [Git submodule][Git Submodules].
 
-> **Warning**
-> This repository is deprecated. To work on these projects further, please [migrate them to Core CMS Custom](#port-project).[^1]
+> [!CAUTION]
+> This repository is deprecated. To develop these projects further, [migrate them to Core CMS Custom](#port-project).[^1]
 
 [^1]: Deploying websites that are still in Core-CMS-Resources **and** have [old custom templates will trigger a major problem](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603194690). The prefered solution is [migration](#port-project). If you must deploy without migration, then [upgrade the website for Core-CMS v3.12](./docs/upgrade-project.md#for-core-cms-v312).
 
@@ -26,19 +26,20 @@ Project-specific code built into the [Core CMS] project
 ## Related Repositories
 
 - [Core CMS], the base CMS code for TACC WMA CMS Websites
-- [Core CMS Custom], the custom CMS code (new solution) for TACC WMA CMS Websites
+- [Core CMS Custom], for custom assets of TACC WMA CMS Websites
+- [Core CMS Template], to build a custom TACC WMA CMS Website
 
 ## Project Websites
 
-| Abbr. | URL | Version[^2] |
-| - | - | - |
-| 3dem | https://3dem.org/ | **v4** |
-| brainmap | https://portal.brainmap.org/ | **v4** |
-| protx | https://ccprotx.org/ | **v4** |
-| sciviscolor | https://sciviscolor.org/ | **v4** |
-| texascale | https://texascale.org/ | **v4** |
+| Abbr. | URL | Version[^2] | Status |
+| - | - | - | - |
+| 3dem | https://3dem.org/ | **v4** | ➡ **migrating** via [#207](https://github.com/TACC/Core-CMS-Resources/pull/207) |
+| brainmap | https://portal.brainmap.org/ | **v4** | ➡ **migrating** via [#206](https://github.com/TACC/Core-CMS-Resources/pull/206) |
+| protx | https://ccprotx.org/ | **v4** | ❌ **retired** |
+| sciviscolor | https://sciviscolor.org/ | **v4** | 🔜 **pending** migration |
+| texascale | https://texascale.org/ | **v4** | 🔜 **pending** migration |
 
-_Last updated: 2025-05-05_
+_Last updated: 2025-05-19_
 
 [^2]: The production version of https://github.com/TACC/Core-CMS that each requires.
 
@@ -153,6 +154,7 @@ To port a project to [Core CMS Custom], read [Port Project].
 [Core CMS]: https://github.com/TACC/Core-CMS
 [Core Portal]: https://github.com/TACC/Core-Portal
 [Core CMS Custom]: https://github.com/TACC/Core-CMS-Custom
+[Core CMS Template]: https://github.com/TACC/Core-CMS-Template
 [Core CMS Resources]: https://github.com/TACC/Core-CMS-Resources
 [Core Portal Deployments]: https://github.com/TACC/Core-Portal-Deployments
 
