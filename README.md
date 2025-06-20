@@ -33,7 +33,6 @@ Project-specific code built into the [Core CMS] project
 
 | Abbr. | URL | Version[^2] | Status |
 | - | - | - | - |
-| protx | https://ccprotx.org/ | **v4** | ❌ **retired** |
 | sciviscolor | https://sciviscolor.org/ | **v4** | 🔜 **pending** migration |
 | texascale | https://texascale.org/ | **v4** | 🔜 **pending** migration |
 
