@@ -1,8 +1,6 @@
 {% extends "./base.html" %}
 {% load cms_tags static %}
 
-{% block title %}{% page_attribute "page_title" %}{% endblock title %}
-
 {% block assets_font %}
   <link rel="stylesheet" href="https://use.typekit.net/xnr7bof.css">
 {% endblock assets_font %}
@@ -13,6 +11,10 @@
   <link rel="stylesheet" href="{% static 'texascale_cms/css/build/site.css' %}">
 {% endblock assets_custom %}
 
+{# To remove container and breadcrumbs #}
 {% block content %}
-{% placeholder "content" %}
+  {% block cms_content %}
+    {% placeholder "content" %}
+  {% endblock cms_content %}
+  {% block app_content %}{% endblock app_content %}
 {% endblock content %}
