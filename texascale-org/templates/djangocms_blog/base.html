@@ -2,7 +2,7 @@
 {% extends "djangocms_blog/base.html" %}
 {% load static get_url_match %}
 
-{% block content_assets %}
+{% block app_assets %}
   {{ block.super }}
 
   {% with year_slug=request.path|get_url_match:"/(20\d\d)/" %}
@@ -16,4 +16,4 @@
       {% endif %}
     {% endif %}
   {% endwith %}
-{% endblock content_assets %}
+{% endblock app_assets %}
