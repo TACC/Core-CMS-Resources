@@ -1,8 +1,0 @@
-/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
-
-/* Organize via ITCSS */
-/* SEE: https://tacc-main.atlassian.net/wiki/x/QQhv */
-
-/* COMPONENTS */
-
-@import url("./_imports/components/c-image-map.css");

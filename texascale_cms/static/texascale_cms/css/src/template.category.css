@@ -1,9 +1,0 @@
-/* DO NOT ADD STYLES HERE; ONLY IMPORT OTHER STYLESHEETS */
-
-/* Organize via ITCSS */
-/* SEE: https://tacc-main.atlassian.net/wiki/x/QQhv */
-
-/* TRUMPS */
-
-@import url("./_imports/trumps/s-category-page.css");
-@import url("./_imports/trumps/u-position-sticky.css");

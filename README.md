@@ -34,7 +34,6 @@ Project-specific code built into the [Core CMS] project
 | Abbr. | URL | Version[^2] | Status |
 | - | - | - | - |
 | sciviscolor | https://sciviscolor.org/ | **v4** | 🔜 **pending** migration |
-| texascale | https://texascale.org/ | **v4** | 🔜 **pending** migration |
 
 _Last updated: 2025-05-19_
 
