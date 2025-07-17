@@ -31,13 +31,8 @@ Project-specific code built into the [Core CMS] project
 
 ## Project Websites
 
-| Abbr. | URL | Version[^2] | Status |
-| - | - | - | - |
-| sciviscolor | https://sciviscolor.org/ | **v4** | 🔜 **pending** migration |
-
-_Last updated: 2025-05-19_
-
-[^2]: The production version of https://github.com/TACC/Core-CMS that each requires.
+> [!IMPORTANT]
+> No more websites exist in this repository. All were moved to [Core CMS Custom] or [APCD-CMS](https://github.com/TACC/APCD-CMS) or [Texascale-CMS](https://github.com/TACC/Texascale-CMS).
 
 ## Project Architecture
 
