@@ -1,12 +1,9 @@
 # Core-CMS-Resources
 
-Project-specific code built into the [Core CMS] project
-
-> [!NOTE]
-> Do **not** clone this repo to work on a CMS project. Work on it via [Core CMS] as a [Git submodule][Git Submodules].
+Project-specific code _that had been_ built into the [Core CMS] project
 
 > [!CAUTION]
-> This repository is **deprecated**. To develop these projects further, [migrate them to Core CMS Custom](#port-project).[^1]
+> This repository is **unmaintained**. [Learn how to develop a custom Core-CMS project](https://github.com/TACC/Core-CMS/blob/main/docs/develop-custom-project.md).[^1]
 
 [^1]: Deploying websites that are still in Core-CMS-Resources **and** have [old custom templates will trigger a major problem](https://github.com/TACC/Core-CMS-Resources/pull/176#issuecomment-1603194690). The prefered solution is [migration](#port-project). If you must deploy without migration, then [upgrade the website for Core-CMS v3.12](./docs/upgrade-project.md#for-core-cms-v312).
 
@@ -32,7 +29,7 @@ Project-specific code built into the [Core CMS] project
 ## Project Websites
 
 > [!IMPORTANT]
-> No more websites exist in this repository. All were moved to [Core CMS Custom] or [APCD-CMS](https://github.com/TACC/APCD-CMS) or [Texascale-CMS](https://github.com/TACC/Texascale-CMS).
+> No more websites exist in this repository. All were moved to [Core CMS Custom] or a repository built from [Core-CMS-Template](https://github.com/TACC/Core-CMS-Template).
 
 ## Project Architecture
 
